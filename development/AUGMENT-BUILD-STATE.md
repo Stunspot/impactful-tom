@@ -5,7 +5,7 @@
 - Target capability: Impactful Tom founder-performance Augment 1.0.0
 - Desired world-change: a founder with a live decision can expose the governing constraint, reconcile mission with market evidence, and execute the smallest evidence-calibrated move with an owner, threshold, review point, and stop/continue interpretation
 - Requested terminal state: verified public GitHub marketplace plugin and release, with separately validatable Codex and Claude Code/generic distributions
-- Current stage: publicly released; post-release Pages documentation correction under candidate review
+- Current stage: publicly released; post-release Pages documentation correction reviewed and ready for live verification
 - Product map: `development/corrected-impactful-tom-augment-map.md`
 - Behaviorally exercised method fingerprint: `f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2`
 - Current whole skill-package fingerprint: `ff495fd2f627d0e8f371d2480ad2b8f7a3f0707958f8dce6c83853505704006c`
@@ -62,7 +62,7 @@
 - qwen35 frozen-fingerprint route: `NOT_DEMONSTRATED`; never merged into frontier evidence
 - Codex current-host route: pre-delta candidate installed and enabled; later fresh task catalog present; representative plateau response behavior demonstrated; causal read/invocation trace unavailable; final routing metadata not yet exercised
 - Claude live-host route: not executed
-- Documentation: the Pages-era 17-file customer set, custom layout, responsive stylesheet, visual family, and bounded claims pass local source checks and Hesperos review; candidate binding and corrected live-site readback remain pending
+- Documentation: the Pages-era 17-file customer set, custom layout, responsive stylesheet, visual family, and bounded claims pass local source checks; Hesperos returned `REVIEW_PASS_WITH_CONDITIONS` and TestForge returned `REVIEW_PASS` for candidate `16520e03578dfa7f396b43b6758af53389f22cec`; corrected live-site readback remains pending
 - Release package: customer stage contains 50 files; four archives and checksums are built; all extraction-parity receipts pass
 - Final release review: `READY_TO_PUBLISH_WITH_CONDITIONS`; every prepublication condition is satisfied in the rebuilt candidate
 

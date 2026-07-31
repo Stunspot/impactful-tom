@@ -2,7 +2,7 @@
   "manifest_version": "1.0",
   "target": {
     "name": "Impactful Tom public documentation surface",
-    "revision": "post-release-pages-and-visuals",
+    "revision": "16520e03578dfa7f396b43b6758af53389f22cec",
     "target_class": "change"
   },
   "scope": {
@@ -165,7 +165,7 @@
       "severity": "high",
       "likelihood": "high",
       "confidence": "high",
-      "disposition": "planned",
+      "disposition": "covered",
       "verification": ["PV-S-004", "PV-T-CLAIMS-001", "PV-T-REVIEW-001"]
     },
     {
@@ -174,7 +174,7 @@
       "severity": "high",
       "likelihood": "low",
       "confidence": "high",
-      "disposition": "planned",
+      "disposition": "covered",
       "verification": ["PV-S-005", "PV-T-IMAGE-001", "PV-T-REVIEW-001"]
     },
     {
@@ -291,7 +291,7 @@
       "command": "python -X utf8 verification/scripts/check_documentation_site.py --repo .",
       "oracle": "Required site files exist; front matter, navigation, internal targets, baseurl-safe paths, and public URLs satisfy the declared invariants.",
       "status": "passed",
-      "execution_id": "PV-E-001"
+      "execution_id": "PV-E-006"
     },
     {
       "id": "PV-T-A11Y-001",
@@ -301,7 +301,7 @@
       "command": "python -X utf8 <hesperos>/scripts/lint_accessible_markdown.py <manifest-listed Markdown files>",
       "oracle": "All selected Markdown files pass structural lint and the custom layout passes semantic and contrast assertions.",
       "status": "passed",
-      "execution_id": "PV-E-002"
+      "execution_id": "PV-E-007"
     },
     {
       "id": "PV-T-CLAIMS-001",
@@ -311,7 +311,7 @@
       "command": "python -X utf8 verification/scripts/check_documentation_site.py --repo .",
       "oracle": "No stale prepublication markers remain on public pages; bounded unverified host states remain explicit.",
       "status": "passed",
-      "execution_id": "PV-E-005"
+      "execution_id": "PV-E-006"
     },
     {
       "id": "PV-T-IMAGE-001",
@@ -328,9 +328,10 @@
       "scenario_ids": ["PV-S-006"],
       "name": "Tag, release asset, and diff-scope custody",
       "layer": "contract",
-      "command": "git diff --name-only 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe...HEAD plus authenticated GitHub tag and asset readback",
+      "command": "git diff --name-only 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe 16520e03578dfa7f396b43b6758af53389f22cec plus local tag readback",
       "oracle": "Published tag and asset digests remain unchanged; post-release changes stay inside the documentation correction scope.",
-      "status": "designed"
+      "status": "passed",
+      "execution_id": "PV-E-006"
     },
     {
       "id": "PV-T-LIVE-001",
@@ -348,7 +349,8 @@
       "layer": "independent-review",
       "command": "Hesperos documentation-accessibility reviewer and TestForge verification reviewer",
       "oracle": "No unresolved material finding blocks the claimed public documentation readiness.",
-      "status": "designed"
+      "status": "passed",
+      "execution_id": "PV-E-007"
     }
   ],
   "executions": [
@@ -435,6 +437,39 @@
         "verification/documentation/testforge-pages-review-initial.md"
       ],
       "boundary": "Discriminating local claim evidence; it does not establish any of the four host states or the live Pages deployment."
+    },
+    {
+      "id": "PV-E-006",
+      "status": "passed",
+      "exit_code": 0,
+      "command": "At candidate 16520e03578dfa7f396b43b6758af53389f22cec: enumerate the exact diff from 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe; read v1.0.0^{}; run documentation-site, content-boundary, release-exclusion, distribution-topology, and unit checks",
+      "environment": "Windows local Git repository with clean worktree",
+      "observed": [
+        "The exact candidate diff contains 42 files and no path under plugins/, dist/, release/assets/, or release/stage/.",
+        "The local v1.0.0 tag remains at 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe.",
+        "All four deterministic validators passed with zero errors and zero warnings.",
+        "All four unit tests passed, including eight hostile host-state assertions rejected by the deny-by-default sentence contract."
+      ],
+      "raw_evidence": [
+        "verification/documentation/pages-candidate-custody.json"
+      ],
+      "boundary": "Immutable local candidate and diff-scope evidence; remote push, remote tag readback after push, and live Pages remain unobserved."
+    },
+    {
+      "id": "PV-E-007",
+      "status": "passed",
+      "exit_code": 0,
+      "command": "Fresh-context Hesperos review with same-reviewer delta closure; fresh-context TestForge review with two remediation closures",
+      "environment": "Independent collaboration agents reviewing candidate 16520e03578dfa7f396b43b6758af53389f22cec",
+      "observed": [
+        "Hesperos returned REVIEW_PASS_WITH_CONDITIONS with no source repair required.",
+        "TestForge returned REVIEW_PASS and closed PV-F-001, PV-F-002, and PV-F-003 with no new decision-changing finding."
+      ],
+      "raw_evidence": [
+        "verification/reviews/documentation-pages-accessibility-review.md",
+        "verification/reviews/pages-visuals-testforge-review.md"
+      ],
+      "boundary": "Independent pre-publication source and candidate review; live deployment and host behavior remain separate."
     }
   ],
   "findings": [
@@ -442,22 +477,22 @@
       "id": "PV-F-001",
       "severity": "high",
       "statement": "The initial public wording would become false when the documentation correction advanced main beyond the immutable v1.0.0 tag.",
-      "status": "resolved",
+      "status": "closed",
       "resolution": "README.md, docs/provenance-and-verification.md, and PV-O-005 now bind the tag to the sealed release commit and describe main as a moving post-release documentation branch."
     },
     {
       "id": "PV-F-002",
       "severity": "high",
       "statement": "The initial aggregate keyword oracle could pass the exact positive host-state overclaim that the invariant forbids.",
-      "status": "resolved",
-      "resolution": "Canonical public surfaces now require explicit negative semantics, forbidden positive claims are rejected, and four hostile fixtures exercise each host-state class."
+      "status": "closed",
+      "resolution": "A deny-by-default sentence contract now requires approved negative semantics for every named host-state sentence, and eight hostile fixtures exercise verified, observed, confirmed, healthy, works, passed, established, and supported variants."
     },
     {
       "id": "PV-F-003",
       "severity": "medium",
       "statement": "The complete candidate and diff scope are not bound while correction files remain outside a candidate commit.",
-      "status": "open",
-      "resolution": "Create a complete local candidate commit, rerun the exact diff and validators, and obtain follow-up review before publication."
+      "status": "closed",
+      "resolution": "Candidate 16520e03578dfa7f396b43b6758af53389f22cec is clean and immutable; its exact 42-file diff contains no release-bearing path, all candidate checks pass, and TestForge independently closed the finding."
     }
   ],
   "residual_risks": [
@@ -470,17 +505,17 @@
     }
   ],
   "review": {
-    "status": "REVIEW_FAIL",
+    "status": "REVIEW_PASS",
     "findings": [
-      "Initial TestForge review found two high-severity source defects, now locally remediated, and one medium-severity candidate-custody gap that remains open until a commit exists.",
-      "Fresh-context Hesperos review returned REVIEW_PASS_WITH_CONDITIONS with no source repair required and a later live-readback condition."
+      "TestForge closed all three source and candidate-custody findings with no new decision-changing finding.",
+      "Hesperos returned REVIEW_PASS_WITH_CONDITIONS with no source repair required and a later live-readback condition."
     ]
   },
   "decision": {
     "status": "INSUFFICIENT_EVIDENCE",
     "basis": [
       "The Pages source, public documents, visual assets, custody receipt, and deterministic regression suite pass locally.",
-      "Fresh-context Hesperos and TestForge review have not yet run against this correction.",
+      "Fresh-context Hesperos and TestForge reviews support pre-publication source and candidate readiness.",
       "The corrected Pages deployment, live routes, metadata, stylesheet, and assets have not yet been read back from the public URL."
     ],
     "authority_required": []

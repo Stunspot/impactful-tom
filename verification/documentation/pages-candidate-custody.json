@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "evidence_date": "2026-07-30",
+  "evidence_state": "normalized from tool-returned local Git and validator output",
+  "release_commit": "913161c29d09e1b587e7e2c5522ef3ba0ca94dfe",
+  "release_tag": "v1.0.0",
+  "release_tag_commit_observed": "913161c29d09e1b587e7e2c5522ef3ba0ca94dfe",
+  "candidate_commit": "16520e03578dfa7f396b43b6758af53389f22cec",
+  "worktree_after_candidate": "clean",
+  "diff_file_count": 42,
+  "diff_paths": [
+    "CHANGELOG.md",
+    "README.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "development/AUGMENT-BUILD-STATE.md",
+    "development/build_documentation_visuals.ps1",
+    "development/documentation-project.json",
+    "development/launch-state.json",
+    "development/launch/archive-plan.json",
+    "development/launch/channel-matrix.md",
+    "development/launch/claims-ledger.md",
+    "docs/404.html",
+    "docs/_config.yml",
+    "docs/_layouts/default.html",
+    "docs/assets/css/site.css",
+    "docs/assets/images/apple-touch-icon.png",
+    "docs/assets/images/favicon-16.png",
+    "docs/assets/images/favicon-32.png",
+    "docs/assets/images/favicon-48.png",
+    "docs/assets/images/impactful-tom-header.png",
+    "docs/assets/images/impactful-tom-mark-192.png",
+    "docs/assets/images/impactful-tom-mark-512.png",
+    "docs/assets/images/impactful-tom-social-card.png",
+    "docs/getting-started.md",
+    "docs/index.md",
+    "docs/installing-and-maintaining.md",
+    "docs/privacy-and-boundaries.md",
+    "docs/provenance-and-verification.md",
+    "docs/site.webmanifest",
+    "docs/troubleshooting.md",
+    "documentation-manifest.json",
+    "verification/documentation/documentation-authorship.json",
+    "verification/documentation/documentation-review.json",
+    "verification/documentation/hesperos-pages-authoring-evidence.md",
+    "verification/documentation/hesperos-pages-authoring-response.txt",
+    "verification/documentation/pages-visuals-verification-manifest.json",
+    "verification/documentation/review-response-pages.txt",
+    "verification/documentation/testforge-pages-review-initial.md",
+    "verification/documentation/visual-assets-custody.json",
+    "verification/reviews/documentation-pages-accessibility-review.md",
+    "verification/scripts/check_documentation_site.py",
+    "verification/tests/test_static_checks.py"
+  ],
+  "forbidden_release_bearing_prefixes": [
+    "plugins/",
+    "dist/",
+    "release/assets/",
+    "release/stage/"
+  ],
+  "forbidden_release_bearing_paths_observed": [],
+  "checks": [
+    {
+      "name": "documentation_site",
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "content_boundaries",
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "release_exclusions",
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "distribution_topology",
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "verification unit suite",
+      "status": "passed",
+      "tests": 4,
+      "failures": 0
+    }
+  ],
+  "independent_review": {
+    "hesperos": "REVIEW_PASS_WITH_CONDITIONS",
+    "testforge": "REVIEW_PASS"
+  },
+  "boundary": "This receipt binds pre-publication local candidate content and diff scope. It does not establish a pushed commit, remote tag immutability after push, GitHub Pages deployment, repository social-preview setting, or host installation behavior."
+}

@@ -105,7 +105,7 @@
       "public": true,
       "https_enforced": true,
       "configuration_status": "built",
-      "corrected_source_status": "locally-verified; post-publication live readback pending"
+      "corrected_source_status": "candidate 16520e03578dfa7f396b43b6758af53389f22cec locally verified and independently reviewed; post-publication live readback pending"
     }
   },
   "archive_custody": {

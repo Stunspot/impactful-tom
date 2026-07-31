@@ -25,3 +25,5 @@ Clean public-route installation, restart resilience, causal host invocation, and
 After the independent TestForge review, the release-lineage language was made temporal, clean public-route installation was stated directly as unobserved, causal host invocation received its own explicit nonclaim, and the claim gate gained four hostile overclaim fixtures.
 
 The same Hesperos reviewer re-read `README.md`, `docs/installing-and-maintaining.md`, `docs/provenance-and-verification.md`, the claim validator, and its tests. The reviewer confirmed that the prior `REVIEW_PASS_WITH_CONDITIONS` still holds with no new decision-changing finding or repair. The later live Pages and repository social-preview readback condition is unchanged.
+
+The reviewer then inspected final candidate `16520e03578dfa7f396b43b6758af53389f22cec`, including the direct homepage nonclaim and refreshed fingerprint `037d75c29820803cd77da31ef17430eafb8fc232d939abaec4ffaa72690c7c4e`. The verdict remained `REVIEW_PASS_WITH_CONDITIONS`; no source repair is needed.
