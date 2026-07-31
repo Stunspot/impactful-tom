@@ -3,9 +3,12 @@
   "fresh_context": true,
   "disposition": "REVIEW_PASS_WITH_CONDITIONS",
   "unresolved_material_findings": 0,
-  "documentation_fingerprint": "8bc3aa19eed6a9400685aabb925cf54209f2f7baca8cd29a5559216c8cf20823",
+  "documentation_fingerprint": "e45c2697a3637ece145e423ee78435ed29c5bf7f6dc550547406e5bf7459b637",
+  "fingerprint_algorithm": "sha256 of UTF-8 path NUL sha256 records joined by LF in reviewed_files order",
   "reviewed_files": [
     "README.md",
+    "docs/index.md",
+    "docs/404.html",
     "docs/getting-started.md",
     "docs/installing-and-maintaining.md",
     "docs/privacy-and-boundaries.md",
@@ -21,13 +24,16 @@
     "SECURITY.md",
     "CHANGELOG.md"
   ],
-  "reviewer": "Fresh-context gpt-5.6-terra Hesperos documentation accessibility reviewer with root remediation, same-reviewer closure, bounded changelog-delta follow-up, and EOF-formatting closure",
-  "review_run_id": "hesperos-doc-review-impactful-tom-20260730-04",
-  "review_input_evidence": "verification/documentation/review-input-prepublication.json",
+  "reviewer": "Fresh-context Hesperos documentation accessibility reviewer with same-reviewer remediation closure",
+  "review_run_id": "hesperos-pages-review-20260730-01",
+  "review_input_evidence": "verification/documentation/hesperos-pages-authoring-evidence.md",
+  "review_response": "verification/documentation/review-response-pages.txt",
+  "review_record": "verification/reviews/documentation-pages-accessibility-review.md",
   "evidence_directory": "verification/documentation",
   "conditions": [
-    "Public repository, tag, release, assets, and public-route readback remain unexecuted.",
-    "Clean-host and restart Codex evidence remain unexecuted.",
-    "Claude Code live installation, discovery, invocation, and first value remain unexecuted."
-  ]
+    "Read back the corrected live Pages routes, stylesheet, metadata, header, and social card before claiming the site is publicly healthy.",
+    "Do not claim the repository-level social-preview setting is configured unless separately observed.",
+    "Clean public-route installation, restart resilience, causal host invocation, and Claude live behavior remain unobserved."
+  ],
+  "claim_boundary": "This review supports the bounded accessibility and reader-journey readiness of the listed source documents. It does not establish live deployment health, accessibility conformance, host behavior, or customer outcomes."
 }

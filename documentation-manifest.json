@@ -7,9 +7,55 @@
   },
   "status": "accessibility-reviewed",
   "owner": "Collaborative Dynamics",
-  "landing_page": "README.md",
+  "landing_page": "docs/index.md",
+  "repository_landing_page": "README.md",
+  "public_site": {
+    "canonical_url": "https://stunspot.github.io/impactful-tom/",
+    "source": "main:/docs",
+    "baseurl": "/impactful-tom",
+    "primary_navigation": [
+      "docs/index.md",
+      "docs/getting-started.md",
+      "docs/installing-and-maintaining.md",
+      "docs/privacy-and-boundaries.md",
+      "docs/provenance-and-verification.md"
+    ],
+    "recovery_page": "docs/404.html",
+    "layout": "docs/_layouts/default.html",
+    "stylesheet": "docs/assets/css/site.css",
+    "manifest": "docs/site.webmanifest"
+  },
+  "visual_assets": [
+    {
+      "path": "docs/assets/images/impactful-tom-header.png",
+      "purpose": "README header",
+      "dimensions": "1600x500"
+    },
+    {
+      "path": "docs/assets/images/impactful-tom-social-card.png",
+      "purpose": "Open Graph and social preview",
+      "dimensions": "1280x640"
+    },
+    {
+      "path": "docs/assets/images/impactful-tom-mark-512.png",
+      "purpose": "Pages hero and application mark",
+      "dimensions": "512x512"
+    },
+    {
+      "path": "docs/assets/images/apple-touch-icon.png",
+      "purpose": "Apple touch icon",
+      "dimensions": "180x180"
+    },
+    {
+      "path": "docs/assets/images/favicon-32.png",
+      "purpose": "Browser favicon",
+      "dimensions": "32x32"
+    }
+  ],
   "customer_docs": [
     "README.md",
+    "docs/index.md",
+    "docs/404.html",
     "docs/getting-started.md",
     "docs/installing-and-maintaining.md",
     "docs/privacy-and-boundaries.md",
@@ -28,6 +74,7 @@
   "moments": {
     "orientation": [
       "README.md",
+      "docs/index.md",
       "docs/getting-started.md"
     ],
     "installation": [

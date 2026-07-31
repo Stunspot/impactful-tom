@@ -7,7 +7,7 @@
     "candidate_tree_sha256": "b9a44384ed1758bf5420b063026d135b367f9d26804e3af1ac6560834ca8da10"
   },
   "requested_terminal_state": "first-success-verified",
-  "status": "executing",
+  "status": "public-released-host-first-success-pending",
   "claim_states": [
     {
       "statement": "The package provides founder-performance constraint diagnosis and evidence-calibrated next moves.",
@@ -50,8 +50,8 @@
       "name": "GitHub repository and release",
       "destination": "Stunspot/impactful-tom",
       "requested": true,
-      "state": "not-created",
-      "visibility": "PUBLIC after release gates",
+      "state": "public-release-observed",
+      "visibility": "PUBLIC",
       "directory_submission": "out-of-scope"
     },
     {
@@ -75,37 +75,47 @@
     "disposition": "required",
     "manifest": "documentation-manifest.json",
     "authorship_receipt": "verification/documentation/documentation-authorship.json",
-    "review_receipt": "verification/reviews/documentation-accessibility-review-signoff.md",
+    "review_receipt": "verification/reviews/documentation-pages-accessibility-review.md",
     "authorship_verified": true,
     "customer_journey_verified": true,
     "review_verified": true
   },
   "repository_custody": {
     "disposition": "required",
-    "default_visibility": "PRIVATE",
+    "default_visibility": "PRIVATE with owner-authorized public exception",
     "full_name": "Stunspot/impactful-tom",
-    "observed_visibility": "unobserved",
+    "observed_visibility": "PUBLIC",
     "public_exception_authority": "Sam Walker explicitly authorized a public GitHub plugin launch in task 019fb465-a48b-7b60-a5a6-41d7bdca7f22.",
     "default_branch": "main",
-    "main_commit": "",
-    "release_tag": "",
-    "release_commit": "",
-    "release_path": "",
-    "release_tree_sha256": "",
-    "release_assets_verified": false,
+    "main_commit_at_release_readback": "913161c29d09e1b587e7e2c5522ef3ba0ca94dfe",
+    "release_tag": "v1.0.0",
+    "annotated_tag_object": "437242822542fa2acde5b1f10b6494dbf10de129",
+    "release_commit": "913161c29d09e1b587e7e2c5522ef3ba0ca94dfe",
+    "release_path": "https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0",
+    "release_tree_sha256": "b9a44384ed1758bf5420b063026d135b367f9d26804e3af1ac6560834ca8da10",
+    "release_assets_verified": true,
     "fresh_main_clone_verified": false,
     "fresh_tag_clone_verified": false,
-    "live_readback": "not_run",
-    "estate_verification_receipt": ""
+    "live_readback": "Public repository, default branch, annotated tag, release metadata, and five release assets were read back on 2026-07-30.",
+    "estate_verification_receipt": "GitHub API and release-asset digest readback retained in the launch task evidence stream.",
+    "pages": {
+      "url": "https://stunspot.github.io/impactful-tom/",
+      "source": "main:/docs",
+      "build_type": "legacy",
+      "public": true,
+      "https_enforced": true,
+      "configuration_status": "built",
+      "corrected_source_status": "locally-verified; post-publication live readback pending"
+    }
   },
   "archive_custody": {
     "plan": "development/launch/archive-plan.json",
     "ledger": "release/archive-custody-v1.0.0.json",
     "canonical_archives_verified": true,
-    "github_assets_verified": false,
+    "github_assets_verified": true,
     "latest_backups_verified": false
   },
-  "estate_custody_status": "incomplete",
+  "estate_custody_status": "public-release-verified; fresh-clone-and-host-evidence-incomplete",
   "proofs": [
     {
       "kind": "candidate-manifest",
@@ -150,9 +160,9 @@
     "An earlier fresh collaboration-agent context omitted the installed skill; after task re-entry, a fresh context included the pre-delta skill and returned a response that passed every representative plateau criterion.",
     "Codex causal skill-read/invocation events are not exposed by this surface; the final public-route catalog, implicit-selection, first-success, clean-host, and restart claims remain unearned.",
     "Claude Code live installation, discovery, invocation, and first value are unobserved.",
-    "The current 15-file documentation fingerprint has a valid Hesperos authorship receipt and fresh-context review with zero material findings; publication-state wording requires a bounded post-publication refresh.",
+    "The Pages-era 17-file documentation set and visual family pass local source checks and Hesperos review; candidate binding and corrected live Pages readback remain pending.",
     "OpenAI Directory submission is not requested."
   ],
-  "next_consequential_move": "Create the public GitHub repository from the exact committed candidate, publish v1.0.0, and verify the public route.",
-  "updated_at": "2026-07-31T00:56:53Z"
+  "next_consequential_move": "Bind and publish the Pages documentation correction, verify its live routes and assets, then perform the clean public-route install and first-success probe without upgrading unobserved restart, causal-invocation, or Claude claims.",
+  "updated_at": "2026-07-31T02:50:00Z"
 }

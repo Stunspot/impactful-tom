@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="docs/assets/images/impactful-tom-header.png" alt="Impactful Tom — founder-performance judgment for naming the real constraint and choosing an owned move." width="1600">
+</p>
+
+<p align="center">
+  <a href="https://stunspot.github.io/impactful-tom/">Documentation</a>
+  ·
+  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0">Download version 1.0.0</a>
+  ·
+  <a href="docs/getting-started.md">Start with one decision</a>
+</p>
+
 # Impactful Tom
 
 Impactful Tom is an independent, unofficial founder-performance skill for a live business decision. It helps you name the real constraint, separate mission from attachment to a tactic, and choose one evidence-calibrated next move.
@@ -18,9 +30,9 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.0.0` is prepared for one public GitHub release. An earlier candidate was installed and enabled through the local Codex marketplace on the current workstation. The current release keeps that candidate’s instruction body byte-identical, leaves nine other shared package files unchanged, replaces two catalog descriptions, and adds four legal and notice files. The current whole package has not yet been installed through the final public route. Public repository, release-asset, and public-route readback remain pending until publication.
+Version `1.0.0` is publicly available from the [GitHub repository](https://github.com/Stunspot/impactful-tom) and [release](https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0). GitHub readback confirmed that the annotated `v1.0.0` tag resolves to sealed release commit `913161c29d09e1b587e7e2c5522ef3ba0ca94dfe`, and that the four distribution archives plus `SHA256SUMS.txt` are uploaded with server-side digests matching the local custody ledger. The tag and release assets remain sealed there; `main` carries later documentation corrections and is not the immutable release record.
 
-The Codex plugin and Claude Code/generic distribution pass the current structural, dependency, content-boundary, source-exclusion, and plugin-readiness checks. Claude live-host behavior remains unobserved.
+An earlier candidate was installed and enabled through the local Codex marketplace on the current workstation. The final public package preserves that candidate’s instruction body and behavior-bearing resources while changing routing descriptions and adding legal custody files. The final package has not yet been installed through a clean public-route host, so clean installation, restart resilience, causal host invocation, and exact final-package first success remain unobserved. The Claude Code/generic distribution passes structural checks; Claude live-host behavior remains unobserved.
 
 Use [Install, update, and uninstall](docs/installing-and-maintaining.md) for the release route and the exact evidence boundary.
 
@@ -49,6 +61,7 @@ Read [Privacy and decision boundaries](docs/privacy-and-boundaries.md) before as
 
 ## Documentation
 
+- [Public documentation site](https://stunspot.github.io/impactful-tom/)
 - [Getting started](docs/getting-started.md)
 - [Install, update, and uninstall](docs/installing-and-maintaining.md)
 - [Privacy and decision boundaries](docs/privacy-and-boundaries.md)
@@ -62,6 +75,6 @@ Read [Privacy and decision boundaries](docs/privacy-and-boundaries.md) before as
 
 ## Status
 
-Version `1.0.0` is constructed, behaviorally reviewed, locally package-checked, and prepared for publication. The sealed 24-case frontier collaboration run produced 20 demonstrated and four accepted low-severity partial cases, with no failed or invalid cases. Public availability, release-asset readback, public-route installation, and live Claude Code behavior are not established until their named receipts exist. OpenAI Plugin Directory submission is outside scope.
+Version `1.0.0` is constructed, behaviorally reviewed, locally package-checked, and publicly released on GitHub. The sealed 24-case frontier collaboration run produced 20 demonstrated and four accepted low-severity partial cases, with no failed or invalid cases. Repository, tag, release, and release-asset readback are established. Clean public-route installation, restart resilience, exact final-package first success, causal host invocation, and live Claude Code behavior remain unobserved until their named receipts exist. OpenAI Plugin Directory submission is outside scope.
 
 Impactful Tom uses the standard Collaborative Dynamics public-Augment split license: MIT for deterministic software and schemas, and CC BY-ND 4.0 for authored Augment material. It remains an independent, unofficial product with no Tom Bilyeu or Impact Theory affiliation, endorsement, sponsorship, or authorization.

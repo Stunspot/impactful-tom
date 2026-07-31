@@ -1,20 +1,26 @@
-# Install, update, and uninstall
+---
+layout: default
+title: Install, update, and uninstall
+description: Install Impactful Tom for Codex or a generic skill host, verify the result, update safely, and remove it cleanly.
+permalink: /install/
+eyebrow: Host setup
+---
 
 ## Current release status
 
-Version `1.0.0` is prepared for publication at `Stunspot/impactful-tom`. At the current evidence cutoff, no public repository, GitHub release, release-asset readback, or public-route installation receipt exists. The commands in “Add the marketplace and install the plugin” are the intended release route and become a public availability claim only after those objects are observed.
+Version `1.0.0` is publicly available from the [Impactful Tom repository](https://github.com/Stunspot/impactful-tom) and [GitHub release](https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0). GitHub readback confirmed the public repository, annotated tag, release, four distribution archives, and `SHA256SUMS.txt`; the server-side asset digests match the local release ledger.
 
-The local Codex repository marketplace was configured on the current workstation, and an earlier candidate was installed and enabled with exact parity across its 11 model-facing runtime files at that evidence cutoff. A later fresh task catalog surfaced that installed skill and returned a representative founder response. The current release keeps the instruction body byte-identical, leaves nine other shared files unchanged, replaces the two catalog descriptions, and adds four legal and notice files. It therefore still requires installation and first-success readback through the final public route. The Claude Code/generic skill directory remains structurally checked without live-host evidence.
+The local Codex repository marketplace was configured on the current workstation, and an earlier candidate was installed and enabled with exact parity across its 11 model-facing runtime files at that evidence cutoff. A later fresh task catalog surfaced that installed skill and returned a representative founder response. The public release keeps the instruction body and behavior-bearing resources byte-identical, replaces two catalog descriptions, and adds four legal and notice files. The exact final package has not been installed or reached first success through a clean public route. Restart resilience and causal host invocation remain unobserved. The Claude Code/generic skill directory remains structurally checked without live-host evidence.
 
 ## Codex repository-marketplace route
 
 ### Before you begin
 
-You need a supported Codex environment with plugin access and a published repository containing the marketplace. The marketplace source is `Stunspot/impactful-tom`, pinned to `main`. If the repository or release is not publicly readable yet, stop and use the evidence in “Current release status” rather than retrying alternate sources.
+You need a supported Codex environment with plugin access and network access to the public repository. The marketplace source is `Stunspot/impactful-tom`, pinned to `main`. If the source does not resolve, record the exact command and error before retrying; do not improvise a partial installation from copied files.
 
 ### Add the marketplace and install the plugin
 
-When the repository is publicly readable, run:
+Add the public marketplace and install the plugin:
 
 ```powershell
 codex plugin marketplace add Stunspot/impactful-tom --ref main
@@ -28,7 +34,7 @@ codex plugin marketplace list
 codex plugin list --marketplace impactful-tom --json
 ```
 
-An installation command returning a result is not, by itself, proof that the skill was selected or behaved well. Use a simple live decision such as the prompt in [Getting started](getting-started.md), then confirm that the response is relevant to the decision you gave it.
+An installation command returning a result is not, by itself, proof that the skill was selected or behaved well. Use a simple live decision such as the prompt in [Getting started]({{ '/getting-started/' | relative_url }}), then confirm that the response is relevant to the decision you gave it.
 
 ### Update the marketplace source
 
@@ -81,4 +87,4 @@ If your host cannot install a self-contained skill directory, stop there rather 
 3. Check that the response stays on the decision, names a plausible constraint, separates evidence from inference, and proposes a bounded next move.
 4. Do not treat this check as legal, financial, tax, or other professional advice.
 
-If the skill does not appear or does not use its method, go to [Troubleshooting and recovery](troubleshooting.md).
+If the skill does not appear or does not use its method, go to [Troubleshooting and recovery]({{ '/troubleshooting/' | relative_url }}).

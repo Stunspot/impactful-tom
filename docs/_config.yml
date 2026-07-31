@@ -1,0 +1,20 @@
+title: Impactful Tom
+description: Founder-performance judgment for exposing the real constraint and choosing an evidence-calibrated next move.
+url: https://stunspot.github.io
+baseurl: /impactful-tom
+lang: en
+repository: Stunspot/impactful-tom
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+permalink: pretty
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/images/impactful-tom-social-card.png
+exclude:
+  - "*.psd"
+  - "*.xcf"

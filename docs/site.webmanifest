@@ -1,0 +1,22 @@
+{
+  "name": "Impactful Tom",
+  "short_name": "Impactful Tom",
+  "description": "Founder-performance judgment for exposing constraints and choosing evidence-calibrated moves.",
+  "start_url": "/impactful-tom/",
+  "scope": "/impactful-tom/",
+  "display": "standalone",
+  "background_color": "#02071d",
+  "theme_color": "#061237",
+  "icons": [
+    {
+      "src": "/impactful-tom/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/impactful-tom/assets/images/impactful-tom-mark-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

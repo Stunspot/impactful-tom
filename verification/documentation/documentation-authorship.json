@@ -1,34 +1,52 @@
 {
+  "format": "cd-hesperos-documentation-authorship/v1",
+  "product": {
+    "slug": "impactful-tom",
+    "version": "1.0.0"
+  },
+  "created_at": "2026-07-31T02:50:50.6961497+00:00",
+  "documentation_fingerprint": "e45c2697a3637ece145e423ee78435ed29c5bf7f6dc550547406e5bf7459b637",
+  "fingerprint_algorithm": "sha256 of UTF-8 path NUL sha256 records joined by LF in authored_files order",
   "authored_files": [
     {
-      "bytes": 5012,
+      "bytes": 6109,
       "path": "README.md",
-      "sha256": "811ce23c0749af600be4849c5d851c0be7ef5f07fc4844e4d0446f8243b5752e"
+      "sha256": "b2784fdf3006e670cef170bd9909f32a20626f9be8cbc2d4f15e8ff0692d3b69"
     },
     {
-      "bytes": 4620,
+      "bytes": 4447,
+      "path": "docs/index.md",
+      "sha256": "092ef44f5c2777ad6f717e1c0563bedf8b2ed3d20cfeaf95a17ff1b675615f82"
+    },
+    {
+      "bytes": 578,
+      "path": "docs/404.html",
+      "sha256": "6ee82cf121115254bfa572df5735bc5794be42f31247438206c228c65c24ff53"
+    },
+    {
+      "bytes": 4842,
       "path": "docs/getting-started.md",
-      "sha256": "75d12a74375a8fc9c80445170e707f96c4ad1c19ed5d4c31a90bdaf2e23fc9a6"
+      "sha256": "8b2d88b25ec5d858bdf49dd20d322d6afa4abfd900a342e711fe7f7434c77fc0"
     },
     {
-      "bytes": 5124,
+      "bytes": 5397,
       "path": "docs/installing-and-maintaining.md",
-      "sha256": "98a25dabc50864385629b8df7544b7dd61f6775eba3df35f504dca96dbeea2b4"
+      "sha256": "349b8885723aaefb949b1f3dd179dd75aa511cd469b03b967722670f1ab049bd"
     },
     {
-      "bytes": 3528,
+      "bytes": 3799,
       "path": "docs/privacy-and-boundaries.md",
-      "sha256": "13cfbc7857d24968b1affa65d4360d536eeee110377deccd957154582640f2bb"
+      "sha256": "6225476089c45d69fb19a4cdedc8cc48c81e8e16bafef76955a0037ce6d31646"
     },
     {
-      "bytes": 3124,
+      "bytes": 3444,
       "path": "docs/troubleshooting.md",
-      "sha256": "e8bca1426b8d7679d944e7922a63570832eceb89890bf7f4dd98086baf2e74c5"
+      "sha256": "c0354f1558848e1d5cd8d275541330877b81a7d04a12b93b62a837923d05b62c"
     },
     {
-      "bytes": 6133,
+      "bytes": 7525,
       "path": "docs/provenance-and-verification.md",
-      "sha256": "f4f4404ffb6c9412232af9fdf229c40e55ce7c90f647829e35d04bb66e16544d"
+      "sha256": "0be02241bb4f4061a6fccc9289a240b33ac84acd88ca8927b54a5af5fe5f5657"
     },
     {
       "bytes": 1595,
@@ -61,61 +79,59 @@
       "sha256": "28f7c17d9a799d6e649c3204c8dfaa6bc69357e779c55762337d12ab9859f157"
     },
     {
-      "bytes": 988,
+      "bytes": 1053,
       "path": "SUPPORT.md",
-      "sha256": "4f53f0ec20cb3eba9b5c5ba85f87e296d03da7fc7bb42022bb6baf70f52e2105"
+      "sha256": "c4689839646e2da9a418d6c74d6f023cb99a8a1b93c4defea6962a91ad590e78"
     },
     {
-      "bytes": 1203,
+      "bytes": 1192,
       "path": "SECURITY.md",
-      "sha256": "9bd38829c3ac0aa2019e7a06761165cad5560247e019f22e36b8497d38ba4546"
+      "sha256": "6a9d76faeda159985410f8c23f057fa5ebb45244c710d71bcbf2fb1046db03f0"
     },
     {
-      "bytes": 2012,
+      "bytes": 2208,
       "path": "CHANGELOG.md",
-      "sha256": "e6531a0083ba1e904da74efef86616852e871a2428984e04062a6c87274b3966"
+      "sha256": "9e8d2f47cebbe000bbad7c589eb59407835ab7781d72e89af5091e6bc9f566fd"
     }
   ],
   "authoring": {
-    "authorship_scope": "materially-revised",
+    "authorship_scope": "materially-revised-pages-and-visuals",
     "capability": "hesperos-documentation",
     "capability_entrypoint_sha256": "f9284a8b14ca20a4661b15db542e3d8f52d3cf1ef42c1c56f4ed540a1036a3b3",
     "mode": "in-process",
-    "run_id": "HESPEROS-IMPACTFUL-TOM-20260730-04"
+    "run_id": "HESPEROS-IMPACTFUL-TOM-20260730-PAGES-01"
   },
-  "authoring_response": {
-    "bytes": 606,
-    "path": "verification/documentation/hesperos-authoring-response.txt",
-    "sha256": "bfa14f78bef679b72221e1b4a30b2eb84230ecb6bfd0c84086fc4c2f880f73e5"
-  },
-  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
-  "created_at": "2026-07-31T00:53:38+00:00",
-  "documentation_fingerprint": "8bc3aa19eed6a9400685aabb925cf54209f2f7baca8cd29a5559216c8cf20823",
   "documentation_manifest": {
-    "bytes": 1863,
+    "bytes": 3259,
     "path": "documentation-manifest.json",
-    "sha256": "a1a551450ca928412f6712055f9850dc12b5aa3edf5606d6789678377fbdc17e"
+    "sha256": "1841bdf7b005f4e0310c0d2d2c265e8116a746972ee1fbacceb0d266403787de"
   },
   "evidence_packet": {
-    "bytes": 2599,
-    "path": "verification/documentation/hesperos-authoring-evidence.md",
-    "sha256": "e5acf3847a73d38f8dd978449bf6bd89587d3ecf37ca8adb0da94a0ddad47bf5"
+    "bytes": 4118,
+    "path": "verification/documentation/hesperos-pages-authoring-evidence.md",
+    "sha256": "122f2597ebe02bb60f06b15a8bf0bcc3bfda58be2006b6d3db40039a533c56b7"
+  },
+  "authoring_response": {
+    "bytes": 553,
+    "path": "verification/documentation/hesperos-pages-authoring-response.txt",
+    "sha256": "bc034e2b656ef16a75cafdd52ce9078f6a6786e13a984610d6bdf031e6b70325"
   },
   "execution_evidence": [
     {
-      "bytes": 3276,
+      "bytes": 4359,
       "path": "development/documentation-project.json",
-      "sha256": "9231dab474cf995c6a51b90522c1c31a9890422dd796343a5a317d343b15a63d"
+      "sha256": "6911bacc47235b6d3111b62f7f2c4274921419d43ee00d8e5bb731237794de62"
     },
     {
-      "bytes": 606,
-      "path": "verification/documentation/hesperos-authoring-response.txt",
-      "sha256": "bfa14f78bef679b72221e1b4a30b2eb84230ecb6bfd0c84086fc4c2f880f73e5"
+      "bytes": 3702,
+      "path": "verification/documentation/visual-assets-custody.json",
+      "sha256": "b0b90a7e342483f82b7a708ec1d1ea21605046a32dfc103a407b88c63f7b3df9"
+    },
+    {
+      "bytes": 1939,
+      "path": "verification/documentation/documentation-review.json",
+      "sha256": "0d1882c62579814382ec6c72d3ce529bd9d144ed59535d42989ec237067da667"
     }
   ],
-  "format": "cd-hesperos-documentation-authorship/v1",
-  "product": {
-    "slug": "impactful-tom",
-    "version": "1.0.0"
-  }
+  "claim_boundary": "Binds the exact 17-file Pages-era customer-document set to one Hesperos authoring run. It does not prove live deployment health, repository social-preview configuration, accessibility conformance, host activation, or customer outcomes."
 }

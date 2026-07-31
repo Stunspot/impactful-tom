@@ -12,6 +12,7 @@
   ],
   "top_tasks": [
     "Decide whether Impactful Tom fits the founder's situation",
+    "Use the public Pages site to orient, install, and inspect evidence boundaries",
     "Install the supported host distribution",
     "Reach first value from one live founder decision",
     "Understand challenge style, evidence posture, and macro limits",
@@ -26,6 +27,9 @@
     "verification/verification-manifest.json",
     "verification/reviews/frontier-f032-review-final.md",
     "verification/host-results/codex-current-task-first-success-20260730.json",
+    "documentation-manifest.json",
+    "verification/documentation/pages-visuals-verification-manifest.json",
+    "verification/documentation/visual-assets-custody.json",
     "LICENSE.md",
     "DATA-AND-PRIVACY.md",
     "TERMS-OF-USE.md",
@@ -33,6 +37,8 @@
   ],
   "topics": [
     "README and first-success path",
+    "GitHub Pages landing page, navigation, responsive presentation, and recovery",
+    "README header, social card, product-mark derivatives, and favicons",
     "Codex installation and removal",
     "Claude Code and generic-skill installation and removal",
     "Founder decision workflow and examples",
@@ -47,14 +53,17 @@
   "accessibility_reviews": [
     "Automated accessible-Markdown lint passed for all 15 manifest-listed customer documents on 2026-07-30.",
     "A fresh-context review found stale current-package parity wording in three pages; all three were corrected against the runtime delta receipt.",
-    "The same fresh-context reviewer re-read the corrected pages and returned REVIEW_PASS_WITH_CONDITIONS with zero unresolved material findings."
+    "The same fresh-context reviewer re-read the corrected pages and returned REVIEW_PASS_WITH_CONDITIONS with zero unresolved material findings.",
+    "The post-release Pages and visual correction passes its dependency-free source validator and received a fresh-context Hesperos REVIEW_PASS_WITH_CONDITIONS with no source repair required.",
+    "The same Hesperos reviewer re-read the release-lineage and host-boundary remediation delta and confirmed that the verdict still holds."
   ],
   "verification": [
     "Reader-facing behavioral claims must be bounded by the independent TestForge review.",
     "Installation claims must distinguish package validation from installed, discoverable, invoked, and healthy host states.",
-    "Public release instructions remain provisional until the repository, tag, assets, URL, and install route are observed.",
+    "The public repository, v1.0.0 tag, release, and five release assets were read back; clean public-route installation, restart resilience, causal invocation, and Claude live behavior remain unobserved.",
+    "The Pages source is configured at main:/docs and its live configuration reports built with HTTPS enforced; the corrected source still requires post-publication route and asset readback.",
     "The owner retained the Impactful Tom name and selected the standard public Augment split license; documentation must preserve that decision and the non-affiliation boundary."
   ],
   "owner": "Collaborative Dynamics",
-  "next_move": "After public repository, tag, release, asset, and install-route readback, update only the publication-state wording and repeat the bounded fingerprint, lint, and fresh-context delta review."
+  "next_move": "Bind the complete Pages correction to a local candidate commit, close the TestForge candidate-custody finding, publish the documentation-only correction, then read back the live routes, metadata, and assets without claiming clean host installation."
 }

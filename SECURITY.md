@@ -4,7 +4,7 @@
 
 Do not disclose a suspected vulnerability, credential, private business record, personal information, or exploit detail in a public issue.
 
-After the repository is public, use GitHub's private vulnerability-reporting route:
+Use GitHub's private vulnerability-reporting route when it is available:
 
 https://github.com/Stunspot/impactful-tom/security/advisories/new
 

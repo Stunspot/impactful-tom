@@ -1,10 +1,10 @@
 # Impactful Tom Support
 
-After the repository is public, use its GitHub issue tracker for installation questions, defects, documentation corrections, and bounded capability reports:
+Use the GitHub issue tracker for installation questions, defects, documentation corrections, and bounded capability reports when that tracker is available:
 
 https://github.com/Stunspot/impactful-tom/issues
 
-Until that route is publicly readable, do not treat it as an available support channel. Before opening an issue, check [Troubleshooting and recovery](docs/troubleshooting.md). Include:
+If the issue tracker is unavailable, use the contact route at https://collaborative-dynamics.com instead of treating an inaccessible form as submitted. Before reporting an issue, check [Troubleshooting and recovery](docs/troubleshooting.md). Include:
 
 - Impactful Tom version;
 - host and host version;

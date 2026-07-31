@@ -1,0 +1,488 @@
+{
+  "manifest_version": "1.0",
+  "target": {
+    "name": "Impactful Tom public documentation surface",
+    "revision": "post-release-pages-and-visuals",
+    "target_class": "change"
+  },
+  "scope": {
+    "included": [
+      "GitHub Pages site built from main:/docs",
+      "README presentation and customer journey",
+      "README header, social preview card, product mark derivative, and favicons",
+      "site navigation, responsive layout, accessible semantics, and metadata",
+      "publication-state wording for the existing v1.0.0 release",
+      "documentation manifests, authorship receipts, review receipts, and launch state"
+    ],
+    "excluded": [
+      "founder-method instruction changes",
+      "v1.0.0 tag or release-asset mutation",
+      "new product version or replacement release",
+      "OpenAI Plugin Directory submission",
+      "Tom Bilyeu likeness, quotation, voice, or third-party marks"
+    ],
+    "constraints": [
+      "The canonical v1.0.0 release tag remains immutable at commit 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe.",
+      "GitHub Pages is configured as a legacy build from main:/docs at https://stunspot.github.io/impactful-tom/.",
+      "The existing founder-constraint mark is the approved product visual anchor.",
+      "Public statements must preserve the independent, unofficial, and non-affiliation boundary."
+    ],
+    "safety_boundary": [
+      "Local construction and verification precede publication.",
+      "No credential, private source material, transcript, headshot, or release-excluded byte may enter the public documentation tree.",
+      "A failed or uncertain GitHub mutation is not retried without authoritative reconciliation and a changed premise."
+    ]
+  },
+  "claim_custody": {
+    "observed": [
+      {
+        "id": "PV-O-001",
+        "statement": "The live GitHub Pages configuration reports build_type legacy, source main:/docs, public true, HTTPS enforced, and status built.",
+        "basis": "Authenticated GitHub Pages API readback on 2026-07-30.",
+        "confidence": "high",
+        "consequence": "The site implementation belongs under docs/ and must preserve the configured base path /impactful-tom."
+      },
+      {
+        "id": "PV-O-002",
+        "statement": "The current repository has customer Markdown under docs/ but no docs/index.md, _config.yml, custom layout, stylesheet, favicon, README header, or social card.",
+        "basis": "Local repository inventory at commit 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe.",
+        "confidence": "high",
+        "consequence": "Pages can build while still lacking a complete customer landing experience."
+      },
+      {
+        "id": "PV-O-003",
+        "statement": "The current README and publication-status documentation still describe the repository and release as not yet public.",
+        "basis": "README.md, docs/installing-and-maintaining.md, and docs/provenance-and-verification.md at the v1.0.0 release commit.",
+        "confidence": "high",
+        "consequence": "The live main-branch documentation currently understates observed public state."
+      },
+      {
+        "id": "PV-O-004",
+        "statement": "The Codex plugin contains one 1254 by 1254 original founder-constraint mark with no likeness or text.",
+        "basis": "Visual inspection and raster metadata readback of plugins/impactful-tom/assets/founder-constraint-mark.png.",
+        "confidence": "high",
+        "consequence": "New documentation graphics should derive from that mark rather than generate a competing identity."
+      },
+      {
+        "id": "PV-O-005",
+        "statement": "The public GitHub repository, annotated v1.0.0 tag, release, and five release assets were read back; at that evidence cutoff, main and the released tag both resolved to commit 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe.",
+        "basis": "Authenticated GitHub API and release-asset digest readback on 2026-07-30.",
+        "confidence": "high",
+        "consequence": "Public documentation may state that the repository and release are available while keeping installation and host-behavior claims separate; later documentation commits may advance main without moving the sealed tag."
+      },
+      {
+        "id": "PV-O-006",
+        "statement": "The completed Pages source, customer documents, generated visual assets, source-mark custody, and public claim boundaries pass the dependency-free documentation-site validator.",
+        "basis": "PV-E-001 and PV-E-003 local execution receipts on 2026-07-30.",
+        "confidence": "high",
+        "consequence": "Static source readiness is established; live deployment and browser behavior remain separate gates."
+      }
+    ],
+    "inferred": [
+      {
+        "id": "PV-I-001",
+        "statement": "A custom dependency-free Jekyll layout under docs/ is the smallest coherent Pages implementation for the configured source.",
+        "basis": "Current Pages source, existing Markdown topic structure, and need for shared navigation and social metadata.",
+        "confidence": "high",
+        "consequence": "The correction will use Markdown, Liquid, HTML, CSS, and committed raster assets without a new package dependency."
+      }
+    ],
+    "assumed": [],
+    "unresolved": [
+      {
+        "id": "PV-U-001",
+        "statement": "The GitHub repository social-preview setting cannot yet be read or updated through the available API surface.",
+        "basis": "No current verified repository-social-preview mutation route.",
+        "confidence": "medium",
+        "consequence": "The repository will ship the exact social-card asset and Pages Open Graph metadata; a repository-settings upload remains unclaimed unless directly observed."
+      }
+    ]
+  },
+  "impact_map": [
+    "repository discovery -> README header and About link -> Pages landing page -> installation or first-value route",
+    "page metadata -> social-card URL -> shared-link preview",
+    "docs source links -> Jekyll baseurl resolution -> live customer navigation",
+    "publication evidence -> status wording -> customer trust",
+    "approved mark -> derived raster assets -> plugin, README, Pages, and social coherence"
+  ],
+  "invariants": [
+    {
+      "id": "PV-INV-001",
+      "statement": "Every internal Pages link resolves under the /impactful-tom base path."
+    },
+    {
+      "id": "PV-INV-002",
+      "statement": "Navigation, headings, landmarks, focus visibility, color contrast, and image alternatives remain usable without relying on color or pointer-only interaction."
+    },
+    {
+      "id": "PV-INV-003",
+      "statement": "README and Pages describe observed repository and release state while keeping clean-install, causal invocation, restart, and Claude behavior unclaimed."
+    },
+    {
+      "id": "PV-INV-004",
+      "statement": "Visual assets preserve the approved founder-constraint mark and introduce no likeness, quotation, affiliation claim, or third-party mark."
+    },
+    {
+      "id": "PV-INV-005",
+      "statement": "The v1.0.0 tag and release assets remain unchanged; the correction is confined to post-release main-branch documentation and evidence."
+    },
+    {
+      "id": "PV-INV-006",
+      "statement": "Public pages expose canonical URL, Open Graph title, description, image, and Twitter card metadata with absolute HTTPS URLs."
+    }
+  ],
+  "risks": [
+    {
+      "id": "PV-R-001",
+      "statement": "Pages is enabled without a real landing page -> visitors reach an incomplete or generic build -> the public documentation route fails at discovery.",
+      "severity": "high",
+      "likelihood": "high",
+      "confidence": "high",
+      "disposition": "planned",
+      "verification": ["PV-S-001", "PV-T-STATIC-001", "PV-T-LIVE-001"]
+    },
+    {
+      "id": "PV-R-002",
+      "statement": "Relative paths ignore the project base URL -> navigation or assets resolve at the account root -> customers encounter broken links and missing images.",
+      "severity": "high",
+      "likelihood": "medium",
+      "confidence": "high",
+      "disposition": "planned",
+      "verification": ["PV-S-002", "PV-T-STATIC-001", "PV-T-LIVE-001"]
+    },
+    {
+      "id": "PV-R-003",
+      "statement": "Custom visual presentation lacks semantic and contrast discipline -> keyboard, low-vision, or screen-reader users lose the task path -> documentation readiness is overstated.",
+      "severity": "high",
+      "likelihood": "medium",
+      "confidence": "medium",
+      "disposition": "planned",
+      "verification": ["PV-S-003", "PV-T-A11Y-001", "PV-T-REVIEW-001"]
+    },
+    {
+      "id": "PV-R-004",
+      "statement": "Main-branch documentation retains prepublication wording -> public visitors are told the repository and release do not exist -> trust and install decisions are corrupted.",
+      "severity": "high",
+      "likelihood": "high",
+      "confidence": "high",
+      "disposition": "planned",
+      "verification": ["PV-S-004", "PV-T-CLAIMS-001", "PV-T-REVIEW-001"]
+    },
+    {
+      "id": "PV-R-005",
+      "statement": "Generated visual derivatives drift from the approved mark or include identity-coded material -> the product acquires a competing or misleading brand surface -> rights and product coherence regress.",
+      "severity": "high",
+      "likelihood": "low",
+      "confidence": "high",
+      "disposition": "planned",
+      "verification": ["PV-S-005", "PV-T-IMAGE-001", "PV-T-REVIEW-001"]
+    },
+    {
+      "id": "PV-R-006",
+      "statement": "Post-release documentation repair silently changes release-bearing plugin or tagged artifacts -> v1.0.0 custody no longer matches its published receipts -> release evidence becomes false.",
+      "severity": "critical",
+      "likelihood": "low",
+      "confidence": "high",
+      "disposition": "planned",
+      "verification": ["PV-S-006", "PV-T-CUSTODY-001"]
+    },
+    {
+      "id": "PV-R-007",
+      "statement": "Social metadata points to a missing, oversized, or incorrectly proportioned card -> shared links render poorly or without product identity -> discovery quality remains unfinished.",
+      "severity": "medium",
+      "likelihood": "medium",
+      "confidence": "high",
+      "disposition": "planned",
+      "verification": ["PV-S-007", "PV-T-IMAGE-001", "PV-T-LIVE-001"]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "PV-S-001",
+      "risk_ids": ["PV-R-001"],
+      "title": "Pages root presents a customer landing page",
+      "layer": "browser",
+      "preconditions": ["Pages is configured from main:/docs"],
+      "action": ["open https://stunspot.github.io/impactful-tom/"],
+      "expected": ["HTTP success", "Impactful Tom identity and founder-performance promise", "visible paths to getting started, installation, boundaries, evidence, and GitHub release"],
+      "forbidden": ["directory listing", "generic theme placeholder", "missing primary navigation"],
+      "evidence": [],
+      "status": "designed"
+    },
+    {
+      "id": "PV-S-002",
+      "risk_ids": ["PV-R-002"],
+      "title": "Project-base navigation and assets resolve",
+      "layer": "static-and-browser",
+      "preconditions": ["site baseurl is /impactful-tom"],
+      "action": ["resolve every internal href, src, canonical, and social-image URL"],
+      "expected": ["all customer routes stay under the project base URL or use an intentional absolute GitHub URL"],
+      "forbidden": ["account-root asset URLs", "missing local targets", "localhost or private workstation paths"],
+      "evidence": [],
+      "status": "designed"
+    },
+    {
+      "id": "PV-S-003",
+      "risk_ids": ["PV-R-003"],
+      "title": "Accessible navigation and reading path",
+      "layer": "static-and-browser",
+      "preconditions": ["custom layout and stylesheet are present"],
+      "action": ["inspect landmarks, headings, link text, image alternatives, focus treatment, contrast, responsive reflow, and reduced-motion behavior"],
+      "expected": ["one h1 per page", "skip link", "labeled navigation", "visible keyboard focus", "non-color cues", "readable mobile layout", "meaningful alt text"],
+      "forbidden": ["sensory-only instructions", "hidden focus", "decorative image announced as content"],
+      "evidence": [],
+      "status": "designed"
+    },
+    {
+      "id": "PV-S-004",
+      "risk_ids": ["PV-R-004"],
+      "title": "Publication claims match observed state",
+      "layer": "static",
+      "preconditions": ["v1.0.0 repository, tag, release, and five assets were read back from GitHub"],
+      "action": ["scan public documentation for stale prepublication language and stronger unverified host claims"],
+      "expected": ["repository and release are described as public", "clean installation, restart resilience, causal invocation, and Claude live behavior remain bounded"],
+      "forbidden": ["release pending", "repository not created", "clean-host verified", "Claude verified"],
+      "evidence": [],
+      "status": "designed"
+    },
+    {
+      "id": "PV-S-005",
+      "risk_ids": ["PV-R-005"],
+      "title": "Visual derivatives preserve the approved product identity",
+      "layer": "static-and-manual",
+      "preconditions": ["founder-constraint-mark.png is the source anchor"],
+      "action": ["compare mark, header, social card, and favicons"],
+      "expected": ["same mark geometry and palette", "clear product name and founder-performance promise", "no living-person likeness or quotation"],
+      "forbidden": ["face", "headshot", "signature", "Tom Bilyeu quotation", "Impact Theory logo", "affiliation cue"],
+      "evidence": [],
+      "status": "designed"
+    },
+    {
+      "id": "PV-S-006",
+      "risk_ids": ["PV-R-006"],
+      "title": "Release-bearing bytes remain immutable",
+      "layer": "contract",
+      "preconditions": ["published v1.0.0 resolves to commit 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe"],
+      "action": ["compare tag commit and release-asset digests; inspect the post-release diff scope"],
+      "expected": ["tag and assets are unchanged", "diff is confined to documentation, documentation visuals, verification evidence, and launch metadata"],
+      "forbidden": ["plugin runtime change", "release archive replacement", "tag movement"],
+      "evidence": [],
+      "status": "designed"
+    },
+    {
+      "id": "PV-S-007",
+      "risk_ids": ["PV-R-007"],
+      "title": "Social preview metadata exposes the intended card",
+      "layer": "static-and-browser",
+      "preconditions": ["1280 by 640 social card exists under docs/assets/images"],
+      "action": ["inspect Open Graph and Twitter metadata and fetch the referenced image"],
+      "expected": ["absolute HTTPS card URL", "PNG response", "1280 by 640 dimensions", "readable safe-area composition"],
+      "forbidden": ["relative og:image", "missing asset", "wrong dimensions", "card above the repository size limit"],
+      "evidence": [],
+      "status": "designed"
+    }
+  ],
+  "tests": [
+    {
+      "id": "PV-T-STATIC-001",
+      "scenario_ids": ["PV-S-001", "PV-S-002"],
+      "name": "Pages structure and link validator",
+      "layer": "static",
+      "command": "python -X utf8 verification/scripts/check_documentation_site.py --repo .",
+      "oracle": "Required site files exist; front matter, navigation, internal targets, baseurl-safe paths, and public URLs satisfy the declared invariants.",
+      "status": "passed",
+      "execution_id": "PV-E-001"
+    },
+    {
+      "id": "PV-T-A11Y-001",
+      "scenario_ids": ["PV-S-003"],
+      "name": "Accessible Markdown and layout inspection",
+      "layer": "static",
+      "command": "python -X utf8 <hesperos>/scripts/lint_accessible_markdown.py <manifest-listed Markdown files>",
+      "oracle": "All selected Markdown files pass structural lint and the custom layout passes semantic and contrast assertions.",
+      "status": "passed",
+      "execution_id": "PV-E-002"
+    },
+    {
+      "id": "PV-T-CLAIMS-001",
+      "scenario_ids": ["PV-S-004"],
+      "name": "Publication-state claim scan",
+      "layer": "static",
+      "command": "python -X utf8 verification/scripts/check_documentation_site.py --repo .",
+      "oracle": "No stale prepublication markers remain on public pages; bounded unverified host states remain explicit.",
+      "status": "passed",
+      "execution_id": "PV-E-005"
+    },
+    {
+      "id": "PV-T-IMAGE-001",
+      "scenario_ids": ["PV-S-005", "PV-S-007"],
+      "name": "Visual asset contract",
+      "layer": "static-and-manual",
+      "command": "python -X utf8 verification/scripts/check_documentation_site.py --repo .",
+      "oracle": "Required PNGs decode, match declared dimensions and size ceilings, preserve expected source-mark custody, and are visually inspected.",
+      "status": "passed",
+      "execution_id": "PV-E-003"
+    },
+    {
+      "id": "PV-T-CUSTODY-001",
+      "scenario_ids": ["PV-S-006"],
+      "name": "Tag, release asset, and diff-scope custody",
+      "layer": "contract",
+      "command": "git diff --name-only 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe...HEAD plus authenticated GitHub tag and asset readback",
+      "oracle": "Published tag and asset digests remain unchanged; post-release changes stay inside the documentation correction scope.",
+      "status": "designed"
+    },
+    {
+      "id": "PV-T-LIVE-001",
+      "scenario_ids": ["PV-S-001", "PV-S-002", "PV-S-007"],
+      "name": "Live Pages and asset readback",
+      "layer": "browser",
+      "command": "Fetch the canonical Pages URL and representative routes after GitHub reports the deployment built.",
+      "oracle": "Public HTTP responses, rendered metadata, primary navigation, stylesheet, header, and social card are observed at their canonical URLs.",
+      "status": "designed"
+    },
+    {
+      "id": "PV-T-REVIEW-001",
+      "scenario_ids": ["PV-S-003", "PV-S-004", "PV-S-005"],
+      "name": "Fresh-context documentation and verification review",
+      "layer": "independent-review",
+      "command": "Hesperos documentation-accessibility reviewer and TestForge verification reviewer",
+      "oracle": "No unresolved material finding blocks the claimed public documentation readiness.",
+      "status": "designed"
+    }
+  ],
+  "executions": [
+    {
+      "id": "PV-E-001",
+      "status": "passed",
+      "exit_code": 0,
+      "command": "python -X utf8 verification/scripts/check_documentation_site.py --repo .; python -X utf8 -m unittest verification.tests.test_static_checks -v",
+      "environment": "Windows local repository at E:/Github/impactful-tom",
+      "observed": [
+        "The documentation-site validator returned passed with zero errors and zero warnings.",
+        "All three static-check unit tests passed, including the release-exclusion negative fixture."
+      ],
+      "raw_evidence": [
+        "verification/scripts/check_documentation_site.py",
+        "verification/tests/test_static_checks.py"
+      ],
+      "boundary": "Static source evidence only; this execution does not establish a GitHub Pages deployment, browser rendering, or repository social-preview setting."
+    },
+    {
+      "id": "PV-E-002",
+      "status": "passed",
+      "exit_code": 0,
+      "command": "Run Hesperos lint_accessible_markdown.py over 16 public Markdown documents, then validate_project.py development/documentation-project.json",
+      "environment": "Hesperos 0.1.0 local scripts",
+      "observed": [
+        "All 16 public Markdown documents returned PASS.",
+        "The documentation project returned VALID."
+      ],
+      "raw_evidence": [
+        "development/documentation-project.json",
+        "documentation-manifest.json"
+      ],
+      "boundary": "Automated Markdown structure and project-schema evidence; this does not replace a fresh-context accessibility review or assistive-technology testing."
+    },
+    {
+      "id": "PV-E-003",
+      "status": "passed",
+      "exit_code": 0,
+      "command": "Inspect the header, social card, 512-pixel mark, and 32-pixel favicon; then execute the visual custody gate",
+      "environment": "Codex local image viewer plus dependency-free documentation-site validator",
+      "observed": [
+        "The four inspected rasters were readable, coherent, and faithful to the approved founder-constraint mark.",
+        "The executable custody receipt matched all eight output digests, dimensions, and byte counts.",
+        "No likeness, headshot, quotation, signature, or third-party logo was observed."
+      ],
+      "raw_evidence": [
+        "verification/documentation/visual-assets-custody.json",
+        "development/build_documentation_visuals.ps1"
+      ],
+      "boundary": "Local raster and custody evidence; live social-card delivery and the repository-level social-preview setting remain unobserved."
+    },
+    {
+      "id": "PV-E-004",
+      "status": "passed",
+      "exit_code": 0,
+      "command": "Run unit discovery, content-boundary, release-exclusion, and dual-host distribution-topology checks",
+      "environment": "Windows local repository at E:/Github/impactful-tom",
+      "observed": [
+        "Three unit tests passed.",
+        "Content boundaries, release exclusions, and Codex/Claude distribution topology returned passed with zero errors and zero warnings."
+      ],
+      "raw_evidence": [
+        "verification/scripts/check_content_boundaries.py",
+        "verification/scripts/check_release_exclusions.py",
+        "verification/scripts/check_distribution_topology.py"
+      ],
+      "boundary": "Local regression evidence; it does not prove remote tag immutability after the correction is pushed."
+    },
+    {
+      "id": "PV-E-005",
+      "status": "passed",
+      "exit_code": 0,
+      "command": "python -X utf8 verification/scripts/check_documentation_site.py --repo .; python -X utf8 -m unittest verification.tests.test_static_checks -v",
+      "environment": "Windows local repository after TestForge claim-oracle remediation",
+      "observed": [
+        "The actual public documentation passed the explicit bounded-claim contract.",
+        "Four hostile fixtures asserting clean installation, restart resilience, causal host invocation, or Claude live behavior each failed the documentation gate as required.",
+        "All four static-check tests passed."
+      ],
+      "raw_evidence": [
+        "verification/scripts/check_documentation_site.py",
+        "verification/tests/test_static_checks.py",
+        "verification/documentation/testforge-pages-review-initial.md"
+      ],
+      "boundary": "Discriminating local claim evidence; it does not establish any of the four host states or the live Pages deployment."
+    }
+  ],
+  "findings": [
+    {
+      "id": "PV-F-001",
+      "severity": "high",
+      "statement": "The initial public wording would become false when the documentation correction advanced main beyond the immutable v1.0.0 tag.",
+      "status": "resolved",
+      "resolution": "README.md, docs/provenance-and-verification.md, and PV-O-005 now bind the tag to the sealed release commit and describe main as a moving post-release documentation branch."
+    },
+    {
+      "id": "PV-F-002",
+      "severity": "high",
+      "statement": "The initial aggregate keyword oracle could pass the exact positive host-state overclaim that the invariant forbids.",
+      "status": "resolved",
+      "resolution": "Canonical public surfaces now require explicit negative semantics, forbidden positive claims are rejected, and four hostile fixtures exercise each host-state class."
+    },
+    {
+      "id": "PV-F-003",
+      "severity": "medium",
+      "statement": "The complete candidate and diff scope are not bound while correction files remain outside a candidate commit.",
+      "status": "open",
+      "resolution": "Create a complete local candidate commit, rerun the exact diff and validators, and obtain follow-up review before publication."
+    }
+  ],
+  "residual_risks": [
+    {
+      "id": "PV-RR-001",
+      "statement": "The repository-level social-preview setting may remain unobserved even when the exact card is shipped and Pages metadata is live.",
+      "treatment": "Keep the card at a stable public path, use it for Pages Open Graph metadata, and claim repository-settings installation only if directly observed.",
+      "owner": "Impactful Tom release owner",
+      "revisit_condition": "A verified browser or API route can inspect and update the repository social-preview setting."
+    }
+  ],
+  "review": {
+    "status": "REVIEW_FAIL",
+    "findings": [
+      "Initial TestForge review found two high-severity source defects, now locally remediated, and one medium-severity candidate-custody gap that remains open until a commit exists.",
+      "Fresh-context Hesperos review returned REVIEW_PASS_WITH_CONDITIONS with no source repair required and a later live-readback condition."
+    ]
+  },
+  "decision": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "basis": [
+      "The Pages source, public documents, visual assets, custody receipt, and deterministic regression suite pass locally.",
+      "Fresh-context Hesperos and TestForge review have not yet run against this correction.",
+      "The corrected Pages deployment, live routes, metadata, stylesheet, and assets have not yet been read back from the public URL."
+    ],
+    "authority_required": []
+  }
+}

@@ -1,4 +1,10 @@
-# Privacy and decision boundaries
+---
+layout: default
+title: Privacy and decision boundaries
+description: Understand session-only use, optional Founder Case custody, macro limits, qualified-review boundaries, and external-action authority.
+permalink: /boundaries/
+eyebrow: User control
+---
 
 ## Session-only is the default
 
@@ -32,7 +38,7 @@ The skill can recommend a move. It is not authorized to send messages, publish c
 
 An attempted external action is not a completed action. Ask for the observed result when the difference matters.
 
-For the package-level data statement and host boundary, read [Impactful Tom Data and Privacy](../DATA-AND-PRIVACY.md).
+For the package-level data statement and host boundary, read [Impactful Tom Data and Privacy](https://github.com/Stunspot/impactful-tom/blob/main/DATA-AND-PRIVACY.md).
 
 ## MIND is not bundled
 

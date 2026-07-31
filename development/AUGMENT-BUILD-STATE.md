@@ -5,7 +5,7 @@
 - Target capability: Impactful Tom founder-performance Augment 1.0.0
 - Desired world-change: a founder with a live decision can expose the governing constraint, reconcile mission with market evidence, and execute the smallest evidence-calibrated move with an owner, threshold, review point, and stop/continue interpretation
 - Requested terminal state: verified public GitHub marketplace plugin and release, with separately validatable Codex and Claude Code/generic distributions
-- Current stage: packaged, independently reviewed publication candidate
+- Current stage: publicly released; post-release Pages documentation correction under candidate review
 - Product map: `development/corrected-impactful-tom-augment-map.md`
 - Behaviorally exercised method fingerprint: `f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2`
 - Current whole skill-package fingerprint: `ff495fd2f627d0e8f371d2480ad2b8f7a3f0707958f8dce6c83853505704006c`
@@ -41,7 +41,7 @@
 - Verification authority: `verification/verification-manifest.json`
 - Sealed behavioral run: `verification/behavioral-results/frontier-collaboration/run-20260730T205203Z-f03260ec`
 - Promoted baseline: `verification/behavioral-baselines/frontier-collaboration/impactful-tom-1.0.0-frontier-f03260ec.json`
-- Original public visual candidate: `plugins/impactful-tom/assets/founder-constraint-mark.png`
+- Public visual anchor: `plugins/impactful-tom/assets/founder-constraint-mark.png`; deterministic README header, social card, web mark, and favicon family under `docs/assets/images`
 - Release archives and checksums: four deterministic archives built and round-trip verified; custody ledger at `release/archive-custody-v1.0.0.json`
 
 | Host profile | Installable artifact | Structural evidence | Live installation evidence | Honest boundary |
@@ -62,7 +62,7 @@
 - qwen35 frozen-fingerprint route: `NOT_DEMONSTRATED`; never merged into frontier evidence
 - Codex current-host route: pre-delta candidate installed and enabled; later fresh task catalog present; representative plateau response behavior demonstrated; causal read/invocation trace unavailable; final routing metadata not yet exercised
 - Claude live-host route: not executed
-- Documentation: all 15 customer files pass Hesperos authorship custody, accessible-Markdown lint, canonical journey validation, fresh-context review, and bounded delta reviews at fingerprint `8bc3aa19eed6a9400685aabb925cf54209f2f7baca8cd29a5559216c8cf20823`
+- Documentation: the Pages-era 17-file customer set, custom layout, responsive stylesheet, visual family, and bounded claims pass local source checks and Hesperos review; candidate binding and corrected live-site readback remain pending
 - Release package: customer stage contains 50 files; four archives and checksums are built; all extraction-parity receipts pass
 - Final release review: `READY_TO_PUBLISH_WITH_CONDITIONS`; every prepublication condition is satisfied in the rebuilt candidate
 
@@ -71,9 +71,9 @@
 - Public name/identity: Sam directed that the product remain `Impactful Tom`. The release retains the independent/unofficial, non-affiliation, no-likeness, no-quotation, and source-exclusion boundaries; no third-party endorsement or legal clearance is claimed.
 - Public license: the standard Collaborative Dynamics public-Augment split license is applied—MIT for deterministic software and schemas, CC BY-ND 4.0 for authored Augment material, with notice, attribution, privacy, terms, and trademark treatment.
 - Plugin readiness metadata: the original mark, brand color, license, website, privacy, terms, and asset references are wired; the current readiness audit reports zero issues.
-- GitHub publication: authorized by Sam Walker; prepublication gates pass; no public repository, commit, tag, release, or public install receipt exists yet.
+- GitHub publication: public repository, annotated `v1.0.0` tag, release, and five assets are observed; the tag and release assets remain sealed at commit `913161c29d09e1b587e7e2c5522ef3ba0ca94dfe`. Pages is configured from `main:/docs`, built, and HTTPS-enforced; the corrected Pages source is not yet live-read back.
 - OpenAI Plugin Directory submission: out of scope.
 
 ## Next valid move
 
-Bind the exact candidate to a Git commit, publish one completed 1.0.0 GitHub release, and verify the public repository and final routing/first-success install route at the strongest host boundary actually available.
+Bind and publish the post-release Pages correction, verify the live documentation routes and assets, then execute the clean public-route installation and first-success probe at the strongest host boundary actually available.

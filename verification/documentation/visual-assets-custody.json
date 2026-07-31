@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "evidence_date": "2026-07-30",
+  "source": {
+    "path": "plugins/impactful-tom/assets/founder-constraint-mark.png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "sha256": "684e4d435fb213e6806cf0cbc362e7f33300ba2e2346d5445dd8d3b72c859773",
+    "custody": "Existing name-free Impactful Tom founder-constraint mark; no headshot, likeness, quotation, signature, or third-party logo."
+  },
+  "generator": {
+    "path": "development/build_documentation_visuals.ps1",
+    "sha256": "bd4ff49e52c1859046f9c6472a6088a665b1f5de3fe6ac5075c469634f09174c",
+    "runtime": "Windows PowerShell with System.Drawing",
+    "network_required": false,
+    "external_dependency_added": false,
+    "operation": "Deterministic source-pixel crop, resampling, and original typography/composition."
+  },
+  "outputs": [
+    {
+      "path": "docs/assets/images/impactful-tom-header.png",
+      "purpose": "README header",
+      "width": 1600,
+      "height": 500,
+      "bytes": 262657,
+      "sha256": "1503574b7c6c3929ae3600620f58a5e67cc2d3f657eb14a8192e9d37caac4223"
+    },
+    {
+      "path": "docs/assets/images/impactful-tom-social-card.png",
+      "purpose": "Open Graph and share-preview card",
+      "width": 1280,
+      "height": 640,
+      "bytes": 269811,
+      "sha256": "8cb9ec00b3e00bdc2ac6d543692edc69299e59205e4664145c66011e57ebd3ac"
+    },
+    {
+      "path": "docs/assets/images/impactful-tom-mark-512.png",
+      "purpose": "Pages hero and web-app icon",
+      "width": 512,
+      "height": 512,
+      "bytes": 269256,
+      "sha256": "0a2468616f96be4cba1e943bd51a480f7db74b8e9f0856476079daefd1f08403"
+    },
+    {
+      "path": "docs/assets/images/impactful-tom-mark-192.png",
+      "purpose": "Web-app icon",
+      "width": 192,
+      "height": 192,
+      "bytes": 38543,
+      "sha256": "6580ed3deec4997cc57308b00c74988b5b17b5f03a65e0f850c25c06293df64e"
+    },
+    {
+      "path": "docs/assets/images/apple-touch-icon.png",
+      "purpose": "Apple touch icon",
+      "width": 180,
+      "height": 180,
+      "bytes": 33585,
+      "sha256": "12aec54b8820b9499d9e6ba7c2b4930e0616d8fb7d13f40b0f8299ec0fb602fb"
+    },
+    {
+      "path": "docs/assets/images/favicon-48.png",
+      "purpose": "Browser favicon",
+      "width": 48,
+      "height": 48,
+      "bytes": 2807,
+      "sha256": "cd63813836f5c26169824d0122f9884a5cb4fb771acc5ff1a83dece56620bb23"
+    },
+    {
+      "path": "docs/assets/images/favicon-32.png",
+      "purpose": "Browser favicon",
+      "width": 32,
+      "height": 32,
+      "bytes": 1604,
+      "sha256": "96d7c46f5986054c7830abc9a8ae514648d889a42fde3d157e4afc4f6a96cb75"
+    },
+    {
+      "path": "docs/assets/images/favicon-16.png",
+      "purpose": "Browser favicon",
+      "width": 16,
+      "height": 16,
+      "bytes": 708,
+      "sha256": "3921acdd8603a9be4814de04ebf07e1f43ceac570b91496dbd487d7f85d02395"
+    }
+  ],
+  "manual_visual_review": {
+    "status": "passed",
+    "reviewed": [
+      "docs/assets/images/impactful-tom-header.png",
+      "docs/assets/images/impactful-tom-social-card.png",
+      "docs/assets/images/impactful-tom-mark-512.png",
+      "docs/assets/images/favicon-32.png"
+    ],
+    "observed": [
+      "Product name and founder-performance promise are readable.",
+      "The existing mark remains the visual anchor.",
+      "The close-cropped mark remains legible at the inspected 32-pixel favicon size.",
+      "No likeness, headshot, quotation, signature, or third-party logo appears.",
+      "Composition preserves conservative edge-safe areas."
+    ],
+    "boundary": "Manual raster inspection does not establish live browser rendering or the repository-level social-preview setting."
+  }
+}

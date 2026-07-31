@@ -42,10 +42,10 @@
     }
   ],
   "release_custody": {
-    "tagged_source": "planned GitHub tag v1.0.0; not yet published",
-    "release_assets": "built locally; names and SHA-256 values recorded in release/archive-custody-v1.0.0.json and release/assets/v1.0.0/SHA256SUMS.txt",
+    "tagged_source": "published annotated GitHub tag v1.0.0 at commit 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe; tag object 437242822542fa2acde5b1f10b6494dbf10de129",
+    "release_assets": "five public GitHub release assets read back; four archive digests match release/archive-custody-v1.0.0.json and SHA256SUMS.txt is present",
     "canonical_local_archives": "release/assets/v1.0.0",
-    "latest_recovery_backup": "not selected; public repository, tag, and release assets will provide the initial remote recovery surfaces after live verification",
+    "latest_recovery_backup": "not selected",
     "detached_checksums": "built for all four archives at release/assets/v1.0.0/SHA256SUMS.txt"
   },
   "build_and_verification_requirements": [

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#061237">
+    {% assign page_title = page.title | default: site.title %}
+    {% assign page_description = page.description | default: site.description %}
+    {% assign social_image = page.image | default: '/assets/images/impactful-tom-social-card.png' %}
+    <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page_description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ page_title | escape }}">
+    <meta property="og:description" content="{{ page_description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ social_image | absolute_url }}">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:image:alt" content="Impactful Tom — founder-performance judgment for exposing constraints and choosing evidence-calibrated moves.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page_title | escape }}">
+    <meta name="twitter:description" content="{{ page_description | escape }}">
+    <meta name="twitter:image" content="{{ social_image | absolute_url }}">
+    <meta name="twitter:image:alt" content="Impactful Tom — founder-performance judgment for exposing constraints and choosing evidence-calibrated moves.">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Impactful Tom documentation home">
+          <img src="{{ '/assets/images/impactful-tom-mark-512.png' | relative_url }}" width="44" height="44" alt="" aria-hidden="true">
+          <span>Impactful Tom</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="{{ '/getting-started/' | relative_url }}">Start</a>
+          <a href="{{ '/install/' | relative_url }}">Install</a>
+          <a href="{{ '/boundaries/' | relative_url }}">Boundaries</a>
+          <a href="{{ '/evidence/' | relative_url }}">Evidence</a>
+          <a href="https://github.com/Stunspot/impactful-tom">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <article class="shell prose">
+        {% unless page.hide_page_title %}
+          <p class="eyebrow">{{ page.eyebrow | default: 'Impactful Tom documentation' }}</p>
+          <h1>{{ page_title }}</h1>
+          {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+        {% endunless %}
+        {{ content }}
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__grid">
+        <div>
+          <strong>Impactful Tom</strong>
+          <p>Independent, unofficial founder-performance judgment from Collaborative Dynamics.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0">Release 1.0.0</a>
+          <a href="https://github.com/Stunspot/impactful-tom/blob/main/SUPPORT.md">Support</a>
+          <a href="https://github.com/Stunspot/impactful-tom/blob/main/DATA-AND-PRIVACY.md">Privacy</a>
+          <a href="https://github.com/Stunspot/impactful-tom/blob/main/LICENSE.md">License</a>
+        </nav>
+      </div>
+      <div class="shell site-footer__boundary">
+        Not Tom Bilyeu. Not affiliated with or endorsed by Tom Bilyeu, Impact Theory, or their companies.
+      </div>
+    </footer>
+  </body>
+</html>

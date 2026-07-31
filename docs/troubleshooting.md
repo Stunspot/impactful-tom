@@ -1,4 +1,10 @@
-# Troubleshooting and recovery
+---
+layout: default
+title: Troubleshooting and recovery
+description: Recover when Impactful Tom does not install, appear, use its method, stay on the founder decision, or save an optional Founder Case.
+permalink: /troubleshooting/
+eyebrow: Recovery
+---
 
 ## The plugin or skill does not appear
 
@@ -39,4 +45,4 @@ You can stop using the skill without changing your business state. Save the curr
 
 Include the host and version, whether the marketplace and plugin were listed, the exact installation or activation error, the prompt you used with sensitive details removed, the unexpected result, and the steps already tried. Do not include credentials or private source material.
 
-Use [Impactful Tom support](../SUPPORT.md) for ordinary issues. Use the private route in [Security policy](../SECURITY.md) for vulnerabilities or sensitive reports.
+Use [Impactful Tom support](https://github.com/Stunspot/impactful-tom/blob/main/SUPPORT.md) for ordinary issues. Use the private route in [Security policy](https://github.com/Stunspot/impactful-tom/blob/main/SECURITY.md) for vulnerabilities or sensitive reports.

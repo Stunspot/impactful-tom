@@ -1,4 +1,10 @@
-# Provenance and verification status
+---
+layout: default
+title: Provenance and verification status
+description: Inspect Impactful Tom's independent status, source boundaries, behavioral evidence, package checks, public-release proof, and unverified host layers.
+permalink: /evidence/
+eyebrow: Trust and evidence
+---
 
 ## Independent and unofficial
 
@@ -17,7 +23,7 @@ Impactful Tom uses the standard Collaborative Dynamics public-Augment split lice
 - deterministic software and machine-readable schemas are MIT-licensed; and
 - original authored Augment material is licensed under CC BY-ND 4.0.
 
-Read [License](../LICENSE.md), [Attribution](../ATTRIBUTION.md), [Notice](../NOTICE.md), and [Trademark and identity policy](../TRADEMARKS.md) for the exact terms and boundaries.
+Read [License](https://github.com/Stunspot/impactful-tom/blob/main/LICENSE.md), [Attribution](https://github.com/Stunspot/impactful-tom/blob/main/ATTRIBUTION.md), [Notice](https://github.com/Stunspot/impactful-tom/blob/main/NOTICE.md), and [Trademark and identity policy](https://github.com/Stunspot/impactful-tom/blob/main/TRADEMARKS.md) for the exact terms and boundaries.
 
 ## Behavioral verification
 
@@ -49,13 +55,22 @@ On the current non-clean Codex workstation, the local repository marketplace was
 
 A later fresh task catalog surfaced `impactful-tom:impactful-tom` and returned a representative founder-plateau response. An independent TestForge review found that response passed every scenario criterion. The review kept the host verdict `PARTIAL` because this Codex collaboration surface does not expose an immutable host-issued event proving that the skill file was read and causally invoked. Catalog presence, response custody, runtime-file parity, and response behavior are supported; the unavailable causal trace is not invented.
 
-## What remains before a public release claim
+## Observed public release state and remaining host evidence
 
-At this documentation cutoff:
+GitHub readback on July 30, 2026 established that:
 
-- no public GitHub repository, tag, release, or release-asset readback has been observed;
-- no public-route or clean-host installation receipt has been observed;
-- restart resilience has not been observed; and
+- `Stunspot/impactful-tom` is public with `main` as its default branch;
+- the annotated `v1.0.0` tag resolves to sealed release commit `913161c29d09e1b587e7e2c5522ef3ba0ca94dfe`;
+- the `Impactful Tom 1.0.0` GitHub release is published rather than draft or prerelease; and
+- the four distribution archives plus `SHA256SUMS.txt` are uploaded, with GitHub-reported SHA-256 digests matching the local release ledger.
+
+At that evidence cutoff, remote `main` also pointed to the release commit. This later documentation correction advances `main` without moving the sealed tag or replacing the release assets.
+
+The remaining host evidence is separate:
+
+- no clean public-route installation receipt for the exact final package has been observed;
+- restart resilience has not been observed;
+- causal host invocation for the exact final package has not been observed; and
 - Claude Code live installation, discovery, invocation, and first value have not been observed.
 
 OpenAI Plugin Directory submission is outside scope.
@@ -72,7 +87,9 @@ Treat these states separately:
 | Discoverable | A named host surfaced the installed skill or plugin |
 | Invoked | Available host evidence ties a request to the skill at the stated confidence |
 | Healthy | A recorded request completed the expected user task at the claimed host layer |
-| Publicly released | Repository, tag, release, assets, and public route were independently read back |
+| Publicly released | The public repository, tag, release, and release assets were read back with their observed lineage |
+| Public-route installation verified | The exact released object was installed through the documented public route on a named host |
+| First success verified | That installed object completed one representative useful request on the named host |
 
 Release notes should state the exact version, host, route, date, result, and remaining limit. If that evidence is absent, the correct state is unknown—not “working.”
 
