@@ -5,7 +5,7 @@
     "version": "1.0.0"
   },
   "created_at": "2026-07-31T02:50:50.6961497+00:00",
-  "documentation_fingerprint": "e45c2697a3637ece145e423ee78435ed29c5bf7f6dc550547406e5bf7459b637",
+  "documentation_fingerprint": "037d75c29820803cd77da31ef17430eafb8fc232d939abaec4ffaa72690c7c4e",
   "fingerprint_algorithm": "sha256 of UTF-8 path NUL sha256 records joined by LF in authored_files order",
   "authored_files": [
     {
@@ -14,9 +14,9 @@
       "sha256": "b2784fdf3006e670cef170bd9909f32a20626f9be8cbc2d4f15e8ff0692d3b69"
     },
     {
-      "bytes": 4447,
+      "bytes": 4423,
       "path": "docs/index.md",
-      "sha256": "092ef44f5c2777ad6f717e1c0563bedf8b2ed3d20cfeaf95a17ff1b675615f82"
+      "sha256": "cdc70c2a58000a5b47825b739fd0f2f6690887664898185b83a9570e5ec65e7f"
     },
     {
       "bytes": 578,
@@ -130,7 +130,7 @@
     {
       "bytes": 1939,
       "path": "verification/documentation/documentation-review.json",
-      "sha256": "0d1882c62579814382ec6c72d3ce529bd9d144ed59535d42989ec237067da667"
+      "sha256": "05f9dc471e98ce5eef7d1fc04944747991f6388fab8d36754d93dd3aa5d109ba"
     }
   ],
   "claim_boundary": "Binds the exact 17-file Pages-era customer-document set to one Hesperos authoring run. It does not prove live deployment health, repository social-preview configuration, accessibility conformance, host activation, or customer outcomes."

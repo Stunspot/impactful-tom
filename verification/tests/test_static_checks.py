@@ -34,9 +34,20 @@ def copy_documentation_fixture(destination: Path) -> None:
         "CHANGELOG.md",
         "SUPPORT.md",
         "SECURITY.md",
+        "DATA-AND-PRIVACY.md",
+        "TERMS-OF-USE.md",
+        "LICENSE.md",
+        "ATTRIBUTION.md",
+        "NOTICE.md",
+        "TRADEMARKS.md",
         "documentation-manifest.json",
         "development/build_documentation_visuals.ps1",
+        "development/documentation-project.json",
         "plugins/impactful-tom/assets/founder-constraint-mark.png",
+        "verification/documentation/documentation-authorship.json",
+        "verification/documentation/documentation-review.json",
+        "verification/documentation/hesperos-pages-authoring-evidence.md",
+        "verification/documentation/hesperos-pages-authoring-response.txt",
         "verification/documentation/visual-assets-custody.json",
     ]:
         source = REPO / relative
@@ -80,6 +91,10 @@ class StaticCheckFixtures(unittest.TestCase):
             "Restart resilience has been observed.",
             "Causal host invocation is confirmed.",
             "Claude Code live behavior is healthy.",
+            "Clean public-route installation works.",
+            "Restart resilience passed.",
+            "Causal host invocation is established.",
+            "Claude Code live behavior is supported.",
         ]
         for overclaim in overclaims:
             with self.subTest(overclaim=overclaim), tempfile.TemporaryDirectory() as temp:
@@ -93,7 +108,7 @@ class StaticCheckFixtures(unittest.TestCase):
                 code, result = run("check_documentation_site.py", "--repo", str(candidate))
                 self.assertEqual(code, 1, result)
                 self.assertTrue(
-                    any("unsupported positive host claim" in item for item in result["errors"]),
+                    any("unsupported host-state sentence" in item for item in result["errors"]),
                     result,
                 )
 

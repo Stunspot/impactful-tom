@@ -3,7 +3,7 @@
   "fresh_context": true,
   "disposition": "REVIEW_PASS_WITH_CONDITIONS",
   "unresolved_material_findings": 0,
-  "documentation_fingerprint": "e45c2697a3637ece145e423ee78435ed29c5bf7f6dc550547406e5bf7459b637",
+  "documentation_fingerprint": "037d75c29820803cd77da31ef17430eafb8fc232d939abaec4ffaa72690c7c4e",
   "fingerprint_algorithm": "sha256 of UTF-8 path NUL sha256 records joined by LF in reviewed_files order",
   "reviewed_files": [
     "README.md",

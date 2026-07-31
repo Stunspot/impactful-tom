@@ -65,7 +65,7 @@ It is not a celebrity simulation, a generic pep talk, or a substitute for qualif
 [Read privacy and decision boundaries →]({{ '/boundaries/' | relative_url }})
 
 <div class="status-note">
-  <strong>Release status:</strong> Version 1.0.0 is publicly available from the GitHub repository and release. Package structure and the founder method have bounded verification evidence; clean public-route installation, restart resilience, causal host invocation, and Claude Code live behavior remain separately stated where unobserved.
+  <strong>Release status:</strong> Version 1.0.0 is publicly available from the GitHub repository and release. Package structure and the founder method have bounded verification evidence; clean public-route installation, restart resilience, causal host invocation, and live Claude Code behavior remain unobserved.
 </div>
 
 ## Choose your route

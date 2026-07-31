@@ -120,31 +120,96 @@ BOUNDED_HOST_CLAIMS = {
     },
 }
 
-FORBIDDEN_POSITIVE_HOST_CLAIMS = {
-    "clean public-route installation": re.compile(
-        r"(?<!no )\bclean(?: public-route)? installation\b[^.\n]{0,220}"
-        r"\b(?:is|are|was|were|has been|have been)\s+"
-        r"(?:verified|observed|confirmed|demonstrated|successful|healthy)\b",
-        re.I,
-    ),
-    "restart resilience": re.compile(
-        r"\brestart resilience\b[^.\n]{0,180}"
-        r"\b(?:is|are|was|were|has been|have been)\s+"
-        r"(?:verified|observed|confirmed|demonstrated|successful|healthy)\b",
-        re.I,
-    ),
-    "causal host invocation": re.compile(
-        r"\bcausal host invocation\b[^.\n]{0,180}"
-        r"\b(?:is|are|was|were|has been|have been)\s+"
-        r"(?:verified|observed|confirmed|demonstrated|successful|healthy)\b",
-        re.I,
-    ),
-    "Claude live-host behavior": re.compile(
-        r"\bClaude(?: Code)?[^.\n]{0,60}(?:behavior|installation|invocation|first success)"
-        r"[^.\n]{0,160}\b(?:is|are|was|were|has been|have been)\s+"
-        r"(?:verified|observed|confirmed|demonstrated|successful|healthy)\b",
-        re.I,
-    ),
+HOST_STATE_SENTENCE_CONTRACTS = {
+    "clean public-route installation": {
+        "subject": re.compile(
+            r"\b(?:clean public-route installation|clean installation|"
+            r"clean public-route host|clean public route)\b",
+            re.I,
+        ),
+        "allowed": [
+            re.compile(
+                r"\bclean public-route installation[^.\n]{0,240}\bremain unobserved\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bnot (?:yet )?been installed[^.\n]{0,140}\bclean public-route host\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bexact final package has not been installed[^.\n]{0,140}"
+                r"\bclean public route\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bno clean public-route installation receipt[^.\n]{0,160}"
+                r"\bhas been observed\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bdo not establish[^.\n]{0,240}\bclean public-route installation\b",
+                re.I,
+            ),
+        ],
+    },
+    "restart resilience": {
+        "subject": re.compile(r"\brestart resilience\b", re.I),
+        "allowed": [
+            re.compile(
+                r"\brestart resilience[^.\n]{0,240}\bremain unobserved\b", re.I
+            ),
+            re.compile(r"\brestart resilience has not been observed\b", re.I),
+            re.compile(
+                r"\bdo not establish[^.\n]{0,240}\brestart resilience\b", re.I
+            ),
+        ],
+    },
+    "causal host invocation": {
+        "subject": re.compile(r"\bcausal host invocation\b", re.I),
+        "allowed": [
+            re.compile(
+                r"\bcausal host invocation[^.\n]{0,240}\bremain unobserved\b", re.I
+            ),
+            re.compile(
+                r"\bcausal host invocation[^.\n]{0,120}\bhas not been observed\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bdo not establish[^.\n]{0,240}\bcausal host invocation\b", re.I
+            ),
+        ],
+    },
+    "Claude live-host behavior": {
+        "subject": re.compile(
+            r"\b(?:live Claude Code behavior|Claude Code live behavior|Claude live-host behavior|"
+            r"Claude Code/generic skill directory|Claude Code live installation)\b",
+            re.I,
+        ),
+        "allowed": [
+            re.compile(
+                r"\blive Claude Code behavior[^.\n]{0,180}\bremain unobserved\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bClaude live-host behavior[^.\n]{0,120}\bremains unobserved\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bClaude Code/generic skill directory[^.\n]{0,180}"
+                r"\bwithout live-host evidence\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bClaude Code live installation[^.\n]{0,200}"
+                r"\bhave not been observed\b",
+                re.I,
+            ),
+            re.compile(
+                r"\bdo not establish[^.\n]{0,240}\blive Claude Code behavior\b",
+                re.I,
+            ),
+        ],
+    },
 }
 
 LIQUID_URL = re.compile(
@@ -472,9 +537,20 @@ def check_public_claims(repo: Path, errors: list[str]) -> None:
         for label, pattern in STALE_PATTERNS.items():
             if pattern.search(text):
                 errors.append(f"stale publication claim '{label}' in {path_text}")
-        for label, pattern in FORBIDDEN_POSITIVE_HOST_CLAIMS.items():
-            if pattern.search(text):
-                errors.append(f"unsupported positive host claim '{label}' in {path_text}")
+        segments = [
+            segment.strip()
+            for segment in re.split(r"(?<=[.!?])\s+|\n+", text)
+            if segment.strip()
+        ]
+        for segment in segments:
+            for label, contract in HOST_STATE_SENTENCE_CONTRACTS.items():
+                if contract["subject"].search(segment) and not any(
+                    pattern.search(segment) for pattern in contract["allowed"]
+                ):
+                    errors.append(
+                        f"unsupported host-state sentence '{label}' in "
+                        f"{path_text}: {segment}"
+                    )
     combined = "\n".join(combined_parts).lower()
     required_claims = [
         "publicly available",
