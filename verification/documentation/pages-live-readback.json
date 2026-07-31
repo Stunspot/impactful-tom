@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-07-31T03:08:32Z",
+  "evidence_state": "normalized from tool-returned Git, GitHub Pages API, repository API, and public HTTPS output",
+  "repository": {
+    "full_name": "Stunspot/impactful-tom",
+    "visibility": "PUBLIC",
+    "default_branch": "main",
+    "pushed_main_commit": "efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8",
+    "remote_main_readback": "efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8",
+    "release_tag_object_readback": "437242822542fa2acde5b1f10b6494dbf10de129",
+    "homepage_before": "",
+    "homepage_after": "https://stunspot.github.io/impactful-tom/"
+  },
+  "pages_build": {
+    "status": "built",
+    "commit": "efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8",
+    "updated_at": "2026-07-31T03:08:32Z",
+    "source": "main:/docs",
+    "https_enforced": true
+  },
+  "routes": [
+    {
+      "url": "https://stunspot.github.io/impactful-tom/",
+      "status": 200,
+      "marker": "Make the decision in front of you."
+    },
+    {
+      "url": "https://stunspot.github.io/impactful-tom/getting-started/",
+      "status": 200,
+      "marker": "Getting started with Impactful Tom"
+    },
+    {
+      "url": "https://stunspot.github.io/impactful-tom/install/",
+      "status": 200,
+      "marker": "Install, update, and uninstall"
+    },
+    {
+      "url": "https://stunspot.github.io/impactful-tom/boundaries/",
+      "status": 200,
+      "marker": "Privacy and decision boundaries"
+    },
+    {
+      "url": "https://stunspot.github.io/impactful-tom/evidence/",
+      "status": 200,
+      "marker": "Provenance and verification status"
+    }
+  ],
+  "root_metadata": {
+    "canonical_social_card": "https://stunspot.github.io/impactful-tom/assets/images/impactful-tom-social-card.png",
+    "twitter_card": "summary_large_image",
+    "stylesheet": "/impactful-tom/assets/css/site.css",
+    "status": "observed"
+  },
+  "assets": [
+    {
+      "url": "https://stunspot.github.io/impactful-tom/assets/css/site.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "bytes": 9764
+    },
+    {
+      "url": "https://stunspot.github.io/impactful-tom/assets/images/impactful-tom-social-card.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 269811
+    },
+    {
+      "url": "https://stunspot.github.io/impactful-tom/assets/images/impactful-tom-header.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 262657
+    }
+  ],
+  "unobserved": [
+    "The repository-level social-preview image setting is not exposed by the verified API route and was not observed.",
+    "Clean public-route plugin installation, restart resilience, causal host invocation, and Claude live behavior are outside this Pages receipt."
+  ],
+  "boundary": "This receipt establishes the named Pages build, routes, metadata references, assets, and repository homepage at the observed commit and time. It does not establish visual-browser behavior, accessibility conformance, repository social-preview configuration, plugin installation, or host invocation."
+}

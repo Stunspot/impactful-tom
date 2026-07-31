@@ -1,10 +1,10 @@
 # Impactful Tom Pages documentation accessibility review
 
-Verdict: `REVIEW_PASS_WITH_CONDITIONS`
+Verdict: `REVIEW_PASS`
 
 Reviewer: Fresh-context Hesperos documentation accessibility reviewer
 Environment: Windows local repository
-Evidence cutoff: 2026-07-30 pre-publication working tree
+Evidence cutoff: 2026-07-31 live Pages readback at `efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8`
 
 ## Source-readiness finding
 
@@ -27,3 +27,11 @@ After the independent TestForge review, the release-lineage language was made te
 The same Hesperos reviewer re-read `README.md`, `docs/installing-and-maintaining.md`, `docs/provenance-and-verification.md`, the claim validator, and its tests. The reviewer confirmed that the prior `REVIEW_PASS_WITH_CONDITIONS` still holds with no new decision-changing finding or repair. The later live Pages and repository social-preview readback condition is unchanged.
 
 The reviewer then inspected final candidate `16520e03578dfa7f396b43b6758af53389f22cec`, including the direct homepage nonclaim and refreshed fingerprint `037d75c29820803cd77da31ef17430eafb8fc232d939abaec4ffaa72690c7c4e`. The verdict remained `REVIEW_PASS_WITH_CONDITIONS`; no source repair is needed.
+
+## Live-readback closure
+
+The reviewer inspected the normalized live receipt after GitHub reported the Pages build as built at `efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8`. The canonical root and four customer routes returned HTTP 200 with their expected markers. The root exposed the intended absolute social-card URL, Twitter large-image metadata, and project-base stylesheet path. The stylesheet, README header, and social card returned HTTP 200, and the repository homepage resolved to the Pages URL.
+
+The later live-readback condition is satisfied. Final verdict: `REVIEW_PASS`.
+
+The repository-level social-preview setting and direct visual-browser or assistive-technology conformance remain unobserved and unclaimed. Clean public-route installation, restart resilience, causal host invocation, and Claude live behavior remain outside this documentation verdict.

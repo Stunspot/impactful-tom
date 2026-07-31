@@ -118,9 +118,9 @@
   },
   "execution_evidence": [
     {
-      "bytes": 4496,
+      "bytes": 4801,
       "path": "development/documentation-project.json",
-      "sha256": "ca14987c98882be51a6d3cca125638122ef0bb49a56995ec2da4a988b8af87d0"
+      "sha256": "aaca465ad9e13f1f7fab5cfbde959d0f90b9cf10eef15a6b68313206fc83f4ca"
     },
     {
       "bytes": 3702,
@@ -128,9 +128,9 @@
       "sha256": "b0b90a7e342483f82b7a708ec1d1ea21605046a32dfc103a407b88c63f7b3df9"
     },
     {
-      "bytes": 1939,
+      "bytes": 2012,
       "path": "verification/documentation/documentation-review.json",
-      "sha256": "05f9dc471e98ce5eef7d1fc04944747991f6388fab8d36754d93dd3aa5d109ba"
+      "sha256": "5f1d1d98ba543f7f725d4c275958f8c89ef9b10537cdf0f842207a438708af01"
     }
   ],
   "claim_boundary": "Binds the exact 17-file Pages-era customer-document set to one Hesperos authoring run. It does not prove live deployment health, repository social-preview configuration, accessibility conformance, host activation, or customer outcomes."

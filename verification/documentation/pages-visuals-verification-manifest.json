@@ -2,7 +2,7 @@
   "manifest_version": "1.0",
   "target": {
     "name": "Impactful Tom public documentation surface",
-    "revision": "16520e03578dfa7f396b43b6758af53389f22cec",
+    "revision": "efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8",
     "target_class": "change"
   },
   "scope": {
@@ -76,6 +76,13 @@
         "basis": "PV-E-001 and PV-E-003 local execution receipts on 2026-07-30.",
         "confidence": "high",
         "consequence": "Static source readiness is established; live deployment and browser behavior remain separate gates."
+      },
+      {
+        "id": "PV-O-007",
+        "statement": "GitHub reported the corrected Pages build as built at commit efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8; five canonical customer routes, the stylesheet, README header, social card, metadata references, and repository homepage were then read back from their public URLs.",
+        "basis": "PV-E-008 and verification/documentation/pages-live-readback.json on 2026-07-31.",
+        "confidence": "high",
+        "consequence": "The bounded public Pages route is live and healthy at the observed revision; visual-browser accessibility, repository social-preview configuration, and plugin host behavior remain separate claims."
       }
     ],
     "inferred": [
@@ -138,7 +145,7 @@
       "severity": "high",
       "likelihood": "high",
       "confidence": "high",
-      "disposition": "planned",
+      "disposition": "covered",
       "verification": ["PV-S-001", "PV-T-STATIC-001", "PV-T-LIVE-001"]
     },
     {
@@ -147,7 +154,7 @@
       "severity": "high",
       "likelihood": "medium",
       "confidence": "high",
-      "disposition": "planned",
+      "disposition": "covered",
       "verification": ["PV-S-002", "PV-T-STATIC-001", "PV-T-LIVE-001"]
     },
     {
@@ -156,7 +163,7 @@
       "severity": "high",
       "likelihood": "medium",
       "confidence": "medium",
-      "disposition": "planned",
+      "disposition": "covered",
       "verification": ["PV-S-003", "PV-T-A11Y-001", "PV-T-REVIEW-001"]
     },
     {
@@ -183,7 +190,7 @@
       "severity": "critical",
       "likelihood": "low",
       "confidence": "high",
-      "disposition": "planned",
+      "disposition": "covered",
       "verification": ["PV-S-006", "PV-T-CUSTODY-001"]
     },
     {
@@ -192,7 +199,7 @@
       "severity": "medium",
       "likelihood": "medium",
       "confidence": "high",
-      "disposition": "planned",
+      "disposition": "covered",
       "verification": ["PV-S-007", "PV-T-IMAGE-001", "PV-T-LIVE-001"]
     }
   ],
@@ -206,8 +213,8 @@
       "action": ["open https://stunspot.github.io/impactful-tom/"],
       "expected": ["HTTP success", "Impactful Tom identity and founder-performance promise", "visible paths to getting started, installation, boundaries, evidence, and GitHub release"],
       "forbidden": ["directory listing", "generic theme placeholder", "missing primary navigation"],
-      "evidence": [],
-      "status": "designed"
+      "evidence": ["PV-E-006", "PV-E-008"],
+      "status": "passed"
     },
     {
       "id": "PV-S-002",
@@ -218,20 +225,20 @@
       "action": ["resolve every internal href, src, canonical, and social-image URL"],
       "expected": ["all customer routes stay under the project base URL or use an intentional absolute GitHub URL"],
       "forbidden": ["account-root asset URLs", "missing local targets", "localhost or private workstation paths"],
-      "evidence": [],
-      "status": "designed"
+      "evidence": ["PV-E-006", "PV-E-008"],
+      "status": "passed"
     },
     {
       "id": "PV-S-003",
       "risk_ids": ["PV-R-003"],
-      "title": "Accessible navigation and reading path",
-      "layer": "static-and-browser",
+      "title": "Source accessibility contracts support the navigation and reading path",
+      "layer": "static-and-independent-review",
       "preconditions": ["custom layout and stylesheet are present"],
-      "action": ["inspect landmarks, headings, link text, image alternatives, focus treatment, contrast, responsive reflow, and reduced-motion behavior"],
-      "expected": ["one h1 per page", "skip link", "labeled navigation", "visible keyboard focus", "non-color cues", "readable mobile layout", "meaningful alt text"],
-      "forbidden": ["sensory-only instructions", "hidden focus", "decorative image announced as content"],
-      "evidence": [],
-      "status": "designed"
+      "action": ["inspect source landmarks, headings, link text, image alternatives, focus rules, contrast tokens, responsive rules, and reduced-motion rules"],
+      "expected": ["one h1 per page", "skip-link source", "labeled navigation", "visible-focus rule", "non-color source cues", "mobile reflow rules", "meaningful alt text"],
+      "forbidden": ["sensory-only instructions", "focus suppression", "content image with an empty alternative"],
+      "evidence": ["PV-E-003", "PV-E-007"],
+      "status": "passed"
     },
     {
       "id": "PV-S-004",
@@ -242,8 +249,8 @@
       "action": ["scan public documentation for stale prepublication language and stronger unverified host claims"],
       "expected": ["repository and release are described as public", "clean installation, restart resilience, causal invocation, and Claude live behavior remain bounded"],
       "forbidden": ["release pending", "repository not created", "clean-host verified", "Claude verified"],
-      "evidence": [],
-      "status": "designed"
+      "evidence": ["PV-E-005", "PV-E-006", "PV-E-008"],
+      "status": "passed"
     },
     {
       "id": "PV-S-005",
@@ -254,8 +261,8 @@
       "action": ["compare mark, header, social card, and favicons"],
       "expected": ["same mark geometry and palette", "clear product name and founder-performance promise", "no living-person likeness or quotation"],
       "forbidden": ["face", "headshot", "signature", "Tom Bilyeu quotation", "Impact Theory logo", "affiliation cue"],
-      "evidence": [],
-      "status": "designed"
+      "evidence": ["PV-E-003", "PV-E-007"],
+      "status": "passed"
     },
     {
       "id": "PV-S-006",
@@ -266,8 +273,8 @@
       "action": ["compare tag commit and release-asset digests; inspect the post-release diff scope"],
       "expected": ["tag and assets are unchanged", "diff is confined to documentation, documentation visuals, verification evidence, and launch metadata"],
       "forbidden": ["plugin runtime change", "release archive replacement", "tag movement"],
-      "evidence": [],
-      "status": "designed"
+      "evidence": ["PV-E-006", "PV-E-008"],
+      "status": "passed"
     },
     {
       "id": "PV-S-007",
@@ -278,8 +285,8 @@
       "action": ["inspect Open Graph and Twitter metadata and fetch the referenced image"],
       "expected": ["absolute HTTPS card URL", "PNG response", "1280 by 640 dimensions", "readable safe-area composition"],
       "forbidden": ["relative og:image", "missing asset", "wrong dimensions", "card above the repository size limit"],
-      "evidence": [],
-      "status": "designed"
+      "evidence": ["PV-E-003", "PV-E-008"],
+      "status": "passed"
     }
   ],
   "tests": [
@@ -340,7 +347,8 @@
       "layer": "browser",
       "command": "Fetch the canonical Pages URL and representative routes after GitHub reports the deployment built.",
       "oracle": "Public HTTP responses, rendered metadata, primary navigation, stylesheet, header, and social card are observed at their canonical URLs.",
-      "status": "designed"
+      "status": "passed",
+      "execution_id": "PV-E-008"
     },
     {
       "id": "PV-T-REVIEW-001",
@@ -470,6 +478,25 @@
         "verification/reviews/pages-visuals-testforge-review.md"
       ],
       "boundary": "Independent pre-publication source and candidate review; live deployment and host behavior remain separate."
+    },
+    {
+      "id": "PV-E-008",
+      "status": "passed",
+      "exit_code": 0,
+      "command": "Read back remote main and v1.0.0 tag object; inspect the GitHub Pages build and repository homepage through authenticated API routes; fetch the canonical Pages root, four customer routes, stylesheet, README header, and social card over public HTTPS.",
+      "environment": "GitHub repository Stunspot/impactful-tom and public Pages site",
+      "observed": [
+        "Remote main resolved to efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8 while the annotated v1.0.0 tag object remained 437242822542fa2acde5b1f10b6494dbf10de129.",
+        "GitHub reported the Pages build built at efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8 from main:/docs with HTTPS enforced.",
+        "The canonical root, getting-started, install, boundaries, and evidence routes returned HTTP 200 with their expected page markers.",
+        "The root exposed an absolute social-card URL, summary_large_image Twitter metadata, and the project-base stylesheet path.",
+        "The stylesheet, 1280 by 640 social card, and 1600 by 500 README header returned HTTP 200 with the expected content types and byte counts.",
+        "The repository homepage was read back as https://stunspot.github.io/impactful-tom/."
+      ],
+      "raw_evidence": [
+        "verification/documentation/pages-live-readback.json"
+      ],
+      "boundary": "Live evidence at the named revision and observation time. It does not establish visual-browser behavior, accessibility conformance, repository social-preview configuration, clean plugin installation, restart resilience, causal host invocation, or Claude behavior."
     }
   ],
   "findings": [
@@ -502,21 +529,30 @@
       "treatment": "Keep the card at a stable public path, use it for Pages Open Graph metadata, and claim repository-settings installation only if directly observed.",
       "owner": "Impactful Tom release owner",
       "revisit_condition": "A verified browser or API route can inspect and update the repository social-preview setting."
+    },
+    {
+      "id": "PV-RR-002",
+      "statement": "Source semantics, contrast contracts, responsive rules, and public responses are verified, but visual-browser and assistive-technology conformance were not directly observed.",
+      "treatment": "Keep the bounded source-accessibility claim and do not upgrade it to accessibility conformance without direct browser and assistive-technology evidence.",
+      "owner": "Impactful Tom documentation owner",
+      "revisit_condition": "A supported visual-browser and assistive-technology test route is available."
     }
   ],
   "review": {
-    "status": "REVIEW_PASS",
+    "status": "REVIEW_PASS_WITH_CONDITIONS",
     "findings": [
-      "TestForge closed all three source and candidate-custody findings with no new decision-changing finding.",
-      "Hesperos returned REVIEW_PASS_WITH_CONDITIONS with no source repair required and a later live-readback condition."
+      "TestForge closed all three source and candidate-custody findings, then accepted the live evidence as supporting READY_WITH_RESIDUAL_RISK subject to durable ledger closure.",
+      "Hesperos reviewed the live receipt and returned REVIEW_PASS; the repository social-preview setting and accessibility conformance remain explicitly unclaimed.",
+      "This manifest update, PV-E-008, and pages-live-readback.json satisfy the requested durable ledger closure."
     ]
   },
   "decision": {
-    "status": "INSUFFICIENT_EVIDENCE",
+    "status": "READY_WITH_RESIDUAL_RISK",
     "basis": [
-      "The Pages source, public documents, visual assets, custody receipt, and deterministic regression suite pass locally.",
-      "Fresh-context Hesperos and TestForge reviews support pre-publication source and candidate readiness.",
-      "The corrected Pages deployment, live routes, metadata, stylesheet, and assets have not yet been read back from the public URL."
+      "The Pages source, public documents, visual assets, custody receipts, bounded-claim oracle, and deterministic regression suite pass locally.",
+      "Fresh-context Hesperos and TestForge reviews support source, candidate, and bounded live documentation readiness.",
+      "GitHub reported the corrected Pages build built at the observed revision, and public readback established the named customer routes, metadata references, stylesheet, README header, social card, and repository homepage.",
+      "The repository social-preview setting and visual-browser accessibility conformance remain explicit residual risks; plugin host-installation claims remain outside this documentation decision."
     ],
     "authority_required": []
   }

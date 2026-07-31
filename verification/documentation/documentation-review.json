@@ -1,7 +1,7 @@
 {
   "format": "cd-documentation-review/v1",
   "fresh_context": true,
-  "disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "disposition": "REVIEW_PASS",
   "unresolved_material_findings": 0,
   "documentation_fingerprint": "037d75c29820803cd77da31ef17430eafb8fc232d939abaec4ffaa72690c7c4e",
   "fingerprint_algorithm": "sha256 of UTF-8 path NUL sha256 records joined by LF in reviewed_files order",
@@ -30,10 +30,11 @@
   "review_response": "verification/documentation/review-response-pages.txt",
   "review_record": "verification/reviews/documentation-pages-accessibility-review.md",
   "evidence_directory": "verification/documentation",
-  "conditions": [
-    "Read back the corrected live Pages routes, stylesheet, metadata, header, and social card before claiming the site is publicly healthy.",
+  "conditions": [],
+  "residual_boundaries": [
     "Do not claim the repository-level social-preview setting is configured unless separately observed.",
+    "Do not claim visual-browser or assistive-technology accessibility conformance from source and HTTP evidence.",
     "Clean public-route installation, restart resilience, causal host invocation, and Claude live behavior remain unobserved."
   ],
-  "claim_boundary": "This review supports the bounded accessibility and reader-journey readiness of the listed source documents. It does not establish live deployment health, accessibility conformance, host behavior, or customer outcomes."
+  "claim_boundary": "This review supports the bounded accessibility and reader-journey readiness of the listed source documents and the named live Pages responses at the observed revision and time. It does not establish accessibility conformance, repository social-preview configuration, host behavior, or customer outcomes."
 }

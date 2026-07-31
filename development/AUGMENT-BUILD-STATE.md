@@ -5,7 +5,7 @@
 - Target capability: Impactful Tom founder-performance Augment 1.0.0
 - Desired world-change: a founder with a live decision can expose the governing constraint, reconcile mission with market evidence, and execute the smallest evidence-calibrated move with an owner, threshold, review point, and stop/continue interpretation
 - Requested terminal state: verified public GitHub marketplace plugin and release, with separately validatable Codex and Claude Code/generic distributions
-- Current stage: publicly released; post-release Pages documentation correction reviewed and ready for live verification
+- Current stage: publicly released; post-release Pages documentation correction live and verified at the named public routes
 - Product map: `development/corrected-impactful-tom-augment-map.md`
 - Behaviorally exercised method fingerprint: `f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2`
 - Current whole skill-package fingerprint: `ff495fd2f627d0e8f371d2480ad2b8f7a3f0707958f8dce6c83853505704006c`
@@ -62,7 +62,7 @@
 - qwen35 frozen-fingerprint route: `NOT_DEMONSTRATED`; never merged into frontier evidence
 - Codex current-host route: pre-delta candidate installed and enabled; later fresh task catalog present; representative plateau response behavior demonstrated; causal read/invocation trace unavailable; final routing metadata not yet exercised
 - Claude live-host route: not executed
-- Documentation: the Pages-era 17-file customer set, custom layout, responsive stylesheet, visual family, and bounded claims pass local source checks; Hesperos returned `REVIEW_PASS_WITH_CONDITIONS` and TestForge returned `REVIEW_PASS` for candidate `16520e03578dfa7f396b43b6758af53389f22cec`; corrected live-site readback remains pending
+- Documentation: the Pages-era 17-file customer set, custom layout, responsive stylesheet, visual family, and bounded claims pass local source checks; Hesperos returned final `REVIEW_PASS`; TestForge supports `READY_WITH_RESIDUAL_RISK`; GitHub reported the Pages build built at `efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8`, and five customer routes, metadata references, stylesheet, README header, social card, and repository homepage were read back
 - Release package: customer stage contains 50 files; four archives and checksums are built; all extraction-parity receipts pass
 - Final release review: `READY_TO_PUBLISH_WITH_CONDITIONS`; every prepublication condition is satisfied in the rebuilt candidate
 
@@ -71,9 +71,9 @@
 - Public name/identity: Sam directed that the product remain `Impactful Tom`. The release retains the independent/unofficial, non-affiliation, no-likeness, no-quotation, and source-exclusion boundaries; no third-party endorsement or legal clearance is claimed.
 - Public license: the standard Collaborative Dynamics public-Augment split license is applied—MIT for deterministic software and schemas, CC BY-ND 4.0 for authored Augment material, with notice, attribution, privacy, terms, and trademark treatment.
 - Plugin readiness metadata: the original mark, brand color, license, website, privacy, terms, and asset references are wired; the current readiness audit reports zero issues.
-- GitHub publication: public repository, annotated `v1.0.0` tag, release, and five assets are observed; the tag and release assets remain sealed at commit `913161c29d09e1b587e7e2c5522ef3ba0ca94dfe`. Pages is configured from `main:/docs`, built, and HTTPS-enforced; the corrected Pages source is not yet live-read back.
+- GitHub publication: public repository, annotated `v1.0.0` tag, release, and five assets are observed; the tag and release assets remain sealed at commit `913161c29d09e1b587e7e2c5522ef3ba0ca94dfe`. Pages is configured from `main:/docs`, built, HTTPS-enforced, and live-read back at `efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8`. The repository social-preview image setting remains unobserved and unclaimed.
 - OpenAI Plugin Directory submission: out of scope.
 
 ## Next valid move
 
-Bind and publish the post-release Pages correction, verify the live documentation routes and assets, then execute the clean public-route installation and first-success probe at the strongest host boundary actually available.
+Execute the clean public-route installation and first-success probe at the strongest disposable host boundary actually available.

@@ -56,15 +56,16 @@
     "The same fresh-context reviewer re-read the corrected pages and returned REVIEW_PASS_WITH_CONDITIONS with zero unresolved material findings.",
     "The post-release Pages and visual correction passes its dependency-free source validator and received a fresh-context Hesperos REVIEW_PASS_WITH_CONDITIONS with no source repair required.",
     "The same Hesperos reviewer re-read the release-lineage and host-boundary remediation delta and confirmed that the verdict still holds.",
-    "Fresh-context TestForge review closed all three source and candidate-custody findings at candidate 16520e03578dfa7f396b43b6758af53389f22cec and returned REVIEW_PASS."
+    "Fresh-context TestForge review closed all three source and candidate-custody findings at candidate 16520e03578dfa7f396b43b6758af53389f22cec and returned REVIEW_PASS.",
+    "After live readback at efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8, Hesperos returned final REVIEW_PASS and TestForge supported READY_WITH_RESIDUAL_RISK with the repository social-preview setting and direct visual-browser accessibility conformance unclaimed."
   ],
   "verification": [
     "Reader-facing behavioral claims must be bounded by the independent TestForge review.",
     "Installation claims must distinguish package validation from installed, discoverable, invoked, and healthy host states.",
     "The public repository, v1.0.0 tag, release, and five release assets were read back; clean public-route installation, restart resilience, causal invocation, and Claude live behavior remain unobserved.",
-    "The Pages source is configured at main:/docs and its live configuration reports built with HTTPS enforced; the corrected source still requires post-publication route and asset readback.",
+    "The Pages source is configured at main:/docs; GitHub reported the corrected build built at efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8 with HTTPS enforced, and five customer routes, metadata references, stylesheet, README header, social card, and repository homepage were read back.",
     "The owner retained the Impactful Tom name and selected the standard public Augment split license; documentation must preserve that decision and the non-affiliation boundary."
   ],
   "owner": "Collaborative Dynamics",
-  "next_move": "Publish the reviewed documentation-only correction, then read back the live Pages routes, metadata, stylesheet, and visual assets without claiming clean host installation or the repository social-preview setting."
+  "next_move": "Maintain the public documentation and preserve bounded claims; clean host installation and the repository social-preview setting remain separate evidence gates."
 }

@@ -105,7 +105,7 @@
       "public": true,
       "https_enforced": true,
       "configuration_status": "built",
-      "corrected_source_status": "candidate 16520e03578dfa7f396b43b6758af53389f22cec locally verified and independently reviewed; post-publication live readback pending"
+      "corrected_source_status": "live and read back at efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8; five customer routes, metadata references, stylesheet, README header, social card, and repository homepage observed"
     }
   },
   "archive_custody": {
@@ -160,9 +160,10 @@
     "An earlier fresh collaboration-agent context omitted the installed skill; after task re-entry, a fresh context included the pre-delta skill and returned a response that passed every representative plateau criterion.",
     "Codex causal skill-read/invocation events are not exposed by this surface; the final public-route catalog, implicit-selection, first-success, clean-host, and restart claims remain unearned.",
     "Claude Code live installation, discovery, invocation, and first value are unobserved.",
-    "The Pages-era 17-file documentation set and visual family pass local source checks and Hesperos review; candidate binding and corrected live Pages readback remain pending.",
+    "The Pages-era 17-file documentation set and visual family pass local source checks and Hesperos review; the corrected Pages build, five customer routes, metadata references, stylesheet, README header, social card, and repository homepage were read back at efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8.",
+    "The repository-level social-preview image setting and direct visual-browser accessibility conformance remain unobserved and unclaimed.",
     "OpenAI Directory submission is not requested."
   ],
-  "next_consequential_move": "Bind and publish the Pages documentation correction, verify its live routes and assets, then perform the clean public-route install and first-success probe without upgrading unobserved restart, causal-invocation, or Claude claims.",
-  "updated_at": "2026-07-31T02:50:00Z"
+  "next_consequential_move": "Perform the clean public-route install and first-success probe at an available disposable host boundary without upgrading unobserved restart, causal-invocation, or Claude claims.",
+  "updated_at": "2026-07-31T03:08:32Z"
 }
