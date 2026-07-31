@@ -1,0 +1,12 @@
+{
+  "schema_version": "cd-augment-recovery-backup/v1",
+  "product": "impactful-tom",
+  "version": "1.1.1",
+  "observed_at": "2026-07-31T08:49:00Z",
+  "source": "release/assets/v1.1.1/impactful-tom-v1.1.1.zip",
+  "destination": "E:/Indranet/Augments/Impactful-Tom-v1.1.1.zip",
+  "bytes": 1857590,
+  "sha256": "0644141936a58baffd3b8aac3f5495dd4b152f50fd6a390d3a99e49377487ce6",
+  "source_destination_hash_match": true,
+  "claim_boundary": "This receipt establishes a byte-identical recovery copy of the complete customer kit at the named local path. It does not establish GitHub publication, release-asset parity, host installation, or first value."
+}

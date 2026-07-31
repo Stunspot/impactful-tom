@@ -1,0 +1,114 @@
+{
+  "schema_version": "impactful-tom-publication-receipt/v1",
+  "observed_at": "2026-07-31T08:48:09Z",
+  "repository": {
+    "full_name": "Stunspot/impactful-tom",
+    "visibility": "public",
+    "url": "https://github.com/Stunspot/impactful-tom",
+    "default_branch": "main",
+    "homepage": "https://stunspot.github.io/impactful-tom/",
+    "main_sha_at_publication_readback": "0cba0dc1bb5860c3bd1884b5ee756c34ce8f4ec6"
+  },
+  "release": {
+    "tag": "v1.1.1",
+    "tag_object_sha": "131f5aa0eef4f47e1b3e4c030f807062df89a50a",
+    "tag_target_commit": "0cba0dc1bb5860c3bd1884b5ee756c34ce8f4ec6",
+    "url": "https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1",
+    "published_at": "2026-07-31T08:43:28Z",
+    "draft": false,
+    "prerelease": false,
+    "asset_count": 5,
+    "archive_hashes_verified": true
+  },
+  "assets": {
+    "impactful-tom-v1.1.1.zip": {
+      "bytes": 1857590,
+      "sha256": "0644141936a58baffd3b8aac3f5495dd4b152f50fd6a390d3a99e49377487ce6"
+    },
+    "impactful-tom-v1.1.1-codex-plugin.zip": {
+      "bytes": 935962,
+      "sha256": "847cdccc14d713393a20a8f4507b7dd9799fbcee35d0b0db5fc97359d2a313b5"
+    },
+    "impactful-tom-v1.1.1-standalone-skill.zip": {
+      "bytes": 32792,
+      "sha256": "b8a085fe8d98280dec4663fe1d3b1496dfed0c6992a2586653e0a0ef052d126f"
+    },
+    "impactful-tom-v1.1.1-claude-code-generic-skill.zip": {
+      "bytes": 32468,
+      "sha256": "fe567e82712d888e03905c1fb12b7c63c7afd3fbe7f51174ab367a0c0c47f0bd"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 420,
+      "sha256": "02e83822538d68df4f91dc48a2c5c3a122a41ecdc5edb572b9d198e281dc4dcf"
+    }
+  },
+  "pages": {
+    "status": "built",
+    "source": "main:/docs",
+    "build_id": 1124652568,
+    "build_commit": "0cba0dc1bb5860c3bd1884b5ee756c34ce8f4ec6",
+    "build_created_at": "2026-07-31T08:45:54Z",
+    "build_updated_at": "2026-07-31T08:46:38Z",
+    "routes_checked": 6,
+    "all_routes_http_200": true,
+    "all_routes_show_version_1_1_1": true,
+    "all_routes_use_augment_language": true,
+    "rejected_warning_phrases_absent": true,
+    "routes": [
+      {
+        "url": "https://stunspot.github.io/impactful-tom/",
+        "title": "Impactful Tom",
+        "status": 200,
+        "content_sha256": "48855fcfd5ae40b190437c551b815396a0c57f892d5d96bbb4aace6194a5d9cd"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/getting-started/",
+        "title": "Getting started with Impactful Tom · Impactful Tom",
+        "status": 200,
+        "content_sha256": "b2cae6d1e6403816c67a04f243e8dcde54a8dbf58ec3dc99501bf921fd9f2dd1"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/install/",
+        "title": "Install, update, and uninstall · Impactful Tom",
+        "status": 200,
+        "content_sha256": "d4de22344490211eaef5a8e9b53505c261efd828a54197c653e80d6f991ea877"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/boundaries/",
+        "title": "Privacy and decision boundaries · Impactful Tom",
+        "status": 200,
+        "content_sha256": "2afd4a421c177de50affbcdd47d35d7723a8a82862eebccc56b88b41cb0ff275"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/troubleshooting/",
+        "title": "Troubleshooting and recovery · Impactful Tom",
+        "status": 200,
+        "content_sha256": "a3b171055c7a9c8c191df1d096f1f82c2495ad1322c4877db28b316793dddc28"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/evidence/",
+        "title": "Provenance and verification status · Impactful Tom",
+        "status": 200,
+        "content_sha256": "1cfaf047b4117ca6986b58fd7daf32399cbe99ca536e8b7ee622936f7d4b7cf8"
+      }
+    ]
+  },
+  "social_preview": {
+    "configured": true,
+    "public_repository_status": 200,
+    "public_open_graph_image_origin": "https://repository-images.githubusercontent.com",
+    "public_open_graph_image_path": "/github-production-repository-image-32fea6/1317810591/62212063-9c36-4f75-b705-56ad251915d8"
+  },
+  "verification": {
+    "testforge_release_status": "READY_WITH_RESIDUAL_RISK",
+    "independent_review": "REVIEW_PASS_WITH_CONDITIONS",
+    "documentation_review": "REVIEW_PASS",
+    "static_regression_tests": "9/9 passed"
+  },
+  "limits": [
+    "Clean-host installation, restart persistence, and live Claude behavior were not directly observed.",
+    "Behavioral custody contains two isolated single-trial executions on one model rather than a repeated multi-model study.",
+    "The expressive and fair-use position is a publisher position, not a legal adjudication.",
+    "OpenAI Plugin Directory submission was not requested and was not performed."
+  ]
+}
