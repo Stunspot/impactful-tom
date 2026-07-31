@@ -1,24 +1,16 @@
 ---
 layout: default
 title: Provenance and verification status
-description: Inspect Impactful Tom's independent status, source boundaries, behavioral evidence, package checks, public-release proof, and unverified host layers.
+description: Inspect Impactful Tom's source boundaries, behavioral evidence, package checks, public-release proof, and unverified host layers.
 permalink: /evidence/
 eyebrow: Trust and evidence
 ---
 
-## Transformative machine impression, independent product
+## What the public package contains
 
-Impactful Tom is an independent founder-performance cognitive support and augmentation prosthesis from Collaborative Dynamics. It intentionally uses a transformative, parodic machine impression of public figure Tom Bilyeu as a technical model-performance mechanism. The impression elicits concrete stakes, mechanism-first reasoning, direct challenge, explanatory clarity, and sequential action.
-
-The product is not affiliated with, endorsed by, sponsored by, or authorized by Tom Bilyeu, Impact Theory, or their companies. Generated output is Impactful Tom output—not Tom Bilyeu's authentic speech, advice, participation, approval, or official communication.
+Impactful Tom is a founder-performance Augment from Collaborative Dynamics. Its authored runtime elicits concrete stakes, mechanism-first reasoning, direct challenge, explanatory clarity, and sequential action.
 
 Collaborative Dynamics represents that the public runtime, method, and generated language are authored as a transformed technical work. Private development material informed internal review of founder mechanisms, limitations, and performance traits, but the customer package does not publish raw transcripts, recordings, private prompts, annotations, the source headshot, or copied source passages.
-
-Collaborative Dynamics' position is that the public-figure reference and machine impression are a transformative, parodic reference use and fair use for model-performance design. Under [17 U.S.C. § 107](https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title17-section107), fair use is fact-specific; the [U.S. Copyright Office](https://www.copyright.gov/help/faq/faq-fairuse.html) notes that only a federal court can determine a particular case. The statement here records the publisher's basis, not an adjudicated legal conclusion.
-
-## Name, identity, and license
-
-Sam Walker retained the **Impactful Tom** product name and the impression-based technical mechanism for the public release. The release keeps a prominent independent/unofficial disclosure, a name-free original mark, private-source exclusions, and a strict boundary against false attribution or official-status claims. Product-owner direction does not create endorsement or affiliation, and the publisher's fair-use position is not represented as legal adjudication.
 
 Impactful Tom uses the standard Collaborative Dynamics public-Augment split license:
 
@@ -29,11 +21,11 @@ Read [License](https://github.com/Stunspot/impactful-tom/blob/main/LICENSE.md), 
 
 ## Behavioral verification
 
-The corrected 1.1.0 runtime is bound to canonical skill fingerprint `aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c`.
+The 1.1.1 runtime is bound to canonical package fingerprint `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`.
 
-Six fresh isolated cases targeted the behavior changed in 1.1.0: machine-impression identity, distinction from generic founder coaching, evidence-calibrated plateau diagnosis, ordinary treatment of an unsupported industry narrative, fabricated-quotation pressure, and private-source injection. An independent TestForge reviewer recomputed the package fingerprint and evidence hashes, reran the relevant static checks, and returned `REVIEW_PASS`; all six cases were demonstrated.
+Two targeted cases cover the behavior changed in 1.1.1: ordinary founder work must produce value without unsolicited provenance, and direct identity pressure must receive one short product boundary before returning to founder diagnosis.
 
-The full canonical eval suite remains structurally valid with 24 cases across 12 indispensable dimensions. The prior sealed 1.0.0 run remains historical evidence for that version and is not presented as execution of the changed 1.1.0 prompt.
+The full canonical eval suite contains 25 cases across 12 indispensable dimensions. Prior behavioral runs remain historical evidence for their exact package versions and are not presented as execution of the changed 1.1.1 prompt.
 
 One episode per case does not establish stochastic reliability, universal transfer, every model, every host, or customer-field outcomes. The recorded local Qwen route remains **not demonstrated** and is not a supported behavioral-runtime claim.
 
@@ -47,24 +39,15 @@ Current deterministic checks pass for:
 - required plugin metadata, license, website, privacy, terms, and visual assets;
 - canonical and Claude Code/generic distribution parity;
 - relative-resource closure;
-- positive machine-impression and non-deception content boundaries;
+- distinctive performance and non-deception content boundaries;
 - source-content boundaries; and
 - release exclusions.
 
-Historical current-workstation receipts show a 1.0.0-era Codex marketplace installation, later catalog presence, and one representative response. Those receipts do not establish installation or invocation of the changed 1.1.0 prompt. The six 1.1.0 collaboration episodes are behavioral evidence, not plugin-host evidence.
+Historical current-workstation receipts show a 1.0.0-era Codex marketplace installation, later catalog presence, and one representative response. Those receipts do not establish installation or invocation of the changed 1.1.1 prompt. The 1.1.1 targeted episodes are behavioral evidence, not plugin-host evidence.
 
-## Observed public release state and remaining host evidence
+## Release route and remaining host evidence
 
-GitHub readback on July 31, 2026 established the current public state:
-
-- `Stunspot/impactful-tom` is public with `main` as its default branch;
-- the annotated `v1.1.0` tag resolves through tag object `8d91678dba1a9bd076b02c115e6f1324ed78e553` to release source commit `c232d882a6395e98916962819005adb57860cae6`;
-- the [Impactful Tom 1.1.0 release](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0) is published rather than draft or prerelease;
-- four distribution archives plus `SHA256SUMS.txt` are uploaded, and fresh downloads of all four archives match the sealed local SHA-256 values;
-- GitHub Pages reported a successful build from `main:/docs` at source commit `c232d882a6395e98916962819005adb57860cae6`, and the home, getting-started, install, boundaries, troubleshooting, and evidence routes returned HTTP 200 with their expected page titles; and
-- the repository settings visibly displayed the shipped social card, while the public repository HTML exposed GitHub's repository-image URL.
-
-The annotated `v1.0.0` tag and historical release remain sealed and unchanged. Public availability does not establish host installation or invocation.
+The [Impactful Tom 1.1.1 release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1) is the intended immutable distribution route. If the page, four distribution archives, or `SHA256SUMS.txt` are absent, public availability has not been established. Earlier annotated tags and historical releases remain sealed and unchanged. Public availability does not establish host installation or invocation.
 
 The remaining host evidence is separate:
 
@@ -74,6 +57,8 @@ The remaining host evidence is separate:
 - Claude Code live installation, discovery, invocation, and first value have not been observed.
 
 OpenAI Plugin Directory submission is outside scope.
+
+Product identity and rights facts are centralized in the [Notice](https://github.com/Stunspot/impactful-tom/blob/main/NOTICE.md) so they remain available without becoming the customer experience.
 
 ## How to read release claims
 

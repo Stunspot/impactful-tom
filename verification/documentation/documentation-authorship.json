@@ -1,136 +1,55 @@
 {
+  "format": "cd-hesperos-documentation-authorship/v1",
+  "product": {"slug": "impactful-tom", "version": "1.1.1"},
+  "created_at": "2026-07-31T12:00:00-05:00",
+  "documentation_fingerprint": "5a9ff024790d1ea6ca6d0a56ffc240f6ef4dc44c705e545a540ccecd0beac943",
   "authored_files": [
-    {
-      "bytes": 6258,
-      "path": "README.md",
-      "sha256": "28add1ed51c5615f004c4503216b4a3fcb19d3ef02342923a5e9e982d2645255"
-    },
-    {
-      "bytes": 4665,
-      "path": "docs/index.md",
-      "sha256": "60872fb0b9c460be568cb5529fa1705070af29dd9ba82c7b536a71635c9de50a"
-    },
-    {
-      "bytes": 578,
-      "path": "docs/404.html",
-      "sha256": "6ee82cf121115254bfa572df5735bc5794be42f31247438206c228c65c24ff53"
-    },
-    {
-      "bytes": 4844,
-      "path": "docs/getting-started.md",
-      "sha256": "e0c0827bff3d07e170ddda75d5a8dc8c5d7f0a7befa31f30a4da307f9d9d7294"
-    },
-    {
-      "bytes": 8770,
-      "path": "docs/installing-and-maintaining.md",
-      "sha256": "3b553733371bcf4daaf1bcde56ced073d8461d49bc259e908531d3340e305cfa"
-    },
-    {
-      "bytes": 3500,
-      "path": "docs/privacy-and-boundaries.md",
-      "sha256": "e3ac5fe8e18b0fd7089625d4dc99d88cfd799486c7448d54f34177323d2afad0"
-    },
-    {
-      "bytes": 3416,
-      "path": "docs/troubleshooting.md",
-      "sha256": "e2b7c84422e983f9dacbdee76c501b02be56806da27f478bcef28d84db231ca7"
-    },
-    {
-      "bytes": 7957,
-      "path": "docs/provenance-and-verification.md",
-      "sha256": "7e192e83750742a24e91a1a2627c1828bc0eb4d390aa7232117ce06439626e19"
-    },
-    {
-      "bytes": 1668,
-      "path": "DATA-AND-PRIVACY.md",
-      "sha256": "1d2d91baa8d8b0b2c65351b42af7d7ee5c06c7119213ddc94e89823f6103f194"
-    },
-    {
-      "bytes": 4509,
-      "path": "TERMS-OF-USE.md",
-      "sha256": "f39a8295ba391182b04fbdb960d0294d8a9364bfd1f7863b8a85c9cd1ed04110"
-    },
-    {
-      "bytes": 3000,
-      "path": "LICENSE.md",
-      "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
-    },
-    {
-      "bytes": 1527,
-      "path": "ATTRIBUTION.md",
-      "sha256": "10be6c04223f4cf75d47b99529f8f6a87d7a4aa10cd6cef6b626d2023f614fbf"
-    },
-    {
-      "bytes": 2131,
-      "path": "NOTICE.md",
-      "sha256": "8340d8f515133459285c866c12b57a06c2a197c53dd57a0e74fecec82dacfb2c"
-    },
-    {
-      "bytes": 1806,
-      "path": "TRADEMARKS.md",
-      "sha256": "db7c486b516cb79f068ada18b68feef834b2bf26decec638308c359120a5c7ec"
-    },
-    {
-      "bytes": 1053,
-      "path": "SUPPORT.md",
-      "sha256": "c4689839646e2da9a418d6c74d6f023cb99a8a1b93c4defea6962a91ad590e78"
-    },
-    {
-      "bytes": 1305,
-      "path": "SECURITY.md",
-      "sha256": "3daf4172c2a776a44fe4a526f888b82ba118fa69d865dff6101529805fe3f71f"
-    },
-    {
-      "bytes": 3469,
-      "path": "CHANGELOG.md",
-      "sha256": "6b804eaff223a240c764b980ec1d198ab54927068badd7fedf4f63892bd5983a"
-    }
+    {"bytes": 5474, "path": "README.md", "sha256": "cc2f7fa772e4d086614cfabf13e9a662cfc2e39751625c42c530a6e89498353b"},
+    {"bytes": 4329, "path": "docs/index.md", "sha256": "adac8a3f76e7dfdb51d31b4155e7b45bf771208ce44e2c68440e6e3b0e3541af"},
+    {"bytes": 578, "path": "docs/404.html", "sha256": "6ee82cf121115254bfa572df5735bc5794be42f31247438206c228c65c24ff53"},
+    {"bytes": 4844, "path": "docs/getting-started.md", "sha256": "e0c0827bff3d07e170ddda75d5a8dc8c5d7f0a7befa31f30a4da307f9d9d7294"},
+    {"bytes": 8598, "path": "docs/installing-and-maintaining.md", "sha256": "bd819ec0942507461312e702c70f0d99de1e1674e2704ba629194b9a33a8b3c9"},
+    {"bytes": 3500, "path": "docs/privacy-and-boundaries.md", "sha256": "e3ac5fe8e18b0fd7089625d4dc99d88cfd799486c7448d54f34177323d2afad0"},
+    {"bytes": 3416, "path": "docs/troubleshooting.md", "sha256": "e2b7c84422e983f9dacbdee76c501b02be56806da27f478bcef28d84db231ca7"},
+    {"bytes": 5555, "path": "docs/provenance-and-verification.md", "sha256": "7b7c897a0a3de56256521ca886946f70fbe05399e6139eb7dae2ef1da6e8fb7a"},
+    {"bytes": 1668, "path": "DATA-AND-PRIVACY.md", "sha256": "ddb5f7b6a2be9ea327f522925978803f1e88f5a73ac70cac03fd08ec59fab33e"},
+    {"bytes": 3674, "path": "TERMS-OF-USE.md", "sha256": "575d3dcf54f7a4a85d54bf941aff27789277b1b426d16ae1501682bdc28d3498"},
+    {"bytes": 3000, "path": "LICENSE.md", "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"},
+    {"bytes": 994, "path": "ATTRIBUTION.md", "sha256": "a4a3852a9465977bd6693f60b88452f545099c44d0295907399fdee1d57a694f"},
+    {"bytes": 1922, "path": "NOTICE.md", "sha256": "f8a1108394980464a7093456a9f7597fd4e547bdb420dae5b26b6d968020e6b6"},
+    {"bytes": 1109, "path": "TRADEMARKS.md", "sha256": "a0bb3f831e92a3aeccc54cca73d6a5faaaf1b96214632458f364f7e7036750e3"},
+    {"bytes": 1053, "path": "SUPPORT.md", "sha256": "c4689839646e2da9a418d6c74d6f023cb99a8a1b93c4defea6962a91ad590e78"},
+    {"bytes": 1305, "path": "SECURITY.md", "sha256": "7ba246ff1b81c59891f74da59b0c37fbf1ba390a82c00409f87b39c0b70b1846"},
+    {"bytes": 3701, "path": "CHANGELOG.md", "sha256": "5d0ce65234c3ac7af33fa5d01379b6ea2645ddde823157f656a21cf85fefcfa6"}
   ],
   "authoring": {
     "authorship_scope": "materially-revised",
     "capability": "hesperos-documentation",
     "capability_entrypoint_sha256": "f9284a8b14ca20a4661b15db542e3d8f52d3cf1ef42c1c56f4ed540a1036a3b3",
     "mode": "independent-dispatch",
-    "run_id": "HESPEROS-IMPACTFUL-TOM-20260731-1.1.0-POSTLAUNCH-02"
+    "run_id": "HESPEROS-IMPACTFUL-TOM-20260731-1.1.1-PRODUCT-FIRST"
   },
-  "authoring_response": {
-    "bytes": 666,
-    "path": "verification/documentation/hesperos-1.1.0-postlaunch-authoring-agent-return-02.txt",
-    "sha256": "65292418269c75ed6646bd66ed3fcde9d9e4941445b2594fd538f7c3e1c2818e"
-  },
-  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
-  "created_at": "2026-07-31T07:48:51+00:00",
-  "documentation_fingerprint": "b1b7c096fd3f302fdd71d9f8d7fa2302dbb6e28b0ef1d419f33df3e80e93dede",
   "documentation_manifest": {
     "bytes": 3259,
     "path": "documentation-manifest.json",
-    "sha256": "3a7241de5a8a55fc4030991d642ff7ad2ed998af910c4acbccfda665bf860433"
+    "sha256": "75fb74a08cbb89ba36aec6f776d71f36adf7eb717e3bbd3a297c532a97bc8dab"
   },
   "evidence_packet": {
-    "bytes": 1877,
-    "path": "verification/documentation/hesperos-1.1.0-postlaunch-authoring-evidence-02.md",
-    "sha256": "6fb32161b2a3952dc4a4cd55b88c4ee343f6b7c26018af73c10e8fc6bd4fd6c1"
+    "bytes": 1260,
+    "path": "verification/documentation/hesperos-1.1.1-product-first-authoring-evidence.md",
+    "sha256": "10ac1a2e11bc64d21a65c30f54d715e6d7eb52458cf839e9becf19f339016923"
+  },
+  "authoring_response": {
+    "bytes": 1271,
+    "path": "verification/documentation/hesperos-1.1.1-product-first-authoring-response.txt",
+    "sha256": "7318ab42f7fe3cfc6ee332a583be99416856aba4d81253c94af887360305d37d"
   },
   "execution_evidence": [
     {
-      "bytes": 4811,
-      "path": "development/documentation-project.json",
-      "sha256": "0775d0e3f9c52d78b3e5106b3d1e99f5f080bbcd0018e22da11a5a65d04717c4"
-    },
-    {
-      "bytes": 3862,
-      "path": "verification/release/public-publication-v1.1.0.json",
-      "sha256": "368c60b93af5101a17a9a25ff19fb0929d1fcca2dc5f02aa0282f79da65794a9"
-    },
-    {
-      "bytes": 666,
-      "path": "verification/documentation/hesperos-1.1.0-postlaunch-authoring-agent-return-02.txt",
-      "sha256": "65292418269c75ed6646bd66ed3fcde9d9e4941445b2594fd538f7c3e1c2818e"
+      "bytes": 1271,
+      "path": "verification/documentation/hesperos-1.1.1-product-first-authoring-response.txt",
+      "sha256": "7318ab42f7fe3cfc6ee332a583be99416856aba4d81253c94af887360305d37d"
     }
   ],
-  "format": "cd-hesperos-documentation-authorship/v1",
-  "product": {
-    "slug": "impactful-tom",
-    "version": "1.1.0"
-  }
+  "claim_boundary": "Binds the exact 17-file customer documentation set to an independent Hesperos authoring pass. It does not prove independent review, live deployment, host behavior, accessibility conformance, legal adjudication, or customer outcomes."
 }

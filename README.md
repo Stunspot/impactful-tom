@@ -5,20 +5,18 @@
 <p align="center">
   <a href="https://stunspot.github.io/impactful-tom/">Documentation</a>
   ·
-  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0">Version 1.1.0 release page</a>
+  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1">Version 1.1.1 release page</a>
   ·
   <a href="docs/getting-started.md">Start with one decision</a>
 </p>
 
 # Impactful Tom
 
-Impactful Tom is an independent, unofficial founder-performance skill for a live business decision. It helps you name the real constraint, separate mission from attachment to a tactic, and choose one evidence-calibrated next move.
+Impactful Tom is a founder-performance Augment for a live business decision. It helps you name the real constraint, separate mission from attachment to a tactic, and choose one evidence-calibrated next move.
 
 It is designed for the moment when you are about to build, sell, hire, cut, test, wait, or quit—and the story around the decision has become larger than the decision itself.
 
-It works through a transformative, parodic machine impression of public figure Tom Bilyeu. The impression is a technical performance seed: it provokes a direct, energetic, explanatory mode of founder judgment inside a cognitive support and augmentation prosthesis.
-
-> **Identity boundary:** Impactful Tom is independently made by Collaborative Dynamics. It is not affiliated with or endorsed by Tom Bilyeu or Impact Theory, and its generated output is not Tom Bilyeu's authentic speech, advice, participation, or approval.
+It brings direct, energetic, explanatory pressure to the part of the decision that actually governs the outcome—then turns that pressure into an owned move you can test.
 
 ## Start here
 
@@ -32,11 +30,11 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.1.0` is the current public release. Its exact tag, release, five assets, checksums, Pages routes, and repository social preview were read back on July 31, 2026. The sealed `v1.0.0` release remains publicly available as historical custody and is not rewritten.
+Version `1.1.1` is the package described here. Its release page is the authoritative source for public availability, four distribution archives, and the checksum ledger. Earlier release tags remain historical custody and are not rewritten.
 
 Clean public-route installation, restart resilience, immutable causal host invocation, and live Claude Code behavior remain unobserved.
 
-Package validation, behavioral evidence, publication, installation, discovery, invocation, and first success are separate states. Read [Provenance and verification status](docs/provenance-and-verification.md) for the exact evidence currently earned by version 1.1.0 and each host.
+Package validation, behavioral evidence, publication, installation, discovery, invocation, and first success are separate states. Read [Provenance and verification status](docs/provenance-and-verification.md) for the exact evidence currently earned by version 1.1.1 and each host.
 
 Use [Install, update, and uninstall](docs/installing-and-maintaining.md) for the release route and the exact evidence boundary.
 
@@ -51,9 +49,9 @@ Impactful Tom is designed to:
 
 It treats fast iteration as conditional. When feedback is slow, downside is high, the work is regulated, or craft and trust are at stake, the better move may be research, staged review, portfolio work, or stopping—not a theatrical 24-hour test.
 
-## What it is not
+## Where it stops
 
-It is not an official Tom Bilyeu or Impact Theory product, a generic pep talk, a substitute for qualified legal, financial, tax, medical, regulatory, safety, or security advice, or an agent authorized to send messages, publish, buy, change accounts, or contact other people for you.
+Impactful Tom is not a generic pep talk, a substitute for qualified legal, financial, tax, medical, regulatory, safety, or security advice, or an agent authorized to send messages, publish, buy, change accounts, or contact other people for you.
 
 It does not turn an environmental constraint into a character flaw. It also does not let an environmental label erase a controllable move.
 
@@ -76,9 +74,10 @@ Read [Privacy and decision boundaries](docs/privacy-and-boundaries.md) before as
 - [Support](SUPPORT.md)
 - [Security reporting](SECURITY.md)
 - [License](LICENSE.md)
+- [Notice](NOTICE.md)
 
 ## Status
 
-Version `1.1.0` carries the corrected machine-impression performance contract. Its canonical skill fingerprint is `aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c`; six targeted isolated cases received independent TestForge `REVIEW_PASS`, and the public release objects and archive hashes passed direct readback. This does not establish installation, invocation, stochastic reliability, or customer outcomes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the bounded evidence. OpenAI Plugin Directory submission is outside scope.
+Version `1.1.1` carries the product-first founder-performance contract. Its canonical package fingerprint is `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`; targeted cases cover ordinary founder use and direct identity pressure. This does not establish installation, invocation, stochastic reliability, or customer outcomes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the bounded evidence. OpenAI Plugin Directory submission is outside scope.
 
-Impactful Tom uses the standard Collaborative Dynamics public-Augment split license: MIT for deterministic software and schemas, and CC BY-ND 4.0 for authored Augment material. Collaborative Dynamics presents the Tom Bilyeu reference and machine impression as transformative parody and fair use for model-performance design. That is the publisher's position, not an adjudicated legal conclusion. The product remains independent and unofficial, with no Tom Bilyeu or Impact Theory affiliation, endorsement, sponsorship, or authorization.
+Impactful Tom uses the standard Collaborative Dynamics public-Augment split license: MIT for deterministic software and schemas, and CC BY-ND 4.0 for authored Augment material. Product identity and rights facts are stated once in the [Notice](NOTICE.md).

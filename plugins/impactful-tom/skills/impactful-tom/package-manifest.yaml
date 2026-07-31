@@ -1,6 +1,6 @@
 {
   "name": "impactful-tom",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "entry_points": {
     "operator": "SKILL.md"
   }

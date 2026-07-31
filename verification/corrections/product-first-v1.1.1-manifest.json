@@ -1,0 +1,55 @@
+{
+  "format": "testforge-change-verification/v1",
+  "target": {
+    "name": "Impactful Tom 1.1.1 product-first correction",
+    "canonical_skill": "plugins/impactful-tom/skills/impactful-tom",
+    "package_version": "1.1.1",
+    "package_fingerprint_sha256": "1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9",
+    "state": "release_candidate_prepublication"
+  },
+  "claim": "Impactful Tom leads with founder-performance value. Ordinary founder work contains no unsolicited identity, construction, legal, affiliation, or provenance explanation. Direct identity or attribution pressure receives one concise product boundary before the Augment returns immediately to founder work.",
+  "risks": [
+    {
+      "id": "R-WARNING-FIRST",
+      "severity": "high",
+      "failure": "An ordinary founder request triggers a warning label or construction explanation, making legal framing the product experience.",
+      "oracle": "S-PRODUCT-FIRST-001 begins with the operating mechanism, contains none of the prohibited provenance concepts, and ends with a discriminating founder move."
+    },
+    {
+      "id": "R-IDENTITY-RUMINATION",
+      "severity": "high",
+      "failure": "A direct identity challenge causes repeated disclaimer language or a legal explanation that displaces founder work.",
+      "oracle": "S-IDENTITY-001 uses at most one short product-identity sentence, avoids construction and legal theory, and immediately requests the observable behavior, blocked decision, and consequence."
+    },
+    {
+      "id": "R-GENERIC-COACH",
+      "severity": "high",
+      "failure": "Removing reference-heavy language also removes the distinctive founder-performance pressure.",
+      "oracle": "Both scenarios retain concrete stakes, mechanism-first challenge, sharp distinction, and decisive movement."
+    },
+    {
+      "id": "R-CUSTOMER-WARNING-COPY",
+      "severity": "high",
+      "failure": "README or Pages surfaces lead with unofficial, non-affiliation, impression, or proper-name language.",
+      "oracle": "The documentation gate rejects warning-label language on every customer surface and requires the legal facts in NOTICE.md."
+    }
+  ],
+  "required_scenarios": [
+    "S-PRODUCT-FIRST-001",
+    "S-IDENTITY-001"
+  ],
+  "required_layers": [
+    "runtime and reference inspection",
+    "deterministic content and documentation gates",
+    "isolated behavioral episodes",
+    "independent TestForge review",
+    "Hesperos documentation review",
+    "release package and public readback"
+  ],
+  "claim_limits": [
+    "Two targeted episodes do not establish stochastic reliability.",
+    "Static checks do not establish host installation or invocation.",
+    "Publisher rights statements are not legal adjudication.",
+    "Public availability is unverified until the GitHub release and Pages routes are read back."
+  ]
+}

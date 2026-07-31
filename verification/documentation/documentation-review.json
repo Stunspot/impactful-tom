@@ -3,7 +3,7 @@
   "fresh_context": true,
   "disposition": "REVIEW_PASS",
   "unresolved_material_findings": 0,
-  "documentation_fingerprint": "b1b7c096fd3f302fdd71d9f8d7fa2302dbb6e28b0ef1d419f33df3e80e93dede",
+  "documentation_fingerprint": "5a9ff024790d1ea6ca6d0a56ffc240f6ef4dc44c705e545a540ccecd0beac943",
   "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records",
   "reviewed_files": [
     "README.md",
@@ -25,22 +25,19 @@
     "CHANGELOG.md"
   ],
   "reviewer": "Fresh-context independent documentation-accessibility reviewer",
-  "review_run_id": "hesperos-doc-review-impactful-tom-20260731-1.1.0-postlaunch-01",
-  "review_input_evidence": "verification/documentation/review-input-1.1.0-postlaunch-01.json",
-  "review_response": "verification/documentation/review-response-1.1.0-postlaunch-01.txt",
-  "review_record": "verification/reviews/documentation-accessibility-review-1.1.0-postlaunch-01.md",
+  "review_run_id": "hesperos-doc-review-impactful-tom-20260731-1.1.1-product-first",
+  "review_response": "verification/documentation/review-response-1.1.1-product-first.txt",
+  "review_record": "verification/reviews/documentation-accessibility-review-1.1.1-product-first.md",
   "evidence_directory": "verification/documentation",
   "execution_evidence": [
-    "verification/documentation/documentation-authorship.json",
-    "verification/release/public-publication-v1.1.0.json"
+    "verification/documentation/documentation-authorship.json"
   ],
   "conditions": [],
   "residual_boundaries": [
-    "Public repository, release, archive, Pages, and social-preview claims are supported by the retained publication receipt; this review did not contact GitHub.",
-    "The exact post-launch documentation bytes require a subsequent public readback before claiming those current bytes are live.",
+    "Public release and Pages deployment remain unverified until direct readback.",
     "Clean public-route installation, discovery, invocation, restart resilience, and live Claude Code behavior remain unobserved.",
     "Source review does not establish assistive-technology, representative-user, or formal accessibility conformance.",
-    "The publisher fair-use position is not legal adjudication, and no customer outcome is established."
+    "Publisher rights statements are not legal adjudication, and no customer outcome is established."
   ],
-  "claim_boundary": "This review supports reader-centered clarity, navigation, installation and recovery procedures, non-affiliation framing, privacy and authority boundaries, source-level accessibility, and evidence-bounded post-launch claims for the exact 17-file fingerprint. It does not independently establish current GitHub state, deployment of these exact post-launch bytes, live-host behavior, formal accessibility conformance, legal adjudication, or customer outcomes."
+  "claim_boundary": "This review supports reader-centered clarity, navigation, installation and recovery procedures, centralized product identity and rights facts, privacy and authority boundaries, source-level accessibility, and evidence-bounded prepublication claims for the exact 17-file fingerprint. It does not establish public deployment, live-host behavior, formal accessibility conformance, legal adjudication, or customer outcomes."
 }

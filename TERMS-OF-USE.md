@@ -14,13 +14,9 @@ Copyright permissions are governed by the licenses included with the release:
 
 These terms do not reduce permissions granted by those licenses. If these terms conflict with an applicable included license concerning copying, modification, or redistribution, the included license controls that question.
 
-## 2. Independent transformative parody
+## 2. Product identity and generated output
 
-Impactful Tom is an independent, unofficial Collaborative Dynamics product. It uses a transformative, parodic machine impression of public figure Tom Bilyeu as a technical performance mechanism for founder-decision support. It is not affiliated with, endorsed by, sponsored by, or authorized by Tom Bilyeu, Impact Theory, or their companies.
-
-Generated output is Impactful Tom output. Do not represent it as Tom Bilyeu's authentic words, advice, participation, approval, authorship, or official communication. The package does not grant users separate rights to extract or reuse third-party names, identities, likenesses, voices, logos, quotations, or marks outside uses otherwise permitted by law.
-
-Collaborative Dynamics' position is that the product's public-figure reference and machine impression are transformative parody and fair use for model-performance design. Fair use is fact-specific; this statement records the publisher's position, not an adjudicated legal conclusion.
+Impactful Tom is a Collaborative Dynamics Augment. The product identity and rights facts stated in [NOTICE.md](NOTICE.md) are incorporated here.
 
 ## 3. Human responsibility
 

@@ -1,0 +1,55 @@
+{
+  "format": "cd-release-candidate-verification/v1",
+  "product": "Impactful Tom",
+  "version": "1.1.1",
+  "observed_at": "2026-07-31T12:00:00-05:00",
+  "stage": {
+    "path": "release/stage/impactful-tom-v1.1.1",
+    "manifest_file_count": 63,
+    "manifest_tree_sha256": "557f51b6936e47703a3c3e2e131491f74a2004653d149d2fdde7c5440ce2f86a"
+  },
+  "archives": [
+    {
+      "name": "impactful-tom-v1.1.1.zip",
+      "bytes": 1857590,
+      "sha256": "0644141936a58baffd3b8aac3f5495dd4b152f50fd6a390d3a99e49377487ce6",
+      "members": 64,
+      "expected_files": 64,
+      "observed_files": 64,
+      "extraction_parity": true
+    },
+    {
+      "name": "impactful-tom-v1.1.1-codex-plugin.zip",
+      "bytes": 935962,
+      "sha256": "847cdccc14d713393a20a8f4507b7dd9799fbcee35d0b0db5fc97359d2a313b5",
+      "members": 18,
+      "expected_files": 18,
+      "observed_files": 18,
+      "extraction_parity": true
+    },
+    {
+      "name": "impactful-tom-v1.1.1-standalone-skill.zip",
+      "bytes": 32792,
+      "sha256": "b8a085fe8d98280dec4663fe1d3b1496dfed0c6992a2586653e0a0ef052d126f",
+      "members": 15,
+      "expected_files": 15,
+      "observed_files": 15,
+      "extraction_parity": true
+    },
+    {
+      "name": "impactful-tom-v1.1.1-claude-code-generic-skill.zip",
+      "bytes": 32468,
+      "sha256": "fe567e82712d888e03905c1fb12b7c63c7afd3fbe7f51174ab367a0c0c47f0bd",
+      "members": 14,
+      "expected_files": 14,
+      "observed_files": 14,
+      "extraction_parity": true
+    }
+  ],
+  "checks": {
+    "zip_path_traversal": "passed",
+    "detached_checksums_match": true,
+    "all_extraction_parity": true
+  },
+  "claim_boundary": "This receipt establishes local stage construction, deterministic archive hashes, traversal-safe member names, checksum parity, and byte-for-byte extraction parity. It does not establish GitHub publication, host installation, invocation, or customer outcomes."
+}

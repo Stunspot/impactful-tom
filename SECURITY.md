@@ -16,4 +16,4 @@ Security corrections are assessed against the latest public release available at
 
 ## Package boundary
 
-The Impactful Tom 1.1.0 package contains no hosted service, account, connector, MCP server, hook, telemetry, analytics, or automatic network request. The AI host, model provider, operating system, repository host, and user-selected tools remain separate security boundaries with their own policies and update duties.
+The Impactful Tom 1.1.1 package contains no hosted service, account, connector, MCP server, hook, telemetry, analytics, or automatic network request. The AI host, model provider, operating system, repository host, and user-selected tools remain separate security boundaries with their own policies and update duties.

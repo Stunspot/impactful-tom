@@ -143,6 +143,47 @@ class StaticCheckFixtures(unittest.TestCase):
         self.assertEqual(code, 1, result)
         self.assertTrue(any("release-excluded source filename" in item for item in result["errors"]))
 
+    def test_content_gate_rejects_warning_label_runtime(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp) / "repo"
+            shutil.copytree(FIXTURES / "valid-repo", candidate)
+            skill = (
+                candidate
+                / "plugins"
+                / "impactful-tom"
+                / "skills"
+                / "impactful-tom"
+                / "SKILL.md"
+            )
+            skill.write_text(
+                skill.read_text(encoding="utf-8")
+                + "\nThis is an unofficial machine impression and is not affiliated.\n",
+                encoding="utf-8",
+            )
+            code, result = run("check_content_boundaries.py", "--repo", str(candidate))
+            self.assertEqual(code, 1, result)
+            self.assertTrue(
+                any("customer runtime experience" in item for item in result["errors"]),
+                result,
+            )
+
+    def test_documentation_gate_rejects_warning_first_copy(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp)
+            copy_documentation_fixture(candidate)
+            readme = candidate / "README.md"
+            readme.write_text(
+                readme.read_text(encoding="utf-8")
+                + "\n\nThis is an unofficial machine impression and is not affiliated.\n",
+                encoding="utf-8",
+            )
+            code, result = run("check_documentation_site.py", "--repo", str(candidate))
+            self.assertEqual(code, 1, result)
+            self.assertTrue(
+                any("warning-label language" in item for item in result["errors"]),
+                result,
+            )
+
     def test_documentation_claim_gate_rejects_each_positive_host_overclaim(self) -> None:
         overclaims = [
             "Clean public-route installation is verified.",

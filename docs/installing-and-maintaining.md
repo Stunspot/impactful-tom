@@ -8,9 +8,9 @@ eyebrow: Host setup
 
 ## Current release status
 
-These instructions target the public version `1.1.0` release. Its tag, release, five assets, checksum ledger, Pages documentation, and repository social preview passed direct public readback on July 31, 2026. Exact-version host installation has not yet been observed.
+These instructions target version `1.1.1`. Exact-version host installation has not yet been observed.
 
-Before installing, open the [version 1.1.0 release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0) and confirm that the tag, release archives, and checksum ledger are still publicly readable. If the page is absent or the checksums do not match, stop; `main` is not an immutable-release substitute.
+Before installing, open the [version 1.1.1 release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1) and confirm that the tag, release archives, and checksum ledger are publicly readable. If the page is absent or the checksums do not match, stop; `main` is not an immutable-release substitute.
 
 The [evidence page]({{ '/evidence/' | relative_url }}) separates static package checks from public readback and live-host evidence. A visible release archive does not, by itself, establish installation, discovery, invocation, or first success.
 

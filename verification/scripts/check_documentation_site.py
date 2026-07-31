@@ -568,10 +568,9 @@ def check_public_claims(repo: Path, release_tag: str, errors: list[str]) -> None
                     )
     combined = "\n".join(combined_parts).lower()
     required_claims = [
-        "publicly available",
         release_tag.lower(),
-        "independent, unofficial",
-        "not affiliated",
+        "founder-performance augment",
+        "notice.md",
     ]
     for claim in required_claims:
         if claim not in combined:
@@ -581,6 +580,40 @@ def check_public_claims(repo: Path, release_tag: str, errors: list[str]) -> None
         for label, pattern in claims.items():
             if not pattern.search(text):
                 errors.append(f"{path_text} missing explicit unobserved claim: {label}")
+
+    marketing_files = [
+        "README.md",
+        "docs/index.md",
+        "docs/getting-started.md",
+        "docs/installing-and-maintaining.md",
+        "docs/privacy-and-boundaries.md",
+        "docs/troubleshooting.md",
+        "docs/provenance-and-verification.md",
+        "docs/_layouts/default.html",
+    ]
+    warning_pattern = re.compile(
+        r"\b(?:tom\s+bilyeu|impact\s+theory|machine[ -]impression|unofficial|"
+        r"not\s+affiliat|parod(?:y|ic)|fair\s+use)\b",
+        flags=re.IGNORECASE,
+    )
+    for path_text in marketing_files:
+        text = read_text(repo / path_text, errors)
+        if warning_pattern.search(text):
+            errors.append(f"warning-label language found in customer surface: {path_text}")
+
+    readme_opening = "\n".join(read_text(repo / "README.md", errors).splitlines()[:30])
+    if not re.search(r"\bfounder-performance Augment\b", readme_opening, flags=re.IGNORECASE):
+        errors.append("README opening does not lead with the founder-performance Augment")
+
+    notice = read_text(repo / "NOTICE.md", errors)
+    for marker in [
+        "Impactful Tom is a Collaborative Dynamics Augment",
+        "independently produced",
+        "not an official or endorsed product of any third party",
+        "generates its own output",
+    ]:
+        if marker.lower() not in notice.lower():
+            errors.append(f"NOTICE.md missing centralized legal marker: {marker}")
 
 
 def check_accessibility_content(repo: Path, errors: list[str]) -> None:

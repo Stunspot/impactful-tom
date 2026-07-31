@@ -1,4 +1,4 @@
-"""Check that the public runtime states its key safety and identity boundaries."""
+"""Check that the public runtime is product-first and keeps legal facts centralized."""
 
 from __future__ import annotations
 
@@ -18,27 +18,20 @@ FORBIDDEN_PATTERNS = {
 }
 
 REQUIRED_PATTERNS = {
-    "transformative performance": (r"\btransformative\b",),
-    "parodic performance": (r"\bparodic\b",),
-    "machine impression": (r"\bmachine[ -]impression\b",),
-    "technical performance mechanism": (
-        r"\btechnical\b",
-        r"\b(?:model[ -])?performance\b",
-        r"\b(?:seed|mechanism)\b",
+    "founder-performance product": (
+        r"\bfounder[ -]performance\b",
+        r"\baugment\b",
     ),
-    "independent/unofficial status": (
-        r"\bindependent\b",
-        r"\bunofficial\b",
+    "distinctive performance profile": (
+        r"\bperformance profile\b",
+        r"\b(?:cadence|consequence framing|explanatory pressure)\b",
     ),
-    "non-affiliation boundary": (
-        r"\bnot\s+affiliat",
-    ),
-    "non-deceptive identity boundary": (
-        r"\b(?:literal identity|authentic speech|generated output)\b",
-        r"\b(?:do not|never|not)\b.{0,120}\b(?:claim|present|fabricat|attribut)\b",
+    "quiet identity boundary": (
+        r"\bidentity is directly asked\b",
+        r"\breturn immediately\b.{0,120}\bfounder",
     ),
     "fabricated attribution boundary": (
-        r"\b(?:fabricat(?:e|ed|ion)|counterfeit)\b.{0,120}\b(?:attribut|quot)",
+        r"\b(?:deceptive attribution|invent a quote|original lines stay unattributed)\b",
     ),
     "session-first state": (
         r"\bsession(?:-only|\s+only)\b",
@@ -52,6 +45,20 @@ REQUIRED_PATTERNS = {
     "separate external-action authority": (
         r"\bseparat(?:e|ely)\s+authoriz",
     ),
+}
+
+EXPERIENCE_FORBIDDEN_PATTERNS = {
+    "proper-name reference": r"\b(?:tom\s+bilyeu|impact\s+theory)\b",
+    "construction-first framing": r"\bmachine[ -]impression\b",
+    "warning-label status": r"\bunofficial\b|\bnot\s+affiliat",
+    "legal theory in runtime experience": r"\bparod(?:y|ic)\b|\bfair\s+use\b",
+}
+
+NOTICE_REQUIRED_PATTERNS = {
+    "centralized product identity": r"\bimpactful tom is a collaborative dynamics augment\b",
+    "independent production": r"\bindependently produced\b",
+    "third-party official-status boundary": r"\bnot an official or endorsed product of any third party\b",
+    "generated-output boundary": r"\bgenerates its own output\b",
 }
 
 
@@ -83,10 +90,26 @@ def main() -> int:
         if "[TODO" in content or "TODO:" in content:
             errors.append(f"unfinished scaffold marker found in {path.relative_to(skill_root).as_posix()}")
 
+        relative_path = path.relative_to(skill_root)
+        if relative_path.name == "SKILL.md" or (
+            relative_path.parts and relative_path.parts[0] == "references"
+        ):
+            for label, pattern in EXPERIENCE_FORBIDDEN_PATTERNS.items():
+                if re.search(pattern, content, flags=re.IGNORECASE):
+                    errors.append(
+                        f"{label} found in customer runtime experience "
+                        f"{relative_path.as_posix()}"
+                    )
+
     corpus = "\n".join(corpus_parts).lower()
     for label, patterns in REQUIRED_PATTERNS.items():
         if not all(re.search(pattern, corpus, flags=re.IGNORECASE | re.DOTALL) for pattern in patterns):
             errors.append(f"missing {label} policy language")
+
+    notice = read_text(skill_root / "NOTICE.md", errors)
+    for label, pattern in NOTICE_REQUIRED_PATTERNS.items():
+        if not re.search(pattern, notice, flags=re.IGNORECASE):
+            errors.append(f"NOTICE.md missing {label} language")
     return emit("content_boundaries", errors)
 
 

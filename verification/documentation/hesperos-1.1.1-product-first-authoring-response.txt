@@ -1,0 +1,11 @@
+AUTHORING_RUN_ID: HESPEROS-IMPACTFUL-TOM-20260731-1.1.1-PRODUCT-FIRST
+AUTHORING_CAPABILITY: hesperos-documentation
+AUTHORSHIP_SCOPE: materially-revised
+AUTHORED_FILES_COUNT: 17
+AUTHORED_FILES: README.md|docs/index.md|docs/404.html|docs/getting-started.md|docs/installing-and-maintaining.md|docs/privacy-and-boundaries.md|docs/troubleshooting.md|docs/provenance-and-verification.md|DATA-AND-PRIVACY.md|TERMS-OF-USE.md|LICENSE.md|ATTRIBUTION.md|NOTICE.md|TRADEMARKS.md|SUPPORT.md|SECURITY.md|CHANGELOG.md
+DOCUMENTATION_FINGERPRINT: 5a9ff024790d1ea6ca6d0a56ffc240f6ef4dc44c705e545a540ccecd0beac943
+MODE: independent-dispatch
+PRODUCT_VERSION: 1.1.1
+CHANGED_FILES: README.md|docs/index.md|docs/installing-and-maintaining.md|docs/provenance-and-verification.md|DATA-AND-PRIVACY.md|TERMS-OF-USE.md|ATTRIBUTION.md|NOTICE.md|TRADEMARKS.md|SECURITY.md|CHANGELOG.md
+CLAIM_BOUNDARY: Source review establishes the current 17-file fingerprint, product-first customer journey, centralized NOTICE.md boundary, version consistency, prepublication claim custody, install and recovery usability, and source-level accessibility. It does not establish public release, live host behavior, assistive-technology conformance, legal adjudication, or customer outcomes.
+HESPEROS_AUTHORING_COMPLETE
