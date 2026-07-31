@@ -8,9 +8,13 @@ eyebrow: Host setup
 
 ## Current release status
 
-Version `1.0.0` is publicly available from the [Impactful Tom repository](https://github.com/Stunspot/impactful-tom) and [GitHub release](https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0). GitHub readback confirmed the public repository, annotated tag, release, four distribution archives, and `SHA256SUMS.txt`; the server-side asset digests match the local release ledger.
+These instructions target version `1.1.0`. Its source package and targeted behavior have passed their named checks, but GitHub publication and exact-version host installation have not yet been observed.
 
-The local Codex repository marketplace was configured on the current workstation, and an earlier candidate was installed and enabled with exact parity across its 11 model-facing runtime files at that evidence cutoff. A later fresh task catalog surfaced that installed skill and returned a representative founder response. The public release keeps the instruction body and behavior-bearing resources byte-identical, replaces two catalog descriptions, and adds four legal and notice files. The exact final package has not been installed or reached first success through a clean public route. Restart resilience and causal host invocation remain unobserved. The Claude Code/generic skill directory remains structurally checked without live-host evidence.
+Before installing, open the [version 1.1.0 release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0). Continue only when the tag, release, archives, and checksum ledger are publicly readable. If the page is absent, version 1.1.0 is not yet available through the release route; `main` is not an immutable-release substitute.
+
+The [evidence page]({{ '/evidence/' | relative_url }}) separates static package checks from public readback and live-host evidence. A visible release archive does not, by itself, establish installation, discovery, invocation, or first success.
+
+The exact final package has not been installed through a clean public route. Restart resilience and causal host invocation remain unobserved.
 
 ## Codex repository-marketplace route
 
@@ -70,15 +74,72 @@ codex plugin marketplace remove impactful-tom
 
 Removing a plugin and removing a marketplace are different actions. The first removes the installed plugin; the second removes the configured source.
 
-## Claude Code and other generic skill hosts
+## Claude Code
 
-The release includes one self-contained directory: `dist/claude-code/impactful-tom`. It has been structurally checked as a portable skill root. A live Claude Code installation, discovery, invocation, and first-success test have not been observed.
+The release includes one self-contained directory: `dist/claude-code/impactful-tom`. The Claude Code/generic skill directory passes structural checks without live-host evidence. A live Claude Code installation, discovery, invocation, and first-success test have not been observed.
 
-Because the documented skill location and activation flow can vary by Claude Code or generic host version, use that host's current official skill-installation instructions. Install the complete `impactful-tom` directory, preserving its internal `SKILL.md`, `assets`, `evals`, and `references` folders. Do not copy only `SKILL.md`; its relative resources are part of the package.
+Claude Code's [official skill documentation](https://code.claude.com/docs/en/slash-commands) defines two local installation scopes:
 
-For an update, replace the entire installed `impactful-tom` directory with the replacement directory after saving any user-created Founder Case somewhere else. For removal, remove that installed directory using the host's documented uninstall or skill-management route. Removing the skill does not delete a Founder Case stored in a separate location you chose.
+- **Personal:** place the complete folder at `~/.claude/skills/impactful-tom/`. The entry point must be `~/.claude/skills/impactful-tom/SKILL.md`. Use this when you want the skill available across your projects.
+- **Project:** from the project root, place the complete folder at `.claude/skills/impactful-tom/`. The entry point must be `.claude/skills/impactful-tom/SKILL.md`. Use this when the skill should apply only to that project.
 
-If your host cannot install a self-contained skill directory, stop there rather than improvising a partial copy. Record the host and version, the installation location you tried, and the exact error. That is the re-entry evidence needed for a compatible distribution.
+Choose one scope unless you intentionally manage both. A personal skill with the same name takes precedence over a project skill.
+
+### Install and check the directory
+
+1. Expand the Claude Code/generic distribution. It should contain one top-level `impactful-tom` folder.
+2. Copy that complete folder to `~/.claude/skills/impactful-tom/` for personal use or `.claude/skills/impactful-tom/` for project use. Preserve every supplied file and subdirectory; do not copy only `SKILL.md`.
+3. Confirm that the installed shape has no extra nesting:
+
+   ```text
+   impactful-tom/
+   ├── SKILL.md
+   ├── package-manifest.yaml
+   ├── ATTRIBUTION.md
+   ├── LICENSE.md
+   ├── NOTICE.md
+   ├── TRADEMARKS.md
+   ├── assets/
+   ├── evals/
+   └── references/
+   ```
+
+   If the entry point is instead at `impactful-tom/impactful-tom/SKILL.md`, move the inner folder up one level.
+4. If `~/.claude/skills/` or the project's `.claude/skills/` already existed when the current Claude Code session started, Claude Code watches it and should detect the new skill without a restart. If you created that top-level skills directory during the session, restart Claude Code so it can watch the directory.
+
+### Invoke it and confirm first value
+
+In Claude Code, invoke the directory name directly with one observable founder decision:
+
+```text
+/impactful-tom We ship features every week, but retention is flat. Find the constraint and give us one move with an owner, threshold, and review point.
+```
+
+A first-success response stays on that decision, distinguishes evidence from inference, names a plausible constraint, and proposes a bounded move with an owner and review condition. That response is a functional check in your host; it is not evidence of universal reliability or professional advice.
+
+If `/impactful-tom` is not available, recheck the entry-point path and extra-nesting condition first. If the top-level skills directory did not exist when the session started, restart Claude Code, then try `/impactful-tom` again. Do not change the package contents until those path and restart checks are complete.
+
+### Update
+
+1. Save any user-created `founder-case.md` outside the installed skill directory. The package does not own or migrate that file.
+2. Replace the entire installed `impactful-tom` folder with the complete replacement folder at the same personal or project path. Do not merge selected files from different versions.
+3. Recheck the directory shape and run the first-value invocation again.
+
+Claude Code watches changes inside an existing skills directory during the current session. Start a new conversation for the update check so a previously loaded skill body is not mistaken for the replacement version. Restart Claude Code only if the top-level skills directory did not exist when the session started.
+
+### Uninstall
+
+1. Save any Founder Case you want to keep outside the skill directory.
+2. Remove only the installed `~/.claude/skills/impactful-tom/` or `.claude/skills/impactful-tom/` folder, matching the scope you chose.
+3. Start a new conversation and confirm that `/impactful-tom` is no longer available.
+
+Removing the skill does not delete a Founder Case stored elsewhere. Claude Code watches removals from an existing skills directory; use the same restart boundary if the top-level directory was created after the session began.
+
+## Other generic skill hosts
+
+Skill locations and activation flows vary outside Claude Code. Use the host's current official skill-installation instructions and install the complete `impactful-tom` directory, preserving `SKILL.md`, `assets`, `evals`, `references`, the package manifest, and the included legal files.
+
+If the host cannot install a self-contained skill directory, stop rather than improvising a partial copy. Record the host and version, the installation location you tried, and the exact error. That is the re-entry evidence needed for a compatible distribution.
 
 ## A safe first check after any install
 

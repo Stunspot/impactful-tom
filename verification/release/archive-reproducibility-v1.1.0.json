@@ -1,0 +1,37 @@
+{
+  "schema_version": "cd-augment-archive-reproducibility/v1",
+  "product": "impactful-tom",
+  "version": "1.1.0",
+  "observed_at": "2026-07-31T07:02:21.120453Z",
+  "builder": "C:/Users/user/.codex/skills/augment-launch-operator/scripts/build_release_archives.py",
+  "plan": "development/launch/archive-plan.json",
+  "fresh_output": "release/tmp/reproducibility-v1.1.0-aaf4-0701/assets",
+  "artifacts": [
+    {
+      "name": "impactful-tom-v1.1.0.zip",
+      "canonical_sha256": "edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
+      "rebuilt_sha256": "edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
+      "match": true
+    },
+    {
+      "name": "impactful-tom-v1.1.0-claude-code-generic-skill.zip",
+      "canonical_sha256": "1debd19b8ef0b340ff738355ce6e471bf42a172ca738fb11af30419be3e5faeb",
+      "rebuilt_sha256": "1debd19b8ef0b340ff738355ce6e471bf42a172ca738fb11af30419be3e5faeb",
+      "match": true
+    },
+    {
+      "name": "impactful-tom-v1.1.0-codex-plugin.zip",
+      "canonical_sha256": "5a7547b744d08f33c619edeb7b4d33b3bdf4104843e82bacf94c8f99d656ea8c",
+      "rebuilt_sha256": "5a7547b744d08f33c619edeb7b4d33b3bdf4104843e82bacf94c8f99d656ea8c",
+      "match": true
+    },
+    {
+      "name": "impactful-tom-v1.1.0-standalone-skill.zip",
+      "canonical_sha256": "b53fd7824570a3993fe74fc4a1ba3c9213ee423d12630e37c41c170b9f82c38b",
+      "rebuilt_sha256": "b53fd7824570a3993fe74fc4a1ba3c9213ee423d12630e37c41c170b9f82c38b",
+      "match": true
+    }
+  ],
+  "all_match": true,
+  "claim_boundary": "This receipt establishes byte-identical archive output from a second fresh build over the same frozen sources and plan. It does not establish GitHub release-asset parity or host behavior."
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "cd-augment-tree-comparison/v1",
+  "expected_root": "dist/claude-code/impactful-tom",
+  "observed_root": "impactful-tom",
+  "expected_tree_sha256": "a9cd0aa4dc0b31d302188d22bbc6e7f45425b3e02cd133b4fae97d8951a2a901",
+  "observed_tree_sha256": "a9cd0aa4dc0b31d302188d22bbc6e7f45425b3e02cd133b4fae97d8951a2a901",
+  "missing": [],
+  "extra": [],
+  "changed": [],
+  "match": true
+}

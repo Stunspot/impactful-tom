@@ -1,0 +1,32 @@
+{
+  "format": "cd-documentation-review-input/v1",
+  "review_run_id": "hesperos-doc-review-impactful-tom-20260731-1.1.0-final",
+  "contents_supplied": true,
+  "documentation_fingerprint": "d588818fa56513eeea1fae0ce8d74ac389a250316a2090c18efb97bf59bea71e",
+  "supplied_files": [
+    "README.md",
+    "docs/index.md",
+    "docs/404.html",
+    "docs/getting-started.md",
+    "docs/installing-and-maintaining.md",
+    "docs/privacy-and-boundaries.md",
+    "docs/troubleshooting.md",
+    "docs/provenance-and-verification.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "LICENSE.md",
+    "ATTRIBUTION.md",
+    "NOTICE.md",
+    "TRADEMARKS.md",
+    "SUPPORT.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "transport": "Fresh-context gpt-5.6-sol xhigh independent accessibility review after Hesperos remediation of the Claude Code installation route.",
+  "review_response_evidence": "verification/documentation/review-response-1.1.0-final.txt",
+  "execution_evidence": [
+    "verification/documentation/reviewer-return-1.1.0-final.md",
+    "verification/documentation/review-response-1.1.0-final.txt",
+    "verification/reviews/documentation-accessibility-review-1.1.0-final.md"
+  ]
+}

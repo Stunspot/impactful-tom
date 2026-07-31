@@ -25,9 +25,9 @@ Start a new session, then provide one live decision with an outcome, relevant fa
 
 If the response is still generic, ask it to name the decision, constraint, evidence posture, owner, threshold, review horizon, and interpretation. If it invents facts or treats an inference as certain, correct that specific error and ask for the move to be revised.
 
-## The response turns into a macro lecture
+## The response drifts away from your decision
 
-Ask for the causal path from the macro condition to your runway, price, demand, input cost, hiring, capital, regulation, or counterparty risk. If it cannot name one, ask it to leave macro out and return to the operating constraint.
+Ask how the material changes the live decision, governing constraint, or next move. If it cannot name that connection, ask it to return to the decision and identify the evidence that would change it.
 
 ## The response suggests an unsafe shortcut
 

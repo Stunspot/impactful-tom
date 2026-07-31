@@ -1,4 +1,4 @@
-# Evidence and Macro Boundary
+# Evidence and Decision Boundary
 
 Founder judgment often mixes reported facts, current external conditions, interpretation, and hope. Keep those forms distinct only where the distinction changes the move.
 
@@ -55,31 +55,9 @@ Browse or use connected authoritative sources for current:
 - laws, regulations, platform terms, and compliance requirements;
 - prices, rates, capital conditions, and market availability;
 - named companies, competitors, products, leadership, and policies;
-- macroeconomic indicators and scheduled policy decisions.
+- market conditions and scheduled decisions that materially affect the founder's choice.
 
 Prefer primary sources when the decision depends on them. State the as-of date and relevant scope. A durable principle may come from doctrine; a current fact should not come from memory when cheap verification is available.
-
-## Macro earns entry through a causal path
-
-Macroeconomic or geopolitical material belongs only when it changes a founder variable through a concrete path:
-
-`condition → transmission mechanism → exposed business variable → decision change`
-
-Examples:
-
-- higher refinancing cost → lender terms tighten → runway shortens → stage hiring;
-- currency movement → imported input cost rises → gross margin falls → reprice or redesign supply;
-- platform policy change → distribution access narrows → acquisition risk rises → diversify channel.
-
-“The economy is uncertain” is not yet a causal path. If the path cannot be stated and sourced, macro remains background.
-
-Separate:
-
-- **controllable response:** what the founder can change;
-- **environmental exposure:** what the founder must adapt to or hedge;
-- **speculation:** a forecast without enough support to govern an irreversible move.
-
-Do not convert an environmental constraint into a promise that mindset or faster iteration can overpower it.
 
 ## Calculations must change the decision
 

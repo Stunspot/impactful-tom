@@ -1,0 +1,96 @@
+{
+  "schema_version": "cd-augment-release-audit/v1",
+  "root": "impactful-tom",
+  "observed_at": "2026-07-31T07:02:06.410838+00:00",
+  "file_count": 15,
+  "tree_sha256": "84e1c9a9cf7d77da14c0d231cea6c730987e7e6191dbc921b5665154e826ad12",
+  "manifest": [
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 245,
+      "sha256": "2b560285b66d95fea7a2838b87e6568f15e31b2fe8a8e2de32fdd69e5a48b610"
+    },
+    {
+      "path": "assets/founder-case.template.md",
+      "bytes": 1413,
+      "sha256": "856acbef667bbdb971535ad0a40a972ae25b7ee7a56d350f4c3498d3d6980436"
+    },
+    {
+      "path": "assets/founder-move.template.md",
+      "bytes": 634,
+      "sha256": "032844bba22b80f62e79f5ade906f6c29c98979e3c3078cca9d3733ebbf7bfbf"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "bytes": 1527,
+      "sha256": "10be6c04223f4cf75d47b99529f8f6a87d7a4aa10cd6cef6b626d2023f614fbf"
+    },
+    {
+      "path": "evals/eval-manifest.yaml",
+      "bytes": 1127,
+      "sha256": "768f01e903d66115572de88bc9154ef6414a7dbffbf3504642fdd1bd6a02917b"
+    },
+    {
+      "path": "evals/founder-performance-cases.yaml",
+      "bytes": 33474,
+      "sha256": "cd80d04194e6e4cc168e9affd9923bb863774860acf1da3c5f4b3b05bb8dc153"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 3000,
+      "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 2131,
+      "sha256": "8340d8f515133459285c866c12b57a06c2a197c53dd57a0e74fecec82dacfb2c"
+    },
+    {
+      "path": "package-manifest.yaml",
+      "bytes": 104,
+      "sha256": "08e1c4aa88905632d05649c54698161833dbd69f2c91cc9abcf55f9f5453a686"
+    },
+    {
+      "path": "references/evidence-and-decision-boundary.md",
+      "bytes": 5185,
+      "sha256": "21f71979bc762e4ec41f6f75a75e3e58cf9cb3675e4f25e45078a155ec946ca7"
+    },
+    {
+      "path": "references/founder-performance-doctrine.md",
+      "bytes": 7183,
+      "sha256": "5d427208b29a48b166302e81c041fe4077ab7871ebf56ed37347f71787400cbe"
+    },
+    {
+      "path": "references/provenance-and-boundaries.md",
+      "bytes": 4353,
+      "sha256": "3bd9170a5675469633be7c9420748f81589b28b8fd7f454cb39139348dd01fae"
+    },
+    {
+      "path": "references/voice-and-challenge.md",
+      "bytes": 4723,
+      "sha256": "9a9a0752c7e53998a244deb9fe235d9fad5de65e09cb892a0b70ae5ebdd2dd7f"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 12244,
+      "sha256": "566cbb652df92ebda02416583ce7bc5d6eb6b7dfe610c0038e60e6cbdb60d38c"
+    },
+    {
+      "path": "TRADEMARKS.md",
+      "bytes": 1806,
+      "sha256": "db7c486b516cb79f068ada18b68feef834b2bf26decec638308c359120a5c7ec"
+    }
+  ],
+  "issues": [
+    {
+      "level": "warning",
+      "kind": "missing-core-surface",
+      "path": ".",
+      "detail": "expected one of: README.md, START-HERE.md"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 1
+  }
+}

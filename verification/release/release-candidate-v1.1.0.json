@@ -1,0 +1,97 @@
+{
+  "schema_version": "impactful-tom-release-candidate/v1",
+  "product": "Impactful Tom",
+  "version": "1.1.0",
+  "sealed_at": "2026-07-31T07:02:45.8712909Z",
+  "canonical_skill_fingerprint": "aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c",
+  "documentation_fingerprint": "7ad752f2073c9d8b7ad9c3e296956fa5d24f071ce506f4f359e5ddb99839a824",
+  "customer_kit": {
+    "stage": "release/stage/impactful-tom-v1.1.0",
+    "file_count_including_manifest": 64,
+    "tree_sha256": "312b739958d453f5236298a23ae12cf1baff9cdcc3a41c1b9cb0b38c8063951d",
+    "release_manifest": {
+      "path": "release/stage/impactful-tom-v1.1.0/RELEASE-MANIFEST.json",
+      "bytes": 11834,
+      "sha256": "b9a817d4b53fcc81af4b02b68dc6befeb4f134ba359aa63e0fbf931d4c4104ae"
+    }
+  },
+  "archives": [
+    {
+      "name": "impactful-tom-v1.1.0.zip",
+      "bytes": 1862805,
+      "sha256": "edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
+      "member_count": 64,
+      "roundtrip_match": true
+    },
+    {
+      "name": "impactful-tom-v1.1.0-codex-plugin.zip",
+      "bytes": 936675,
+      "sha256": "5a7547b744d08f33c619edeb7b4d33b3bdf4104843e82bacf94c8f99d656ea8c",
+      "member_count": 18,
+      "roundtrip_match": true
+    },
+    {
+      "name": "impactful-tom-v1.1.0-standalone-skill.zip",
+      "bytes": 33439,
+      "sha256": "b53fd7824570a3993fe74fc4a1ba3c9213ee423d12630e37c41c170b9f82c38b",
+      "member_count": 15,
+      "roundtrip_match": true
+    },
+    {
+      "name": "impactful-tom-v1.1.0-claude-code-generic-skill.zip",
+      "bytes": 33116,
+      "sha256": "1debd19b8ef0b340ff738355ce6e471bf42a172ca738fb11af30419be3e5faeb",
+      "member_count": 14,
+      "roundtrip_match": true
+    }
+  ],
+  "custody": {
+    "archive_ledger": {
+      "path": "release/archive-custody-v1.1.0.json",
+      "bytes": 2177,
+      "sha256": "8c988219538a4293ece19992af5ba87323f660dbdefacdf5b679bb6fa0c139d1"
+    },
+    "detached_checksums": {
+      "path": "release/assets/v1.1.0/SHA256SUMS.txt",
+      "bytes": 420,
+      "sha256": "172b1028cfa3da89e98da3680a1f03ea811a3497d25a9ab551063d1b8975817f"
+    },
+    "recovery_backup": {
+      "path": "E:/Indranet/Augments/Impactful-Tom-v1.1.0.zip",
+      "sha256": "edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
+      "verified": true
+    }
+  },
+  "evidence": {
+    "behavioral_review": {
+      "path": "verification/behavioral-results/targeted-collaboration/run-20260731T064503Z-aaf4ad08/review.json",
+      "sha256": "6d977a2bf201f43ffa1e576363894097370d8f85e6c5af1fbe7670e91613e301",
+      "disposition": "REVIEW_PASS"
+    },
+    "documentation_authorship": {
+      "path": "verification/documentation/documentation-authorship.json",
+      "sha256": "fea58ac2257d50bb31e51744e5b3c3dabce4bdb11fcec05c2b6be758adbd68fb"
+    },
+    "documentation_review": {
+      "path": "verification/documentation/documentation-review.json",
+      "sha256": "ff7854439a7c32f1f587c0ef548ccb7d9c01a24b1567531d5d2980a2f063246d",
+      "disposition": "REVIEW_PASS"
+    },
+    "documentation_review_input": {
+      "path": "verification/documentation/review-input-1.1.0-final-02.json",
+      "sha256": "32849e470288f7bc802d375a1edf9c78791a640430126332248c31cc269146aa"
+    },
+    "documentation_review_response": {
+      "path": "verification/documentation/review-response-1.1.0-final-02.txt",
+      "sha256": "16fe6f00782c2176dfa64fed5bc32c4f99f105f361143efc2617d95b5d617b5e"
+    },
+    "release_notes": {
+      "path": "release/RELEASE-NOTES-v1.1.0.md",
+      "sha256": "3430a495efea6393c6b9fbbef154c883b764d28e6ed67f7ab0e32528bd906972"
+    }
+  },
+  "static_gate": "passed",
+  "publication_state": "not_attempted",
+  "host_state": "exact-version public-route installation, discovery, invocation, restart resilience, and live Claude behavior unobserved",
+  "claim_boundary": "This record seals the locally reviewed 1.1.0 package and recovery copy. It does not establish a GitHub commit, tag, release, release-asset readback, live Pages content, repository social-preview configuration, or host first success."
+}

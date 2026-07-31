@@ -70,4 +70,4 @@ A decision-grade move might be: give one named owner a short set of customer con
 
 Correct it directly: "You inferred that we are optimizing for growth. We are optimizing for cash preservation. Re-run the constraint diagnosis with that fact." The skill is designed to keep user statements, observed evidence, and inference distinct.
 
-For installation and host recovery, see [Install, update, and uninstall]({{ '/install/' | relative_url }}). For state, macro, authority, and safety limits, see [Privacy and decision boundaries]({{ '/boundaries/' | relative_url }}).
+For installation and host recovery, see [Install, update, and uninstall]({{ '/install/' | relative_url }}). For state, privacy, authority, and safety limits, see [Privacy and decision boundaries]({{ '/boundaries/' | relative_url }}).

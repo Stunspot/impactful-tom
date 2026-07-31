@@ -1,12 +1,12 @@
 {
   "name": "impactful-tom",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Founder-performance judgment for exposing constraints and choosing evidence-calibrated moves.",
   "author": {
     "name": "Collaborative Dynamics",
     "url": "https://github.com/Stunspot"
   },
-  "homepage": "https://github.com/Stunspot/impactful-tom",
+  "homepage": "https://stunspot.github.io/impactful-tom/",
   "repository": "https://github.com/Stunspot/impactful-tom",
   "license": "Split license; see LICENSE.md",
   "keywords": [
@@ -21,7 +21,7 @@
     "shortDescription": "🎯 Founder-performance judgment.",
     "longDescription": "Diagnose the real constraint in a live founder decision, reconcile mission with market evidence, and choose an owned move with a threshold and review horizon.",
     "developerName": "Collaborative Dynamics",
-    "websiteURL": "https://github.com/Stunspot/impactful-tom",
+    "websiteURL": "https://stunspot.github.io/impactful-tom/",
     "privacyPolicyURL": "https://github.com/Stunspot/impactful-tom/blob/main/DATA-AND-PRIVACY.md",
     "termsOfServiceURL": "https://github.com/Stunspot/impactful-tom/blob/main/TERMS-OF-USE.md",
     "category": "Productivity",

@@ -1,14 +1,14 @@
 # Impactful Tom Augment Map
 
 **Status:** Successor map — construction authority granted by Sam Walker
-**Version target:** 1.0.0
+**Version target:** 1.1.0
 **Customer product:** One GitHub-hosted founder-performance Augment
 **Hosts:** Codex plugin; Claude Code/generic skill distribution
 **Supersedes:** the private draft recorded in `verification/source-custody.json`
 
 ## Operating concept
 
-Impactful Tom helps a founder start, unstick, or outperform a merely adequate business by turning the live decision into a constraint diagnosis and a falsifiable move. It carries an energetic, concrete, explanatory challenge style associated with Tom Bilyeu's founder coaching while remaining an independent, unofficial product that neither impersonates him nor implies affiliation.
+Impactful Tom helps a founder start, unstick, or outperform a merely adequate business by turning the live decision into a constraint diagnosis and a falsifiable move. It uses a transformative, parodic machine impression of public figure Tom Bilyeu as a technical performance seed inside a founder-performance cognitive support and augmentation prosthesis. The impression is deliberately recognizable while the product remains independent, unofficial, unaffiliated, and unendorsed; its output is not Tom Bilyeu's authentic speech or advice.
 
 The product's load-bearing sequence is:
 
@@ -189,21 +189,7 @@ Voice guardrails are positive performance constraints:
 - disclose the product as independent and unofficial at onboarding and identity-relevant moments;
 - keep exported artifacts native to their purpose, free of theatrical wrappers unless requested.
 
-The evaluator should recognize confident founder-performance energy, not a celebrity impression, caps-lock costume, generic startup jargon, or macro-doom autopilot.
-
-## Macro boundary
-
-Macroeconomic or geopolitical material enters only when it can change a concrete founder variable:
-
-- runway or financing;
-- price sensitivity or demand;
-- input cost or supply;
-- hiring or compensation;
-- capital allocation;
-- regulation or compliance;
-- concentration or counterparty risk.
-
-The response names the causal path from macro condition to founder decision and uses current evidence. Otherwise macro material remains dormant. Availability of a Fed noun is not a routing strategy.
+The evaluator should recognize a transformed parodic machine impression doing cognitive work through consequence framing, explanatory intensity, mechanism-first challenge, vivid analogy, and decisive sequencing. Generic startup jargon, caps-lock costume, literal identity claims, false affiliation, and fabricated attribution do not satisfy that contract.
 
 ## Evidence, tools, and authority
 
@@ -248,7 +234,7 @@ impactful-tom/
 │               │   └── openai.yaml
 │               ├── references/
 │               │   ├── founder-performance-doctrine.md
-│               │   ├── evidence-and-macro-boundary.md
+│               │   ├── evidence-and-decision-boundary.md
 │               │   ├── voice-and-challenge.md
 │               │   └── provenance.md
 │               ├── assets/
@@ -282,7 +268,7 @@ It remains compact. It does not embed the private persona, transcripts, Thoughtc
 
 ## First release boundary
 
-Version 1.0.0 includes:
+Version 1.1.0 includes:
 
 - one founder-performance skill;
 - four compact runtime references;
@@ -293,7 +279,7 @@ Version 1.0.0 includes:
 - customer installation, first-use, privacy, limitations, provenance, update, and uninstall guidance;
 - structural, behavioral, contrastive, adversarial, privacy/state, packaging, and launch evidence.
 
-Version 1.0.0 excludes:
+Version 1.1.0 excludes:
 
 - raw transcripts, Thoughtcore, headshot, source prompts, and copied playbook passages;
 - sigil-aware retrieval or claims about sigil retrieval advantage;
@@ -313,7 +299,7 @@ The initial TestForge manifest governs verification before construction.
 - validate each skill root for naming, frontmatter, path containment, and dependency closure;
 - validate eval envelope and JSON-compatible YAML;
 - validate Markdown links, release exclusions, archive topology, hashes, and source/package parity;
-- scan for private source fragments, prohibited URLs, hard-coded consent, impersonation, and unsupported claims.
+- scan for private source fragments, prohibited URLs, hard-coded consent, deceptive identity claims, fabricated attribution, and unsupported claims.
 
 ### Behavioral and contrastive
 
@@ -326,7 +312,7 @@ Use isolated cases across:
 - controllable versus systemic constraints;
 - fast versus slow feedback;
 - uncertainty that earns research;
-- macro temptation that should remain dormant;
+- fashionable narrative pressure that lacks decision-changing evidence;
 - user resistance and identity threat;
 - coercive or unsafe requests;
 - optional Founder Case create, resume, correction, and no-consent behavior;
@@ -337,7 +323,7 @@ Run contrastive judgments against an unaugmented model and a generic founder-coa
 
 ### Adversarial
 
-Test source/tool-output injection, demands to impersonate or fabricate quotations, attempts to force automatic persistence, unsafe external action, high-stakes advice without current evidence, humiliation requests, false urgency, and macro rabbit holes.
+Test source/tool-output injection, demands for literal identity or fabricated quotations, attempts to force automatic persistence, unsafe external action, high-stakes advice without current evidence, humiliation requests, and false urgency.
 
 ### Host evidence
 
@@ -369,7 +355,7 @@ A generic founder coach may say to interview customers, improve marketing, set S
 
 Observed source records provide no explicit public license for the headshot, transcripts, Thoughtcore, source prompts, living-person likeness, or third-party marks. Sam has authorized the product and public GitHub launch and directed that the public product remain `Impactful Tom`; that authority is a product decision, not an endorsement or third-party rights claim.
 
-Construction proceeds with a clean public surface: new text, no likeness, no raw sources, no copied prompt, no quotation bank, no source-faithful imitation, and prominent independent/unofficial/non-affiliation disclosure.
+Construction proceeds with a transformed public surface: original generated language, a recognizable parodic machine impression, no raw source redistribution, no copied private prompt, no quotation bank, and prominent independent/unofficial/non-affiliation disclosure.
 
 The owner decision is settled. Publication retains the current name and must preserve the clean public surface, independent/unofficial disclosure, name-free original mark, third-party identity boundary, and release exclusions. The residual is accepted by the release owner and remains visible; it is not represented as legal clearance.
 
@@ -379,26 +365,26 @@ This is a real launch gate, not a reason to stop upstream construction, verifica
 
 1. Freeze the product contract, source ledger, successor map, and verification manifest.
 2. Scaffold the repository marketplace, plugin, and skill.
-3. Author the derived performance seed, founder doctrine, evidence/macro boundary, templates, and evals.
+3. Author the derived performance seed, founder doctrine, evidence and decision boundary, templates, and evals.
 4. Run narrow structural and content-leak checks; repair before broader testing.
 5. Run isolated behavioral, contrastive, adversarial, and state/privacy evaluations.
 6. Submit the evidence package to an independent TestForge reviewer and resolve findings.
 7. Hand stable product truth to Hesperos; create and validate documentation authorship and accessibility receipts.
 8. Build Codex, Claude, and customer release archives; expand and revalidate them.
 9. Run the Augment Launch Operator gates for rights, brand, claims, authority, channel, custody, estate, and first success.
-10. After final product, verification, documentation, and package gates pass, create the public GitHub repository, push exact verified bytes, tag `v1.0.0`, publish one release, and verify the public marketplace install route.
+10. After final product, verification, documentation, and package gates pass, push exact verified bytes, tag `v1.1.0`, publish one finished release, and verify the public marketplace install route.
 11. Verify clean installation and first success at every available host layer; close only with a requirement-by-requirement evidence audit.
 
 ## Acceptance
 
-Impactful Tom 1.0.0 is DONE-done only when:
+Impactful Tom 1.1.0 is DONE-done only when:
 
 - its behavior is recognizably founder-performance specific and distinguishable from a generic coach;
 - it diagnoses the right constraint level and maps behaviors and incentives;
 - it preserves mission while challenging tactics against market evidence;
 - it admits rapid iteration only where the signal and feedback horizon fit;
 - it returns an owned, thresholded, reviewable move;
-- it uses Tom-adjacent energy without impersonation, quotation fabrication, coercion, or macro drift;
+- it performs the transformative parodic machine impression without literal identity claims, false affiliation, fabricated attribution, or coercion;
 - state remains optional, minimal, inspectable, correctable, exportable, and deletable;
 - public artifacts contain no release-excluded source bytes;
 - Codex and Claude distributions validate separately;

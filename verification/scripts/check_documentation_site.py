@@ -239,6 +239,21 @@ def parse_simple_yaml(text: str) -> dict[str, str]:
     return values
 
 
+def expected_release_tag(repo: Path, errors: list[str]) -> str:
+    manifest_path = repo / "documentation-manifest.json"
+    try:
+        manifest = json.loads(read_text(manifest_path, errors))
+    except (json.JSONDecodeError, OSError) as exc:
+        errors.append(f"invalid documentation manifest: {exc}")
+        return "<invalid>"
+    product = manifest.get("product", {})
+    version = product.get("version") if isinstance(product, dict) else None
+    if not isinstance(version, str) or not re.fullmatch(r"\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?", version):
+        errors.append("documentation manifest product.version must be a SemVer string")
+        return "<invalid>"
+    return f"v{version}"
+
+
 def parse_front_matter(path: Path, errors: list[str]) -> tuple[dict[str, str], str]:
     text = read_text(path, errors)
     lines = text.splitlines()
@@ -526,7 +541,7 @@ def check_metadata(repo: Path, errors: list[str]) -> None:
         errors.append(f"site.webmanifest scope must be {EXPECTED_BASEURL}/")
 
 
-def check_public_claims(repo: Path, errors: list[str]) -> None:
+def check_public_claims(repo: Path, release_tag: str, errors: list[str]) -> None:
     combined_parts: list[str] = []
     for path_text in PUBLIC_CLAIM_FILES:
         path = repo / path_text
@@ -554,7 +569,7 @@ def check_public_claims(repo: Path, errors: list[str]) -> None:
     combined = "\n".join(combined_parts).lower()
     required_claims = [
         "publicly available",
-        "v1.0.0",
+        release_tag.lower(),
         "independent, unofficial",
         "not affiliated",
     ]
@@ -667,7 +682,7 @@ def check_documentation_custody(repo: Path, errors: list[str]) -> None:
         errors.append(f"invalid documentation custody receipt: {exc}")
         return
 
-    records: list[str] = []
+    records: list[tuple[str, str]] = []
     authored_files = authorship.get("authored_files", [])
     if not isinstance(authored_files, list) or len(authored_files) != 17:
         errors.append("documentation authorship receipt must bind exactly 17 customer files")
@@ -686,9 +701,14 @@ def check_documentation_custody(repo: Path, errors: list[str]) -> None:
             errors.append(f"documentation authorship byte count does not match: {path_text}")
         if item.get("sha256") != digest:
             errors.append(f"documentation authorship digest does not match: {path_text}")
-        records.append(f"{path_text}\0{digest}")
+        records.append((path_text, digest))
 
-    fingerprint = hashlib.sha256("\n".join(records).encode("utf-8")).hexdigest()
+    fingerprint_digest = hashlib.sha256()
+    for path_text, digest in sorted(records):
+        fingerprint_digest.update(path_text.encode("utf-8"))
+        fingerprint_digest.update(b"\0")
+        fingerprint_digest.update(bytes.fromhex(digest))
+    fingerprint = fingerprint_digest.hexdigest()
     if authorship.get("documentation_fingerprint") != fingerprint:
         errors.append("documentation authorship collection fingerprint does not match")
     if review.get("documentation_fingerprint") != fingerprint:
@@ -738,12 +758,12 @@ def check_identity_and_private_paths(repo: Path, errors: list[str]) -> None:
             errors.append(f"forbidden identity-coded visual filename: {name}")
 
 
-def check_readme(repo: Path, errors: list[str]) -> None:
+def check_readme(repo: Path, release_tag: str, errors: list[str]) -> None:
     readme = read_text(repo / "README.md", errors)
     required = [
         "docs/assets/images/impactful-tom-header.png",
         EXPECTED_ROOT,
-        "https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0",
+        f"https://github.com/Stunspot/impactful-tom/releases/tag/{release_tag}",
     ]
     for marker in required:
         if marker not in readme:
@@ -758,6 +778,7 @@ def main() -> int:
     repo = args.repo.resolve()
     errors: list[str] = []
     warnings: list[str] = []
+    release_tag = expected_release_tag(repo, errors)
 
     check_required_files(repo, errors)
     check_config(repo, errors)
@@ -765,13 +786,13 @@ def main() -> int:
     check_layout_and_css(repo, errors)
     check_links(repo, permalink_map, errors)
     check_metadata(repo, errors)
-    check_public_claims(repo, errors)
+    check_public_claims(repo, release_tag, errors)
     check_accessibility_content(repo, errors)
     check_pngs(repo, errors)
     check_visual_custody(repo, errors)
     check_documentation_custody(repo, errors)
     check_identity_and_private_paths(repo, errors)
-    check_readme(repo, errors)
+    check_readme(repo, release_tag, errors)
 
     return emit("documentation_site", errors, warnings)
 

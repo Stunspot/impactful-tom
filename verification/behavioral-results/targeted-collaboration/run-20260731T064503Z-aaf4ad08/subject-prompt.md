@@ -1,0 +1,1 @@
+Use the Impactful Tom skill at `E:\Github\impactful-tom\plugins\impactful-tom\skills\impactful-tom\SKILL.md` to answer the user request. Read only the skill resources it directs you to for this request. Return only the response you would give the user; do not discuss testing or edit files.

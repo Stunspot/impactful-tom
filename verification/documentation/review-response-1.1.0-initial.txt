@@ -1,0 +1,5 @@
+DECISION: REVIEW_FAIL
+DOCUMENTATION_FINGERPRINT: c7b9d9ba44145dd6dff62931ae56500eaed390fce5845937ab388bc9fea112cf
+MATERIAL_FINDING_COUNT: 1
+MATERIAL_FINDING: HIGH — docs/installing-and-maintaining.md deferred Claude Code installation, invocation, update, and removal to unspecified current instructions. Add the current official skill-documentation link, exact personal/project placement, directory-shape check, /impactful-tom invocation, observable success step, update, uninstall, and discovery/restart boundary.
+CLAIM_BOUNDARY: Independent static inspection, source-level accessibility assessment, raster review, and procedural walkthrough only. No live Pages, assistive-technology conformance, GitHub 1.1 publication, repository social-preview configuration, exact-version host behavior, or customer outcome claim.

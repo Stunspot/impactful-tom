@@ -11,14 +11,14 @@ The split license applies MIT to deterministic software and machine-readable sch
 
 ## Retained identity boundary
 
-Impactful Tom is published by Sam Walker / Collaborative Dynamics as an independent, unofficial founder-performance Augment. It is not Tom Bilyeu and does not claim affiliation, endorsement, sponsorship, authorization, quotation, likeness, voice, or official status from Tom Bilyeu, Impact Theory, or their companies.
+Impactful Tom is published by Sam Walker / Collaborative Dynamics as an independent, unofficial founder-performance Augment. It uses a transformative, parodic machine impression of public figure Tom Bilyeu as a technical performance mechanism. It does not claim literal identity, authentic speech, affiliation, endorsement, sponsorship, authorization, participation, approval, or official status from Tom Bilyeu, Impact Theory, or their companies.
 
 The source records do not contain a documentary third-party rights grant. Product-owner direction does not create one. The release therefore preserves the risk treatment already built and tested:
 
-- no source headshot, face, voice, likeness, transcript corpus, source-faithful persona, copied playbook blocks, or fabricated quotation;
+- no source headshot, cloned audio, recording, transcript corpus, private persona text, copied playbook blocks, or fabricated attributed quotation;
 - a name-free original product mark;
 - prominent independent/non-affiliation language;
-- independently authored runtime doctrine and presentation;
+- a transformed runtime prompt and original generated presentation;
 - third-party identity and mark boundaries in `TRADEMARKS.md`; and
 - provenance and release-exclusion checks over the final package.
 

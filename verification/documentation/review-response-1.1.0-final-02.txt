@@ -1,0 +1,15 @@
+REVIEWED_FILES_COUNT: 17
+REVIEWED_FILES: README.md | docs/index.md | docs/404.html | docs/getting-started.md | docs/installing-and-maintaining.md | docs/privacy-and-boundaries.md | docs/troubleshooting.md | docs/provenance-and-verification.md | DATA-AND-PRIVACY.md | TERMS-OF-USE.md | LICENSE.md | ATTRIBUTION.md | NOTICE.md | TRADEMARKS.md | SUPPORT.md | SECURITY.md | CHANGELOG.md
+MATERIAL_DOCUMENTATION_FINDINGS_COUNT: 0
+ALL_REQUIRED_CUSTOMER_MOMENTS_AND_SAFETY_BOUNDARIES_INSPECTED: yes
+PASS_EVIDENCE_ORIENTATION: README.md | docs/index.md | docs/404.html :: The landing surfaces identify founders, the live-decision promise, the impression mechanism, and a recoverable route.
+PASS_EVIDENCE_INSTALLATION: docs/installing-and-maintaining.md :: Codex and Claude steps provide exact placement, invocation, update, removal, and bounded success checks.
+PASS_EVIDENCE_FIRST_VALUE: docs/getting-started.md :: Founder examples begin with one live decision and explain how to judge a useful first response.
+PASS_EVIDENCE_NORMAL_USE: docs/privacy-and-boundaries.md :: Normal use preserves challenge, optional state, user authority, professional boundaries, and ordinary evidence treatment.
+PASS_EVIDENCE_RECOVERY: docs/troubleshooting.md :: Recovery guidance distinguishes missing installation, discovery, behavior, state, and evidence without invented guarantees.
+PASS_EVIDENCE_PRIVACY_SECURITY: DATA-AND-PRIVACY.md | TERMS-OF-USE.md | SECURITY.md :: Privacy, host processing, security reporting, optional state, and external authority remain explicit and bounded.
+PASS_EVIDENCE_EVIDENCE_LIMITS: docs/provenance-and-verification.md :: Provenance separates exact-fingerprint behavior, static package checks, historical custody, and unobserved host states.
+PASS_EVIDENCE_SUPPORT_MAINTENANCE: SUPPORT.md | CHANGELOG.md :: Support routes protect sensitive reports while the changelog explains the corrected mechanism and release evidence.
+PASS_EVIDENCE_PROVENANCE: LICENSE.md | ATTRIBUTION.md | NOTICE.md | TRADEMARKS.md :: Licensing, creator attribution, third-party identity treatment, non-affiliation, transformation, and publisher-position language remain mutually consistent.
+UNEXECUTED_CONDITIONS: Live Pages rendering, assistive-technology and representative-user testing, formal accessibility conformance, GitHub 1.1 publication, repository social-preview configuration, exact-version host behavior, live Claude behavior, legal adjudication, and customer outcomes remain unexecuted.
+REVIEW_PASS

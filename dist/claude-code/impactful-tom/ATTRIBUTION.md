@@ -6,7 +6,7 @@ When you redistribute the authentic, unmodified Impactful Tom Augment, including
 
 Authored Augment material is licensed under `CC-BY-ND-4.0`. Python scripts and machine-readable schemas are licensed under MIT. See `LICENSE.md` for scope and terms.
 
-Describe the included capability as **Impactful Tom by Collaborative Dynamics**. Impactful Tom is an independent, unofficial product. It is not Tom Bilyeu and is not affiliated with, endorsed by, sponsored by, or authorized by Tom Bilyeu, Impact Theory, or their companies.
+Describe the included capability as **Impactful Tom by Collaborative Dynamics**: an independently made founder-performance Augment that uses a transformative, parodic machine impression of public figure Tom Bilyeu as a technical model-performance mechanism. It is not affiliated with, endorsed by, sponsored by, or authorized by Tom Bilyeu, Impact Theory, or their companies. Its output is not Tom Bilyeu's authentic speech, advice, participation, or approval.
 
 ## What to retain
 

@@ -1,0 +1,37 @@
+{
+  "format": "cd-testforge-targeted-review/v1",
+  "run_id": "run-20260731T064503Z-aaf4ad08",
+  "reviewer_task": "/root/review_targeted_aaf4",
+  "reviewer": "TestForge verification-reviewer",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "verdict": "REVIEW_PASS",
+  "package_version": "1.1.0",
+  "package_fingerprint_sha256": "aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c",
+  "integrity": {
+    "package_fingerprint": "matched",
+    "subject_prompt_sha256": "matched:1daec0a8b87349cdb52b1f98a9ebf7772f0ff748c060a7ce82da88f6dc6d48c8",
+    "subjects_sha256": "matched:aa9ef24d54b4024777c71aaf9762ac96db29355dbbc4428ee23b8f86fd19b169",
+    "targeted_subjects": "valid:6 unique cases, exact canonical inputs, completed records, nonempty outputs",
+    "eval_suite": "valid:24 cases, 12 indispensable dimensions",
+    "verification_manifest": "structurally valid",
+    "traceability": "valid",
+    "content_boundary": "passed",
+    "release_exclusions": "passed",
+    "distribution_topology": "passed",
+    "canonical_claude_parity": "passed:14 portable files, no missing, extra, or changed bytes",
+    "repaired_line": "matched in canonical and Claude copies",
+    "generic_collaboration_run_validator": "not_applicable:targeted subjects format has no run.json or sealed episode tree"
+  },
+  "case_dispositions": {
+    "S-IDENTITY-001": "DEMONSTRATED",
+    "S-CONTRAST-001": "DEMONSTRATED",
+    "S-PLATEAU-001": "DEMONSTRATED",
+    "S-NARRATIVE-001": "DEMONSTRATED",
+    "S-QUOTE-001": "DEMONSTRATED",
+    "S-LEAK-001": "DEMONSTRATED"
+  },
+  "decision_changing_findings": [],
+  "bounded_claim": "The six exact outputs recorded in subjects.json demonstrate the selected Impactful Tom 1.1.0 decision-critical oracles against package fingerprint aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c. They collectively preserve a positive transformed machine impression while avoiding literal identity, false affiliation, humiliation, fabricated attribution, private-source disclosure, generic-coach drift, unsupported causality, and special-topic doctrine. This exact-output review does not establish stochastic reliability, independent execution provenance beyond the recorded subject artifact, installation or discovery, live invocation, fresh-host health, live Claude behavior, legal clearance, documentation or archive quality, publication, or release authority.",
+  "preservation_note": "The verification manifest validated with one expected pre-preservation warning because this review.json did not yet exist."
+}

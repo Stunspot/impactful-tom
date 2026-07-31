@@ -10,20 +10,35 @@ from _static_check import default_repo, emit, read_text, text_files
 
 
 FORBIDDEN_PATTERNS = {
-    "celebrity impersonation": r"(?m)^\s*(?:you are|i am|act as|speak as)\s+tom\s+bilyeu\b",
-    "exact-voice instruction": r"(?m)^\s*(?:use|perform|write in)\s+(?:the\s+)?(?:exact|indistinguishable)\s+(?:voice|style)\s+of\s+tom\s+bilyeu\b",
+    "deceptive literal identity": r"(?m)^\s*(?:you are|i am)\s+tom\s+bilyeu\b",
+    "authentic-speech claim": r"(?mi)^(?!.*\b(?:never|do not|don't|not)\b).*\btom\s+bilyeu['’]s\s+(?:authentic\s+)?(?:words|advice|statement)\b",
     "official affiliation claim": r"\bimpact\s+theory\s+(?:official|approved|endorsed)\b",
     "automatic analytics claim": r"\bautomatic(?:ally)?\s+analytics\b",
     "automatic persistence claim": r"\bautomatic(?:ally)?\s+(?:save|saved|store|stored|persist|persisted)\b",
 }
 
 REQUIRED_PATTERNS = {
+    "transformative performance": (r"\btransformative\b",),
+    "parodic performance": (r"\bparodic\b",),
+    "machine impression": (r"\bmachine[ -]impression\b",),
+    "technical performance mechanism": (
+        r"\btechnical\b",
+        r"\b(?:model[ -])?performance\b",
+        r"\b(?:seed|mechanism)\b",
+    ),
     "independent/unofficial status": (
         r"\bindependent\b",
         r"\bunofficial\b",
     ),
     "non-affiliation boundary": (
         r"\bnot\s+affiliat",
+    ),
+    "non-deceptive identity boundary": (
+        r"\b(?:literal identity|authentic speech|generated output)\b",
+        r"\b(?:do not|never|not)\b.{0,120}\b(?:claim|present|fabricat|attribut)\b",
+    ),
+    "fabricated attribution boundary": (
+        r"\b(?:fabricat(?:e|ed|ion)|counterfeit)\b.{0,120}\b(?:attribut|quot)",
     ),
     "session-first state": (
         r"\bsession(?:-only|\s+only)\b",

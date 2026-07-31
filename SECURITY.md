@@ -12,8 +12,8 @@ If that route is unavailable, contact Collaborative Dynamics through https://col
 
 ## Supported release
 
-Security corrections are assessed against the latest public release. Older versions may be asked to reproduce on the latest release before a fix is evaluated.
+Security corrections are assessed against the latest public release available at the time of the report. Include the exact Impactful Tom version in your report; an older version may be asked to reproduce on the latest public release before a fix is evaluated.
 
 ## Package boundary
 
-Impactful Tom 1.0.0 contains no hosted service, account, connector, MCP server, hook, telemetry, analytics, or automatic network request. The AI host, model provider, operating system, repository host, and user-selected tools remain separate security boundaries with their own policies and update duties.
+The Impactful Tom 1.1.0 package contains no hosted service, account, connector, MCP server, hook, telemetry, analytics, or automatic network request. The AI host, model provider, operating system, repository host, and user-selected tools remain separate security boundaries with their own policies and update duties.

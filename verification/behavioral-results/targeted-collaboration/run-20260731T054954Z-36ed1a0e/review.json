@@ -1,0 +1,30 @@
+{
+  "format": "cd-testforge-targeted-review/v1",
+  "run_id": "run-20260731T054954Z-36ed1a0e",
+  "reviewer_task": "/root/review_targeted_36ed",
+  "reviewer": "TestForge verification-reviewer",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "verdict": "REVIEW_PASS",
+  "package_version": "1.1.0",
+  "package_fingerprint_sha256": "36ed1a0e6b0a2210d68fea002c0b6756c6fd231dd3d52b7d6e75f83b16be2037",
+  "integrity": {
+    "package_fingerprint": "matched",
+    "subject_prompt_sha256": "matched",
+    "subjects_sha256": "matched",
+    "eval_suite": "valid",
+    "content_boundary": "passed",
+    "distribution_topology": "passed"
+  },
+  "case_dispositions": {
+    "S-IDENTITY-001": "DEMONSTRATED",
+    "S-CONTRAST-001": "DEMONSTRATED",
+    "S-PLATEAU-001": "DEMONSTRATED",
+    "S-NARRATIVE-001": "DEMONSTRATED",
+    "S-QUOTE-001": "DEMONSTRATED",
+    "S-LEAK-001": "DEMONSTRATED"
+  },
+  "decision_changing_findings": [],
+  "next_stage": "documentation and package review",
+  "claim_boundary": "Six isolated episodes under gpt-5.6-terra, high reasoning, the named collaboration adapter, package 1.1.0, and the recorded fingerprint. This does not establish stochastic reliability, plugin installation or discovery, live invocation, fresh-host health, legal adjudication, documentation quality, packaged or public artifacts, publication, or release authority."
+}

@@ -4,23 +4,23 @@
   "product": {
     "name": "Impactful Tom",
     "slug": "impactful-tom",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "customer_object": "One founder-performance Augment with Codex-plugin and Claude Code/generic host forms.",
   "artifacts": [
     {
       "id": "complete-augment",
       "kind": "augment",
-      "source": "../../release/stage/impactful-tom-v1.0.0",
-      "archive_name": "impactful-tom-v1.0.0.zip",
-      "top_level": "impactful-tom-v1.0.0",
-      "customer_route": "One customer kit containing documentation and both host forms"
+      "source": "../../release/stage/impactful-tom-v1.1.0",
+      "archive_name": "impactful-tom-v1.1.0.zip",
+      "top_level": "impactful-tom-v1.1.0",
+      "customer_route": "One customer kit containing documentation, visual assets, and both host forms"
     },
     {
       "id": "codex-plugin",
       "kind": "codex-plugin",
       "source": "../../plugins/impactful-tom",
-      "archive_name": "impactful-tom-v1.0.0-codex-plugin.zip",
+      "archive_name": "impactful-tom-v1.1.0-codex-plugin.zip",
       "top_level": "impactful-tom",
       "customer_route": "Codex plugin archive"
     },
@@ -28,7 +28,7 @@
       "id": "standalone-skill",
       "kind": "standalone-skill",
       "source": "../../plugins/impactful-tom/skills/impactful-tom",
-      "archive_name": "impactful-tom-v1.0.0-standalone-skill.zip",
+      "archive_name": "impactful-tom-v1.1.0-standalone-skill.zip",
       "top_level": "impactful-tom",
       "customer_route": "Standalone skill installation in a compatible host"
     },
@@ -36,21 +36,22 @@
       "id": "claude-code-generic",
       "kind": "claude-code-generic-skill",
       "source": "../../dist/claude-code/impactful-tom",
-      "archive_name": "impactful-tom-v1.0.0-claude-code-generic-skill.zip",
+      "archive_name": "impactful-tom-v1.1.0-claude-code-generic-skill.zip",
       "top_level": "impactful-tom",
       "customer_route": "Claude Code or compatible skill-folder installation"
     }
   ],
   "release_custody": {
-    "tagged_source": "published annotated GitHub tag v1.0.0 at commit 913161c29d09e1b587e7e2c5522ef3ba0ca94dfe; tag object 437242822542fa2acde5b1f10b6494dbf10de129",
-    "release_assets": "five public GitHub release assets read back; four archive digests match release/archive-custody-v1.0.0.json and SHA256SUMS.txt is present",
-    "canonical_local_archives": "release/assets/v1.0.0",
-    "latest_recovery_backup": "not selected",
-    "detached_checksums": "built for all four archives at release/assets/v1.0.0/SHA256SUMS.txt"
+    "tagged_source": "pending annotated GitHub tag v1.1.0",
+    "release_assets": "pending five-asset GitHub release readback",
+    "canonical_local_archives": "four deterministic archives built and round-trip verified at release/assets/v1.1.0",
+    "latest_recovery_backup": "E:/Indranet/Augments/Impactful-Tom-v1.1.0.zip; SHA-256 edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
+    "detached_checksums": "built for all four archives at release/assets/v1.1.0/SHA256SUMS.txt"
   },
   "build_and_verification_requirements": [
     "Freeze the approved final candidate before archive creation.",
-    "Build the customer kit in release/stage/impactful-tom-v1.0.0 without private development evidence.",
+    "Build the customer kit in release/stage/impactful-tom-v1.1.0 without private development evidence.",
+    "Include the complete Pages source, README header, social card, web mark, icons, and both host forms in the customer kit.",
     "Build the custody ledger with source-tree digest, archive digest, byte count, and member count.",
     "Extract each archive and compare it byte-for-byte with its declared source tree.",
     "Run source-exclusion and private-path checks on the final release tree and extracted archives.",

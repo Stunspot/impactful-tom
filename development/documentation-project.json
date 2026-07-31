@@ -1,7 +1,7 @@
 {
-  "project_id": "DOC-IMPACTFUL-TOM-1.0.0",
+  "project_id": "DOC-IMPACTFUL-TOM-1.1.0",
   "title": "Impactful Tom customer documentation",
-  "product_version": "1.0.0",
+  "product_version": "1.1.0",
   "status": "accessibility-reviewed",
   "audiences": [
     "Pre-founders who need a credible first move",
@@ -15,7 +15,7 @@
     "Use the public Pages site to orient, install, and inspect evidence boundaries",
     "Install the supported host distribution",
     "Reach first value from one live founder decision",
-    "Understand challenge style, evidence posture, and macro limits",
+    "Understand challenge style, evidence posture, and decision boundaries",
     "Choose session-only use or an explicit user-owned Founder Case",
     "Update, uninstall, troubleshoot, and interpret verification status"
   ],
@@ -44,7 +44,7 @@
     "Founder decision workflow and examples",
     "Challenge style and user control",
     "Privacy and optional Founder Case",
-    "Macro, high-consequence, and external-action boundaries",
+    "Evidence, high-consequence, and external-action boundaries",
     "Troubleshooting and recovery",
     "Independent and unofficial status, provenance, and rights boundary",
     "Verification status and evidence limits",

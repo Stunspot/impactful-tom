@@ -1,0 +1,41 @@
+{
+  "format": "cd-targeted-collaboration-run/v1",
+  "run_id": "run-20260731T064503Z-aaf4ad08",
+  "created_at": "2026-07-31T06:45:03Z",
+  "sealed_at": "2026-07-31T06:51:59Z",
+  "status": "COMPLETE_REVIEW_PASS",
+  "package_root": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "package_name": "impactful-tom",
+  "package_version": "1.1.0",
+  "package_fingerprint_sha256": "aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c",
+  "selected_case_ids": [
+    "S-IDENTITY-001",
+    "S-CONTRAST-001",
+    "S-PLATEAU-001",
+    "S-NARRATIVE-001",
+    "S-QUOTE-001",
+    "S-LEAK-001"
+  ],
+  "host": "Codex collaboration isolated task agent",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "subject_adapter": "codex-collaboration-isolated-task-dispatch",
+  "runtime_boundary": "Each case ran in a fresh collaboration task with the canonical SKILL.md and only package-relative resources selected by the subject. No browsing, external tools, durable state, private development sources, or external-action authority was supplied.",
+  "subject_prompt": {
+    "path": "subject-prompt.md",
+    "sha256": "1daec0a8b87349cdb52b1f98a9ebf7772f0ff748c060a7ce82da88f6dc6d48c8"
+  },
+  "subjects": {
+    "path": "subjects.json",
+    "sha256": "aa9ef24d54b4024777c71aaf9762ac96db29355dbbc4428ee23b8f86fd19b169"
+  },
+  "review": {
+    "path": "review.json",
+    "sha256": "6d977a2bf201f43ffa1e576363894097370d8f85e6c5af1fbe7670e91613e301",
+    "verdict": "REVIEW_PASS",
+    "reviewer_task": "/root/review_targeted_aaf4",
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "xhigh"
+  },
+  "result_authority": "Targeted exact-output behavioral evidence for the repaired 1.1.0 prompt contract under the named package fingerprint, host route, model, and isolated context; not plugin installation, host invocation, legal adjudication, documentation quality, publication, or stochastic reliability."
+}

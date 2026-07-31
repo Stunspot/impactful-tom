@@ -11,6 +11,7 @@ from _static_check import default_repo, emit, read_json, read_text, relative, te
 
 SKILL_NAME = "impactful-tom"
 REFERENCE_PATTERN = re.compile(r"(?<![\w.-])((?:references|assets)/[A-Za-z0-9][A-Za-z0-9._/-]*)")
+SEMVER_PATTERN = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?$")
 
 
 def parse_frontmatter(skill_path: Path, errors: list[str]) -> dict[str, str]:
@@ -89,6 +90,14 @@ def validate_claude_copy(canonical: Path, claude_root: Path, errors: list[str]) 
         errors.append(f"Claude/generic skill differs from canonical files: {', '.join(changed)}")
 
 
+def validate_versioned_manifest(path: Path, version_key: str, label: str, expected_version: str, errors: list[str]) -> None:
+    manifest = read_json(path, errors, label)
+    if manifest.get(version_key) != expected_version:
+        errors.append(
+            f"{label} {version_key} must match plugin version {expected_version}"
+        )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", type=Path, default=default_repo(__file__))
@@ -116,8 +125,10 @@ def main() -> int:
     plugin = read_json(plugin_root / ".codex-plugin" / "plugin.json", errors, "plugin manifest")
     if plugin.get("name") != SKILL_NAME:
         errors.append("plugin manifest name must be impactful-tom")
-    if plugin.get("version") != "1.0.0":
-        errors.append("plugin manifest version must be 1.0.0 for the sole public initial release")
+    plugin_version = plugin.get("version")
+    if not isinstance(plugin_version, str) or not SEMVER_PATTERN.fullmatch(plugin_version):
+        errors.append("plugin manifest version must be a SemVer string")
+        plugin_version = "<invalid>"
     if plugin.get("skills") != "./skills/":
         errors.append("plugin manifest skills path must be ./skills/")
 
@@ -138,8 +149,38 @@ def main() -> int:
         if not path.is_dir() or not any(path.iterdir()):
             errors.append(f"required runtime directory is missing or empty: {path}")
 
+    validate_versioned_manifest(
+        skill_root / "package-manifest.yaml",
+        "version",
+        "canonical package manifest",
+        plugin_version,
+        errors,
+    )
+    validate_versioned_manifest(
+        skill_root / "evals" / "eval-manifest.yaml",
+        "package_version",
+        "canonical eval manifest",
+        plugin_version,
+        errors,
+    )
+
     if args.claude_root:
-        validate_claude_copy(skill_root, args.claude_root.resolve(), errors)
+        claude_root = args.claude_root.resolve()
+        validate_claude_copy(skill_root, claude_root, errors)
+        validate_versioned_manifest(
+            claude_root / "package-manifest.yaml",
+            "version",
+            "Claude/generic package manifest",
+            plugin_version,
+            errors,
+        )
+        validate_versioned_manifest(
+            claude_root / "evals" / "eval-manifest.yaml",
+            "package_version",
+            "Claude/generic eval manifest",
+            plugin_version,
+            errors,
+        )
     elif args.require_claude:
         errors.append("--require-claude needs an explicit --claude-root")
     else:

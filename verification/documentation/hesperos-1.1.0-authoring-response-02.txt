@@ -1,0 +1,11 @@
+AUTHORING_RUN_ID: HESPEROS-IMPACTFUL-TOM-20260731-1.1.0-02
+AUTHORING_CAPABILITY: hesperos-documentation
+AUTHORSHIP_SCOPE: materially-revised
+AUTHORED_FILES_COUNT: 17
+AUTHORED_FILES: README.md | docs/index.md | docs/404.html | docs/getting-started.md | docs/installing-and-maintaining.md | docs/privacy-and-boundaries.md | docs/troubleshooting.md | docs/provenance-and-verification.md | DATA-AND-PRIVACY.md | TERMS-OF-USE.md | LICENSE.md | ATTRIBUTION.md | NOTICE.md | TRADEMARKS.md | SUPPORT.md | SECURITY.md | CHANGELOG.md
+DOCUMENTATION_FINGERPRINT: d588818fa56513eeea1fae0ce8d74ac389a250316a2090c18efb97bf59bea71e
+MODE: independent-dispatch
+PRODUCT_VERSION: 1.1.0
+CHANGED_FILES: docs/installing-and-maintaining.md
+CLAIM_BOUNDARY: Claude Code personal and project placement, complete-folder shape, direct /impactful-tom invocation, observable first success, update, uninstall, and restart behavior now follow the official Claude skill documentation. Hesperos Markdown lint and content-boundary verification pass. Documentation-site content checks pass; authorship and review receipts still bind the prior document bytes until regenerated. Live Claude Code installation, discovery, invocation, and first success remain unobserved.
+HESPEROS_AUTHORING_COMPLETE

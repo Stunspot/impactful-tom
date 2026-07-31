@@ -1,0 +1,9 @@
+run_id: HESPEROS-IMPACTFUL-TOM-20260731-1.1.0-02
+capability: hesperos-documentation
+mode: independent-dispatch
+authorship_scope: materially-revised
+product_version: 1.1.0
+exact_file_count: 17
+exact_file_inventory: ["README.md","docs/index.md","docs/404.html","docs/getting-started.md","docs/installing-and-maintaining.md","docs/privacy-and-boundaries.md","docs/troubleshooting.md","docs/provenance-and-verification.md","DATA-AND-PRIVACY.md","TERMS-OF-USE.md","LICENSE.md","ATTRIBUTION.md","NOTICE.md","TRADEMARKS.md","SUPPORT.md","SECURITY.md","CHANGELOG.md"]
+changed_files: ["docs/installing-and-maintaining.md"]
+claim_boundary: "Claude Code personal and project placement, complete-folder shape, direct /impactful-tom invocation, observable first success, update, uninstall, and restart behavior now follow the [official Claude skill documentation](https://code.claude.com/docs/en/slash-commands). Hesperos Markdown lint and content-boundary verification pass. Documentation-site content checks pass; the validator remains pending only because authorship and review receipts bind the prior document bytes and were outside this dispatch. Live Claude Code installation, discovery, invocation, and first success remain unobserved."

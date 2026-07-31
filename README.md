@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://stunspot.github.io/impactful-tom/">Documentation</a>
   ·
-  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0">Download version 1.0.0</a>
+  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0">Version 1.1.0 release page</a>
   ·
   <a href="docs/getting-started.md">Start with one decision</a>
 </p>
@@ -16,7 +16,9 @@ Impactful Tom is an independent, unofficial founder-performance skill for a live
 
 It is designed for the moment when you are about to build, sell, hire, cut, test, wait, or quit—and the story around the decision has become larger than the decision itself.
 
-> **Identity boundary:** Impactful Tom is not Tom Bilyeu and is not affiliated with or endorsed by Tom Bilyeu or Impact Theory.
+It works through a transformative, parodic machine impression of public figure Tom Bilyeu. The impression is a technical performance seed: it provokes a direct, energetic, explanatory mode of founder judgment inside a cognitive support and augmentation prosthesis.
+
+> **Identity boundary:** Impactful Tom is independently made by Collaborative Dynamics. It is not affiliated with or endorsed by Tom Bilyeu or Impact Theory, and its generated output is not Tom Bilyeu's authentic speech, advice, participation, or approval.
 
 ## Start here
 
@@ -30,9 +32,11 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.0.0` is publicly available from the [GitHub repository](https://github.com/Stunspot/impactful-tom) and [release](https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0). GitHub readback confirmed that the annotated `v1.0.0` tag resolves to sealed release commit `913161c29d09e1b587e7e2c5522ef3ba0ca94dfe`, and that the four distribution archives plus `SHA256SUMS.txt` are uploaded with server-side digests matching the local custody ledger. The tag and release assets remain sealed there; `main` carries later documentation corrections and is not the immutable release record.
+Version `1.1.0` is the current release candidate. Its exact-fingerprint package checks and six-case behavioral review pass; GitHub publication and exact-version host installation remain separate until their public and host receipts exist. The sealed `v1.0.0` release remains publicly available as historical custody and is not rewritten.
 
-An earlier candidate was installed and enabled through the local Codex marketplace on the current workstation. The final public package preserves that candidate’s instruction body and behavior-bearing resources while changing routing descriptions and adding legal custody files. The final package has not yet been installed through a clean public-route host, so clean installation, restart resilience, causal host invocation, and exact final-package first success remain unobserved. The Claude Code/generic distribution passes structural checks; Claude live-host behavior remains unobserved.
+For this release candidate, clean public-route installation, restart resilience, immutable causal host invocation, and live Claude Code behavior remain unobserved.
+
+Package validation, behavioral evidence, publication, installation, discovery, invocation, and first success are separate states. Read [Provenance and verification status](docs/provenance-and-verification.md) for the exact evidence currently earned by version 1.1.0 and each host.
 
 Use [Install, update, and uninstall](docs/installing-and-maintaining.md) for the release route and the exact evidence boundary.
 
@@ -49,7 +53,7 @@ It treats fast iteration as conditional. When feedback is slow, downside is high
 
 ## What it is not
 
-It is not a celebrity simulation, a generic pep talk, a substitute for qualified legal, financial, tax, medical, regulatory, safety, or security advice, or an agent authorized to send messages, publish, buy, change accounts, or contact other people for you.
+It is not an official Tom Bilyeu or Impact Theory product, a generic pep talk, a substitute for qualified legal, financial, tax, medical, regulatory, safety, or security advice, or an agent authorized to send messages, publish, buy, change accounts, or contact other people for you.
 
 It does not turn an environmental constraint into a character flaw. It also does not let an environmental label erase a controllable move.
 
@@ -75,6 +79,6 @@ Read [Privacy and decision boundaries](docs/privacy-and-boundaries.md) before as
 
 ## Status
 
-Version `1.0.0` is constructed, behaviorally reviewed, locally package-checked, and publicly released on GitHub. The sealed 24-case frontier collaboration run produced 20 demonstrated and four accepted low-severity partial cases, with no failed or invalid cases. Repository, tag, release, and release-asset readback are established. Clean public-route installation, restart resilience, exact final-package first success, causal host invocation, and live Claude Code behavior remain unobserved until their named receipts exist. OpenAI Plugin Directory submission is outside scope.
+Version `1.1.0` carries the corrected machine-impression performance contract. Its canonical skill fingerprint is `aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c`; six targeted isolated cases received independent TestForge `REVIEW_PASS`. This does not establish publication, installation, invocation, stochastic reliability, or customer outcomes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the bounded evidence. OpenAI Plugin Directory submission is outside scope.
 
-Impactful Tom uses the standard Collaborative Dynamics public-Augment split license: MIT for deterministic software and schemas, and CC BY-ND 4.0 for authored Augment material. It remains an independent, unofficial product with no Tom Bilyeu or Impact Theory affiliation, endorsement, sponsorship, or authorization.
+Impactful Tom uses the standard Collaborative Dynamics public-Augment split license: MIT for deterministic software and schemas, and CC BY-ND 4.0 for authored Augment material. Collaborative Dynamics presents the Tom Bilyeu reference and machine impression as transformative parody and fair use for model-performance design. That is the publisher's position, not an adjudicated legal conclusion. The product remains independent and unofficial, with no Tom Bilyeu or Impact Theory affiliation, endorsement, sponsorship, or authorization.

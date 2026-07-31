@@ -1,0 +1,9 @@
+run_id: HESPEROS-IMPACTFUL-TOM-20260731-1.1.0-01
+capability: hesperos-documentation
+mode: independent-dispatch
+authorship_scope: materially-revised
+product_version: 1.1.0
+exact_file_count: 17
+exact_file_inventory: ["README.md","docs/index.md","docs/404.html","docs/getting-started.md","docs/installing-and-maintaining.md","docs/privacy-and-boundaries.md","docs/troubleshooting.md","docs/provenance-and-verification.md","DATA-AND-PRIVACY.md","TERMS-OF-USE.md","LICENSE.md","ATTRIBUTION.md","NOTICE.md","TRADEMARKS.md","SUPPORT.md","SECURITY.md","CHANGELOG.md"]
+changed_files: ["README.md","docs/index.md","docs/installing-and-maintaining.md","docs/provenance-and-verification.md","DATA-AND-PRIVACY.md","SECURITY.md","CHANGELOG.md"]
+claim_boundary: "All 17 customer documents were inspected. Sixteen Markdown files pass Hesperos structural accessibility lint, and content-boundary verification passes. The documentation-site validator now passes customer content, links, assets, presentation, and host-claim checks; its overall result remains pending solely because existing authorship and accessibility receipts bind earlier bytes and were outside this dispatch. GitHub publication, exact-version installation, discovery, invocation, restart resilience, live Claude behavior, and customer outcomes remain unestablished."

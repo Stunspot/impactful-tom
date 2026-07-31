@@ -1,0 +1,55 @@
+{
+  "schema_version": "cd-augment-archive-custody/v1",
+  "product": {
+    "name": "Impactful Tom",
+    "slug": "impactful-tom",
+    "version": "1.1.0"
+  },
+  "created_at": "2026-07-31T07:01:17.705133+00:00",
+  "artifacts": [
+    {
+      "top_level": "impactful-tom-v1.1.0",
+      "source_tree_sha256": "312b739958d453f5236298a23ae12cf1baff9cdcc3a41c1b9cb0b38c8063951d",
+      "archive_sha256": "edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
+      "bytes": 1862805,
+      "member_count": 64,
+      "id": "complete-augment",
+      "kind": "augment",
+      "source": "../../release/stage/impactful-tom-v1.1.0",
+      "archive_name": "impactful-tom-v1.1.0.zip"
+    },
+    {
+      "top_level": "impactful-tom",
+      "source_tree_sha256": "305424ffd712396a74d02c8265845cd415c5031a2eccfbb536c9a9bdf926ee5d",
+      "archive_sha256": "5a7547b744d08f33c619edeb7b4d33b3bdf4104843e82bacf94c8f99d656ea8c",
+      "bytes": 936675,
+      "member_count": 18,
+      "id": "codex-plugin",
+      "kind": "codex-plugin",
+      "source": "../../plugins/impactful-tom",
+      "archive_name": "impactful-tom-v1.1.0-codex-plugin.zip"
+    },
+    {
+      "top_level": "impactful-tom",
+      "source_tree_sha256": "84e1c9a9cf7d77da14c0d231cea6c730987e7e6191dbc921b5665154e826ad12",
+      "archive_sha256": "b53fd7824570a3993fe74fc4a1ba3c9213ee423d12630e37c41c170b9f82c38b",
+      "bytes": 33439,
+      "member_count": 15,
+      "id": "standalone-skill",
+      "kind": "standalone-skill",
+      "source": "../../plugins/impactful-tom/skills/impactful-tom",
+      "archive_name": "impactful-tom-v1.1.0-standalone-skill.zip"
+    },
+    {
+      "top_level": "impactful-tom",
+      "source_tree_sha256": "a9cd0aa4dc0b31d302188d22bbc6e7f45425b3e02cd133b4fae97d8951a2a901",
+      "archive_sha256": "1debd19b8ef0b340ff738355ce6e471bf42a172ca738fb11af30419be3e5faeb",
+      "bytes": 33116,
+      "member_count": 14,
+      "id": "claude-code-generic",
+      "kind": "claude-code-generic-skill",
+      "source": "../../dist/claude-code/impactful-tom",
+      "archive_name": "impactful-tom-v1.1.0-claude-code-generic-skill.zip"
+    }
+  ]
+}

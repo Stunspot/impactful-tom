@@ -3,8 +3,8 @@
   "fresh_context": true,
   "disposition": "REVIEW_PASS",
   "unresolved_material_findings": 0,
-  "documentation_fingerprint": "037d75c29820803cd77da31ef17430eafb8fc232d939abaec4ffaa72690c7c4e",
-  "fingerprint_algorithm": "sha256 of UTF-8 path NUL sha256 records joined by LF in reviewed_files order",
+  "documentation_fingerprint": "7ad752f2073c9d8b7ad9c3e296956fa5d24f071ce506f4f359e5ddb99839a824",
+  "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records",
   "reviewed_files": [
     "README.md",
     "docs/index.md",
@@ -24,17 +24,15 @@
     "SECURITY.md",
     "CHANGELOG.md"
   ],
-  "reviewer": "Fresh-context Hesperos documentation accessibility reviewer with same-reviewer remediation closure",
-  "review_run_id": "hesperos-pages-review-20260730-01",
-  "review_input_evidence": "verification/documentation/hesperos-pages-authoring-evidence.md",
-  "review_response": "verification/documentation/review-response-pages.txt",
-  "review_record": "verification/reviews/documentation-pages-accessibility-review.md",
-  "evidence_directory": "verification/documentation",
+  "reviewer": "Fresh-context independent documentation-accessibility reviewer",
+  "review_run_id": "hesperos-doc-review-impactful-tom-20260731-1.1.0-final-02",
+  "review_input_evidence": "verification/documentation/review-input-1.1.0-final-02.json",
   "conditions": [],
   "residual_boundaries": [
-    "Do not claim the repository-level social-preview setting is configured unless separately observed.",
-    "Do not claim visual-browser or assistive-technology accessibility conformance from source and HTTP evidence.",
-    "Clean public-route installation, restart resilience, causal host invocation, and Claude live behavior remain unobserved."
+    "Do not claim live Pages rendering until the corrected public routes and assets are read back.",
+    "Do not claim repository-level social-preview configuration until directly observed.",
+    "Do not claim assistive-technology, representative-user, or formal accessibility conformance from source review.",
+    "Exact-version installation, discovery, invocation, restart resilience, and live Claude behavior remain unobserved."
   ],
-  "claim_boundary": "This review supports the bounded accessibility and reader-journey readiness of the listed source documents and the named live Pages responses at the observed revision and time. It does not establish accessibility conformance, repository social-preview configuration, host behavior, or customer outcomes."
+  "claim_boundary": "This review supports bounded source-level accessibility, customer-journey, procedural, claims, visual, and Hesperos-custody readiness for the exact 17-file fingerprint. It does not establish live Pages, social-preview configuration, assistive-technology conformance, exact-version host behavior, publication, legal adjudication, or customer outcomes."
 }

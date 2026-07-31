@@ -2,40 +2,33 @@
   "schema_version": "cd-augment-launch/v1",
   "product": {
     "name": "Impactful Tom",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "release_root": "E:\\Github\\impactful-tom",
-    "candidate_tree_sha256": "b9a44384ed1758bf5420b063026d135b367f9d26804e3af1ac6560834ca8da10"
+    "candidate_tree_sha256": "312b739958d453f5236298a23ae12cf1baff9cdcc3a41c1b9cb0b38c8063951d"
   },
-  "requested_terminal_state": "first-success-verified",
-  "status": "public-released-host-first-success-pending",
+  "requested_terminal_state": "published-verified",
+  "status": "prepared",
   "claim_states": [
     {
-      "statement": "The package provides founder-performance constraint diagnosis and evidence-calibrated next moves.",
+      "statement": "The exact repaired runtime demonstrates the six selected founder-performance and identity-boundary cases.",
       "class": "capability",
-      "state": "review-pass-with-conditions",
-      "evidence": "verification/behavioral-results/frontier-collaboration/run-20260730T205203Z-f03260ec/review.md",
-      "limit": "Bounded collaboration host-adapter evidence for the byte-identical founder method: 24 valid, 20 demonstrated, 4 accepted low-severity partials. It is not an exact-fingerprint run of the final ff495 package and makes no all-case, stochastic, installed-host, Claude, legal, or publication claim."
+      "state": "review-pass",
+      "evidence": "verification/behavioral-results/targeted-collaboration/run-20260731T064503Z-aaf4ad08/review.json",
+      "limit": "Six isolated gpt-5.6-terra episodes with independent exact-output review; not stochastic, installed-host, legal, publication, or outcome evidence."
     },
     {
-      "statement": "The Codex plugin and Claude Code/generic distributions are structurally valid.",
+      "statement": "The Codex and Claude Code/generic distributions are structurally valid and match the repaired canonical runtime.",
       "class": "compatibility",
       "state": "statically-verified",
-      "evidence": "verification scripts and validators",
-      "limit": "A separate receipt establishes current-host Codex installation, enablement, and cache parity, but not discovery or invoked behavior; Claude live-host behavior is unobserved."
+      "evidence": "distribution, package, stage, archive, and extracted-tree validators",
+      "limit": "Exact-version public-route installation, discovery, invocation, restart resilience, and live Claude behavior remain unobserved."
     },
     {
-      "statement": "A pre-delta candidate was installed and enabled on the current non-clean Codex host; its founder response and the final package's exact body-equivalence boundary are separately reviewed.",
-      "class": "compatibility",
-      "state": "observed-current-host",
-      "evidence": "verification/host-results/codex-local-install-20260730.json; verification/host-results/codex-current-task-first-success-20260730.json; verification/runtime-delta-f032-to-ff495.json; verification/reviews/runtime-delta-review.md",
-      "limit": "The final package changes two routing descriptions and adds four legal/notice files. It has not been installed through the public route. The host exposes no immutable read/invocation event trace, and clean-host, restart, and Claude claims remain unearned."
-    },
-    {
-      "statement": "Impactful Tom retains its name and uses the standard Collaborative Dynamics public-Augment split license.",
-      "class": "owner-decision",
-      "state": "authorized",
-      "evidence": "Sam Walker instructions in task 019fb465-a48b-7b60-a5a6-41d7bdca7f22 on 2026-07-30; LICENSE.md",
-      "limit": "Product-owner direction and non-affiliation disclosure do not establish endorsement, affiliation, or third-party rights in Tom Bilyeu or Impact Theory identifiers."
+      "statement": "The exact 17-file customer documentation corpus is authored and independently reviewed.",
+      "class": "documentation",
+      "state": "review-pass",
+      "evidence": "verification/documentation/documentation-authorship.json; verification/documentation/documentation-review.json",
+      "limit": "Source-level review only; live Pages and formal accessibility conformance remain unobserved."
     }
   ],
   "authority": {
@@ -50,14 +43,14 @@
       "name": "GitHub repository and release",
       "destination": "Stunspot/impactful-tom",
       "requested": true,
-      "state": "public-release-observed",
+      "state": "existing-public-repository-v1.1.0-pending",
       "visibility": "PUBLIC",
       "directory_submission": "out-of-scope"
     },
     {
       "name": "Codex repository marketplace",
       "install_object": ".agents/plugins/marketplace.json",
-      "state": "installed-enabled-pre-delta-current-host"
+      "state": "statically-verified"
     },
     {
       "name": "Claude Code and generic skill archive",
@@ -68,102 +61,81 @@
   "plugin_readiness": {
     "disposition": "ready",
     "static_audit": "pass-zero-issues",
-    "clean_install": "not_run-pre-delta-current-host-install-observed",
+    "clean_install": "not_run",
     "directory_state": "not_observed"
   },
   "documentation_custody": {
     "disposition": "required",
     "manifest": "documentation-manifest.json",
     "authorship_receipt": "verification/documentation/documentation-authorship.json",
-    "review_receipt": "verification/reviews/documentation-pages-accessibility-review.md",
+    "review_receipt": "verification/documentation/documentation-review.json",
     "authorship_verified": true,
     "customer_journey_verified": true,
     "review_verified": true
   },
   "repository_custody": {
     "disposition": "required",
-    "default_visibility": "PRIVATE with owner-authorized public exception",
+    "default_visibility": "PRIVATE",
     "full_name": "Stunspot/impactful-tom",
     "observed_visibility": "PUBLIC",
     "public_exception_authority": "Sam Walker explicitly authorized a public GitHub plugin launch in task 019fb465-a48b-7b60-a5a6-41d7bdca7f22.",
     "default_branch": "main",
-    "main_commit_at_release_readback": "913161c29d09e1b587e7e2c5522ef3ba0ca94dfe",
-    "release_tag": "v1.0.0",
-    "annotated_tag_object": "437242822542fa2acde5b1f10b6494dbf10de129",
-    "release_commit": "913161c29d09e1b587e7e2c5522ef3ba0ca94dfe",
-    "release_path": "https://github.com/Stunspot/impactful-tom/releases/tag/v1.0.0",
-    "release_tree_sha256": "b9a44384ed1758bf5420b063026d135b367f9d26804e3af1ac6560834ca8da10",
-    "release_assets_verified": true,
+    "main_commit": "",
+    "release_tag": "v1.1.0",
+    "release_commit": "",
+    "release_path": "https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0",
+    "release_tree_sha256": "312b739958d453f5236298a23ae12cf1baff9cdcc3a41c1b9cb0b38c8063951d",
+    "release_assets_verified": false,
     "fresh_main_clone_verified": false,
     "fresh_tag_clone_verified": false,
-    "live_readback": "Public repository, default branch, annotated tag, release metadata, and five release assets were read back on 2026-07-30.",
-    "estate_verification_receipt": "GitHub API and release-asset digest readback retained in the launch task evidence stream.",
-    "pages": {
-      "url": "https://stunspot.github.io/impactful-tom/",
-      "source": "main:/docs",
-      "build_type": "legacy",
-      "public": true,
-      "https_enforced": true,
-      "configuration_status": "built",
-      "corrected_source_status": "live and read back at efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8; five customer routes, metadata references, stylesheet, README header, social card, and repository homepage observed"
-    }
+    "live_readback": "not_run",
+    "estate_verification_receipt": ""
   },
   "archive_custody": {
     "plan": "development/launch/archive-plan.json",
-    "ledger": "release/archive-custody-v1.0.0.json",
+    "ledger": "release/archive-custody-v1.1.0.json",
     "canonical_archives_verified": true,
-    "github_assets_verified": true,
-    "latest_backups_verified": false
+    "github_assets_verified": false,
+    "latest_backups_verified": true
   },
-  "estate_custody_status": "public-release-verified; fresh-clone-and-host-evidence-incomplete",
+  "estate_custody_status": "incomplete",
   "proofs": [
     {
       "kind": "candidate-manifest",
-      "file_count": 50,
-      "tree_sha256": "b9a44384ed1758bf5420b063026d135b367f9d26804e3af1ac6560834ca8da10",
-      "evidence": "release/stage/impactful-tom-v1.0.0/RELEASE-MANIFEST.json; verification/release/release-tree-audit-prepublication.json"
+      "file_count": 64,
+      "tree_sha256": "312b739958d453f5236298a23ae12cf1baff9cdcc3a41c1b9cb0b38c8063951d",
+      "evidence": "release/stage/impactful-tom-v1.1.0/RELEASE-MANIFEST.json"
     },
     {
-      "kind": "archive-roundtrip",
+      "kind": "archive-roundtrip-and-reproducibility",
       "archive_count": 4,
-      "ledger": "release/archive-custody-v1.0.0.json",
-      "evidence": "verification/release/archive-parity-complete.json; verification/release/archive-parity-codex.json; verification/release/archive-parity-standalone.json; verification/release/archive-parity-claude.json"
+      "complete_archive_sha256": "edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
+      "evidence": "release/archive-custody-v1.1.0.json; verification/release/archive-reproducibility-v1.1.0.json"
     }
   ],
   "open_decisions": [],
   "resolved_decisions": [
     {
-      "id": "OD-RIGHTS-001",
+      "id": "OD-IDENTITY-001",
       "owner": "Sam Walker",
-      "decision": "Retain the Impactful Tom product name for the public release.",
-      "recorded_at": "2026-07-30T23:38:19.3577215Z",
-      "treatment": "Keep the product independent and unofficial; exclude the source headshot, raw corpus, source-faithful persona, quotations, and affiliation claims; preserve prominent non-affiliation and third-party identity boundaries."
+      "decision": "Use Impactful Tom as a positive transformative parodic machine impression and technical performance mechanism; retain the product name.",
+      "treatment": "Perform the independent machine impression while rejecting literal identity, fabricated attribution, affiliation, endorsement, authorization, and official-status claims."
     },
     {
       "id": "OD-LICENSE-001",
       "owner": "Sam Walker",
       "decision": "Use the standard public Collaborative Dynamics Augment licensing pattern.",
-      "recorded_at": "2026-07-30T23:38:19.3577215Z",
-      "treatment": "MIT for deterministic software and schemas; CC BY-ND 4.0 for authored Augment material; retain LICENSE, ATTRIBUTION, NOTICE, TRADEMARKS, privacy, and terms surfaces."
-    },
-    {
-      "kind": "final-independent-review",
-      "disposition": "ready-to-publish-with-conditions-satisfied",
-      "evidence": "verification/reviews/final-release-review-prepublication.md"
+      "treatment": "MIT for deterministic software and schemas; CC BY-ND 4.0 for authored Augment material."
     }
   ],
   "known_limits": [
     "Raw transcripts, private prompts, Thoughtcore, and the source headshot are release-excluded.",
-    "Qwen 3.5 9B is not a supported behavioral runtime based on the recorded local episodes.",
-    "The reviewed frontier result is PARTIAL: 20 demonstrated and four accepted low-severity partials across one episode per case.",
-    "Current-host Codex evidence applies to the pre-delta candidate; the final package has two changed routing descriptions and four added legal/notice files.",
-    "An earlier fresh collaboration-agent context omitted the installed skill; after task re-entry, a fresh context included the pre-delta skill and returned a response that passed every representative plateau criterion.",
-    "Codex causal skill-read/invocation events are not exposed by this surface; the final public-route catalog, implicit-selection, first-success, clean-host, and restart claims remain unearned.",
-    "Claude Code live installation, discovery, invocation, and first value are unobserved.",
-    "The Pages-era 17-file documentation set and visual family pass local source checks and Hesperos review; the corrected Pages build, five customer routes, metadata references, stylesheet, README header, social card, and repository homepage were read back at efee26a0f3b0a0c7238b83cfe8a55b3fd501c7f8.",
-    "The repository-level social-preview image setting and direct visual-browser accessibility conformance remain unobserved and unclaimed.",
-    "OpenAI Directory submission is not requested."
+    "The publisher's fair-use position is not an adjudicated legal conclusion.",
+    "One isolated episode per targeted case does not establish stochastic reliability.",
+    "GitHub 1.1.0 publication, release-asset parity, live Pages correction, and repository social-preview configuration remain unobserved.",
+    "Exact-version public-route installation, immutable causal invocation, restart resilience, and live Claude behavior remain unobserved.",
+    "OpenAI Plugin Directory submission is out of scope."
   ],
-  "next_consequential_move": "Perform the clean public-route install and first-success probe at an available disposable host boundary without upgrading unobserved restart, causal-invocation, or Claude claims.",
-  "updated_at": "2026-07-31T03:08:32Z"
+  "next_consequential_move": "Receive final independent release verdict, commit and tag the exact candidate, then perform one controlled GitHub publication attempt and readback. Stop on any GitHub failure without retry.",
+  "updated_at": "2026-07-31T07:03:30Z"
 }

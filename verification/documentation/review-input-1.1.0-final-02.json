@@ -1,0 +1,32 @@
+{
+  "format": "cd-documentation-review-input/v1",
+  "review_run_id": "hesperos-doc-review-impactful-tom-20260731-1.1.0-final-02",
+  "contents_supplied": true,
+  "documentation_fingerprint": "7ad752f2073c9d8b7ad9c3e296956fa5d24f071ce506f4f359e5ddb99839a824",
+  "supplied_files": [
+    "README.md",
+    "docs/index.md",
+    "docs/404.html",
+    "docs/getting-started.md",
+    "docs/installing-and-maintaining.md",
+    "docs/privacy-and-boundaries.md",
+    "docs/troubleshooting.md",
+    "docs/provenance-and-verification.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "LICENSE.md",
+    "ATTRIBUTION.md",
+    "NOTICE.md",
+    "TRADEMARKS.md",
+    "SUPPORT.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "transport": "Fresh-context independent documentation-accessibility review after canonical Hesperos custody validation for the exact repaired fingerprint.",
+  "review_response_evidence": "verification/documentation/review-response-1.1.0-final-02.txt",
+  "execution_evidence": [
+    "verification/documentation/review-response-1.1.0-final-02.txt",
+    "verification/reviews/documentation-accessibility-review-1.1.0-final-02.md",
+    "verification/documentation/documentation-authorship.json"
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Privacy and decision boundaries
-description: Understand session-only use, optional Founder Case custody, macro limits, qualified-review boundaries, and external-action authority.
+description: Understand session-only use, optional Founder Case custody, evidence limits, qualified-review boundaries, and external-action authority.
 permalink: /boundaries/
 eyebrow: User control
 ---
@@ -20,9 +20,7 @@ User statements, observed evidence, and model inference should be labeled separa
 
 If the host cannot write to the location you choose, the safe result is a portable draft in the conversation marked **not saved**. Do not assume a file exists because a useful-looking case was drafted.
 
-## Macro stays subordinate to the business decision
-
-Macroeconomic, political, or geopolitical conditions should enter only when there is a concrete path to something you can act on: runway, pricing, demand, input cost, hiring, capital, regulation, or counterparty risk. If that path cannot be named, macro is a distraction, not a diagnosis.
+## Current claims need current evidence
 
 For a volatile claim—such as a current law, platform rule, price, competitor, capital condition, or regulation—the skill should use current authoritative evidence when that capability is available. Without it, treat the conclusion as provisional and prefer a reversible move or qualified review.
 

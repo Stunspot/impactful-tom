@@ -80,6 +80,64 @@ class StaticCheckFixtures(unittest.TestCase):
         )
         self.assertEqual(code, 0, result)
 
+    def test_distribution_topology_accepts_consistent_semver(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp) / "repo"
+            shutil.copytree(FIXTURES / "valid-repo", candidate)
+            claude_root = Path(temp) / "claude"
+            shutil.copytree(FIXTURES / "valid-claude", claude_root)
+            version = "1.2.3"
+            for path_text, key in [
+                ("plugins/impactful-tom/.codex-plugin/plugin.json", "version"),
+                ("plugins/impactful-tom/skills/impactful-tom/package-manifest.yaml", "version"),
+                ("plugins/impactful-tom/skills/impactful-tom/evals/eval-manifest.yaml", "package_version"),
+            ]:
+                path = candidate / path_text
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                payload[key] = version
+                path.write_text(json.dumps(payload), encoding="utf-8")
+            for path_text, key in [
+                ("package-manifest.yaml", "version"),
+                ("evals/eval-manifest.yaml", "package_version"),
+            ]:
+                path = claude_root / path_text
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                payload[key] = version
+                path.write_text(json.dumps(payload), encoding="utf-8")
+            code, result = run(
+                "check_distribution_topology.py",
+                "--repo",
+                str(candidate),
+                "--claude-root",
+                str(claude_root),
+                "--require-claude",
+            )
+            self.assertEqual(code, 0, result)
+
+    def test_distribution_topology_rejects_version_drift(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp) / "repo"
+            shutil.copytree(FIXTURES / "valid-repo", candidate)
+            claude_root = Path(temp) / "claude"
+            shutil.copytree(FIXTURES / "valid-claude", claude_root)
+            manifest_path = claude_root / "evals/eval-manifest.yaml"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["package_version"] = "1.0.1"
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            code, result = run(
+                "check_distribution_topology.py",
+                "--repo",
+                str(candidate),
+                "--claude-root",
+                str(claude_root),
+                "--require-claude",
+            )
+            self.assertEqual(code, 1, result)
+            self.assertIn(
+                "Claude/generic eval manifest package_version must match plugin version 1.0.0",
+                result["errors"],
+            )
+
     def test_release_exclusions_reject_private_filename(self) -> None:
         code, result = run("check_release_exclusions.py", "--repo", str(FIXTURES / "leak-repo"))
         self.assertEqual(code, 1, result)
@@ -111,6 +169,25 @@ class StaticCheckFixtures(unittest.TestCase):
                     any("unsupported host-state sentence" in item for item in result["errors"]),
                     result,
                 )
+
+    def test_documentation_release_marker_tracks_manifest_version(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp)
+            copy_documentation_fixture(candidate)
+            manifest_path = candidate / "documentation-manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["product"]["version"] = "1.2.3"
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            code, result = run("check_documentation_site.py", "--repo", str(candidate))
+            self.assertEqual(code, 1, result)
+            self.assertTrue(
+                any(
+                    "README missing public presentation marker: "
+                    "https://github.com/Stunspot/impactful-tom/releases/tag/v1.2.3" in item
+                    for item in result["errors"]
+                ),
+                result,
+            )
 
 
 if __name__ == "__main__":
