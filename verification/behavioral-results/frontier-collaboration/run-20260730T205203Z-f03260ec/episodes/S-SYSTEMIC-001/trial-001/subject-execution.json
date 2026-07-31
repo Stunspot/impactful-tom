@@ -1,0 +1,25 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-SYSTEMIC-001",
+  "trial": 1,
+  "agent_task": "/root/subj_systemic",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-SYSTEMIC-001/trial-001/subject-prompt.md",
+    "sha256": "8c928d301dfa15becf246ac2964d4ebe145689cc02beb8c29746f4e03d51d90d"
+  },
+  "request": {
+    "relative_path": "episodes/S-SYSTEMIC-001/trial-001/subject-request.json",
+    "sha256": "121ef35d7fa93e1587b735b76faf0c31155fd750df695bfbaa1e02dcdbe99340"
+  },
+  "response": {
+    "relative_path": "episodes/S-SYSTEMIC-001/trial-001/subject-response.md",
+    "sha256": "02c542affdfc196dfb09b3e8062e91239bd45b3eb84afd45bd1314bf4c8e5807"
+  },
+  "completed_at": "2026-07-30T20:57:37.3258722Z",
+  "status": "COMPLETED",
+  "runtime_boundary": "Isolated episode; filesystem access was harness transport only. No browsing, external tools, durable state, or external actions were used."
+}

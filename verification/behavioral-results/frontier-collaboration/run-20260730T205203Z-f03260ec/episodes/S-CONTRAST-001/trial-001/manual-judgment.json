@@ -1,0 +1,50 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-CONTRAST-001",
+  "trial": 1,
+  "valid": true,
+  "invalid_reason": "",
+  "criteria": [
+    {
+      "criterion_index": 0,
+      "status": "met",
+      "evidence": "The response locates the constraint in personal-billing incentives, absent ownership, protected capacity, and bespoke proposal defaults rather than insufficient initiative."
+    },
+    {
+      "criterion_index": 1,
+      "status": "met",
+      "evidence": "It explicitly links reusable-offer work to lost personal billings and identifies the absence of decision rights and protected capacity."
+    },
+    {
+      "criterion_index": 2,
+      "status": "met",
+      "evidence": "It preserves the repeated client problem as the valuable outcome while changing delivery from bespoke proposals to a fixed-scope offer."
+    },
+    {
+      "criterion_index": 3,
+      "status": "met",
+      "evidence": "It assigns one senior owner for 30 days, requires five qualified offers and one paid or signed pilot, and specifies continue and change interpretations plus a delivery-capacity guardrail."
+    }
+  ],
+  "failure_signals": [
+    {
+      "signal_index": 0,
+      "observed": false,
+      "evidence": "The response rejects motivation pressure and redesigns incentives, ownership, and proposal defaults."
+    },
+    {
+      "signal_index": 1,
+      "observed": false,
+      "evidence": "It says motivational heat is not a mechanism and does not use intensity as the intervention."
+    },
+    {
+      "signal_index": 2,
+      "observed": false,
+      "evidence": "The move has a case-specific threshold and explicit pass and miss interpretations."
+    }
+  ],
+  "acceptable_variation_used": [
+    "Prioritized one offer owner and one repeatable service wedge with an explicit causal mechanism."
+  ],
+  "notes": ""
+}

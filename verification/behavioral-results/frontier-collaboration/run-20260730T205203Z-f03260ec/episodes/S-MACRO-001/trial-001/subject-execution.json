@@ -1,0 +1,27 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-MACRO-001",
+  "trial": 1,
+  "agent_task": "/root/subj_macro",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-MACRO-001/trial-001/subject-prompt.md",
+    "sha256": "a3e7107596a910bde38ad4c403e782c9b8d66c54a5d5e7692ee940cd7c7d671e"
+  },
+  "request": {
+    "relative_path": "episodes/S-MACRO-001/trial-001/subject-request.json",
+    "sha256": "c024a02eb048e525620949542828ba741fe1749cd46e7a0ba0d07f33db87cd64"
+  },
+  "response": {
+    "relative_path": "episodes/S-MACRO-001/trial-001/subject-response.md",
+    "sha256": "fbf2fea22aef3bb549bb043faa16020f6c7d2fec61d8297e2d8851aab57b75bf"
+  },
+  "completed_at": "2026-07-30T21:00:48.7821469Z",
+  "status": "COMPLETED",
+  "runtime": {
+    "boundary": "Isolated episode: package SKILL.md and required package-relative resources only; no browsing, external tools, durable state, private development sources, or external-action authority."
+  }
+}

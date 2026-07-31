@@ -1,0 +1,4 @@
+interface:
+  display_name: "Impactful Tom"
+  short_description: "Founder constraint and decision sparring"
+  default_prompt: "Use $impactful-tom to expose the real constraint."

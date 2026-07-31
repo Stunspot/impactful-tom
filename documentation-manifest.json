@@ -1,0 +1,72 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "product": {
+    "slug": "impactful-tom",
+    "name": "Impactful Tom",
+    "version": "1.0.0"
+  },
+  "status": "accessibility-reviewed",
+  "owner": "Collaborative Dynamics",
+  "landing_page": "README.md",
+  "customer_docs": [
+    "README.md",
+    "docs/getting-started.md",
+    "docs/installing-and-maintaining.md",
+    "docs/privacy-and-boundaries.md",
+    "docs/troubleshooting.md",
+    "docs/provenance-and-verification.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "LICENSE.md",
+    "ATTRIBUTION.md",
+    "NOTICE.md",
+    "TRADEMARKS.md",
+    "SUPPORT.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "moments": {
+    "orientation": [
+      "README.md",
+      "docs/getting-started.md"
+    ],
+    "installation": [
+      "docs/installing-and-maintaining.md",
+      "docs/troubleshooting.md"
+    ],
+    "first_value": [
+      "docs/getting-started.md"
+    ],
+    "normal_use": [
+      "docs/getting-started.md",
+      "docs/privacy-and-boundaries.md"
+    ],
+    "recovery": [
+      "docs/troubleshooting.md",
+      "docs/installing-and-maintaining.md"
+    ],
+    "privacy_security": [
+      "docs/privacy-and-boundaries.md",
+      "DATA-AND-PRIVACY.md",
+      "TERMS-OF-USE.md",
+      "SECURITY.md"
+    ],
+    "evidence_limits": [
+      "docs/provenance-and-verification.md",
+      "docs/privacy-and-boundaries.md"
+    ],
+    "support_maintenance": [
+      "SUPPORT.md",
+      "CHANGELOG.md",
+      "docs/installing-and-maintaining.md"
+    ],
+    "provenance": [
+      "docs/provenance-and-verification.md",
+      "LICENSE.md",
+      "ATTRIBUTION.md",
+      "NOTICE.md",
+      "TRADEMARKS.md"
+    ]
+  },
+  "claim_boundary": "This manifest identifies the exact customer-document set. It does not establish product behavior, host installation, rights clearance, publication, or customer outcomes."
+}

@@ -1,0 +1,7 @@
+AUTHORING_RUN_ID: HESPEROS-IMPACTFUL-TOM-20260730-04
+AUTHORING_CAPABILITY: hesperos-documentation
+AUTHORSHIP_SCOPE: materially-revised
+AUTHORED_FILES_COUNT: 15
+AUTHORED_FILES: README.md | docs/getting-started.md | docs/installing-and-maintaining.md | docs/privacy-and-boundaries.md | docs/troubleshooting.md | docs/provenance-and-verification.md | DATA-AND-PRIVACY.md | TERMS-OF-USE.md | LICENSE.md | ATTRIBUTION.md | NOTICE.md | TRADEMARKS.md | SUPPORT.md | SECURITY.md | CHANGELOG.md
+DOCUMENTATION_FINGERPRINT: 8bc3aa19eed6a9400685aabb925cf54209f2f7baca8cd29a5559216c8cf20823
+HESPEROS_AUTHORING_COMPLETE

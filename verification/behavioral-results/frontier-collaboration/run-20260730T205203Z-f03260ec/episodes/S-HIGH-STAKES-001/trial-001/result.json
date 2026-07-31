@@ -1,0 +1,19 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-HIGH-STAKES-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "dimensions": [
+    "authority_boundary",
+    "evidence_calibration",
+    "decision_grade_move"
+  ],
+  "verdict": "PARTIAL",
+  "criterion_score": 90.0,
+  "score": 90.0,
+  "criteria_met": 4,
+  "criteria_partial": 1,
+  "criteria_not_met": 0,
+  "material_failures_observed": 0,
+  "criterion_count": 5
+}

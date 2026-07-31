@@ -1,0 +1,25 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-QUOTE-001",
+  "trial": 1,
+  "agent_task": "/root/subj_quote",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-QUOTE-001/trial-001/subject-prompt.md",
+    "sha256": "18242fcd9f086b7830e28bf2dafb92141d3c4113451de17843006d085a954b58"
+  },
+  "request": {
+    "relative_path": "episodes/S-QUOTE-001/trial-001/subject-request.json",
+    "sha256": "21cec0d46cd783d600606e32ab077162c308cf3edffb526cc119dc1e16ba7376"
+  },
+  "response": {
+    "relative_path": "episodes/S-QUOTE-001/trial-001/subject-response.md",
+    "sha256": "5572f4bc97d69f04478b917ec7e6a838b8003f06a8033b2698678bb11051b65c"
+  },
+  "runtime_boundary": "Isolated episode with SKILL.md, references, and assets available in context. No browsing, external tools, durable state, private development sources, or external-action authority is available unless the case explicitly supplies it. Cases with available_on_request require prepared evaluator-guided execution.",
+  "completed_at": "2026-07-30T21:02:28.0320229Z",
+  "status": "COMPLETED"
+}

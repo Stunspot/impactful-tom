@@ -1,0 +1,264 @@
+{
+  "schema_version": "cd-augment-release-audit/v1",
+  "root": "release/stage/impactful-tom-v1.0.0",
+  "observed_at": "2026-07-31T00:53:24.160770+00:00",
+  "file_count": 50,
+  "tree_sha256": "b9a44384ed1758bf5420b063026d135b367f9d26804e3af1ac6560834ca8da10",
+  "manifest": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "bytes": 390,
+      "sha256": "967174e2eeec27d6c37b5a978a452247e533353a518a9afed111bd3c4f8bfe0a"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "bytes": 1340,
+      "sha256": "ab54ba596a030ac7845deeabce1c33fa9cbbb527b640627c4cff397d1aa992bb"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2012,
+      "sha256": "e6531a0083ba1e904da74efef86616852e871a2428984e04062a6c87274b3966"
+    },
+    {
+      "path": "DATA-AND-PRIVACY.md",
+      "bytes": 1595,
+      "sha256": "1064ebef8a78c73e3de0952fc7ec238090906fcea445c089f9dcbc2a7feeee15"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/assets/founder-case.template.md",
+      "bytes": 1413,
+      "sha256": "856acbef667bbdb971535ad0a40a972ae25b7ee7a56d350f4c3498d3d6980436"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/assets/founder-move.template.md",
+      "bytes": 634,
+      "sha256": "032844bba22b80f62e79f5ade906f6c29c98979e3c3078cca9d3733ebbf7bfbf"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/ATTRIBUTION.md",
+      "bytes": 1340,
+      "sha256": "ab54ba596a030ac7845deeabce1c33fa9cbbb527b640627c4cff397d1aa992bb"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/evals/eval-manifest.yaml",
+      "bytes": 1119,
+      "sha256": "f3804f875b62e94f905fc2e595f2346bb80254408ed13aa2a4ed1774bb1a1868"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/evals/founder-performance-cases.yaml",
+      "bytes": 32910,
+      "sha256": "5ac413dd42c1c98e618cd35347fbef0eefe7f34ce5c7d398f86b3fd1a6273318"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/LICENSE.md",
+      "bytes": 3000,
+      "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/NOTICE.md",
+      "bytes": 1820,
+      "sha256": "51f1497a814173890f75378bead6b14cc0aa03ed5fde1a0cb28e7e69eac04e95"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/package-manifest.yaml",
+      "bytes": 104,
+      "sha256": "27a1aea9c1e3631ff44821ba13786d5b1c28f94217f90093ba946407bd6d9554"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/references/evidence-and-macro-boundary.md",
+      "bytes": 6174,
+      "sha256": "427139478812acc8e520861b470438c8d7a601be41ad5b8c6b597f92b7d12020"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/references/founder-performance-doctrine.md",
+      "bytes": 7183,
+      "sha256": "5d427208b29a48b166302e81c041fe4077ab7871ebf56ed37347f71787400cbe"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/references/provenance-and-boundaries.md",
+      "bytes": 3492,
+      "sha256": "9e3e288e8fa4397945bf2612e9d5adda88c219d76f6b68cda1fd56348762b979"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/references/voice-and-challenge.md",
+      "bytes": 3468,
+      "sha256": "1b495c6fba93c3a52f63a3aa379a60bbd5e516d0cfc0274fa7f18abf4c59d9db"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/SKILL.md",
+      "bytes": 10814,
+      "sha256": "4d9c303802747126dd9843214a4b1303fe47c3635525bd5c35d5bbe3e6b8444f"
+    },
+    {
+      "path": "dist/claude-code/impactful-tom/TRADEMARKS.md",
+      "bytes": 1433,
+      "sha256": "28f7c17d9a799d6e649c3204c8dfaa6bc69357e779c55762337d12ab9859f157"
+    },
+    {
+      "path": "docs/getting-started.md",
+      "bytes": 4620,
+      "sha256": "75d12a74375a8fc9c80445170e707f96c4ad1c19ed5d4c31a90bdaf2e23fc9a6"
+    },
+    {
+      "path": "docs/installing-and-maintaining.md",
+      "bytes": 5124,
+      "sha256": "98a25dabc50864385629b8df7544b7dd61f6775eba3df35f504dca96dbeea2b4"
+    },
+    {
+      "path": "docs/privacy-and-boundaries.md",
+      "bytes": 3528,
+      "sha256": "13cfbc7857d24968b1affa65d4360d536eeee110377deccd957154582640f2bb"
+    },
+    {
+      "path": "docs/provenance-and-verification.md",
+      "bytes": 6133,
+      "sha256": "f4f4404ffb6c9412232af9fdf229c40e55ce7c90f647829e35d04bb66e16544d"
+    },
+    {
+      "path": "docs/troubleshooting.md",
+      "bytes": 3124,
+      "sha256": "e8bca1426b8d7679d944e7922a63570832eceb89890bf7f4dd98086baf2e74c5"
+    },
+    {
+      "path": "documentation-manifest.json",
+      "bytes": 1863,
+      "sha256": "a1a551450ca928412f6712055f9850dc12b5aa3edf5606d6789678377fbdc17e"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 3000,
+      "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1820,
+      "sha256": "51f1497a814173890f75378bead6b14cc0aa03ed5fde1a0cb28e7e69eac04e95"
+    },
+    {
+      "path": "plugins/impactful-tom/.codex-plugin/plugin.json",
+      "bytes": 1716,
+      "sha256": "7b58b6e5fe3c1baeaa8985687163bc862f3815ea3b7a659b5fb03589ac504d93"
+    },
+    {
+      "path": "plugins/impactful-tom/assets/founder-constraint-mark.png",
+      "bytes": 913305,
+      "sha256": "684e4d435fb213e6806cf0cbc362e7f33300ba2e2346d5445dd8d3b72c859773"
+    },
+    {
+      "path": "plugins/impactful-tom/LICENSE.md",
+      "bytes": 3000,
+      "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/agents/openai.yaml",
+      "bytes": 245,
+      "sha256": "2b560285b66d95fea7a2838b87e6568f15e31b2fe8a8e2de32fdd69e5a48b610"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/assets/founder-case.template.md",
+      "bytes": 1413,
+      "sha256": "856acbef667bbdb971535ad0a40a972ae25b7ee7a56d350f4c3498d3d6980436"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/assets/founder-move.template.md",
+      "bytes": 634,
+      "sha256": "032844bba22b80f62e79f5ade906f6c29c98979e3c3078cca9d3733ebbf7bfbf"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/ATTRIBUTION.md",
+      "bytes": 1340,
+      "sha256": "ab54ba596a030ac7845deeabce1c33fa9cbbb527b640627c4cff397d1aa992bb"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/evals/eval-manifest.yaml",
+      "bytes": 1119,
+      "sha256": "f3804f875b62e94f905fc2e595f2346bb80254408ed13aa2a4ed1774bb1a1868"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/evals/founder-performance-cases.yaml",
+      "bytes": 32910,
+      "sha256": "5ac413dd42c1c98e618cd35347fbef0eefe7f34ce5c7d398f86b3fd1a6273318"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/LICENSE.md",
+      "bytes": 3000,
+      "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/NOTICE.md",
+      "bytes": 1820,
+      "sha256": "51f1497a814173890f75378bead6b14cc0aa03ed5fde1a0cb28e7e69eac04e95"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/package-manifest.yaml",
+      "bytes": 104,
+      "sha256": "27a1aea9c1e3631ff44821ba13786d5b1c28f94217f90093ba946407bd6d9554"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/references/evidence-and-macro-boundary.md",
+      "bytes": 6174,
+      "sha256": "427139478812acc8e520861b470438c8d7a601be41ad5b8c6b597f92b7d12020"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/references/founder-performance-doctrine.md",
+      "bytes": 7183,
+      "sha256": "5d427208b29a48b166302e81c041fe4077ab7871ebf56ed37347f71787400cbe"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/references/provenance-and-boundaries.md",
+      "bytes": 3492,
+      "sha256": "9e3e288e8fa4397945bf2612e9d5adda88c219d76f6b68cda1fd56348762b979"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/references/voice-and-challenge.md",
+      "bytes": 3468,
+      "sha256": "1b495c6fba93c3a52f63a3aa379a60bbd5e516d0cfc0274fa7f18abf4c59d9db"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/SKILL.md",
+      "bytes": 10814,
+      "sha256": "4d9c303802747126dd9843214a4b1303fe47c3635525bd5c35d5bbe3e6b8444f"
+    },
+    {
+      "path": "plugins/impactful-tom/skills/impactful-tom/TRADEMARKS.md",
+      "bytes": 1433,
+      "sha256": "28f7c17d9a799d6e649c3204c8dfaa6bc69357e779c55762337d12ab9859f157"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5012,
+      "sha256": "811ce23c0749af600be4849c5d851c0be7ef5f07fc4844e4d0446f8243b5752e"
+    },
+    {
+      "path": "RELEASE-MANIFEST.json",
+      "bytes": 9431,
+      "sha256": "2d73a90407981bfd39dea95f08d82971c80041be2f6cfed7b8069be3423d19a4"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1203,
+      "sha256": "9bd38829c3ac0aa2019e7a06761165cad5560247e019f22e36b8497d38ba4546"
+    },
+    {
+      "path": "SUPPORT.md",
+      "bytes": 988,
+      "sha256": "4f53f0ec20cb3eba9b5c5ba85f87e296d03da7fc7bb42022bb6baf70f52e2105"
+    },
+    {
+      "path": "TERMS-OF-USE.md",
+      "bytes": 3984,
+      "sha256": "15d458e61c756102be52cc5c993d37d4e5f71ddece563e06723a659d8cf7aefc"
+    },
+    {
+      "path": "TRADEMARKS.md",
+      "bytes": 1433,
+      "sha256": "28f7c17d9a799d6e649c3204c8dfaa6bc69357e779c55762337d12ab9859f157"
+    }
+  ],
+  "issues": [],
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

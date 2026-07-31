@@ -1,0 +1,77 @@
+{
+  "protocol_version": "1.0",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "created_at": "2026-07-30T20:52:03+00:00",
+  "status": "COMPLETE",
+  "prepared_at": "2026-07-30T20:52:03+00:00",
+  "package_root": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "package_name": "impactful-tom",
+  "package_version": "1.0.0",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "eval_files": [
+    "founder-performance-cases.yaml"
+  ],
+  "dialects": [
+    "cd-augment-eval/v1"
+  ],
+  "case_count": 24,
+  "trials": 1,
+  "expected_episodes": 24,
+  "host": "Codex collaboration isolated task agent",
+  "model": "gpt-5.6-terra",
+  "subject_adapter": "codex-collaboration-isolated-task-dispatch",
+  "judge_adapter": "collaboration-judgment-replay",
+  "subject_adapter_sha256": null,
+  "judge_adapter_sha256": "6201431bf5307826eb0ec1fc6905ffc5f271740267b22a182a8101d3a288f9a7",
+  "subject_adapter_provenance": {
+    "name": "codex-collaboration-isolated-task-dispatch",
+    "mode": "prepared TestForge packet dispatched to one fresh gpt-5.6-terra task per case; S-STATE-002 used evaluator-guided follow-up turns",
+    "case_receipt_format": "cd-collaboration-subject-execution/v1",
+    "custody_check": "verification/scripts/check_collaboration_run.py",
+    "claim_boundary": "Manual host-adapter evidence with hash-bound prompts, requests, responses, and task receipts; not Codex CLI or plugin-host execution."
+  },
+  "judge_adapter_provenance": {
+    "name": "collaboration-judgment-replay",
+    "config_path": "verification/adapters/collaboration-judgment-replay.json",
+    "config_sha256": "6201431bf5307826eb0ec1fc6905ffc5f271740267b22a182a8101d3a288f9a7",
+    "tracked_files": [
+      {
+        "path": "verification/adapters/replay_collaboration_judgment.py",
+        "sha256": "8d0f3b7018c538bf268272f5bb59d298614c28450ea9a0feb47d889e001b352d",
+        "bytes": 1220
+      }
+    ],
+    "independent_judge_receipt": {
+      "path": "judge-batch-receipt.json",
+      "sha256": "a5bf6ffabb8e587e85046f4eaa8250d8c18fe88dfc86623a07d1006a5bde7b5e",
+      "bytes": 12164,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "xhigh"
+    }
+  },
+  "harness_sha256": "894a4c7a655503a674bc5dca9165915f07c6d380758317acbd4940d1d698080e",
+  "runtime_identity": {
+    "python_version": "3.14.0",
+    "python_implementation": "CPython",
+    "python_executable": "C:\\Python314\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "machine": "AMD64"
+  },
+  "indispensable_dimensions": [
+    "useful_intake",
+    "constraint_diagnosis",
+    "behavior_incentive_mapping",
+    "mission_market_arbitration",
+    "conditional_iteration",
+    "evidence_calibration",
+    "macro_subordination",
+    "decision_grade_move",
+    "dignity_preserving_challenge",
+    "identity_nonimpersonation",
+    "state_consent",
+    "authority_boundary"
+  ],
+  "selected_case_ids": [],
+  "source_case_count": 24,
+  "summarized_at": "2026-07-30T21:33:13+00:00"
+}

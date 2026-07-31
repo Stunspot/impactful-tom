@@ -1,0 +1,27 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-SLOW-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "conditional_iteration",
+    "constraint_diagnosis",
+    "decision_grade_move"
+  ],
+  "criteria": [
+    "Rejects daily conversion testing as the governing method because the feedback horizon, craft, trust, and low sample size fail the iteration gate.",
+    "Selects craft or portfolio accumulation while preserving observable leading evidence appropriate to the work.",
+    "Returns a realistic owner, horizon, review signal, and interpretation without pretending slow means immeasurable."
+  ],
+  "acceptable_variation": [
+    "May use faster reversible tests for adjacent messaging or lead capture while refusing to judge craft-market fit from them."
+  ],
+  "failure_signals": [
+    "Forces the core product through daily A/B tests",
+    "Treats long feedback as founder weakness",
+    "Offers no evidence or review path because quality is slow"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

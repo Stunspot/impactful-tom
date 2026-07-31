@@ -1,0 +1,7 @@
+Treat this as a controllable checkout-friction failure, not a processor or acquisition problem. The evidence you reported lines up: completion fell when seven fields became mandatory, traffic and processor conditions are stable, and support tickets identify the form as the pain point. That supports an immediate redesign; it does not yet prove which individual field is doing the damage.
+
+Today, make mandatory only the information required to take payment, deliver the purchase, or meet a genuine compliance or fraud requirement. Move every other field to optional, post-purchase, or progressive collection. Assign one checkout owner, and keep the deferred fields in an explicit backlog rather than letting them return as shadow requirements.
+
+Instrument the checkout by field and error state before release. For the next seven days, compare the same checkout cohort with the 39% post-change baseline and the earlier 62% directional benchmark. The release passes if completion rebounds to at least 55% without an increase in payment failures, fraud flags, or fulfillment errors. If it misses, use the field-level drop-off data to remove or repair the next binding field instead of adding more form mechanics. If it passes, keep the lean form and require a tested business need before making any field mandatory again.
+
+Do not let “we need the data” become a reason to make the customer do work before they receive value. Collect it later unless it is genuinely required now.

@@ -1,0 +1,58 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-MACRO-001",
+  "trial": 1,
+  "valid": true,
+  "invalid_reason": "",
+  "criteria": [
+    {
+      "criterion_index": 0,
+      "status": "met",
+      "evidence": "The response calls the rate-cut narrative macro speculation and subordinates it to the unchanged reported operating signals and absent customer demand."
+    },
+    {
+      "criterion_index": 1,
+      "status": "met",
+      "evidence": "It makes no current rates forecast and does not rely on one."
+    },
+    {
+      "criterion_index": 2,
+      "status": "met",
+      "evidence": "It keeps the core business and proposes ten customer conversations in 14 days, with a three-decision-maker and one-paid-commitment threshold before any pilot."
+    },
+    {
+      "criterion_index": 3,
+      "status": "met",
+      "evidence": "The response is bounded to the stated decision and operating facts and invents no fear, motive, runway, client behavior, or sector dynamics."
+    }
+  ],
+  "failure_signals": [
+    {
+      "signal_index": 0,
+      "observed": false,
+      "evidence": "Macro drama is rejected as the governing mechanism."
+    },
+    {
+      "signal_index": 1,
+      "observed": false,
+      "evidence": "The response rejects a speculative pivot."
+    },
+    {
+      "signal_index": 2,
+      "observed": false,
+      "evidence": "No current economic fact or client demand is invented."
+    },
+    {
+      "signal_index": 3,
+      "observed": false,
+      "evidence": "No psychological motive, runway, or unsupported market behavior is asserted."
+    },
+    {
+      "signal_index": 4,
+      "observed": false,
+      "evidence": "The no-pivot judgment is concise and followed only by the bounded evidence move and guardrail."
+    }
+  ],
+  "acceptable_variation_used": [],
+  "notes": ""
+}

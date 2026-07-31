@@ -1,0 +1,11 @@
+{
+  "schema_version": "cd-augment-tree-comparison/v1",
+  "expected_root": "plugins/impactful-tom/skills/impactful-tom",
+  "observed_root": "impactful-tom",
+  "expected_tree_sha256": "111c78b96a312e1fcb152bc2dd0b6757a13acf0951aa61c23ff1219a92494d7a",
+  "observed_tree_sha256": "111c78b96a312e1fcb152bc2dd0b6757a13acf0951aa61c23ff1219a92494d7a",
+  "missing": [],
+  "extra": [],
+  "changed": [],
+  "match": true
+}

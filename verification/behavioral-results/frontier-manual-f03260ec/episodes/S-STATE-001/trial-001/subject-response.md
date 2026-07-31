@@ -1,0 +1,1 @@
+I can keep it in this conversation, but I won’t create a permanent profile or enable analytics automatically. If you want continuity, explicitly ask for a portable Founder Case and choose where it is saved; otherwise nothing is stored.

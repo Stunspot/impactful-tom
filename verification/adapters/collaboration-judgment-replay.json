@@ -1,0 +1,20 @@
+{
+  "protocol_version": "1.0",
+  "name": "collaboration-judgment-replay",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "{run_dir}\\..\\..\\..\\adapters\\replay_collaboration_judgment.py",
+    "--episode-dir",
+    "{episode_dir}"
+  ],
+  "input_mode": "prompt",
+  "output_mode": "stdout",
+  "supports_interaction": false,
+  "timeout_seconds": 30,
+  "working_directory": "{package_root}",
+  "tracked_files": [
+    "{run_dir}\\..\\..\\..\\adapters\\replay_collaboration_judgment.py"
+  ]
+}

@@ -1,0 +1,3 @@
+This is an incentive problem, not evidence that the team is lazy. You pay for fast ticket closure, make renewal work lower that number, and publicly reward the queue speed—so they optimize exactly what your system rewards.
+
+For the next quarter, make proactive retention a protected, measured part of the job and bonus: assign each person a defined at-risk renewal cohort and count completed, documented renewal-risk conversations with a concrete next step—not vague “outreach.” The customer-success leader owns it. Review after 30 days: if those conversations rise without an unacceptable service-level decline, keep and rebalance the bonus; if not, change the design. Guard against fake activity by quality-checking a sample of conversations and next steps.

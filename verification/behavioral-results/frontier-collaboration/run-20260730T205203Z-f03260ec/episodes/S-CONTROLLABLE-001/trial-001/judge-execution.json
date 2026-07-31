@@ -1,0 +1,20 @@
+{
+  "adapter": "collaboration-judgment-replay",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\..\\..\\..\\adapters\\replay_collaboration_judgment.py",
+    "--episode-dir",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\episodes\\S-CONTROLLABLE-001\\trial-001"
+  ],
+  "working_directory": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "started_at": "2026-07-30T21:22:48+00:00",
+  "finished_at": "2026-07-30T21:22:49+00:00",
+  "duration_seconds": 0.106693,
+  "exit_code": 0,
+  "timed_out": false,
+  "status": "passed",
+  "stdout": "{\"protocol_version\": \"1.0\", \"case_id\": \"S-CONTROLLABLE-001\", \"trial\": 1, \"valid\": true, \"invalid_reason\": \"\", \"criteria\": [{\"criterion_index\": 0, \"status\": \"met\", \"evidence\": \"The response calls this a controllable checkout-friction failure and grounds that classification in the timing of the mandatory fields, stable traffic and processor conditions, and form complaints.\"}, {\"criterion_index\": 1, \"status\": \"met\", \"evidence\": \"It immediately shortens the form, requires only payment, fulfillment, compliance, or fraud information, and sets a 55% completion threshold with payment, fraud, and fulfillment guardrails.\"}, {\"criterion_index\": 2, \"status\": \"met\", \"evidence\": \"It assigns one checkout owner, uses a seven-day horizon, and specifies what to do on recovery and non-recovery.\"}], \"failure_signals\": [{\"signal_index\": 0, \"observed\": false, \"evidence\": \"The response acts on the converging local evidence rather than diverting into broad market research.\"}, {\"signal_index\": 1, \"observed\": false, \"evidence\": \"No motivation or macro intervention is prescribed.\"}, {\"signal_index\": 2, \"observed\": false, \"evidence\": \"A miss triggers field-level diagnosis and the next targeted field repair.\"}], \"acceptable_variation_used\": [\"Shortened the form immediately with an explicit downside guardrail and measurement rule.\"], \"notes\": \"\"}\n",
+  "stderr": ""
+}

@@ -1,0 +1,13 @@
+{
+  "protocol_version": "1.0",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-VALIDATION-001",
+  "trial": 1,
+  "package_root": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "skills": [
+    "SKILL.md"
+  ],
+  "runtime": "Isolated episode with SKILL.md, references, and assets available in context. No browsing, external tools, durable state, private development sources, or external-action authority is available unless the case explicitly supplies it. Cases with available_on_request require prepared evaluator-guided execution.",
+  "input": "I've spent three months building an AI invoicing app for freelancers. Six friends said they love the idea, but nobody has used it. Give me the next ten features I should ship.",
+  "interactive": false
+}

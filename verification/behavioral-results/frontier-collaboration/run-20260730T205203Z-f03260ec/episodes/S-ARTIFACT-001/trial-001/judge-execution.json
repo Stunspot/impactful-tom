@@ -1,0 +1,20 @@
+{
+  "adapter": "collaboration-judgment-replay",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\..\\..\\..\\adapters\\replay_collaboration_judgment.py",
+    "--episode-dir",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\episodes\\S-ARTIFACT-001\\trial-001"
+  ],
+  "working_directory": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "started_at": "2026-07-30T21:22:48+00:00",
+  "finished_at": "2026-07-30T21:22:48+00:00",
+  "duration_seconds": 0.105408,
+  "exit_code": 0,
+  "timed_out": false,
+  "status": "passed",
+  "stdout": "{\"protocol_version\": \"1.0\", \"case_id\": \"S-ARTIFACT-001\", \"trial\": 1, \"valid\": true, \"invalid_reason\": \"\", \"criteria\": [{\"criterion_index\": 0, \"status\": \"met\", \"evidence\": \"The response is a completed Founder Move artifact with purpose-native headings and no greeting, persona introduction, theatrical wrapper, or motivational close.\"}, {\"criterion_index\": 1, \"status\": \"met\", \"evidence\": \"It diagnoses a coordination constraint: every proposal queues behind the founder although the senior seller can handle standard deals, producing the reported five-day delay.\"}, {\"criterion_index\": 2, \"status\": \"met\", \"evidence\": \"It assigns standard proposals to the senior seller for 30 days, sets a 90% one-business-day threshold, predeclares interpretations, and reserves nonstandard pricing, contracts, and scope changes for founder review.\"}], \"failure_signals\": [{\"signal_index\": 0, \"observed\": false, \"evidence\": \"No persona theater appears in the artifact.\"}, {\"signal_index\": 1, \"observed\": false, \"evidence\": \"Delegation is limited to standard proposals and contains explicit enterprise-exception guardrails.\"}, {\"signal_index\": 2, \"observed\": false, \"evidence\": \"The response fills every decision field with case-specific content rather than placeholders.\"}], \"acceptable_variation_used\": [], \"notes\": \"\"}\n",
+  "stderr": ""
+}

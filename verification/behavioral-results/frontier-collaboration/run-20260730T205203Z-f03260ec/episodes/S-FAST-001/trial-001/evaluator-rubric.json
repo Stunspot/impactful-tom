@@ -1,0 +1,27 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-FAST-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "conditional_iteration",
+    "evidence_calibration",
+    "decision_grade_move"
+  ],
+  "criteria": [
+    "Admits a bounded experiment because the variable, signal, downside, and feedback horizon fit.",
+    "Defines the comparison, threshold or decision rule, horizon, and treatment of an inconclusive result.",
+    "Avoids inflating the test into a complete product-market-fit claim."
+  ],
+  "acceptable_variation": [
+    "May recommend an equivalence or minimum-effect rule rather than a simple winner if it is decision-relevant."
+  ],
+  "failure_signals": [
+    "Rejects useful experimentation merely because one test is imperfect",
+    "Treats clicks alone as the governing signal when purchases are available",
+    "Claims the winning promise validates the whole business"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

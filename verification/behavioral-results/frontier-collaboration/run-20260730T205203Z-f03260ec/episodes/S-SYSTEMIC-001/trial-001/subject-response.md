@@ -1,0 +1,7 @@
+This is not a funnel problem. Your processor has shut off the ability to transact in the region; traffic and form changes are irrelevant until that dependency clears. Treat checkout completion as unavailable, not as a 39% conversion rate to optimize.
+
+Respond plainly: tell affected customers that purchases are temporarily unavailable in their region while the payment provider completes a mandatory regulatory review, and that you cannot give a completion date. Do not promise a workaround, push people toward an unreviewed payment path, or imply the review is nearly done. Give them a way to be notified when checkout returns, and preserve their intent without taking payment.
+
+The move is qualified review and staging, not growth experimentation. Owner: whoever owns payments or operations. Within one business day, have them confirm with the processor or qualified regulatory counsel what communications, waitlists, and non-payment alternatives are allowed during the review; then publish one approved status message and route support to it. Review daily for a processor update and immediately when advice changes.
+
+Success is not raising checkout completion before the block lifts. Success is a compliant, consistent customer response with zero unapproved transactions or misleading promises. If the review remains open beyond a horizon you can afford, decide whether to pause regional acquisition and support the affected customers rather than paying to send more people into a closed checkout.

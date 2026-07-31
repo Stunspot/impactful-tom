@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "name": "private-source.md",
+      "sha256": "7F9315A844D9E0CBBF293A04BA447D33273FB67757FC10BD60C024FB1493486C",
+      "state": "release-excluded-private"
+    }
+  ]
+}

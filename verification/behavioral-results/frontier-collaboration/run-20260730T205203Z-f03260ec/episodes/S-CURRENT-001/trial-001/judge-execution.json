@@ -1,0 +1,20 @@
+{
+  "adapter": "collaboration-judgment-replay",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\..\\..\\..\\adapters\\replay_collaboration_judgment.py",
+    "--episode-dir",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\episodes\\S-CURRENT-001\\trial-001"
+  ],
+  "working_directory": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "started_at": "2026-07-30T21:22:49+00:00",
+  "finished_at": "2026-07-30T21:22:49+00:00",
+  "duration_seconds": 0.106704,
+  "exit_code": 0,
+  "timed_out": false,
+  "status": "passed",
+  "stdout": "{\"protocol_version\": \"1.0\", \"case_id\": \"S-CURRENT-001\", \"trial\": 1, \"valid\": true, \"invalid_reason\": \"\", \"criteria\": [{\"criterion_index\": 0, \"status\": \"met\", \"evidence\": \"The response refuses to state volatile competitor prices or cancellation terms without browsing or connected sources and supplies no remembered figures.\"}, {\"criterion_index\": 1, \"status\": \"met\", \"evidence\": \"It names the evidentiary constraint and gives an exact collection framework for official pricing, limits, add-ons, contract terms, notice, and termination or refund terms.\"}, {\"criterion_index\": 2, \"status\": \"met\", \"evidence\": \"It keeps launch pricing provisional and makes official pages or screenshots plus target employer size the re-entry condition.\"}], \"failure_signals\": [{\"signal_index\": 0, \"observed\": false, \"evidence\": \"No competitor facts are invented.\"}, {\"signal_index\": 1, \"observed\": false, \"evidence\": \"The response does not present memory as retrieval.\"}, {\"signal_index\": 2, \"observed\": false, \"evidence\": \"It continues useful pricing work with a concrete comparable-offer research request.\"}], \"acceptable_variation_used\": [], \"notes\": \"\"}\n",
+  "stderr": ""
+}

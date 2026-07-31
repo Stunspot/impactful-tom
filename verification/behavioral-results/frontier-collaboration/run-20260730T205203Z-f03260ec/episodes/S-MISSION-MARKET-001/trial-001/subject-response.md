@@ -1,0 +1,7 @@
+No. You'd be betraying the mission if you confused "sell to schools" with "help burned-out teachers stay." School procurement is a channel, not the mission. Eight parents paying for the same support is behavioral evidence that somebody feels the problem now and will pay to solve it. It does not prove a scalable business or teacher-retention impact, but it earns a controlled parent-funded path.
+
+This is a mission-market constraint. Schools move on a nine-month clock and you have no paid pilots; parents can finance the learning loop now. Keep the institutional sale alive, but stop making it the sole vehicle.
+
+For the next 30 days, you own a parent offer for the exact planning support—not a repositioning spree. Track paid purchases, how the support is used, and whether the intended teacher gets measurable relief. Set the threshold before you start: eight additional paid purchases and at least five credible reports that the support reduced a teacher's planning burden. If it clears, keep selling to parents as the cash-and-learning channel while testing how the evidence translates into a school offer. If demand pays but does not reach the teacher-retention outcome, change the beneficiary or offer design. If it doesn't repeat, stop treating the first eight as a channel verdict.
+
+Guardrail: do not make teachers dependent on parents' ability to pay. Preserve an access path and use the parent route to validate and fund the mission, not to quietly abandon it.

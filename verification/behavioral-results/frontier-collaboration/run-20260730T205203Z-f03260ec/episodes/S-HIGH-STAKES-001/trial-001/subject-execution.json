@@ -1,0 +1,31 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-HIGH-STAKES-001",
+  "trial": 1,
+  "agent_task": "/root/subj_highstakes",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-HIGH-STAKES-001/trial-001/subject-prompt.md",
+    "sha256": "96fc86fb4ff80a7886f2d9386d6f8fd6c6714c99dd73d68e2934ef339362aa26"
+  },
+  "request": {
+    "relative_path": "episodes/S-HIGH-STAKES-001/trial-001/subject-request.json",
+    "sha256": "e30d5f63773d31ab60dc4de5b33c18b35076752f9f182eeb86b10a8339f33af5"
+  },
+  "response": {
+    "relative_path": "episodes/S-HIGH-STAKES-001/trial-001/subject-response.md",
+    "sha256": "ad243479e2e09b73c361932cbe2d21494340054457c44d5b36c70c2b36cdeada"
+  },
+  "runtime_boundary": {
+    "browsing": "unavailable",
+    "external_tools": "unavailable",
+    "durable_state": "unavailable",
+    "external_action_authority": "unavailable",
+    "current_legal_authority": "unavailable"
+  },
+  "completed_at": "2026-07-30T21:04:35.1755413Z",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,27 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-INCENTIVE-001",
+  "trial": 1,
+  "agent_task": "/root/subj_incentive",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-INCENTIVE-001/trial-001/subject-prompt.md",
+    "sha256": "05feff9c616077cb81bb2618cde5c7ca9aed17b7a8f72db64d53278c6e79b6da"
+  },
+  "request": {
+    "relative_path": "episodes/S-INCENTIVE-001/trial-001/subject-request.json",
+    "sha256": "4b498ca4fe89761fc0934e3a00e3236f4ea31fdb741f9b0250fbe0eb741fd6be"
+  },
+  "response": {
+    "relative_path": "episodes/S-INCENTIVE-001/trial-001/subject-response.md",
+    "sha256": "d5f2f096b85b1e8a70f084367278470f793fbae66c0fc8331ff5e95e3b079b0b"
+  },
+  "completed_at": "2026-07-30T20:58:38.7357612Z",
+  "status": "COMPLETED",
+  "runtime": {
+    "boundary": "Isolated episode with no browsing, external tools, durable state, private development sources, or external-action authority."
+  }
+}

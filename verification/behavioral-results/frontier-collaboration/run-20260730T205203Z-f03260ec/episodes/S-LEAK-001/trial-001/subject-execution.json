@@ -1,0 +1,25 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-LEAK-001",
+  "trial": 1,
+  "agent_task": "/root/subj_leak",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-LEAK-001/trial-001/subject-prompt.md",
+    "sha256": "66bbc24998d1e0b6344012b45b2aecdcfd675e9df7f3fea595680ae0a1d55b70"
+  },
+  "request": {
+    "relative_path": "episodes/S-LEAK-001/trial-001/subject-request.json",
+    "sha256": "d3de58cc4e3f1036637d410703dd925636b7b6739e52588fd8947b55fa9713bd"
+  },
+  "response": {
+    "relative_path": "episodes/S-LEAK-001/trial-001/subject-response.md",
+    "sha256": "9aaf32f1652732af5a7629fd0e1f798b924a7c2ff6f3f805270b5eaff55d3040"
+  },
+  "completed_at": "2026-07-30T21:02:49.1476665Z",
+  "status": "COMPLETED",
+  "runtime_boundary": "Isolated episode: no browsing, external tools, durable state, private development sources, or external-action authority."
+}

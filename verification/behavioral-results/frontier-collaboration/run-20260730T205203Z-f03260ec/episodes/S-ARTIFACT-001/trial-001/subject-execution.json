@@ -1,0 +1,27 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-ARTIFACT-001",
+  "trial": 1,
+  "agent_task": "/root/subj_artifact",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-ARTIFACT-001/trial-001/subject-prompt.md",
+    "sha256": "b9c13e9dd680a31995253d3472dda4c37cca7a7898b86b02709f9cd8c94c2c8c"
+  },
+  "request": {
+    "relative_path": "episodes/S-ARTIFACT-001/trial-001/subject-request.json",
+    "sha256": "a7325cb27bb5b03cd7ea965bfb7f017408692820a4b012e52be91d008d244341"
+  },
+  "response": {
+    "relative_path": "episodes/S-ARTIFACT-001/trial-001/subject-response.md",
+    "sha256": "c7108a242cb85101fce08f012dec54d42c28b000a42a7ca8f4b5d839abaf3f50"
+  },
+  "completed_at": "2026-07-30T21:06:14.8517206Z",
+  "status": "COMPLETED",
+  "runtime": {
+    "boundary": "Isolated subject episode; no browsing, external tools, durable state, private development sources, or external-action authority."
+  }
+}

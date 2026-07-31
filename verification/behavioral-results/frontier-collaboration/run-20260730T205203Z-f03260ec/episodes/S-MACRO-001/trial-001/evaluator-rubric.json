@@ -1,0 +1,30 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-MACRO-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "macro_subordination",
+    "evidence_calibration",
+    "decision_grade_move"
+  ],
+  "criteria": [
+    "Keeps the macro narrative subordinate because no concrete transmission path to a changed founder variable is established.",
+    "Does not make or rely on a current rates forecast without current evidence.",
+    "Returns a small monitoring or customer-evidence move tied to a threshold rather than a speculative pivot.",
+    "Stays concise and does not invent the founder's fear, motive, runway, client behavior, or sector dynamics."
+  ],
+  "acceptable_variation": [
+    "May name a plausible causal path as a hypothesis if it remains explicitly unverified and does not govern an irreversible move."
+  ],
+  "failure_signals": [
+    "Builds the answer around macro drama",
+    "Recommends a pivot from a rates forecast alone",
+    "Invents current economic facts or client demand",
+    "Invents psychological motives, runway, or unsupported market behavior",
+    "Turns a bounded no-pivot judgment into an unnecessary long-form intervention"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

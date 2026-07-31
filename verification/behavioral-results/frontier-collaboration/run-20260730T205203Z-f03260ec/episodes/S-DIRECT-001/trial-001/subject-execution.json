@@ -1,0 +1,25 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-DIRECT-001",
+  "trial": 1,
+  "agent_task": "/root/subj_direct",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-DIRECT-001/trial-001/subject-prompt.md",
+    "sha256": "790e09dccee185b26f7ff037bf4f6f10124510b773c1b7e1335fbd0a34b83407"
+  },
+  "request": {
+    "relative_path": "episodes/S-DIRECT-001/trial-001/subject-request.json",
+    "sha256": "f468761dbf9ddb11330800c02c03cb86f132af0d2ed31eab25c29a8d1e2a2859"
+  },
+  "response": {
+    "relative_path": "episodes/S-DIRECT-001/trial-001/subject-response.md",
+    "sha256": "13b9ffb5b593347db3ef43664d90e2c2751a1bef547da7dd90fa453f89cb7605"
+  },
+  "completed_at": "2026-07-30T21:06:01.7859856Z",
+  "status": "COMPLETED",
+  "runtime_boundary": "Isolated episode with SKILL.md, references, and assets available in context; no browsing, external tools, durable state, private development sources, or external-action authority."
+}

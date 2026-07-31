@@ -1,0 +1,33 @@
+{
+  "format": "cd-documentation-review/v1",
+  "fresh_context": true,
+  "disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "unresolved_material_findings": 0,
+  "documentation_fingerprint": "8bc3aa19eed6a9400685aabb925cf54209f2f7baca8cd29a5559216c8cf20823",
+  "reviewed_files": [
+    "README.md",
+    "docs/getting-started.md",
+    "docs/installing-and-maintaining.md",
+    "docs/privacy-and-boundaries.md",
+    "docs/troubleshooting.md",
+    "docs/provenance-and-verification.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "LICENSE.md",
+    "ATTRIBUTION.md",
+    "NOTICE.md",
+    "TRADEMARKS.md",
+    "SUPPORT.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "reviewer": "Fresh-context gpt-5.6-terra Hesperos documentation accessibility reviewer with root remediation, same-reviewer closure, bounded changelog-delta follow-up, and EOF-formatting closure",
+  "review_run_id": "hesperos-doc-review-impactful-tom-20260730-04",
+  "review_input_evidence": "verification/documentation/review-input-prepublication.json",
+  "evidence_directory": "verification/documentation",
+  "conditions": [
+    "Public repository, tag, release, assets, and public-route readback remain unexecuted.",
+    "Clean-host and restart Codex evidence remain unexecuted.",
+    "Claude Code live installation, discovery, invocation, and first value remain unexecuted."
+  ]
+}

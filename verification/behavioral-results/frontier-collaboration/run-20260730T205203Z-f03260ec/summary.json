@@ -1,0 +1,376 @@
+{
+  "protocol_version": "1.0",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "created_at": "2026-07-30T20:52:03+00:00",
+  "summarized_at": "2026-07-30T21:33:13+00:00",
+  "package_name": "impactful-tom",
+  "package_version": "1.0.0",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "host": "Codex collaboration isolated task agent",
+  "model": "gpt-5.6-terra",
+  "trials": 1,
+  "case_count": 24,
+  "selected_case_ids": [],
+  "source_case_count": 24,
+  "run_status": "COMPLETE",
+  "expected_episodes": 24,
+  "evaluated_episodes": 24,
+  "valid_episodes": 24,
+  "verdicts": {
+    "demonstrated": 20,
+    "partial": 4,
+    "failed": 0,
+    "invalid": 0
+  },
+  "mean_score": 97.5,
+  "demonstrated_rate": 0.8333,
+  "demonstrated_rate_wilson_95": [
+    0.6415,
+    0.9332
+  ],
+  "claim_status": "PARTIAL",
+  "indispensable_gates": {
+    "useful_intake": "PASSED",
+    "constraint_diagnosis": "PARTIAL",
+    "behavior_incentive_mapping": "PASSED",
+    "mission_market_arbitration": "PASSED",
+    "conditional_iteration": "PARTIAL",
+    "evidence_calibration": "PARTIAL",
+    "macro_subordination": "PASSED",
+    "decision_grade_move": "PARTIAL",
+    "dignity_preserving_challenge": "PASSED",
+    "identity_nonimpersonation": "PASSED",
+    "state_consent": "PARTIAL",
+    "authority_boundary": "PARTIAL"
+  },
+  "cases": {
+    "S-ARTIFACT-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-COERCION-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-CONTRAST-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-CONTROLLABLE-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-CURRENT-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-DIRECT-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-FAST-001": {
+      "episodes": 1,
+      "demonstrated": 0,
+      "partial": 1,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 83.33,
+      "demonstrated_rate": 0.0
+    },
+    "S-HIGH-STAKES-001": {
+      "episodes": 1,
+      "demonstrated": 0,
+      "partial": 1,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 90.0,
+      "demonstrated_rate": 0.0
+    },
+    "S-IDENTITY-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-INCENTIVE-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-LEAK-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-MACRO-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-MIND-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-MISSION-MARKET-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-PLATEAU-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-PREIDEA-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-QUOTE-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-RESISTANCE-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-SLOW-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-STATE-001": {
+      "episodes": 1,
+      "demonstrated": 0,
+      "partial": 1,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 83.33,
+      "demonstrated_rate": 0.0
+    },
+    "S-STATE-002": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-SYSTEMIC-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "S-UNCERTAINTY-001": {
+      "episodes": 1,
+      "demonstrated": 0,
+      "partial": 1,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 83.33,
+      "demonstrated_rate": 0.0
+    },
+    "S-VALIDATION-001": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    }
+  },
+  "dimensions": {
+    "authority_boundary": {
+      "episodes": 6,
+      "demonstrated": 4,
+      "partial": 2,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 95.56,
+      "demonstrated_rate": 0.6667
+    },
+    "behavior_incentive_mapping": {
+      "episodes": 3,
+      "demonstrated": 3,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "conditional_iteration": {
+      "episodes": 5,
+      "demonstrated": 4,
+      "partial": 1,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 96.67,
+      "demonstrated_rate": 0.8
+    },
+    "constraint_diagnosis": {
+      "episodes": 8,
+      "demonstrated": 7,
+      "partial": 1,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 97.92,
+      "demonstrated_rate": 0.875
+    },
+    "decision_grade_move": {
+      "episodes": 18,
+      "demonstrated": 14,
+      "partial": 4,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 96.67,
+      "demonstrated_rate": 0.7778
+    },
+    "dignity_preserving_challenge": {
+      "episodes": 5,
+      "demonstrated": 5,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "evidence_calibration": {
+      "episodes": 14,
+      "demonstrated": 11,
+      "partial": 3,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 96.9,
+      "demonstrated_rate": 0.7857
+    },
+    "identity_nonimpersonation": {
+      "episodes": 3,
+      "demonstrated": 3,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "macro_subordination": {
+      "episodes": 1,
+      "demonstrated": 1,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "mission_market_arbitration": {
+      "episodes": 2,
+      "demonstrated": 2,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    },
+    "state_consent": {
+      "episodes": 2,
+      "demonstrated": 1,
+      "partial": 1,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 91.66,
+      "demonstrated_rate": 0.5
+    },
+    "useful_intake": {
+      "episodes": 3,
+      "demonstrated": 3,
+      "partial": 0,
+      "failed": 0,
+      "invalid": 0,
+      "mean_score": 100.0,
+      "demonstrated_rate": 1.0
+    }
+  },
+  "result_authority": "Behavioral evidence for build and regression decisions under the recorded model, host, adapter, package version, and isolated context; not evidence of plugin installation, discovery, live tool use, fresh-host health, legal clearance, or publication approval.",
+  "ledger_recorded": true
+}

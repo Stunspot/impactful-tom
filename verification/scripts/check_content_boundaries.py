@@ -1,0 +1,79 @@
+"""Check that the public runtime states its key safety and identity boundaries."""
+
+from __future__ import annotations
+
+import argparse
+import re
+from pathlib import Path
+
+from _static_check import default_repo, emit, read_text, text_files
+
+
+FORBIDDEN_PATTERNS = {
+    "celebrity impersonation": r"(?m)^\s*(?:you are|i am|act as|speak as)\s+tom\s+bilyeu\b",
+    "exact-voice instruction": r"(?m)^\s*(?:use|perform|write in)\s+(?:the\s+)?(?:exact|indistinguishable)\s+(?:voice|style)\s+of\s+tom\s+bilyeu\b",
+    "official affiliation claim": r"\bimpact\s+theory\s+(?:official|approved|endorsed)\b",
+    "automatic analytics claim": r"\bautomatic(?:ally)?\s+analytics\b",
+    "automatic persistence claim": r"\bautomatic(?:ally)?\s+(?:save|saved|store|stored|persist|persisted)\b",
+}
+
+REQUIRED_PATTERNS = {
+    "independent/unofficial status": (
+        r"\bindependent\b",
+        r"\bunofficial\b",
+    ),
+    "non-affiliation boundary": (
+        r"\bnot\s+affiliat",
+    ),
+    "session-first state": (
+        r"\bsession(?:-only|\s+only)\b",
+        r"\bfounder\s+case\b",
+        r"\bexplicit(?:ly)?\b",
+    ),
+    "optional MIND boundary": (
+        r"\bmind\b",
+        r"(?:\boptional\b|\bwhen\b.{0,40}\bavailable\b|\bmay\s+supply\b)",
+    ),
+    "separate external-action authority": (
+        r"\bseparat(?:e|ely)\s+authoriz",
+    ),
+}
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--repo", type=Path, default=default_repo(__file__))
+    parser.add_argument("--skill-root", type=Path)
+    args = parser.parse_args()
+    repo = args.repo.resolve()
+    skill_root = (args.skill_root or repo / "plugins" / "impactful-tom" / "skills" / "impactful-tom").resolve()
+    errors: list[str] = []
+
+    files = [
+        path
+        for path in text_files(skill_root)
+        if "evals" not in path.relative_to(skill_root).parts
+    ]
+    if not files:
+        errors.append(f"no runtime text files found below {skill_root}")
+        return emit("content_boundaries", errors)
+
+    corpus_parts: list[str] = []
+    for path in files:
+        content = read_text(path, errors)
+        corpus_parts.append(content)
+        for label, pattern in FORBIDDEN_PATTERNS.items():
+            if re.search(pattern, content, flags=re.IGNORECASE):
+                errors.append(f"{label} found in {path.relative_to(skill_root).as_posix()}")
+        if "[TODO" in content or "TODO:" in content:
+            errors.append(f"unfinished scaffold marker found in {path.relative_to(skill_root).as_posix()}")
+
+    corpus = "\n".join(corpus_parts).lower()
+    for label, patterns in REQUIRED_PATTERNS.items():
+        if not all(re.search(pattern, corpus, flags=re.IGNORECASE | re.DOTALL) for pattern in patterns):
+            errors.append(f"missing {label} policy language")
+    return emit("content_boundaries", errors)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,38 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-DIRECT-001",
+  "trial": 1,
+  "valid": true,
+  "invalid_reason": "",
+  "criteria": [
+    {
+      "criterion_index": 0,
+      "status": "met",
+      "evidence": "The response is one short paragraph with no intake question, founder card, or deep-dive structure."
+    },
+    {
+      "criterion_index": 1,
+      "status": "met",
+      "evidence": "It defines the governing constraint as the bottleneck determining the outcome and contrasts changing that mechanism with piling effort onto other tasks."
+    }
+  ],
+  "failure_signals": [
+    {
+      "signal_index": 0,
+      "observed": false,
+      "evidence": "The answer does not expand into sections or a playbook."
+    },
+    {
+      "signal_index": 1,
+      "observed": false,
+      "evidence": "It answers directly without requesting business context."
+    },
+    {
+      "signal_index": 2,
+      "observed": false,
+      "evidence": "The definition is mechanism-specific rather than motivational."
+    }
+  ],
+  "acceptable_variation_used": [],
+  "notes": ""
+}

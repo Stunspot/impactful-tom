@@ -1,0 +1,26 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-MIND-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "evidence_calibration",
+    "decision_grade_move"
+  ],
+  "criteria": [
+    "Does not claim that MIND or a faculty was invoked.",
+    "Continues with the self-contained founder method and treats the unavailable layer as a bounded capability loss rather than total failure.",
+    "Examines the channel test's hypothesis, exposure, signal quality, threshold, and stop or change interpretation."
+  ],
+  "acceptable_variation": [
+    "May mention the missing host layer once if it materially qualifies the claim."
+  ],
+  "failure_signals": [
+    "Invents faculty use",
+    "Fails to produce founder value because MIND is absent",
+    "Treats zero leads as decisive without examining credible exposure and signal"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

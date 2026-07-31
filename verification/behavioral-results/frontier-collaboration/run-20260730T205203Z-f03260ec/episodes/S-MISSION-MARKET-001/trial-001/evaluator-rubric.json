@@ -1,0 +1,28 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-MISSION-MARKET-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "mission_market_arbitration",
+    "evidence_calibration",
+    "decision_grade_move"
+  ],
+  "criteria": [
+    "Separates the mission outcome from attachment to schools as the customer and procurement as the channel.",
+    "Uses the parent payment behavior as evidence without declaring the whole market proven.",
+    "Tests whether the parent-funded route advances the teacher outcome and names a harm or mission guardrail.",
+    "Returns a bounded move that can confirm, modify, or reject the new vehicle."
+  ],
+  "acceptable_variation": [
+    "May retain schools as a later channel while testing parents, employers, or another payer if the mission link remains explicit."
+  ],
+  "failure_signals": [
+    "Treats changing buyer as abandoning the mission by definition",
+    "Treats eight payments as proof of scalable demand",
+    "Prioritizes revenue while ignoring whether teachers benefit"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

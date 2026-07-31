@@ -1,0 +1,15 @@
+REVIEWED_FILES_COUNT: 15
+REVIEWED_FILES: README.md | docs/getting-started.md | docs/installing-and-maintaining.md | docs/privacy-and-boundaries.md | docs/troubleshooting.md | docs/provenance-and-verification.md | DATA-AND-PRIVACY.md | TERMS-OF-USE.md | LICENSE.md | ATTRIBUTION.md | NOTICE.md | TRADEMARKS.md | SUPPORT.md | SECURITY.md | CHANGELOG.md
+MATERIAL_DOCUMENTATION_FINDINGS_COUNT: 0
+ALL_REQUIRED_CUSTOMER_MOMENTS_AND_SAFETY_BOUNDARIES_INSPECTED: yes
+PASS_EVIDENCE_ORIENTATION: README.md :: The landing page identifies one live founder decision as the entry point, states the independent identity boundary, and routes readers to first use, installation, privacy, recovery, provenance, support, security, and license information.
+PASS_EVIDENCE_INSTALLATION: docs/installing-and-maintaining.md :: The installation page separates prospective public Codex commands from observed current-workstation evidence, covers Claude Code structural status, and provides update, uninstall, first-check, and safe-stop routes.
+PASS_EVIDENCE_FIRST_VALUE: docs/getting-started.md :: The getting-started page gives a concrete founder prompt, explains what a useful result contains, and shows how the challenge style produces value without an intake ritual.
+PASS_EVIDENCE_NORMAL_USE: docs/privacy-and-boundaries.md :: The boundary page explains ordinary decision work, conditional iteration, macro restraint, external-action gates, optional state, user corrections, and high-consequence review without turning the skill into generic coaching.
+PASS_EVIDENCE_RECOVERY: docs/troubleshooting.md :: The troubleshooting page begins from visible symptoms, preserves exact errors and user data, distinguishes installation from behavior failures, and supplies bounded recovery and escalation evidence.
+PASS_EVIDENCE_PRIVACY_SECURITY: DATA-AND-PRIVACY.md | TERMS-OF-USE.md | SECURITY.md :: These pages state session-only defaults, optional user-owned state, sensitive-data limits, host boundaries, prohibited reliance, and private vulnerability-reporting routes without inventing a hosted service.
+PASS_EVIDENCE_EVIDENCE_LIMITS: docs/provenance-and-verification.md :: The provenance page separates prior exact-fingerprint behavior evidence from the current metadata delta, distinguishes every host evidence state, and names the public, clean-host, restart, and Claude limits.
+PASS_EVIDENCE_SUPPORT_MAINTENANCE: SUPPORT.md | CHANGELOG.md :: The support and changelog pages condition public issue availability on publication, explain useful sanitized reports, describe release scope and maintenance, and avoid claiming an unpublished route is live.
+PASS_EVIDENCE_PROVENANCE: LICENSE.md | ATTRIBUTION.md | NOTICE.md | TRADEMARKS.md :: These pages preserve the standard split license, creator and source-method attribution, independent and unofficial status, third-party identity boundary, redistribution notices, and name-free original-mark policy.
+UNEXECUTED_CONDITIONS: public repository, tag, release, assets, and public-route readback | clean-host and restart Codex evidence | Claude Code live installation, discovery, invocation, and first value
+REVIEW_PASS_WITH_CONDITIONS

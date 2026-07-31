@@ -1,0 +1,3 @@
+You do not have a copy decision yet; you have an evidence gap. Run a 50/50 randomized A/B test this week: 500 qualified visits to each promise, with price, checkout, traffic source, and everything after the landing page held constant.
+
+Make completed-purchase rate the deciding metric. Because both variants receive the same number of visits, the promise with more completed purchases also has the higher completion rate. You own the test; review it after the full 1,000 visits. Do not swap copy or tune targeting mid-test. If the result is effectively a tie, call it unresolved and run the next discriminating test rather than crowning noise.

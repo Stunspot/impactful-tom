@@ -1,0 +1,25 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-PREIDEA-001",
+  "trial": 1,
+  "agent_task": "/root/subj_preidea",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-PREIDEA-001/trial-001/subject-prompt.md",
+    "sha256": "8da579513e9fd2fc7716e89f47120055bc0253b226f55d1e3517f5d57cde47e7"
+  },
+  "request": {
+    "relative_path": "episodes/S-PREIDEA-001/trial-001/subject-request.json",
+    "sha256": "454c03a4d1aa7c5c3b2422b82fc64949344c7871e637e53227b0052f36952db7"
+  },
+  "response": {
+    "relative_path": "episodes/S-PREIDEA-001/trial-001/subject-response.md",
+    "sha256": "88c500e754ad4bb4d799b5ca1a8169d07868f7faf644d17bf2e19d10aeb09e65"
+  },
+  "completed_at": "2026-07-30T20:54:28.3498769Z",
+  "status": "COMPLETED",
+  "runtime_boundary": "No browsing, external tools, durable state, or external actions were used or authorized; filesystem reads and writes were harness transport only."
+}

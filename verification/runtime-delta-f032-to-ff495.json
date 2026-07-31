@@ -1,0 +1,74 @@
+{
+  "schema_version": "impactful-tom-runtime-delta/v1",
+  "observed_at": "2026-07-31T00:07:31.8888070Z",
+  "package_root": "plugins/impactful-tom/skills/impactful-tom",
+  "prior_behavioral_package": {
+    "fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+    "file_count": 11,
+    "evidence_run": "verification/behavioral-results/frontier-collaboration/run-20260730T205203Z-f03260ec"
+  },
+  "current_release_package": {
+    "fingerprint_sha256": "ff495fd2f627d0e8f371d2480ad2b8f7a3f0707958f8dce6c83853505704006c",
+    "file_count": 15
+  },
+  "shared_file_comparison": {
+    "shared_file_count": 11,
+    "byte_identical_file_count": 9,
+    "changed_files": [
+      {
+        "path": "SKILL.md",
+        "prior_sha256": "1941be1652fc7934f719cc052b51c72704e877ba3dcb6b39a43bcb6425148c5d",
+        "current_sha256": "4d9c303802747126dd9843214a4b1303fe47c3635525bd5c35d5bbe3e6b8444f",
+        "change": "Frontmatter description only: replaced a 412-character routing description with the standard catalog label \"🎯 Founder-performance judgment.\"",
+        "instruction_body_prior_sha256": "a17c7ac78926729f32baeb31f6f111beb6b175abac7748a2e9dc227c1d5df9e8",
+        "instruction_body_current_sha256": "a17c7ac78926729f32baeb31f6f111beb6b175abac7748a2e9dc227c1d5df9e8",
+        "instruction_body_byte_identical": true
+      },
+      {
+        "path": "agents/openai.yaml",
+        "prior_sha256": "d1c3cc4d221e95c086352c4b0a617e529e2eb0c2adac46a0fee70825b735367e",
+        "current_sha256": "2b560285b66d95fea7a2838b87e6568f15e31b2fe8a8e2de32fdd69e5a48b610",
+        "change": "short_description only: aligned with the standard catalog label."
+      }
+    ],
+    "unchanged_surfaces": [
+      "assets/founder-case.template.md",
+      "assets/founder-move.template.md",
+      "evals/eval-manifest.yaml",
+      "evals/founder-performance-cases.yaml",
+      "package-manifest.yaml",
+      "references/evidence-and-macro-boundary.md",
+      "references/founder-performance-doctrine.md",
+      "references/provenance-and-boundaries.md",
+      "references/voice-and-challenge.md"
+    ]
+  },
+  "added_non_instruction_files": [
+    {
+      "path": "ATTRIBUTION.md",
+      "sha256": "ab54ba596a030ac7845deeabce1c33fa9cbbb527b640627c4cff397d1aa992bb",
+      "bytes": 1340
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e",
+      "bytes": 3000
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "51f1497a814173890f75378bead6b14cc0aa03ed5fde1a0cb28e7e69eac04e95",
+      "bytes": 1820
+    },
+    {
+      "path": "TRADEMARKS.md",
+      "sha256": "28f7c17d9a799d6e649c3204c8dfaa6bc69357e779c55762337d12ab9859f157",
+      "bytes": 1433
+    }
+  ],
+  "verification_interpretation": {
+    "behavioral_method": "The prior sealed run remains exact evidence for the byte-identical instruction body, evals, references, and templates.",
+    "exact_package": "The prior sealed run is not represented as an exact-fingerprint test of the ff495 release package.",
+    "routing_metadata": "The new description passed the current Codex and Claude Augment package validators. Installed-host catalog selection and first success must be re-observed for the final public route.",
+    "legal_files": "The four added legal and notice files are package custody surfaces, not model instructions."
+  }
+}

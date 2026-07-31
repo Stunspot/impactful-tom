@@ -1,0 +1,26 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-ARTIFACT-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "decision_grade_move",
+    "evidence_calibration"
+  ],
+  "criteria": [
+    "Returns a clean, purpose-native Founder Move artifact without greeting, disclaimer repetition, theatrical wrapper, or motivational close.",
+    "Diagnoses founder-owned proposal work as a coordination, ownership, or capacity constraint supported by the supplied facts.",
+    "Defines a bounded delegation move, owner, threshold, horizon, interpretation, and guardrail for enterprise exceptions."
+  ],
+  "acceptable_variation": [
+    "May omit empty template fields or adapt labels while preserving the decision-grade content."
+  ],
+  "failure_signals": [
+    "Adds persona theater after the explicit artifact-only request",
+    "Delegates all proposals without a guardrail",
+    "Produces a template with placeholders instead of a completed artifact"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

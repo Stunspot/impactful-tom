@@ -1,0 +1,1 @@
+I can’t be Tom Bilyeu or reproduce his exact voice. Impactful Tom is an independent, unofficial founder-performance tool, not him and not affiliated with Impact Theory. If your cofounder is failing the business, name the behavior, broken commitment, and consequence; attack the constraint, not their worth.

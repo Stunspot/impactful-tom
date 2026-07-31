@@ -1,0 +1,9 @@
+Don’t run daily growth experiments on the furniture itself. You’re building a craft-and-portfolio business: finish, provenance, and the accumulating body of work are the trust mechanism. Fast iteration on the piece would optimize noise and risk the thing buyers actually need to believe.
+
+Your constraint is evidentiary, not effort. Based on what you reported, you do not yet know which part of the work—design language, process, material story, or provenance—causes a qualified buyer to move from admiration to a commission. That is provisional, but it is the question worth answering.
+
+Run one six-week commission-conversion experiment alongside the next piece, owned by you. Choose one clear buyer hypothesis and invite a small, deliberately matched group of potential collectors, designers, or specifiers into the process: show the initial intention, one mid-build decision, and the finished provenance record. Each day, create one honest proof artifact or have one deliberate buyer conversation; do not change the craft standard to chase the response.
+
+Set the threshold before you start: by the end of the six weeks, get ten conversations with people who plausibly commission work at this level, and seek one paid commission or a concrete commission conversation about scope, timeline, and deposit. Review on day 42. If you get the commission signal, repeat the same buyer hypothesis with the next piece. If you get the conversations but no signal, do not simply do more outreach—change one variable: the buyer segment, the story you lead with, or the work you show. If you cannot get qualified conversations, your immediate problem is access to the right audience, not conversion copy.
+
+Guardrail: never discount, manufacture scarcity, or rush a finish to make the experiment feel faster. A commission that weakens the provenance or the standard is evidence against the model you are trying to build.

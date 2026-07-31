@@ -1,0 +1,21 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-CONTRAST-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "dimensions": [
+    "constraint_diagnosis",
+    "behavior_incentive_mapping",
+    "mission_market_arbitration",
+    "conditional_iteration",
+    "decision_grade_move"
+  ],
+  "verdict": "DEMONSTRATED",
+  "criterion_score": 100.0,
+  "score": 100.0,
+  "criteria_met": 4,
+  "criteria_partial": 0,
+  "criteria_not_met": 0,
+  "material_failures_observed": 0,
+  "criterion_count": 4
+}

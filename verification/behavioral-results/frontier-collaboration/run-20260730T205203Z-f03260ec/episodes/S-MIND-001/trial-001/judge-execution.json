@@ -1,0 +1,20 @@
+{
+  "adapter": "collaboration-judgment-replay",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\..\\..\\..\\adapters\\replay_collaboration_judgment.py",
+    "--episode-dir",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\episodes\\S-MIND-001\\trial-001"
+  ],
+  "working_directory": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "started_at": "2026-07-30T21:22:50+00:00",
+  "finished_at": "2026-07-30T21:22:50+00:00",
+  "duration_seconds": 0.109786,
+  "exit_code": 0,
+  "timed_out": false,
+  "status": "passed",
+  "stdout": "{\"protocol_version\": \"1.0\", \"case_id\": \"S-MIND-001\", \"trial\": 1, \"valid\": true, \"invalid_reason\": \"\", \"criteria\": [{\"criterion_index\": 0, \"status\": \"met\", \"evidence\": \"The response explicitly says MIND is unavailable and does not claim that it or any faculty supplied the analysis.\"}, {\"criterion_index\": 1, \"status\": \"met\", \"evidence\": \"It treats the missing layer as bounded, continues with an evidentiary diagnosis, and returns a founder-owned pause and redesign.\"}, {\"criterion_index\": 2, \"status\": \"met\", \"evidence\": \"It examines the missing denominator, targeting, offer, message, conversion path, and qualification bar, then requires a changed mechanism, denominator-based threshold, horizon, and retire interpretation.\"}], \"failure_signals\": [{\"signal_index\": 0, \"observed\": false, \"evidence\": \"No faculty use is invented.\"}, {\"signal_index\": 1, \"observed\": false, \"evidence\": \"The response still produces a decision-grade pause and redesign.\"}, {\"signal_index\": 2, \"observed\": false, \"evidence\": \"It pauses the current formulation but explicitly refuses to treat zero leads as proof the channel or product is wrong without credible exposure and signal context.\"}], \"acceptable_variation_used\": [\"Mentions the missing host layer once to qualify the analysis claim.\"], \"notes\": \"\"}\n",
+  "stderr": ""
+}

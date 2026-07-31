@@ -1,0 +1,1359 @@
+{
+  "protocol_version": "1.0",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "sealed_at": "2026-07-30T21:42:15+00:00",
+  "file_count": 270,
+  "total_bytes": 550968,
+  "files": [
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/evaluator-rubric.json",
+      "sha256": "3a97abb9e096ca0a74b05321a5cd961bd28bf1409cd5f084e7cdbd7e740ddaa6",
+      "bytes": 1821
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/judge-execution.json",
+      "sha256": "326f23010c2297a38736aecd7e4f7f1526eff193bad11ada8f5ac9221c901123",
+      "bytes": 2185
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/judge-prompt.md",
+      "sha256": "c3395678a8b53c81bac8b4bd70cba0a83e5afdb38ad22034ba205e4b16b05f2e",
+      "bytes": 5734
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/judge-response.txt",
+      "sha256": "978b9f77d287e83c44e7337501f72ebdf8576679d8421ea4821248b1e242aeaf",
+      "bytes": 1307
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/judge-result.json",
+      "sha256": "02c9b97f5d524fb3748594c63366918ee30abeb777fe5abeae1f86b583a60f51",
+      "bytes": 1545
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/manual-judgment.json",
+      "sha256": "c21ab4601da0ad837538b63c4685876b6c6583e47f276acb0a1a35beecead574",
+      "bytes": 1502
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/result.json",
+      "sha256": "0a73034ed5f93bceeedc7512d07c58995d2f306de3172b84054d8dde31a9a114",
+      "bytes": 425
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/subject-execution.json",
+      "sha256": "6bf3309b15322d52e8b8863dfa80469387743cf2a546311d029d3f83b167970a",
+      "bytes": 1121
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/subject-prompt.md",
+      "sha256": "b9c13e9dd680a31995253d3472dda4c37cca7a7898b86b02709f9cd8c94c2c8c",
+      "bytes": 1020
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/subject-request.json",
+      "sha256": "a7325cb27bb5b03cd7ea965bfb7f017408692820a4b012e52be91d008d244341",
+      "bytes": 894
+    },
+    {
+      "path": "episodes/S-ARTIFACT-001/trial-001/subject-response.md",
+      "sha256": "c7108a242cb85101fce08f012dec54d42c28b000a42a7ca8f4b5d839abaf3f50",
+      "bytes": 1950
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/evaluator-rubric.json",
+      "sha256": "b0167ac7115cdfee1724ecb97cbf2e55d90cbef8e31960d827f52a9f031c225d",
+      "bytes": 1809
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/judge-execution.json",
+      "sha256": "a53ad6da6f2ec195261c962db3f5ab1c8f56ddbeb08d211ccf6e2337a388475b",
+      "bytes": 2116
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/judge-prompt.md",
+      "sha256": "adbd85557b984e05fb4a86ec79ec0051dee851e2433f5a4ea377b9b547fd7b0a",
+      "bytes": 4284
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/judge-response.txt",
+      "sha256": "c8b425915d8391bc6fa4cf34efb960508c1b19f092b33622ca31dfa7d279d17a",
+      "bytes": 1236
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/judge-result.json",
+      "sha256": "21bf043bddae5cd45468aab59c77ecb79c871ad76bcd93c838c557ce007c9d8f",
+      "bytes": 1484
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/manual-judgment.json",
+      "sha256": "ea23f9810dd5e64042e7ccd89c975e44e874fc18a9d30e2a86349b531b264724",
+      "bytes": 1439
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/result.json",
+      "sha256": "fc6aa92b4eaa1810faecac2dbbb14d1e7d27ea98c1c3577e42e85bc06e07c85d",
+      "bytes": 460
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/subject-execution.json",
+      "sha256": "02a1be7b08e0d9c0b2d951339aa7d2983a0deeb70e47a6ab954fbdee9506f08c",
+      "bytes": 1100
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/subject-prompt.md",
+      "sha256": "06726a945b924e9b3ae3e6c597a8396eec42a8c235a71cad85056335abb91ab9",
+      "bytes": 941
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/subject-request.json",
+      "sha256": "c27dc3fb779127b43a70ee038a7c1f67ac2fa9dea2481865f0edfce351f1b2a9",
+      "bytes": 815
+    },
+    {
+      "path": "episodes/S-COERCION-001/trial-001/subject-response.md",
+      "sha256": "13431603b7590d87f37514c297c8881bab782601a89ada664176db3ee72ed734",
+      "bytes": 651
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/evaluator-rubric.json",
+      "sha256": "b1e7cc52e5a2ee21525f85cd9bd8dccc93167e7f63625d02f7280364fd55e362",
+      "bytes": 2055
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/judge-execution.json",
+      "sha256": "7a03f701d6f08f78f9d47463205fcf62cf13cbe8527552552cb8b89d84f4af1f",
+      "bytes": 2474
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/judge-prompt.md",
+      "sha256": "1e1aa11482cc6b662f14473cf213db5eeed0fa75fc5e72dd6caf4c4a85d5e873",
+      "bytes": 5409
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/judge-response.txt",
+      "sha256": "f86be297788b44b1d883532e18e355eb4b5d4c0150f1f97289fa2312f5fc0165",
+      "bytes": 1584
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/judge-result.json",
+      "sha256": "20f6c5248753fd4afd538fefe4c56f99a915d4e5f7280bb58d5bfb92ee8d8ad7",
+      "bytes": 1865
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/manual-judgment.json",
+      "sha256": "6e73441909adbf1533c79f077ae8418599ff48b457c471a904494c6e20c094d5",
+      "bytes": 1815
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/result.json",
+      "sha256": "7634da42e195af29b313de01167e70c4bc93d6b6ec21a73cb83f4605dc68785f",
+      "bytes": 525
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/subject-execution.json",
+      "sha256": "259adbfe3ffd5fa0f4c74678e345a4a227de5991fb5fabe9e8e8846c2a4eefa5",
+      "bytes": 1247
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/subject-prompt.md",
+      "sha256": "6aeb9622c199829501ae7d7f3b07113a643189cb0b45c1cdc9c3fc45b1fd1e99",
+      "bytes": 1117
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/subject-request.json",
+      "sha256": "2733243436b64ab5e502e7b6c4599d472d60b1873b2ab5de768bc7a7a5e1abe2",
+      "bytes": 991
+    },
+    {
+      "path": "episodes/S-CONTRAST-001/trial-001/subject-response.md",
+      "sha256": "eddcd41dc9638f8de00bb3024393a46d2fda37772a7e155989bbdec66725a846",
+      "bytes": 1291
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/evaluator-rubric.json",
+      "sha256": "517ea97454a9c5c62b25c6cd9d3e952537775948695b310a659f59ae9561878d",
+      "bytes": 1782
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/judge-execution.json",
+      "sha256": "2bdcb3b5771beec6262dc2c6221decc5b0b1ce202330f7fb6869c2298437137c",
+      "bytes": 2224
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/judge-prompt.md",
+      "sha256": "84f6eaaddac6f0d9e95f60e8a74496017c3eda9bbf6d1affb78b9b1657bb8535",
+      "bytes": 5135
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/judge-response.txt",
+      "sha256": "1e4c19936bad2e572b55b654897b31ae605a3630e08253ec9023a12dce10d6c8",
+      "bytes": 1340
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/judge-result.json",
+      "sha256": "ffff6ac0205bfa3c86632a2624672b0abd7708d810b85332c9d6a16348d93a1c",
+      "bytes": 1588
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/manual-judgment.json",
+      "sha256": "e9c589ce4f57c71e6a3e5b1114cf04d8cff638a9e25ee3e14a2765ed96b96982",
+      "bytes": 1543
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/result.json",
+      "sha256": "ca9a1310b16dbdf9b797b67bdc9f5123869d067f42520158d91b3b7d1054c3ac",
+      "bytes": 459
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/subject-execution.json",
+      "sha256": "280aaef0385a7c369dcf963a9d57bbf750c61c7fd86a73b5707ec695fb4fbe4f",
+      "bytes": 1304
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/subject-prompt.md",
+      "sha256": "066ede6a1f7d836e6bf0038612e4f5238b5d326447244f37c72fdfecd03ccd33",
+      "bytes": 983
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/subject-request.json",
+      "sha256": "519cc00ced04f549d72f49feb2270bed5a32cbfb7e7c884f4010eb7734c3cfe8",
+      "bytes": 861
+    },
+    {
+      "path": "episodes/S-CONTROLLABLE-001/trial-001/subject-response.md",
+      "sha256": "7d47c07fbc52755add89b004142983a5e32ee3c436a75bfaaefb1b91f1b2e4e7",
+      "bytes": 1481
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/evaluator-rubric.json",
+      "sha256": "f946f64ccbaa51b0b5d24e55d47fd8d2b8e94991ead741d2bcaa00eb88db3b8c",
+      "bytes": 1695
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/judge-execution.json",
+      "sha256": "0b48401b9f6ae379a4fa701eef6cdec866da4a93c28227076e1f95ce07b36275",
+      "bytes": 2017
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/judge-prompt.md",
+      "sha256": "2e5e33b7699863ebd2611587ab63d4fdabeaaa80d2bba3ed282154e7818d23aa",
+      "bytes": 4309
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/judge-response.txt",
+      "sha256": "ddce399738e4a13c4aa788301c9cef5c60fabf4e5a64bfe6b05e805b224a5a55",
+      "bytes": 1140
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/judge-result.json",
+      "sha256": "677c065c2b5c52e9caba36cbf072c39710604e6ffcd5dc720fc0de8ad5722605",
+      "bytes": 1378
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/manual-judgment.json",
+      "sha256": "2d7c72a15591f136a9b69dfbefdea33d5e2c56624e0033e0726c813c4a5489f2",
+      "bytes": 1335
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/result.json",
+      "sha256": "f59935dd4f710914b5bdbabd34cbf0a192c7acbd4d518b265659bcaf63124562",
+      "bytes": 424
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/subject-execution.json",
+      "sha256": "3d8411dd4f98ecf091d14812575bad9af1fe56e050613812044c55cf4baab265",
+      "bytes": 1147
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/subject-prompt.md",
+      "sha256": "c2a088a7ac3ee5a67d24541b6543c53523e37e2728479d53b489ccce4116d57b",
+      "bytes": 970
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/subject-request.json",
+      "sha256": "61dc83836d367bdf6abb43b312836c394d0994ce565f9dfe65b7d0f46b14c6e3",
+      "bytes": 843
+    },
+    {
+      "path": "episodes/S-CURRENT-001/trial-001/subject-response.md",
+      "sha256": "a5249b6c223ded129b2dc92a9d4325253d4860659b4578066b1662d1db19a21a",
+      "bytes": 732
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/evaluator-rubric.json",
+      "sha256": "972cc420372e2002eb4b527bf1a364b39ad92c60bdb96ac839bed6d1b8edf4db",
+      "bytes": 1635
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/judge-execution.json",
+      "sha256": "dca56656d77fcdb4c0e1465a2a10897afc7dd115cca50539af3988149e98ff0d",
+      "bytes": 1757
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/judge-prompt.md",
+      "sha256": "d6f346e9426e52e61ecfb4be810fab500883256fabc2ddabff58c87f0018782d",
+      "bytes": 3643
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/judge-response.txt",
+      "sha256": "cd7dfd8727785080887b250f29d70c9822b0fc461b5617f3683ec1f6744d7946",
+      "bytes": 891
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/judge-result.json",
+      "sha256": "2f583e088fdb5756d85849b56d96d9efd26e9bf4f25ccca5accf00ce58770001",
+      "bytes": 1096
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/manual-judgment.json",
+      "sha256": "a731498266e5cde448cb99991c061755d98453612fc957c9766d995349f2dc61",
+      "bytes": 1058
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/result.json",
+      "sha256": "63d42a46450719ac45c807d69aad70e98d6e7d7dc9229fcaf0f35bffd42ea6b3",
+      "bytes": 425
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/subject-execution.json",
+      "sha256": "3c3700997405e35a8b40625157a3747faf7e3978a5404aadccaf34604d8ce49c",
+      "bytes": 1149
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/subject-prompt.md",
+      "sha256": "790e09dccee185b26f7ff037bf4f6f10124510b773c1b7e1335fbd0a34b83407",
+      "bytes": 820
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/subject-request.json",
+      "sha256": "f468761dbf9ddb11330800c02c03cb86f132af0d2ed31eab25c29a8d1e2a2859",
+      "bytes": 692
+    },
+    {
+      "path": "episodes/S-DIRECT-001/trial-001/subject-response.md",
+      "sha256": "13b9ffb5b593347db3ef43664d90e2c2751a1bef547da7dd90fa453f89cb7605",
+      "bytes": 414
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/evaluator-rubric.json",
+      "sha256": "89a5f64eb6bb3b5c30033762aa126c6d4cacb5cfa73f2ad3d21907914023c667",
+      "bytes": 1767
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/judge-execution.json",
+      "sha256": "2456b773ea3b895754e4c3c8761a627ee49d7dd7ca75a90ed1503e4bbfe4b700",
+      "bytes": 2107
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/judge-prompt.md",
+      "sha256": "28760b00cbc33a3f8208837e1794230b0647fc4fd5102f5eb9ee7ac538d354e6",
+      "bytes": 4293
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/judge-response.txt",
+      "sha256": "48537d88a1473d650d4b34fb8e78c8520578ffc99e9f8e7493830a9ca16d2e71",
+      "bytes": 1231
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/judge-result.json",
+      "sha256": "78879d16fde5f4f236bddfc093e6f6e446f73f2215663595d9f6b5c7875bb0a1",
+      "bytes": 1479
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/manual-judgment.json",
+      "sha256": "ce0ae529039c0903bad95d08f4106423cdf713fa1fd61f9c97ea0074d586607e",
+      "bytes": 1434
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/result.json",
+      "sha256": "89030f81cbfb1c41d1f7f97810daea993c2a61d45a6d44519026d7a36289b23c",
+      "bytes": 446
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/subject-execution.json",
+      "sha256": "b760344ef46b88cfd143619e0c7961ebf9b2b66346df562cefaddb37b4db4b7e",
+      "bytes": 1085
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/subject-prompt.md",
+      "sha256": "d88d5dc1639a203cd88f3f5adb0f4968de94e8f8d1997f8ee33232e52cab3bbc",
+      "bytes": 1005
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/subject-request.json",
+      "sha256": "95fb5d2875e5205e6d51fbb41d8d6c9a9d993babaf00d3a0e72ac8c233b017a8",
+      "bytes": 875
+    },
+    {
+      "path": "episodes/S-FAST-001/trial-001/subject-response.md",
+      "sha256": "2239a842c412ac2fd287337b61cfab53bf16b5804fd9db5e56420947a9b47fda",
+      "bytes": 644
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/evaluator-rubric.json",
+      "sha256": "74e46db9c2d3389967726eaf58ea5ff622c4b0edadd11c46793008eba34457f4",
+      "bytes": 2249
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/judge-execution.json",
+      "sha256": "8a4e12f5bd382b594a874e98c5a6c5e73cc92f05e35b7258a1c9be62fe1df728",
+      "bytes": 2576
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/judge-prompt.md",
+      "sha256": "493e4abbaef23f5b37b477ed3e719e7a3553f48cc1716cc224966fb8f215798e",
+      "bytes": 4765
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/judge-response.txt",
+      "sha256": "7893ea8740b9daaeed2fed4aaa758c8b125d67f3559623bf0a1a1e423a7c29b8",
+      "bytes": 1665
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/judge-result.json",
+      "sha256": "7ba35f0e7262a67b3a66dd061a9b725f9e494c19df478dc03594bcfcf469f42f",
+      "bytes": 2012
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/manual-judgment.json",
+      "sha256": "bb9cc74d63ee99c7d104e7131fe33180095f00052ea76bbbd9fe1e7fe4411f75",
+      "bytes": 1952
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/result.json",
+      "sha256": "c547d37885a8a99cf2458726b9762340cf1bd79316c0bf46d5f30fa110c553c9",
+      "bytes": 448
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/subject-execution.json",
+      "sha256": "06d786ff21348ec937a313d79e9a0f68ee300cbeb2a3270495af9ea7f71bdfcd",
+      "bytes": 1194
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/subject-prompt.md",
+      "sha256": "96fc86fb4ff80a7886f2d9386d6f8fd6c6714c99dd73d68e2934ef339362aa26",
+      "bytes": 915
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/subject-request.json",
+      "sha256": "e30d5f63773d31ab60dc4de5b33c18b35076752f9f182eeb86b10a8339f33af5",
+      "bytes": 792
+    },
+    {
+      "path": "episodes/S-HIGH-STAKES-001/trial-001/subject-response.md",
+      "sha256": "ad243479e2e09b73c361932cbe2d21494340054457c44d5b36c70c2b36cdeada",
+      "bytes": 338
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/evaluator-rubric.json",
+      "sha256": "71cb90dca129b48f996500392671e9ee293f0b34a51a53b5c2681cd1dc5396cf",
+      "bytes": 1679
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/judge-execution.json",
+      "sha256": "21205eb6fb85de0851a7a300b85f745b8abf6bf725a71646b15a6d6caeaf334f",
+      "bytes": 1958
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/judge-prompt.md",
+      "sha256": "d6aa8e17ff53edcc14089e13e4a7db2272f332adc387bf144bbe9422b09abd35",
+      "bytes": 3741
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/judge-response.txt",
+      "sha256": "954c9cd3555777e2550f7f17e3d16312d610d254eee9c7be9ce6e9367423e2de",
+      "bytes": 1079
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/judge-result.json",
+      "sha256": "b5a535471a2712c03854278fdb01bb5084de24c8a5aa11a95699ee91aab41de8",
+      "bytes": 1327
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/manual-judgment.json",
+      "sha256": "3c1ea6fdbb4924293b4e3ccc3bd58f8582d15cf873d7a0a476266ba213bba408",
+      "bytes": 1282
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/result.json",
+      "sha256": "699ef5d774e676a867526c759d2c2f35bae84daac325e46f652b834bd3eb9780",
+      "bytes": 439
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/subject-execution.json",
+      "sha256": "13332d0e65ec3881595e3ab6cb64513c0caa11aa6dd94fc7d475e813aee0ecda",
+      "bytes": 1100
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/subject-prompt.md",
+      "sha256": "722f2b2fb4a1b712095138f59c5ebb12437522fcce03e0f0083e8631c32e1793",
+      "bytes": 858
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/subject-request.json",
+      "sha256": "f886e6f341884d60f5bff0ee2ac3e31939b36c708fa17c02df45f651b018522c",
+      "bytes": 732
+    },
+    {
+      "path": "episodes/S-IDENTITY-001/trial-001/subject-response.md",
+      "sha256": "c152f18131d350c6f743e592378c1df85006e02b0135c31d964855bce4a2b6e5",
+      "bytes": 309
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/evaluator-rubric.json",
+      "sha256": "cb083d6b304de5edefd167cdba16db28a35c8e491dc50371f289051e3309daa4",
+      "bytes": 1847
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/judge-execution.json",
+      "sha256": "01bedf2ac46dd4efab7b0981bdbe47e678debec5d222b2d966b411188c504ede",
+      "bytes": 2286
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/judge-prompt.md",
+      "sha256": "a48bd800d97a5f887f1affed61acd7c65e94a8ccb9c87b354800db8fda54ab1a",
+      "bytes": 5146
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/judge-response.txt",
+      "sha256": "5f4acd9fd62ed0a44f2b05641e9a4cbae2edfc4e0667dc40fa0d3f522d17bf6f",
+      "bytes": 1395
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/judge-result.json",
+      "sha256": "290a81f5a71668369d4221f5422f1a6fa0f2e21d25c043fd832bf048f2f84ee5",
+      "bytes": 1676
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/manual-judgment.json",
+      "sha256": "85a97393abfcadaf935c138cfcb237529d18bec5bac2a0c9a13b75bb52083a22",
+      "bytes": 1626
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/result.json",
+      "sha256": "3c3cc38c6936ff8a48f80857ff41b19b414b3453e03a11c68b486fd9edb51281",
+      "bytes": 469
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/subject-execution.json",
+      "sha256": "a13718a2a33616638778c8c737444899d78a5c345f06b18eafcb7bcde1bbf33a",
+      "bytes": 1122
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/subject-prompt.md",
+      "sha256": "05feff9c616077cb81bb2618cde5c7ca9aed17b7a8f72db64d53278c6e79b6da",
+      "bytes": 1000
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/subject-request.json",
+      "sha256": "4b498ca4fe89761fc0934e3a00e3236f4ea31fdb741f9b0250fbe0eb741fd6be",
+      "bytes": 875
+    },
+    {
+      "path": "episodes/S-INCENTIVE-001/trial-001/subject-response.md",
+      "sha256": "d5f2f096b85b1e8a70f084367278470f793fbae66c0fc8331ff5e95e3b079b0b",
+      "bytes": 1295
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/evaluator-rubric.json",
+      "sha256": "05b39639bce5937fb679cfe59a8b6fea69ef11274cd1aee2c3d47a95c3f83721",
+      "bytes": 1693
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/judge-execution.json",
+      "sha256": "645fa3664dc0f80b3de5239399ce2411689e0eccb2ad0e69ef7626533638ae3f",
+      "bytes": 1916
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/judge-prompt.md",
+      "sha256": "18389670fc149c0d6b8619d4366023915cf1a23dc88e8eb217fab3e5a8213c6b",
+      "bytes": 3803
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/judge-response.txt",
+      "sha256": "9d05d0e463c8c7665e71e7758d4de4ad8ba58ebb6ad3fc7bc545df02644216b6",
+      "bytes": 1040
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/judge-result.json",
+      "sha256": "d9bcad4de81e15f9edd0dac85069523ab50be73207307b23a647009161056ab9",
+      "bytes": 1288
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/manual-judgment.json",
+      "sha256": "540bd0ad675047fcc6ad2ac54a063e1dca152c650a72c44a857af6e70435cd51",
+      "bytes": 1243
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/result.json",
+      "sha256": "ee5214c7aa5d46638ffa12aa16a133e74db7992adea327cf6cc075462e66aa48",
+      "bytes": 454
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/subject-execution.json",
+      "sha256": "1a6b84383105c920aad9be586bc232c75a09a82683c7599fdee4f7909071bf9c",
+      "bytes": 1080
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/subject-prompt.md",
+      "sha256": "66bbc24998d1e0b6344012b45b2aecdcfd675e9df7f3fea595680ae0a1d55b70",
+      "bytes": 974
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/subject-request.json",
+      "sha256": "d3de58cc4e3f1036637d410703dd925636b7b6739e52588fd8947b55fa9713bd",
+      "bytes": 844
+    },
+    {
+      "path": "episodes/S-LEAK-001/trial-001/subject-response.md",
+      "sha256": "9aaf32f1652732af5a7629fd0e1f798b924a7c2ff6f3f805270b5eaff55d3040",
+      "bytes": 264
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/evaluator-rubric.json",
+      "sha256": "309720cd86bb418ddc2089934e789211d28fa519764ba09aa61615392d23c863",
+      "bytes": 2038
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/judge-execution.json",
+      "sha256": "e348d1aa687155d9420206d28211c59397dfb30c5c2b9626649f4c072888f04d",
+      "bytes": 2419
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/judge-prompt.md",
+      "sha256": "503134469db1e0552df8fe160696714420ddd1b84367810bc8b9adfaf43e2589",
+      "bytes": 5188
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/judge-response.txt",
+      "sha256": "a61aeef6065d9b1d1a0b5c12c78661d9680a55c3045ac1045a80113bf4e810c8",
+      "bytes": 1518
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/judge-result.json",
+      "sha256": "93d651e49fb84ddbf18c791c86d5e78a271086306aeee2e8fc0756c4bb09df19",
+      "bytes": 1855
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/manual-judgment.json",
+      "sha256": "134107488a24e2bd049dce9e6374e7fc914349daf7ecc49279b3c965b67ae8f2",
+      "bytes": 1797
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/result.json",
+      "sha256": "c6110e3bb8fa74a2d7011015cc93aa7160ce85f5664bac05b212dc5e21d94b6f",
+      "bytes": 450
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/subject-execution.json",
+      "sha256": "2aabe9e466c01d11427033f49d4cf06aad8fd881187c6d4fa1435d0b622fd71e",
+      "bytes": 1161
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/subject-prompt.md",
+      "sha256": "a3e7107596a910bde38ad4c403e782c9b8d66c54a5d5e7692ee940cd7c7d671e",
+      "bytes": 1006
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/subject-request.json",
+      "sha256": "c024a02eb048e525620949542828ba741fe1749cd46e7a0ba0d07f33db87cd64",
+      "bytes": 877
+    },
+    {
+      "path": "episodes/S-MACRO-001/trial-001/subject-response.md",
+      "sha256": "fbf2fea22aef3bb549bb043faa16020f6c7d2fec61d8297e2d8851aab57b75bf",
+      "bytes": 903
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/evaluator-rubric.json",
+      "sha256": "a0838a47e01e9842aba1c81426f14eb3d375f7f3e6e7c0e76136e6e13197b7f8",
+      "bytes": 1698
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/judge-execution.json",
+      "sha256": "0d1ad0f9fcf53ef83c8fb751cf0b7d253bd09356c28d1718dfc2b309aaab3ee3",
+      "bytes": 2166
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/judge-prompt.md",
+      "sha256": "b078387ff99a0f6b52eaae51e41590074d551e6252397b20e0fc3b044c3b5de9",
+      "bytes": 4689
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/judge-response.txt",
+      "sha256": "f215d5e01b0e6f2a51012f565b8f0a66ab7a1af45cbac3ef5cde4288d6be000c",
+      "bytes": 1290
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/judge-result.json",
+      "sha256": "c6160a4fe3c588da3d2d180741fbc7e4b153cb9046fff0699f3f297b51d49ff0",
+      "bytes": 1538
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/manual-judgment.json",
+      "sha256": "7b9de717304bb0b98b5eab4ce86ec7334e8346480cd864cf72dc5424787bb357",
+      "bytes": 1493
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/result.json",
+      "sha256": "44d63d627b3978bc3708a72a9c4b0bf1d1267f5e23556ee960e1c584fb57d18c",
+      "bytes": 421
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/subject-execution.json",
+      "sha256": "c5a7dfbf54fdd84762675c4cc5a0e5edce7babae8a00d18a3623d7fc0f4b13fc",
+      "bytes": 1215
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/subject-prompt.md",
+      "sha256": "56912af253e20d16a8eef4f99e6b778fe3b177fcdf25147563c3739ac677d629",
+      "bytes": 968
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/subject-request.json",
+      "sha256": "7556f000538f2fdf2efc3d374c25ac0c07591fdfc982b1488893f613a2a79221",
+      "bytes": 838
+    },
+    {
+      "path": "episodes/S-MIND-001/trial-001/subject-response.md",
+      "sha256": "5c07ae9d700f7c2cebcc61e97e952adbedbeac07e8691998cfaf014b029f97ca",
+      "bytes": 1112
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/evaluator-rubric.json",
+      "sha256": "4cd268066a94418cc2101816afae05a1fcf1c899fd1a72dcb1a70f25852cc47e",
+      "bytes": 1895
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/judge-execution.json",
+      "sha256": "45d2ad126ac278e65013db2d384eafe8ed25c584b6d90073e794738c1d44e749",
+      "bytes": 2318
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/judge-prompt.md",
+      "sha256": "73daed6ffcad5d1e64193fb616ca10ab1376a28dda248e838ae6a0a03156c2a4",
+      "bytes": 5410
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/judge-response.txt",
+      "sha256": "fc89dd29cbe8edd1163ea495ee0112e3b9d031bdf1b53aa0bfba5f4cf4a7977d",
+      "bytes": 1422
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/judge-result.json",
+      "sha256": "d8702d3fa674b49837e6287146eb76d4eec29888286b9c390a80caaf5b8d045f",
+      "bytes": 1703
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/manual-judgment.json",
+      "sha256": "508c5a4df25a8b2263a2b85b85b53c88823002ccfa2d655cdb6042a1d0d33c8e",
+      "bytes": 1653
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/result.json",
+      "sha256": "e7323b3b11357e2527306a185809ff10bb005a6cd12a5ea37ca74a26bddf557a",
+      "bytes": 466
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/subject-execution.json",
+      "sha256": "726ad83529bc6fe157dbdbdd12a1f97131f8b478861a81d3fdc761af07ad0815",
+      "bytes": 1197
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/subject-prompt.md",
+      "sha256": "535a201b484d46bd4b200cfabc2d92e78453376ccb9572f9bdec60b3b0b14fd2",
+      "bytes": 1023
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/subject-request.json",
+      "sha256": "167757f0cf41b4252fe4818f45b206664a25ea025f8b519a29c925287042d6a4",
+      "bytes": 903
+    },
+    {
+      "path": "episodes/S-MISSION-MARKET-001/trial-001/subject-response.md",
+      "sha256": "a0d61e1d6be659fedfbc6fe8eaac700f3ac1ff2e88df0204008623c2ff184df1",
+      "bytes": 1475
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/evaluator-rubric.json",
+      "sha256": "66267758bac8fbd31d0347271526c06e26a9c0f857e59edec3d7a7095b6de16f",
+      "bytes": 2522
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/judge-execution.json",
+      "sha256": "c80b90686f9891526d684733802a47140747d86678e0c76dc2e137e0c4f24e06",
+      "bytes": 3015
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/judge-prompt.md",
+      "sha256": "15a75391d2bcc50c549669816c9c382879cbf508162240ff949ba60a1e680c28",
+      "bytes": 6553
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/judge-response.txt",
+      "sha256": "d385b6922b9c637964316c7e8876375692d3da3bbfa1d623cd39a8081097a3c0",
+      "bytes": 2087
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/judge-result.json",
+      "sha256": "78f1b82a4f3872259d2a9e14160b0924094ed7918b7ca527b99e5eb53a804568",
+      "bytes": 2523
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/manual-judgment.json",
+      "sha256": "c94beb1c9b618753bd576c0a643182f0ec30383d39573b5804c4a1c1d5d219a8",
+      "bytes": 2450
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/result.json",
+      "sha256": "6dce8d9e8c829a76a9835545e002b9a44287a56124f917eb68df7ebf90ccc007",
+      "bytes": 453
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/subject-execution.json",
+      "sha256": "e6ee60eedcc8f317817cc7cd29767a369d2f789504a10037e03c8ac7da7d2954",
+      "bytes": 1123
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/subject-prompt.md",
+      "sha256": "c21b3c875b3c0d7073e7feb704eeb7574866a1766e6c56216b629d71dd00cf40",
+      "bytes": 960
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/subject-request.json",
+      "sha256": "351c4b5803e4964804f7b222ad0016d0b358b069a7d232e14903fef911299c9b",
+      "bytes": 833
+    },
+    {
+      "path": "episodes/S-PLATEAU-001/trial-001/subject-response.md",
+      "sha256": "cb049ad11198f43e19294dc6e992ece7bae6c1e51e07042d7bf3e16eb7aade64",
+      "bytes": 1466
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/evaluator-rubric.json",
+      "sha256": "5db70732835243540a4142d8b4f8ee0de9f31db6e2104b0b3422e3773d407d65",
+      "bytes": 1921
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/judge-execution.json",
+      "sha256": "c5351b9df1d7b5a71add62648f0e861c4f9efdc6b6659e9ff59632b535d3ca78",
+      "bytes": 2096
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/judge-prompt.md",
+      "sha256": "d754796ced04c438724dfc656990587e3b91db587fae1f4163b54434f9d86011",
+      "bytes": 5117
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/judge-response.txt",
+      "sha256": "0397e17e3debcbe71e1e040708db8f97807d298fe395514e6f4ba8167ef0542e",
+      "bytes": 1217
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/judge-result.json",
+      "sha256": "7d22d50201dd1d23a599656c118de8af2d116e45529e37a25a730bc8d9c20952",
+      "bytes": 1465
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/manual-judgment.json",
+      "sha256": "07179fe89082c0c9a68e05ed7f57b59a04085515ebe38d2d60cf5ae8fa3bfa89",
+      "bytes": 1420
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/result.json",
+      "sha256": "560c7f0c753ead476ad2846f7bdddcf0b037ade664fe3b798c8866ccf3ed7fe6",
+      "bytes": 446
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/subject-execution.json",
+      "sha256": "5cc51a2a828727a378ecaf3a654d10f5fee3214af64b7b1d4a6654833b213e00",
+      "bytes": 1120
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/subject-prompt.md",
+      "sha256": "8da579513e9fd2fc7716e89f47120055bc0253b226f55d1e3517f5d57cde47e7",
+      "bytes": 979
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/subject-request.json",
+      "sha256": "454c03a4d1aa7c5c3b2422b82fc64949344c7871e637e53227b0052f36952db7",
+      "bytes": 852
+    },
+    {
+      "path": "episodes/S-PREIDEA-001/trial-001/subject-response.md",
+      "sha256": "88c500e754ad4bb4d799b5ca1a8169d07868f7faf644d17bf2e19d10aeb09e65",
+      "bytes": 1323
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/evaluator-rubric.json",
+      "sha256": "5c81712b1e9955b4137e8cafbb028480eb20aa62416ad8c8a6a72a3077686e43",
+      "bytes": 1822
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/judge-execution.json",
+      "sha256": "e44239f40dc96fb67fc7d4ae914d10199c20aeb53bd0f1652b47a385c1628af7",
+      "bytes": 2189
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/judge-prompt.md",
+      "sha256": "0244b68d545b6f82ac552d04ebf0c053f5516a4491b383f39a52439da206678d",
+      "bytes": 4181
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/judge-response.txt",
+      "sha256": "0023c16f4ff00d0d1e715d85853202fe0c02bb88e5972a8892e28e4549d98374",
+      "bytes": 1288
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/judge-result.json",
+      "sha256": "ac8c2bac07188bd6266cf60077183b5db35d44c0eabff4c279cea866f6e911a3",
+      "bytes": 1625
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/manual-judgment.json",
+      "sha256": "c5185a47688203ee8a71a0dcb50635f98c6ca0621749613d952feae8fc0dcd6d",
+      "bytes": 1567
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/result.json",
+      "sha256": "687db18e51368a4ab06c43f1f623cfc2128d96b50444491427bece819cbf628c",
+      "bytes": 428
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/subject-execution.json",
+      "sha256": "7b26d1ee14542ee9cd8585f731df879958fc33d4e45cfbbd8decebcbbc774397",
+      "bytes": 1273
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/subject-prompt.md",
+      "sha256": "18242fcd9f086b7830e28bf2dafb92141d3c4113451de17843006d085a954b58",
+      "bytes": 899
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/subject-request.json",
+      "sha256": "21cec0d46cd783d600606e32ab077162c308cf3edffb526cc119dc1e16ba7376",
+      "bytes": 770
+    },
+    {
+      "path": "episodes/S-QUOTE-001/trial-001/subject-response.md",
+      "sha256": "5572f4bc97d69f04478b917ec7e6a838b8003f06a8033b2698678bb11051b65c",
+      "bytes": 178
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/evaluator-rubric.json",
+      "sha256": "f66d4735ab362a4b6fe50b36898c88c86e31eb2d11e18211c675cc42795908fc",
+      "bytes": 1760
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/judge-execution.json",
+      "sha256": "b52bea9a0dba666c14237c22aa29a7fbaf03a08b46ff04f25c2e4ac44a25ec39",
+      "bytes": 2077
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/judge-prompt.md",
+      "sha256": "9676ea930c985cb6472bec98af2aafae248aebf45d9775a2b634d070b0d9d1c0",
+      "bytes": 4189
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/judge-response.txt",
+      "sha256": "431e106809f32e0be1e46192ba8f3d06653eaaac373c60a04cea9428fdd8f658",
+      "bytes": 1195
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/judge-result.json",
+      "sha256": "92e280ec97c47af90c91dcd48e56450923d0b9a736e9eca759ff23afc47e7751",
+      "bytes": 1443
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/manual-judgment.json",
+      "sha256": "72ff586766e7d9dfa89e144af68d83e62a5f97435d8f57f3fd4e88c3ac3dcdb7",
+      "bytes": 1398
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/result.json",
+      "sha256": "6cbd0f658f38ad28a82e0fb7f60089747fb7733536465a79630c4b802b4a0a84",
+      "bytes": 464
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/subject-execution.json",
+      "sha256": "eaa20f186d4837a99ae7a51913e46e9ba24423aaa741af95ed410f4dd4bd44ba",
+      "bytes": 1105
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/subject-prompt.md",
+      "sha256": "f1c3942587430961da3614f70ad5e4729965c111942b1798c0e92ff958c4734a",
+      "bytes": 897
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/subject-request.json",
+      "sha256": "07e7fd8ecd794eaf07786d8ec1262e4a00c1f8955f32e7f396a810d07c663908",
+      "bytes": 773
+    },
+    {
+      "path": "episodes/S-RESISTANCE-001/trial-001/subject-response.md",
+      "sha256": "345f036f48d3f802119a4877f176ad44916c6d488845341db9c909e99b6cd928",
+      "bytes": 654
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/evaluator-rubric.json",
+      "sha256": "360a370d630beebdd367b7731a9982cd4208db4377826ef69f4f6f8ef6be640a",
+      "bytes": 1838
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/judge-execution.json",
+      "sha256": "099f684721c903168834bf72f7a6237b28bed7bad62ce3550d9250ea8788fee4",
+      "bytes": 2364
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/judge-prompt.md",
+      "sha256": "8082e2de8fe5a57919045ae46abc8d500ff1da73e2887d74fac2bbfdd654789c",
+      "bytes": 5661
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/judge-response.txt",
+      "sha256": "f8d4a03923dc221e9bb73c1f6a98d0aa0f8de851832b69fa5861975a82c61f57",
+      "bytes": 1488
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/judge-result.json",
+      "sha256": "a94193c64e1398c380a20437a395fabb8fee5bb340f7ebfbe66013b2c4519e6e",
+      "bytes": 1736
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/manual-judgment.json",
+      "sha256": "fc95202718062698ef2faa3e8febaa63e9ee8155199f797dfad98a657660fc7c",
+      "bytes": 1691
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/result.json",
+      "sha256": "bd80668d23d5c0303bdd451e207c9b5f8bf01fc6d5bceec289e47284c8817dd1",
+      "bytes": 451
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/subject-execution.json",
+      "sha256": "2a66fdbda3f094e8d1bc2fd352f4d042e11dcce77ee57e27e9e0b31305b75d57",
+      "bytes": 1080
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/subject-prompt.md",
+      "sha256": "93dd488cf0b2cfbfc3acffee448440cb9e99b72adc92f43100dca3354339f92e",
+      "bytes": 1022
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/subject-request.json",
+      "sha256": "f83d224364f72267f0f7993bbdb25317472ff280ecb87ac9745915d38bad37c1",
+      "bytes": 892
+    },
+    {
+      "path": "episodes/S-SLOW-001/trial-001/subject-response.md",
+      "sha256": "bdafa29a7d6e9624b8bc69c590cd58839b9fbc66f84ead8eb56f1294b8441cc0",
+      "bytes": 1918
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/evaluator-rubric.json",
+      "sha256": "63ad49b9522e19c9513fbd49b65a56f530a4fda652bed04b18803f06ab8bf2e3",
+      "bytes": 1795
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/judge-execution.json",
+      "sha256": "e46c4fb220050076ce81086b20d57a9a55b3b9437a5bd416004a11bd00657c15",
+      "bytes": 2088
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/judge-prompt.md",
+      "sha256": "4f59af5cdd3ae1879fed3df1d6e918ed06c7fcd8f6070b935d32ad294d7d546e",
+      "bytes": 4028
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/judge-response.txt",
+      "sha256": "123d2163cac55f4a7ab60e0cc3bf5ab405c9305079f269dbce8be81457b5fd60",
+      "bytes": 1213
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/judge-result.json",
+      "sha256": "c8e66a4938840b60d7b54f76eb957d1fbcfbb0e272bfb6338d19a85cf353bffb",
+      "bytes": 1451
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/manual-judgment.json",
+      "sha256": "2e1bfe55ba51fddbdc3c3fa226309ee8e040b20e57c76d23e8d0566002941d06",
+      "bytes": 1408
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/result.json",
+      "sha256": "e042c6b4f836598f5e9bcfeeeae2ea5d4ac0e5be80651cada5a30fee54056bb4",
+      "bytes": 437
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/subject-execution.json",
+      "sha256": "3b414d9b007403a5c911dc990555f2a060090db1d5361cdb96c0d33b45f1b94b",
+      "bytes": 1274
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/subject-prompt.md",
+      "sha256": "1a526efa428da91f179679babfde266c6034b01f6218bae6f0ced091337576b7",
+      "bytes": 962
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/subject-request.json",
+      "sha256": "85c4465aaed3b378e4f30efbe7c5313809f253c447b4d9195ceb548a503cfe89",
+      "bytes": 833
+    },
+    {
+      "path": "episodes/S-STATE-001/trial-001/subject-response.md",
+      "sha256": "32bf49e430d03b0075493475f5d3aeb495e22f8ac34472a72cafd3a56b257a50",
+      "bytes": 383
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/evaluator-rubric.json",
+      "sha256": "8d452d4350b83d19bd90c32fc3e2bd9919e448ae6ca36a9d3d02a7563721c987",
+      "bytes": 2481
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/judge-execution.json",
+      "sha256": "0f7d04c8e920f2f62cc9c47077850588084b54d16b31c5e876af7aab219eca64",
+      "bytes": 2486
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/judge-prompt.md",
+      "sha256": "39a35cf84d4b1eaab3181112138c84a799555dbb8c7892dbd93fc9e026ff21af",
+      "bytes": 13418
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/judge-response.txt",
+      "sha256": "58722768598287c3aff61730a8c2ce06bf2a3474131583157f605fb6226db559",
+      "bytes": 1591
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/judge-result.json",
+      "sha256": "c05a92dbecef026a5f74ffe7593107f6b16e8920b8ec6b09a36cb5198296b0d0",
+      "bytes": 1905
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/manual-judgment.json",
+      "sha256": "b01500d32d164da5f1cdf8fd71f651282c45f6ff66db16a92749af623d4c3cbb",
+      "bytes": 1850
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/result.json",
+      "sha256": "3f0f09b8cde1d19a8b20b3c9a4badad3364fec4eb08a2d4238bbcf17000962fe",
+      "bytes": 443
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/subject-execution.json",
+      "sha256": "f1a4b0983ca62aa2ece0b547b489f565ddc981916679a233a0e24009872864b7",
+      "bytes": 1363
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/subject-prompt.md",
+      "sha256": "5dbb2014ed880a7aeec7842b4e321935d2dfe8bc825490175c678c1502749169",
+      "bytes": 889
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/subject-request.json",
+      "sha256": "9a853ac1010721ec39778d816caa2cf12395c6c251264648b3941d5304dfff53",
+      "bytes": 759
+    },
+    {
+      "path": "episodes/S-STATE-002/trial-001/subject-response.md",
+      "sha256": "1624d4863889e17c3ac4e8ed8b3067cebb5eea9efbd011cdb73069d2b0f8a111",
+      "bytes": 9261
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/evaluator-rubric.json",
+      "sha256": "8ede45dbea5cfe83bc0904de7160e9f37809870b49a91e02b5149c929c28ffc6",
+      "bytes": 1984
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/judge-execution.json",
+      "sha256": "885fe05d7402d2cd47a41d143945e2712c8929516574ab0557e9d9843cb4ec0a",
+      "bytes": 2364
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/judge-prompt.md",
+      "sha256": "34b75d875a51ffb86e7ab505fe0c18b46321fc4f8d3de0ff009deb89552d039e",
+      "bytes": 5506
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/judge-response.txt",
+      "sha256": "590196f70e67e23d16b8080dfacdd586ab2558d50a54854f9db5b1a0b5d58d64",
+      "bytes": 1474
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/judge-result.json",
+      "sha256": "652faf042679de2cca48fd67fb2ddb938c0efe54c901eb66159e258c18f03f50",
+      "bytes": 1755
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/manual-judgment.json",
+      "sha256": "32f4db273fd3db5efe0fe423a2db3609c0a6da7495bceac9393b53c46030b1e4",
+      "bytes": 1705
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/result.json",
+      "sha256": "79f1dcfaca0dc49a54ef5aa363c2958868f47889a42b6ccaab3c6e216bcbc5d3",
+      "bytes": 481
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/subject-execution.json",
+      "sha256": "6ef71bf110b8aa4d7e0ba79a150c6843c9285feaa8a058e4512634e335a9d426",
+      "bytes": 1118
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/subject-prompt.md",
+      "sha256": "8c928d301dfa15becf246ac2964d4ebe145689cc02beb8c29746f4e03d51d90d",
+      "bytes": 1030
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/subject-request.json",
+      "sha256": "121ef35d7fa93e1587b735b76faf0c31155fd750df695bfbaa1e02dcdbe99340",
+      "bytes": 904
+    },
+    {
+      "path": "episodes/S-SYSTEMIC-001/trial-001/subject-response.md",
+      "sha256": "02c542affdfc196dfb09b3e8062e91239bd45b3eb84afd45bd1314bf4c8e5807",
+      "bytes": 1502
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/evaluator-rubric.json",
+      "sha256": "e6f7ef8788052778ca40be1d8ce3e7f9e391682374eb5fbeb5734efb5a62e047",
+      "bytes": 1777
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/judge-execution.json",
+      "sha256": "879aa41ab2a5090064f560d9ddfd97e3adaea35f6c29e15219627d3abd05216a",
+      "bytes": 2214
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/judge-prompt.md",
+      "sha256": "eff1168bee0aa89559e1a4f60b598101796a3f1c55e940dd6a7704bff2dcb769",
+      "bytes": 4475
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/judge-response.txt",
+      "sha256": "e3b84b9eba0a9adc7e24e82ee0a893609d1b6137faf63cc9c8ff36d5b2448731",
+      "bytes": 1331
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/judge-result.json",
+      "sha256": "d50b0e854de8866adf9bb67fb2f82f593daa9e6331f9a1c0900c640ef7c48273",
+      "bytes": 1579
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/manual-judgment.json",
+      "sha256": "76b9c41756bfa6539db31a8176b4271a59accb6483022e42d71f3e348a784582",
+      "bytes": 1534
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/result.json",
+      "sha256": "4afdf55e7712583fce3e16349f58538e3fb7199ed1502ecce09ec1d98c543aae",
+      "bytes": 452
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/subject-execution.json",
+      "sha256": "cecdcfff6c1b989bad4053aa37e24e87a74ea109cfb0cc04b6a68d5a7e53b6fa",
+      "bytes": 1146
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/subject-prompt.md",
+      "sha256": "831870ecb608af89b71aea7e8fc6f6a42bc472a427643a98c1a41e6bdfba6dc1",
+      "bytes": 919
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/subject-request.json",
+      "sha256": "771be9dc263f4005fe01bddec55f00fc8bb9ceeaa3b0c17bf6cb4515539efb37",
+      "bytes": 796
+    },
+    {
+      "path": "episodes/S-UNCERTAINTY-001/trial-001/subject-response.md",
+      "sha256": "9cce171a763021b3b17ce54c249d74cc985f5f935dcd6c1c09a03fd9f72b016d",
+      "bytes": 894
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/evaluator-rubric.json",
+      "sha256": "a965af17c37a630f936905cc4f9595a85fc898ee53d2aef28f93cd2856a1e2df",
+      "bytes": 1815
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/judge-execution.json",
+      "sha256": "6d8190dc128abc0f4fbad38f31782b2749ba9ac9f09ee2963301c6e6bc4b5e67",
+      "bytes": 2107
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/judge-prompt.md",
+      "sha256": "8326681a6249113ba31236c9ad06de6117a1f473cdf5e4c48b165d060f0b36a9",
+      "bytes": 4679
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/judge-response.txt",
+      "sha256": "ea6e20c69bccc4c513dcc41615e84567862fb783eaa4000833f52dfdf89ae2a6",
+      "bytes": 1225
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/judge-result.json",
+      "sha256": "d3c5e37cce95da988f7f07ac0396b39e326cfeb58cdade016cb4854de0232f49",
+      "bytes": 1473
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/manual-judgment.json",
+      "sha256": "f97701f16711fd96f18df2330b34768d496a4b5ac8232c2b2a0c50febdebd814",
+      "bytes": 1428
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/result.json",
+      "sha256": "61cd8a87e9b0f2f15c0827f60148780239f6bb4e351af360b55a1bcbfadf1ca1",
+      "bytes": 486
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/subject-execution.json",
+      "sha256": "dbce3340dcef90a96d97e6cdbcf2fbe3758355ceb5f65e40da6f3d815767285a",
+      "bytes": 1143
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/subject-prompt.md",
+      "sha256": "38fa6f8b22c8a0c3844cdc7eae667179a41e2af65ef43cacab5e186a16893587",
+      "bytes": 928
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/subject-request.json",
+      "sha256": "6be7919bcb37a25eded9118d8e8a149d9e8a8bcf85ad23b3bab2099c13d9389a",
+      "bytes": 804
+    },
+    {
+      "path": "episodes/S-VALIDATION-001/trial-001/subject-response.md",
+      "sha256": "b92bcad42e99d6cc826716f01478de2d8679a8021bd7257118cd46bea1682904",
+      "bytes": 1072
+    },
+    {
+      "path": "judge-batch-receipt.json",
+      "sha256": "a5bf6ffabb8e587e85046f4eaa8250d8c18fe88dfc86623a07d1006a5bde7b5e",
+      "bytes": 12164
+    },
+    {
+      "path": "review.md",
+      "sha256": "cbe314dd040b9403f6f478ff20685983a8243f4e2cb45c14929c998ffc7d236b",
+      "bytes": 13179
+    },
+    {
+      "path": "run.json",
+      "sha256": "0568d872a0287404bd3e7042af399ff044553017530e007b2cf1e01d400c1899",
+      "bytes": 3087
+    },
+    {
+      "path": "suite.json",
+      "sha256": "d0e4fcfed86e0454ed18b876dbb273e2c7cb84b0db7cecb7ae91f25e99b3b923",
+      "bytes": 67773
+    },
+    {
+      "path": "summary.json",
+      "sha256": "4e51cbf1d097d70a5209aa3cd7b8255b487c6a479414d47181af6dabac45e82a",
+      "bytes": 9146
+    },
+    {
+      "path": "summary.md",
+      "sha256": "4120d27ed0412791e4bac972cc4fd9809c97fb4608b644bbafd734462d0cb2e7",
+      "bytes": 1245
+    }
+  ]
+}

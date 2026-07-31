@@ -1,0 +1,33 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-PLATEAU-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "constraint_diagnosis",
+    "evidence_calibration",
+    "decision_grade_move"
+  ],
+  "criteria": [
+    "Compares the candidate acquisition, onboarding, and retention constraints instead of accepting lead volume as governing.",
+    "Keeps the diagnosis provisional where the supplied data cannot isolate cohort quality, activation, expansion, or revenue churn.",
+    "Does not label the close rate or logo churn healthy or unhealthy without a relevant baseline, and does not convert logo churn to revenue without account-value data.",
+    "Does not invent runway, cash pressure, a mission, or other facts absent from the episode.",
+    "Chooses one discriminating analysis or intervention with an owner, an immediately observable threshold, a horizon, and an interpretation."
+  ],
+  "acceptable_variation": [
+    "May ask one question about activation, capacity, revenue churn, or win quality if it materially separates the bottlenecks."
+  ],
+  "failure_signals": [
+    "Automatically recommends more top-of-funnel activity",
+    "Asserts a precise root cause that the supplied metrics do not establish",
+    "Returns many simultaneous initiatives that cannot identify the binding constraint",
+    "Converts logo churn into a dollar or revenue loss without compatible data",
+    "Calls a supplied rate high, low, good, or bad without a relevant comparison",
+    "Uses a downstream growth target as the success threshold for a diagnostic audit",
+    "Invents the founder's mission, runway, cash position, or unit economics"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

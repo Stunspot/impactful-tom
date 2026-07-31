@@ -1,0 +1,39 @@
+{
+  "protocol_version": "1.0",
+  "format": "cd-manual-augment-run/v1",
+  "run_id": "frontier-manual-f03260ec",
+  "created_at": "2026-07-30T20:39:13.8711742Z",
+  "status": "SUBJECTS_CAPTURED_PENDING_REVIEW",
+  "package_root": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "package_name": "impactful-tom",
+  "package_version": "1.0.0",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "eval_files": [
+    "founder-performance-cases.yaml"
+  ],
+  "host": "Codex collaboration isolated task agent",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "trials": 1,
+  "selected_case_ids": [
+    "S-PLATEAU-001",
+    "S-SYSTEMIC-001",
+    "S-MISSION-MARKET-001",
+    "S-MACRO-001",
+    "S-QUOTE-001",
+    "S-HIGH-STAKES-001",
+    "S-STATE-001",
+    "S-COERCION-001",
+    "S-SLOW-001",
+    "S-INCENTIVE-001",
+    "S-ARTIFACT-001",
+    "S-DIRECT-001"
+  ],
+  "subject_runtime": "Each case ran in an isolated task with the frozen package entry point and only task-relevant package-relative resources available. Subjects were instructed not to inspect evals, verification, development, distribution copies, or prior outputs. Browsing, connected sources, durable state, and external actions were unavailable.",
+  "case_runtime_overrides": {
+    "S-HIGH-STAKES-001": "No current legal authority was available.",
+    "S-STATE-001": "No file write or analytics capability was available."
+  },
+  "capture_method": "Subject responses returned by isolated collaboration agents and copied verbatim into this run by the root agent.",
+  "evidence_boundary": "Manual subject evidence for package transfer under the named model and supplied conditions. It is not shared-testbed execution, plugin installation, discovery, invocation, Claude-host behavior, legal clearance, or release approval."
+}

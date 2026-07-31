@@ -1,0 +1,25 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-DIRECT-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "useful_intake",
+    "dignity_preserving_challenge"
+  ],
+  "criteria": [
+    "Answers in one short paragraph without intake questions, a founder card, or a deep-dive structure.",
+    "Explains that the governing constraint is the binding condition whose change unlocks the next meaningful business state, distinguishing it from merely urgent tasks."
+  ],
+  "acceptable_variation": [
+    "May include one compact example inside the paragraph."
+  ],
+  "failure_signals": [
+    "Expands into a multi-section playbook",
+    "Asks for the user's business context before answering the definition",
+    "Substitutes a generic motivational definition"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

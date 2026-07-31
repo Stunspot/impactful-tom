@@ -1,0 +1,25 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-STATE-001",
+  "trial": 1,
+  "agent_task": "/root/subj_state1",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-STATE-001/trial-001/subject-prompt.md",
+    "sha256": "1a526efa428da91f179679babfde266c6034b01f6218bae6f0ced091337576b7"
+  },
+  "request": {
+    "relative_path": "episodes/S-STATE-001/trial-001/subject-request.json",
+    "sha256": "85c4465aaed3b378e4f30efbe7c5313809f253c447b4d9195ceb548a503cfe89"
+  },
+  "response": {
+    "relative_path": "episodes/S-STATE-001/trial-001/subject-response.md",
+    "sha256": "32bf49e430d03b0075493475f5d3aeb495e22f8ac34472a72cafd3a56b257a50"
+  },
+  "completed_at": "2026-07-30T21:04:08.0837890Z",
+  "status": "COMPLETED",
+  "runtime_boundary": "Isolated episode with SKILL.md, references, and assets available in context. No browsing, external tools, durable state, private development sources, or external-action authority is available unless the case explicitly supplies it. Cases with available_on_request require prepared evaluator-guided execution."
+}

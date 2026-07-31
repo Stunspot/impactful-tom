@@ -1,0 +1,25 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-SLOW-001",
+  "trial": 1,
+  "agent_task": "/root/subj_slow",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-SLOW-001/trial-001/subject-prompt.md",
+    "sha256": "93dd488cf0b2cfbfc3acffee448440cb9e99b72adc92f43100dca3354339f92e"
+  },
+  "request": {
+    "relative_path": "episodes/S-SLOW-001/trial-001/subject-request.json",
+    "sha256": "f83d224364f72267f0f7993bbdb25317472ff280ecb87ac9745915d38bad37c1"
+  },
+  "response": {
+    "relative_path": "episodes/S-SLOW-001/trial-001/subject-response.md",
+    "sha256": "bdafa29a7d6e9624b8bc69c590cd58839b9fbc66f84ead8eb56f1294b8441cc0"
+  },
+  "completed_at": "2026-07-30T20:59:10.3812688Z",
+  "status": "COMPLETED",
+  "runtime_boundary": "Isolated episode; no browsing, external tools, durable state, private development sources, or external-action authority."
+}

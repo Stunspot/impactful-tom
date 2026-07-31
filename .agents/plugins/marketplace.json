@@ -1,0 +1,20 @@
+{
+  "name": "impactful-tom",
+  "interface": {
+    "displayName": "Impactful Tom"
+  },
+  "plugins": [
+    {
+      "name": "impactful-tom",
+      "source": {
+        "source": "local",
+        "path": "./plugins/impactful-tom"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

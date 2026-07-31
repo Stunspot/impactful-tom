@@ -1,0 +1,253 @@
+{
+  "format": "cd-collaboration-judge-batch/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "agent_task": "/root/frontier_judge",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "evaluated_case_count": 24,
+  "completed_at": "2026-07-30T21:20:00.9533083Z",
+  "cases": [
+    {
+      "case_id": "S-ARTIFACT-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "c3395678a8b53c81bac8b4bd70cba0a83e5afdb38ad22034ba205e4b16b05f2e",
+        "subject-response.md": "c7108a242cb85101fce08f012dec54d42c28b000a42a7ca8f4b5d839abaf3f50",
+        "evaluator-rubric.json": "3a97abb9e096ca0a74b05321a5cd961bd28bf1409cd5f084e7cdbd7e740ddaa6",
+        "manual-judgment.json": "c21ab4601da0ad837538b63c4685876b6c6583e47f276acb0a1a35beecead574"
+      }
+    },
+    {
+      "case_id": "S-COERCION-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "adbd85557b984e05fb4a86ec79ec0051dee851e2433f5a4ea377b9b547fd7b0a",
+        "subject-response.md": "13431603b7590d87f37514c297c8881bab782601a89ada664176db3ee72ed734",
+        "evaluator-rubric.json": "b0167ac7115cdfee1724ecb97cbf2e55d90cbef8e31960d827f52a9f031c225d",
+        "manual-judgment.json": "ea23f9810dd5e64042e7ccd89c975e44e874fc18a9d30e2a86349b531b264724"
+      }
+    },
+    {
+      "case_id": "S-CONTRAST-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "1e1aa11482cc6b662f14473cf213db5eeed0fa75fc5e72dd6caf4c4a85d5e873",
+        "subject-response.md": "eddcd41dc9638f8de00bb3024393a46d2fda37772a7e155989bbdec66725a846",
+        "evaluator-rubric.json": "b1e7cc52e5a2ee21525f85cd9bd8dccc93167e7f63625d02f7280364fd55e362",
+        "manual-judgment.json": "6e73441909adbf1533c79f077ae8418599ff48b457c471a904494c6e20c094d5"
+      }
+    },
+    {
+      "case_id": "S-CONTROLLABLE-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "84f6eaaddac6f0d9e95f60e8a74496017c3eda9bbf6d1affb78b9b1657bb8535",
+        "subject-response.md": "7d47c07fbc52755add89b004142983a5e32ee3c436a75bfaaefb1b91f1b2e4e7",
+        "evaluator-rubric.json": "517ea97454a9c5c62b25c6cd9d3e952537775948695b310a659f59ae9561878d",
+        "manual-judgment.json": "e9c589ce4f57c71e6a3e5b1114cf04d8cff638a9e25ee3e14a2765ed96b96982"
+      }
+    },
+    {
+      "case_id": "S-CURRENT-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "2e5e33b7699863ebd2611587ab63d4fdabeaaa80d2bba3ed282154e7818d23aa",
+        "subject-response.md": "a5249b6c223ded129b2dc92a9d4325253d4860659b4578066b1662d1db19a21a",
+        "evaluator-rubric.json": "f946f64ccbaa51b0b5d24e55d47fd8d2b8e94991ead741d2bcaa00eb88db3b8c",
+        "manual-judgment.json": "2d7c72a15591f136a9b69dfbefdea33d5e2c56624e0033e0726c813c4a5489f2"
+      }
+    },
+    {
+      "case_id": "S-DIRECT-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "d6f346e9426e52e61ecfb4be810fab500883256fabc2ddabff58c87f0018782d",
+        "subject-response.md": "13b9ffb5b593347db3ef43664d90e2c2751a1bef547da7dd90fa453f89cb7605",
+        "evaluator-rubric.json": "972cc420372e2002eb4b527bf1a364b39ad92c60bdb96ac839bed6d1b8edf4db",
+        "manual-judgment.json": "a731498266e5cde448cb99991c061755d98453612fc957c9766d995349f2dc61"
+      }
+    },
+    {
+      "case_id": "S-FAST-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "28760b00cbc33a3f8208837e1794230b0647fc4fd5102f5eb9ee7ac538d354e6",
+        "subject-response.md": "2239a842c412ac2fd287337b61cfab53bf16b5804fd9db5e56420947a9b47fda",
+        "evaluator-rubric.json": "89a5f64eb6bb3b5c30033762aa126c6d4cacb5cfa73f2ad3d21907914023c667",
+        "manual-judgment.json": "ce0ae529039c0903bad95d08f4106423cdf713fa1fd61f9c97ea0074d586607e"
+      }
+    },
+    {
+      "case_id": "S-HIGH-STAKES-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "493e4abbaef23f5b37b477ed3e719e7a3553f48cc1716cc224966fb8f215798e",
+        "subject-response.md": "ad243479e2e09b73c361932cbe2d21494340054457c44d5b36c70c2b36cdeada",
+        "evaluator-rubric.json": "74e46db9c2d3389967726eaf58ea5ff622c4b0edadd11c46793008eba34457f4",
+        "manual-judgment.json": "bb9cc74d63ee99c7d104e7131fe33180095f00052ea76bbbd9fe1e7fe4411f75"
+      }
+    },
+    {
+      "case_id": "S-IDENTITY-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "d6aa8e17ff53edcc14089e13e4a7db2272f332adc387bf144bbe9422b09abd35",
+        "subject-response.md": "c152f18131d350c6f743e592378c1df85006e02b0135c31d964855bce4a2b6e5",
+        "evaluator-rubric.json": "71cb90dca129b48f996500392671e9ee293f0b34a51a53b5c2681cd1dc5396cf",
+        "manual-judgment.json": "3c1ea6fdbb4924293b4e3ccc3bd58f8582d15cf873d7a0a476266ba213bba408"
+      }
+    },
+    {
+      "case_id": "S-INCENTIVE-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "a48bd800d97a5f887f1affed61acd7c65e94a8ccb9c87b354800db8fda54ab1a",
+        "subject-response.md": "d5f2f096b85b1e8a70f084367278470f793fbae66c0fc8331ff5e95e3b079b0b",
+        "evaluator-rubric.json": "cb083d6b304de5edefd167cdba16db28a35c8e491dc50371f289051e3309daa4",
+        "manual-judgment.json": "85a97393abfcadaf935c138cfcb237529d18bec5bac2a0c9a13b75bb52083a22"
+      }
+    },
+    {
+      "case_id": "S-LEAK-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "18389670fc149c0d6b8619d4366023915cf1a23dc88e8eb217fab3e5a8213c6b",
+        "subject-response.md": "9aaf32f1652732af5a7629fd0e1f798b924a7c2ff6f3f805270b5eaff55d3040",
+        "evaluator-rubric.json": "05b39639bce5937fb679cfe59a8b6fea69ef11274cd1aee2c3d47a95c3f83721",
+        "manual-judgment.json": "540bd0ad675047fcc6ad2ac54a063e1dca152c650a72c44a857af6e70435cd51"
+      }
+    },
+    {
+      "case_id": "S-MACRO-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "503134469db1e0552df8fe160696714420ddd1b84367810bc8b9adfaf43e2589",
+        "subject-response.md": "fbf2fea22aef3bb549bb043faa16020f6c7d2fec61d8297e2d8851aab57b75bf",
+        "evaluator-rubric.json": "309720cd86bb418ddc2089934e789211d28fa519764ba09aa61615392d23c863",
+        "manual-judgment.json": "134107488a24e2bd049dce9e6374e7fc914349daf7ecc49279b3c965b67ae8f2"
+      }
+    },
+    {
+      "case_id": "S-MIND-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "b078387ff99a0f6b52eaae51e41590074d551e6252397b20e0fc3b044c3b5de9",
+        "subject-response.md": "5c07ae9d700f7c2cebcc61e97e952adbedbeac07e8691998cfaf014b029f97ca",
+        "evaluator-rubric.json": "a0838a47e01e9842aba1c81426f14eb3d375f7f3e6e7c0e76136e6e13197b7f8",
+        "manual-judgment.json": "7b9de717304bb0b98b5eab4ce86ec7334e8346480cd864cf72dc5424787bb357"
+      }
+    },
+    {
+      "case_id": "S-MISSION-MARKET-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "73daed6ffcad5d1e64193fb616ca10ab1376a28dda248e838ae6a0a03156c2a4",
+        "subject-response.md": "a0d61e1d6be659fedfbc6fe8eaac700f3ac1ff2e88df0204008623c2ff184df1",
+        "evaluator-rubric.json": "4cd268066a94418cc2101816afae05a1fcf1c899fd1a72dcb1a70f25852cc47e",
+        "manual-judgment.json": "508c5a4df25a8b2263a2b85b85b53c88823002ccfa2d655cdb6042a1d0d33c8e"
+      }
+    },
+    {
+      "case_id": "S-PLATEAU-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "15a75391d2bcc50c549669816c9c382879cbf508162240ff949ba60a1e680c28",
+        "subject-response.md": "cb049ad11198f43e19294dc6e992ece7bae6c1e51e07042d7bf3e16eb7aade64",
+        "evaluator-rubric.json": "66267758bac8fbd31d0347271526c06e26a9c0f857e59edec3d7a7095b6de16f",
+        "manual-judgment.json": "c94beb1c9b618753bd576c0a643182f0ec30383d39573b5804c4a1c1d5d219a8"
+      }
+    },
+    {
+      "case_id": "S-PREIDEA-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "d754796ced04c438724dfc656990587e3b91db587fae1f4163b54434f9d86011",
+        "subject-response.md": "88c500e754ad4bb4d799b5ca1a8169d07868f7faf644d17bf2e19d10aeb09e65",
+        "evaluator-rubric.json": "5db70732835243540a4142d8b4f8ee0de9f31db6e2104b0b3422e3773d407d65",
+        "manual-judgment.json": "07179fe89082c0c9a68e05ed7f57b59a04085515ebe38d2d60cf5ae8fa3bfa89"
+      }
+    },
+    {
+      "case_id": "S-QUOTE-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "0244b68d545b6f82ac552d04ebf0c053f5516a4491b383f39a52439da206678d",
+        "subject-response.md": "5572f4bc97d69f04478b917ec7e6a838b8003f06a8033b2698678bb11051b65c",
+        "evaluator-rubric.json": "5c81712b1e9955b4137e8cafbb028480eb20aa62416ad8c8a6a72a3077686e43",
+        "manual-judgment.json": "c5185a47688203ee8a71a0dcb50635f98c6ca0621749613d952feae8fc0dcd6d"
+      }
+    },
+    {
+      "case_id": "S-RESISTANCE-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "9676ea930c985cb6472bec98af2aafae248aebf45d9775a2b634d070b0d9d1c0",
+        "subject-response.md": "345f036f48d3f802119a4877f176ad44916c6d488845341db9c909e99b6cd928",
+        "evaluator-rubric.json": "f66d4735ab362a4b6fe50b36898c88c86e31eb2d11e18211c675cc42795908fc",
+        "manual-judgment.json": "72ff586766e7d9dfa89e144af68d83e62a5f97435d8f57f3fd4e88c3ac3dcdb7"
+      }
+    },
+    {
+      "case_id": "S-SLOW-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "8082e2de8fe5a57919045ae46abc8d500ff1da73e2887d74fac2bbfdd654789c",
+        "subject-response.md": "bdafa29a7d6e9624b8bc69c590cd58839b9fbc66f84ead8eb56f1294b8441cc0",
+        "evaluator-rubric.json": "360a370d630beebdd367b7731a9982cd4208db4377826ef69f4f6f8ef6be640a",
+        "manual-judgment.json": "fc95202718062698ef2faa3e8febaa63e9ee8155199f797dfad98a657660fc7c"
+      }
+    },
+    {
+      "case_id": "S-STATE-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "4f59af5cdd3ae1879fed3df1d6e918ed06c7fcd8f6070b935d32ad294d7d546e",
+        "subject-response.md": "32bf49e430d03b0075493475f5d3aeb495e22f8ac34472a72cafd3a56b257a50",
+        "evaluator-rubric.json": "63ad49b9522e19c9513fbd49b65a56f530a4fda652bed04b18803f06ab8bf2e3",
+        "manual-judgment.json": "2e1bfe55ba51fddbdc3c3fa226309ee8e040b20e57c76d23e8d0566002941d06"
+      }
+    },
+    {
+      "case_id": "S-STATE-002",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "39a35cf84d4b1eaab3181112138c84a799555dbb8c7892dbd93fc9e026ff21af",
+        "subject-response.md": "1624d4863889e17c3ac4e8ed8b3067cebb5eea9efbd011cdb73069d2b0f8a111",
+        "evaluator-rubric.json": "8d452d4350b83d19bd90c32fc3e2bd9919e448ae6ca36a9d3d02a7563721c987",
+        "manual-judgment.json": "b01500d32d164da5f1cdf8fd71f651282c45f6ff66db16a92749af623d4c3cbb"
+      }
+    },
+    {
+      "case_id": "S-SYSTEMIC-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "34b75d875a51ffb86e7ab505fe0c18b46321fc4f8d3de0ff009deb89552d039e",
+        "subject-response.md": "02c542affdfc196dfb09b3e8062e91239bd45b3eb84afd45bd1314bf4c8e5807",
+        "evaluator-rubric.json": "8ede45dbea5cfe83bc0904de7160e9f37809870b49a91e02b5149c929c28ffc6",
+        "manual-judgment.json": "32f4db273fd3db5efe0fe423a2db3609c0a6da7495bceac9393b53c46030b1e4"
+      }
+    },
+    {
+      "case_id": "S-UNCERTAINTY-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "eff1168bee0aa89559e1a4f60b598101796a3f1c55e940dd6a7704bff2dcb769",
+        "subject-response.md": "9cce171a763021b3b17ce54c249d74cc985f5f935dcd6c1c09a03fd9f72b016d",
+        "evaluator-rubric.json": "e6f7ef8788052778ca40be1d8ce3e7f9e391682374eb5fbeb5734efb5a62e047",
+        "manual-judgment.json": "76b9c41756bfa6539db31a8176b4271a59accb6483022e42d71f3e348a784582"
+      }
+    },
+    {
+      "case_id": "S-VALIDATION-001",
+      "trial": 1,
+      "sha256": {
+        "judge-prompt.md": "8326681a6249113ba31236c9ad06de6117a1f473cdf5e4c48b165d060f0b36a9",
+        "subject-response.md": "b92bcad42e99d6cc826716f01478de2d8679a8021bd7257118cd46bea1682904",
+        "evaluator-rubric.json": "a965af17c37a630f936905cc4f9595a85fc898ee53d2aef28f93cd2856a1e2df",
+        "manual-judgment.json": "f97701f16711fd96f18df2330b34768d496a4b5ac8232c2b2a0c50febdebd814"
+      }
+    }
+  ],
+  "boundary": "Evaluator judgment only; this batch receipt is not host-installation, rights, release, or field evidence."
+}

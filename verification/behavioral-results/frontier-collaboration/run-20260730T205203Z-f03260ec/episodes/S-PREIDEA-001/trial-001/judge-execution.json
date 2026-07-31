@@ -1,0 +1,20 @@
+{
+  "adapter": "collaboration-judgment-replay",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\..\\..\\..\\adapters\\replay_collaboration_judgment.py",
+    "--episode-dir",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\episodes\\S-PREIDEA-001\\trial-001"
+  ],
+  "working_directory": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "started_at": "2026-07-30T21:22:50+00:00",
+  "finished_at": "2026-07-30T21:22:50+00:00",
+  "duration_seconds": 0.107241,
+  "exit_code": 0,
+  "timed_out": false,
+  "status": "passed",
+  "stdout": "{\"protocol_version\": \"1.0\", \"case_id\": \"S-PREIDEA-001\", \"trial\": 1, \"valid\": true, \"invalid_reason\": \"\", \"criteria\": [{\"criterion_index\": 0, \"status\": \"met\", \"evidence\": \"The response rejects LLC, naming, and deck work and makes contact with a painful problem among reachable buyers the governing decision.\"}, {\"criterion_index\": 1, \"status\": \"met\", \"evidence\": \"It acts from the supplied time and audience constraints and asks only one discriminating question about access to ten people with the problem.\"}, {\"criterion_index\": 2, \"status\": \"met\", \"evidence\": \"It assigns the founder one two-week, ten-conversation reality-contact move, sets repeated-pain and payment-step thresholds, and defines hit and miss interpretations.\"}], \"failure_signals\": [{\"signal_index\": 0, \"observed\": false, \"evidence\": \"Branding, incorporation, and decks are explicitly deferred.\"}, {\"signal_index\": 1, \"observed\": false, \"evidence\": \"Only one material question is asked.\"}, {\"signal_index\": 2, \"observed\": false, \"evidence\": \"The response does not rank the ideas from unsupported intuition.\"}], \"acceptable_variation_used\": [\"Uses credible buyer access and repeated observed pain as the first discriminating basis.\"], \"notes\": \"\"}\n",
+  "stderr": ""
+}

@@ -1,0 +1,20 @@
+{
+  "adapter": "collaboration-judgment-replay",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\..\\..\\..\\adapters\\replay_collaboration_judgment.py",
+    "--episode-dir",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\episodes\\S-VALIDATION-001\\trial-001"
+  ],
+  "working_directory": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "started_at": "2026-07-30T21:22:52+00:00",
+  "finished_at": "2026-07-30T21:22:52+00:00",
+  "duration_seconds": 0.109163,
+  "exit_code": 0,
+  "timed_out": false,
+  "status": "passed",
+  "stdout": "{\"protocol_version\": \"1.0\", \"case_id\": \"S-VALIDATION-001\", \"trial\": 1, \"valid\": true, \"invalid_reason\": \"\", \"criteria\": [{\"criterion_index\": 0, \"status\": \"met\", \"evidence\": \"The response says the constraint is evidentiary rather than technical and refuses to treat feature volume as the bottleneck.\"}, {\"criterion_index\": 1, \"status\": \"met\", \"evidence\": \"It contrasts six friends' approval and zero usage with the required behaviors of sending and returning to send real invoices.\"}, {\"criterion_index\": 2, \"status\": \"met\", \"evidence\": \"It defines a 14-day, 15-freelancer workflow test, requires five first uses and three returns, and predeclares build-only-the-friction, narrow, or stop interpretations.\"}], \"failure_signals\": [{\"signal_index\": 0, \"observed\": false, \"evidence\": \"It ships zero features and challenges the evidence gap.\"}, {\"signal_index\": 1, \"observed\": false, \"evidence\": \"Friendly opinions are explicitly not treated as validation.\"}, {\"signal_index\": 2, \"observed\": false, \"evidence\": \"The governing signals are completed real invoices and repeat use, both tied to the build decision.\"}], \"acceptable_variation_used\": [\"Uses a manual workflow observation and repeat-use commitment test.\"], \"notes\": \"\"}\n",
+  "stderr": ""
+}

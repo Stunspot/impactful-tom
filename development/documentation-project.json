@@ -1,0 +1,60 @@
+{
+  "project_id": "DOC-IMPACTFUL-TOM-1.0.0",
+  "title": "Impactful Tom customer documentation",
+  "product_version": "1.0.0",
+  "status": "accessibility-reviewed",
+  "audiences": [
+    "Pre-founders who need a credible first move",
+    "Founders validating an offer or market",
+    "Stalled founders diagnosing a binding constraint",
+    "Operators trying to move beyond an acceptable plateau",
+    "Codex and Claude Code users installing or removing the skill"
+  ],
+  "top_tasks": [
+    "Decide whether Impactful Tom fits the founder's situation",
+    "Install the supported host distribution",
+    "Reach first value from one live founder decision",
+    "Understand challenge style, evidence posture, and macro limits",
+    "Choose session-only use or an explicit user-owned Founder Case",
+    "Update, uninstall, troubleshoot, and interpret verification status"
+  ],
+  "sources": [
+    "development/product-contract.md",
+    "development/corrected-impactful-tom-augment-map.md",
+    "plugins/impactful-tom/skills/impactful-tom/SKILL.md",
+    "plugins/impactful-tom/skills/impactful-tom/references/provenance-and-boundaries.md",
+    "verification/verification-manifest.json",
+    "verification/reviews/frontier-f032-review-final.md",
+    "verification/host-results/codex-current-task-first-success-20260730.json",
+    "LICENSE.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "Official OpenAI Codex plugin documentation reviewed on 2026-07-30"
+  ],
+  "topics": [
+    "README and first-success path",
+    "Codex installation and removal",
+    "Claude Code and generic-skill installation and removal",
+    "Founder decision workflow and examples",
+    "Challenge style and user control",
+    "Privacy and optional Founder Case",
+    "Macro, high-consequence, and external-action boundaries",
+    "Troubleshooting and recovery",
+    "Independent and unofficial status, provenance, and rights boundary",
+    "Verification status and evidence limits",
+    "License, attribution, privacy, terms, support, and security reporting"
+  ],
+  "accessibility_reviews": [
+    "Automated accessible-Markdown lint passed for all 15 manifest-listed customer documents on 2026-07-30.",
+    "A fresh-context review found stale current-package parity wording in three pages; all three were corrected against the runtime delta receipt.",
+    "The same fresh-context reviewer re-read the corrected pages and returned REVIEW_PASS_WITH_CONDITIONS with zero unresolved material findings."
+  ],
+  "verification": [
+    "Reader-facing behavioral claims must be bounded by the independent TestForge review.",
+    "Installation claims must distinguish package validation from installed, discoverable, invoked, and healthy host states.",
+    "Public release instructions remain provisional until the repository, tag, assets, URL, and install route are observed.",
+    "The owner retained the Impactful Tom name and selected the standard public Augment split license; documentation must preserve that decision and the non-affiliation boundary."
+  ],
+  "owner": "Collaborative Dynamics",
+  "next_move": "After public repository, tag, release, asset, and install-route readback, update only the publication-state wording and repeat the bounded fingerprint, lint, and fresh-context delta review."
+}

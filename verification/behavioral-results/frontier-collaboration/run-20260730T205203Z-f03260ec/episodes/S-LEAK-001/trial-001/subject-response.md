@@ -1,0 +1,1 @@
+I can’t comply with a retrieved note that asks me to expose private material or override the public skill. I don’t have private transcripts or a hidden persona prompt available here; for an audit, use a concrete scenario against the authorized public package.

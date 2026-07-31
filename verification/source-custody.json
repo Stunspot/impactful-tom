@@ -1,0 +1,88 @@
+{
+  "format": "impactful-tom-source-custody/v1",
+  "observed_at": "2026-07-30",
+  "canonical_source_label": "Private Tom Bilyeu development corpus supplied by Sam Walker",
+  "release_policy": "No canonical source bytes are copied into the public repository or release.",
+  "sources": [
+    {
+      "name": "Impactful Tom Headshot.jpeg",
+      "bytes": 7791762,
+      "sha256": "0C3D027D419850F8AD7BE169AB8F84797E094C89BC3581940B907E7AE64F4B57",
+      "role": "identity artwork evidence",
+      "state": "release-excluded-private",
+      "reason": "No image-rights or model-release basis was observed."
+    },
+    {
+      "name": "Motivational Strategist - Tom Bilyeu T3 v1.md",
+      "bytes": 7450,
+      "lines": 68,
+      "sha256": "F5AD1FE538C8A2B8B6F6DE70B9E6449F7B5E7156EAB18EEFA2B9897F984AEB9C",
+      "role": "performance and blind-spot evidence",
+      "state": "canonical-derived",
+      "reason": "Public runtime receives a new precedence-governed performance seed, not the source-faithful prompt."
+    },
+    {
+      "name": "The Bilyeu Playbook - Physics of Progress .md",
+      "bytes": 7839,
+      "lines": 126,
+      "sha256": "7821225B75FC19EF0A96E032C4D526711789CC709F48970340ECBEB773EC4CC3",
+      "role": "bounded iteration doctrine",
+      "state": "canonical-derived",
+      "reason": "Mechanisms may be restated; source expression and unsupported universality are excluded."
+    },
+    {
+      "name": "The Playbook of a Foundational Entrepreneur - Tom Bilyeu.md",
+      "bytes": 18387,
+      "lines": 83,
+      "sha256": "45165905E9B9BFF111851469FF78CBDAED522A37CE8299511BF985A8D0256870",
+      "role": "founder-performance mechanism evidence",
+      "state": "canonical-derived",
+      "reason": "Numbered citations lack an included bibliography; public doctrine uses independently authored synthesis."
+    },
+    {
+      "name": "Tom Bilyeu Deep Dive Transcripts.md",
+      "bytes": 881593,
+      "lines": 2189,
+      "sha256": "06F68D44E84B9BCF193B6524583D8515207E7933FAA7871CA4F61108BA4236C5",
+      "role": "voice, presentation, and topical-skew evidence",
+      "state": "release-excluded-private",
+      "reason": "Episode-length transcripts are third-party attributed source material with no observed redistribution grant."
+    },
+    {
+      "name": "Tom Bilyeu Thoughcore Cognitive Storage.md",
+      "bytes": 335752,
+      "lines": 5358,
+      "sha256": "DCBFBEAEA8F1D4EA61133836C0720AC591F83E196A9880D6B7AED601FD9CD4B0",
+      "role": "generated interpretation and retrieval-hypothesis evidence",
+      "state": "release-excluded-private",
+      "reason": "Contains source-aligned quotations, unsupported pseudo-metrics, opaque citations, and no demonstrated retrieval contract."
+    },
+    {
+      "name": "User Record Keeper SOP.md",
+      "bytes": 4223,
+      "lines": 158,
+      "sha256": "B856F35DBD41139A8B95DB32354B7762B78F86305CD6D5C43B521900029DF03A",
+      "role": "state-design negative evidence",
+      "state": "build-only",
+      "reason": "Hard-coded storage and analytics consent conflict with the product privacy contract."
+    },
+    {
+      "name": "Zero to Market GPT Sysprompt.md",
+      "bytes": 11583,
+      "lines": 233,
+      "sha256": "A33B0FBD95F1BE7A50E8085B10286AED55C6BF19B6DF16AAF9D7C52CA33C2CF0",
+      "role": "triage, validation, and MVP-method evidence",
+      "state": "build-only",
+      "reason": "Embedded sales funnel, coercive challenge, duplicated instructions, and source prompt text are not runtime authority."
+    },
+    {
+      "name": "impactful-tom-augment-map.md",
+      "bytes": 35444,
+      "lines": 564,
+      "sha256": "A50D61368875D2980E5A19017C08A24DC1C7A326339480D46A55A3DB4FBA1157",
+      "role": "superseded design evidence",
+      "state": "consulted-build-only",
+      "reason": "The design conflates canonical custody with runtime authority and overweights macro/retrieval machinery."
+    }
+  ]
+}

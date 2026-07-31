@@ -1,0 +1,30 @@
+{
+  "format": "cd-documentation-review-input/v1",
+  "review_run_id": "hesperos-doc-review-impactful-tom-20260730-04",
+  "contents_supplied": true,
+  "documentation_fingerprint": "8bc3aa19eed6a9400685aabb925cf54209f2f7baca8cd29a5559216c8cf20823",
+  "supplied_files": [
+    "README.md",
+    "docs/getting-started.md",
+    "docs/installing-and-maintaining.md",
+    "docs/privacy-and-boundaries.md",
+    "docs/troubleshooting.md",
+    "docs/provenance-and-verification.md",
+    "DATA-AND-PRIVACY.md",
+    "TERMS-OF-USE.md",
+    "LICENSE.md",
+    "ATTRIBUTION.md",
+    "NOTICE.md",
+    "TRADEMARKS.md",
+    "SUPPORT.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "transport": "Fresh-context gpt-5.6-terra collaboration review with exact local files, same-reviewer closure on three remediated pages, bounded follow-up on the dated changelog delta, and EOF-formatting closure.",
+  "review_response_evidence": "verification/documentation/review-response-prepublication.txt",
+  "execution_evidence": [
+    "verification/documentation/reviewer-return-prepublication.md",
+    "verification/documentation/review-response-prepublication.txt",
+    "verification/reviews/documentation-accessibility-review-signoff.md"
+  ]
+}

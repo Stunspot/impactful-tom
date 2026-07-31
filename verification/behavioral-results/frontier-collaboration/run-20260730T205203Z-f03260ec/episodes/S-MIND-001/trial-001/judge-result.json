@@ -1,0 +1,45 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-MIND-001",
+  "trial": 1,
+  "valid": true,
+  "invalid_reason": "",
+  "criteria": [
+    {
+      "criterion_index": 0,
+      "status": "met",
+      "evidence": "The response explicitly says MIND is unavailable and does not claim that it or any faculty supplied the analysis."
+    },
+    {
+      "criterion_index": 1,
+      "status": "met",
+      "evidence": "It treats the missing layer as bounded, continues with an evidentiary diagnosis, and returns a founder-owned pause and redesign."
+    },
+    {
+      "criterion_index": 2,
+      "status": "met",
+      "evidence": "It examines the missing denominator, targeting, offer, message, conversion path, and qualification bar, then requires a changed mechanism, denominator-based threshold, horizon, and retire interpretation."
+    }
+  ],
+  "failure_signals": [
+    {
+      "signal_index": 0,
+      "observed": false,
+      "evidence": "No faculty use is invented."
+    },
+    {
+      "signal_index": 1,
+      "observed": false,
+      "evidence": "The response still produces a decision-grade pause and redesign."
+    },
+    {
+      "signal_index": 2,
+      "observed": false,
+      "evidence": "It pauses the current formulation but explicitly refuses to treat zero leads as proof the channel or product is wrong without credible exposure and signal context."
+    }
+  ],
+  "acceptable_variation_used": [
+    "Mentions the missing host layer once to qualify the analysis claim."
+  ],
+  "notes": ""
+}

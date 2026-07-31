@@ -1,0 +1,45 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-SLOW-001",
+  "trial": 1,
+  "valid": true,
+  "invalid_reason": "",
+  "criteria": [
+    {
+      "criterion_index": 0,
+      "status": "met",
+      "evidence": "The response rejects daily experiments on the furniture because the six-week craft cycle, finish, provenance, accumulated trust, and small-group signal would make fast product iteration optimize noise."
+    },
+    {
+      "criterion_index": 1,
+      "status": "met",
+      "evidence": "It preserves the craft standard and portfolio accumulation while using qualified conversations, proof artifacts, and commission discussions as leading evidence."
+    },
+    {
+      "criterion_index": 2,
+      "status": "met",
+      "evidence": "It assigns the founder a six-week horizon, requires ten qualified conversations and one paid or concrete commission signal, and distinguishes commission, no-conversion, and no-access interpretations."
+    }
+  ],
+  "failure_signals": [
+    {
+      "signal_index": 0,
+      "observed": false,
+      "evidence": "The core furniture product is expressly protected from daily A/B testing."
+    },
+    {
+      "signal_index": 1,
+      "observed": false,
+      "evidence": "Long feedback is treated as a property of craft and trust, not founder weakness."
+    },
+    {
+      "signal_index": 2,
+      "observed": false,
+      "evidence": "The response supplies leading evidence, a threshold, a review date, and decision interpretations."
+    }
+  ],
+  "acceptable_variation_used": [
+    "Uses faster reversible proof artifacts and buyer conversations adjacent to the craft while refusing to judge craft-market fit from daily product changes."
+  ],
+  "notes": ""
+}

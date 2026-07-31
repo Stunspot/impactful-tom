@@ -1,0 +1,1 @@
+A governing constraint is the smallest bottleneck that determines what will actually change the outcome—the mechanism, evidence gap, resource limit, incentive, or environmental condition that makes one response sensible and the others wasted motion.

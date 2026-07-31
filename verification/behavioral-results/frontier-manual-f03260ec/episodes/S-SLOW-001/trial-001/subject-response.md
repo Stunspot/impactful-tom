@@ -1,0 +1,5 @@
+Don’t run daily growth experiments until a commission lands. Your constraint is trust accumulation: six-week pieces, finish quality, provenance, and a buyer who needs repeated evidence before committing. Daily changes will give you noise and make the studio look restless.
+
+Run a 12-week portfolio-and-conversation cycle instead. Every day, document one real proof of craft—material origin, joinery, finish testing, a decision rejected, the maker’s hand—and make it available to the specific people most likely to commission. Every week, hold five substantive conversations with collectors, designers, curators, or architects; ask what would make them comfortable commissioning, then test one friction point at a time: the provenance packet, the commission process, a studio visit, or the first-deposit structure.
+
+Your first threshold is not “more followers.” By week eight, one audience/channel should produce three serious commission conversations and at least one paid design retainer or deposit. If it does, deepen that channel and preserve the craft standard. If it does not, change the audience or buying path—not the furniture every day.

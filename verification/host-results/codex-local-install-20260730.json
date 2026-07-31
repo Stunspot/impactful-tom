@@ -1,0 +1,98 @@
+{
+  "schema_version": "impactful-tom-host-receipt/v1",
+  "recorded_at": "2026-07-30T21:52:23.3125222Z",
+  "target": {
+    "host": "Codex CLI on the current Windows workstation",
+    "task_id": "019fb465-a48b-7b60-a5a6-41d7bdca7f22",
+    "source_repository": "E:\\Github\\impactful-tom",
+    "plugin_id": "impactful-tom@impactful-tom",
+    "plugin_version": "1.0.0",
+    "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+    "host_cleanliness": "non-clean-current-host"
+  },
+  "preflight": {
+    "marketplace_collision_observed": false,
+    "plugin_collision_observed": false,
+    "basis": [
+      "codex plugin marketplace list",
+      "codex plugin list --json"
+    ]
+  },
+  "transactions": [
+    {
+      "command": "codex plugin marketplace add E:\\Github\\impactful-tom --json",
+      "exit_code": 0,
+      "tool_returned": {
+        "marketplaceName": "impactful-tom",
+        "installedRoot": "E:\\Github\\impactful-tom",
+        "alreadyAdded": false
+      }
+    },
+    {
+      "command": "codex plugin add impactful-tom@impactful-tom --json",
+      "exit_code": 0,
+      "tool_returned": {
+        "pluginId": "impactful-tom@impactful-tom",
+        "name": "impactful-tom",
+        "marketplaceName": "impactful-tom",
+        "version": "1.0.0",
+        "installedPath": "C:\\Users\\user\\.codex\\plugins\\cache\\impactful-tom\\impactful-tom\\1.0.0",
+        "authPolicy": "ON_INSTALL"
+      }
+    }
+  ],
+  "authoritative_readback": {
+    "marketplace": {
+      "command": "codex plugin marketplace list",
+      "observed_name": "impactful-tom",
+      "observed_root": "E:\\Github\\impactful-tom"
+    },
+    "plugin": {
+      "command": "codex plugin list --marketplace impactful-tom --json",
+      "installed": true,
+      "enabled": true,
+      "source": "local",
+      "source_path": "E:\\Github\\impactful-tom",
+      "policy": "AVAILABLE",
+      "auth_policy": "ON_INSTALL"
+    },
+    "cache_parity": {
+      "source_root": "E:\\Github\\impactful-tom\\plugins\\impactful-tom",
+      "cache_root": "C:\\Users\\user\\.codex\\plugins\\cache\\impactful-tom\\impactful-tom\\1.0.0",
+      "source_files": 13,
+      "cache_files": 13,
+      "missing_files": 0,
+      "extra_files": 0,
+      "changed_files": 0,
+      "comparison": "relative paths and SHA-256 bytes"
+    }
+  },
+  "fresh_context_probe": {
+    "surface": "fresh Codex collaboration agent after installation",
+    "agent": "/root/codex_install_probe",
+    "available_skills_catalog": "absent",
+    "skill_read": false,
+    "skill_invoked": false,
+    "founder_response": "NOT RUN",
+    "probe_statement": "Absent from the freshly injected Available skills catalog. No injected skill name or path existed, so it was neither read nor invoked.",
+    "interpretation": "This establishes only non-injection in that collaboration-agent context. It does not establish absence of the installed plugin artifacts or general Codex plugin failure."
+  },
+  "earned_states": [
+    "marketplace-configured-current-host",
+    "plugin-installed-current-host",
+    "plugin-enabled-current-host",
+    "installed-cache-byte-parity-current-host"
+  ],
+  "not_earned": [
+    "clean-host-installation",
+    "task-catalog-discovery",
+    "skill-invocation",
+    "resource-loading",
+    "first-success",
+    "healthy",
+    "restart-resilient",
+    "Claude-host-behavior"
+  ],
+  "disposition": "PARTIAL_HOST_EVIDENCE",
+  "next_valid_check": "After the final identity and license decisions freeze the public release, remove any superseded local listing, install the final release through its public route in a fresh supported task context, and verify discovery, invocation, resources, first success, and restart behavior where the host surface exposes them."
+}

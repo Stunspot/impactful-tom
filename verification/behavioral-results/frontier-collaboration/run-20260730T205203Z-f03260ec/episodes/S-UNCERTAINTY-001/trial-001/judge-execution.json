@@ -1,0 +1,20 @@
+{
+  "adapter": "collaboration-judgment-replay",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\..\\..\\..\\adapters\\replay_collaboration_judgment.py",
+    "--episode-dir",
+    "E:\\Github\\impactful-tom\\verification\\behavioral-results\\frontier-collaboration\\run-20260730T205203Z-f03260ec\\episodes\\S-UNCERTAINTY-001\\trial-001"
+  ],
+  "working_directory": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "started_at": "2026-07-30T21:22:52+00:00",
+  "finished_at": "2026-07-30T21:22:52+00:00",
+  "duration_seconds": 0.101311,
+  "exit_code": 0,
+  "timed_out": false,
+  "status": "passed",
+  "stdout": "{\"protocol_version\": \"1.0\", \"case_id\": \"S-UNCERTAINTY-001\", \"trial\": 1, \"valid\": true, \"invalid_reason\": \"\", \"criteria\": [{\"criterion_index\": 0, \"status\": \"partial\", \"evidence\": \"The response refuses to choose or average, and examines definition, denominator, cohort, period, and logo versus revenue scope, but it does not explicitly require checking data freshness.\"}, {\"criterion_index\": 1, \"status\": \"met\", \"evidence\": \"It states that retention cannot yet be classified as the main problem and keeps the diagnosis evidentiary pending reconciliation.\"}, {\"criterion_index\": 2, \"status\": \"met\", \"evidence\": \"It provides board-ready language identifying two reported figures and the unresolved diagnosis, assigns finance or RevOps, and specifies a 48-hour reconciliation and decision treatment.\"}], \"failure_signals\": [{\"signal_index\": 0, \"observed\": false, \"evidence\": \"No reason is invented for either system being correct.\"}, {\"signal_index\": 1, \"observed\": false, \"evidence\": \"The figures are not averaged.\"}, {\"signal_index\": 2, \"observed\": false, \"evidence\": \"The uncertainty changes the decision treatment by blocking retention classification, spending, and target changes.\"}], \"acceptable_variation_used\": [\"Presents both reported figures as conflicting for the board while reconciliation remains pending.\"], \"notes\": \"\"}\n",
+  "stderr": ""
+}

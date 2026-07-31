@@ -1,0 +1,33 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-MIND-001",
+  "trial": 1,
+  "agent_task": "/root/subj_mind",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-MIND-001/trial-001/subject-prompt.md",
+    "sha256": "56912af253e20d16a8eef4f99e6b778fe3b177fcdf25147563c3739ac677d629"
+  },
+  "request": {
+    "relative_path": "episodes/S-MIND-001/trial-001/subject-request.json",
+    "sha256": "7556f000538f2fdf2efc3d374c25ac0c07591fdfc982b1488893f613a2a79221"
+  },
+  "response": {
+    "relative_path": "episodes/S-MIND-001/trial-001/subject-response.md",
+    "sha256": "5c07ae9d700f7c2cebcc61e97e952adbedbeac07e8691998cfaf014b029f97ca"
+  },
+  "completed_at": "2026-07-30T21:05:28.4796356Z",
+  "status": "COMPLETED",
+  "runtime_boundary": {
+    "mind": "unavailable",
+    "omnicompetence": "unavailable",
+    "faculty_router": "unavailable",
+    "browsing": "unavailable",
+    "external_tools": "unavailable",
+    "durable_state": "unavailable",
+    "external_action_authority": "unavailable"
+  }
+}

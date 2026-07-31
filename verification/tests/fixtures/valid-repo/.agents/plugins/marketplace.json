@@ -1,0 +1,10 @@
+{
+  "name": "impactful-tom",
+  "plugins": [
+    {
+      "name": "impactful-tom",
+      "source": { "source": "local", "path": "./plugins/impactful-tom" },
+      "policy": { "installation": "AVAILABLE" }
+    }
+  ]
+}

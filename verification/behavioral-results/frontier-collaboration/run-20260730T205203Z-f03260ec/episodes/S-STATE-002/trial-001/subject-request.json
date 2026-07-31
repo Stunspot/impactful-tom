@@ -1,0 +1,13 @@
+{
+  "protocol_version": "1.0",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-STATE-002",
+  "trial": 1,
+  "package_root": "E:\\Github\\impactful-tom\\plugins\\impactful-tom\\skills\\impactful-tom",
+  "skills": [
+    "SKILL.md"
+  ],
+  "runtime": "Isolated episode with SKILL.md, references, and assets available in context. No browsing, external tools, durable state, private development sources, or external-action authority is available unless the case explicitly supplies it. Cases with available_on_request require prepared evaluator-guided execution.",
+  "input": "Create a portable Founder Case for this business and let me correct it before anything is saved. I want the file in a location I choose.",
+  "interactive": true
+}

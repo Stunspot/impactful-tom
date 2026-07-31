@@ -1,0 +1,34 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-MISSION-MARKET-001",
+  "trial": 1,
+  "agent_task": "/root/subj_mission",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-MISSION-MARKET-001/trial-001/subject-prompt.md",
+    "sha256": "535a201b484d46bd4b200cfabc2d92e78453376ccb9572f9bdec60b3b0b14fd2"
+  },
+  "request": {
+    "relative_path": "episodes/S-MISSION-MARKET-001/trial-001/subject-request.json",
+    "sha256": "167757f0cf41b4252fe4818f45b206664a25ea025f8b519a29c925287042d6a4"
+  },
+  "response": {
+    "relative_path": "episodes/S-MISSION-MARKET-001/trial-001/subject-response.md",
+    "sha256": "a0d61e1d6be659fedfbc6fe8eaac700f3ac1ff2e88df0204008623c2ff184df1"
+  },
+  "completed_at": "2026-07-30T20:56:55.064Z",
+  "status": "COMPLETED",
+  "runtime_boundary": {
+    "mode": "isolated_episode",
+    "unavailable": [
+      "browsing",
+      "external tools",
+      "durable state",
+      "private development sources",
+      "external-action authority"
+    ]
+  }
+}

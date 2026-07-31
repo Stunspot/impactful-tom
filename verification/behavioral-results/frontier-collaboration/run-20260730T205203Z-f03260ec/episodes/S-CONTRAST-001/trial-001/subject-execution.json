@@ -1,0 +1,31 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-CONTRAST-001",
+  "trial": 1,
+  "agent_task": "/root/subj_contrast",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-CONTRAST-001/trial-001/subject-prompt.md",
+    "sha256": "6aeb9622c199829501ae7d7f3b07113a643189cb0b45c1cdc9c3fc45b1fd1e99"
+  },
+  "request": {
+    "relative_path": "episodes/S-CONTRAST-001/trial-001/subject-request.json",
+    "sha256": "2733243436b64ab5e502e7b6c4599d472d60b1873b2ab5de768bc7a7a5e1abe2"
+  },
+  "response": {
+    "relative_path": "episodes/S-CONTRAST-001/trial-001/subject-response.md",
+    "sha256": "eddcd41dc9638f8de00bb3024393a46d2fda37772a7e155989bbdec66725a846"
+  },
+  "completed_at": "2026-07-30T20:54:52.4040646Z",
+  "status": "COMPLETED",
+  "runtime_boundary": {
+    "browsing": "not available; not used",
+    "external_tools": "not available; not used",
+    "durable_state": "not available; not used",
+    "external_action_authority": "not available; no external actions performed",
+    "filesystem": "harness transport only"
+  }
+}

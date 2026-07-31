@@ -1,0 +1,61 @@
+{
+  "schema_version": "cd-augment-archive-plan/v1",
+  "status": "built-and-roundtrip-verified",
+  "product": {
+    "name": "Impactful Tom",
+    "slug": "impactful-tom",
+    "version": "1.0.0"
+  },
+  "customer_object": "One founder-performance Augment with Codex-plugin and Claude Code/generic host forms.",
+  "artifacts": [
+    {
+      "id": "complete-augment",
+      "kind": "augment",
+      "source": "../../release/stage/impactful-tom-v1.0.0",
+      "archive_name": "impactful-tom-v1.0.0.zip",
+      "top_level": "impactful-tom-v1.0.0",
+      "customer_route": "One customer kit containing documentation and both host forms"
+    },
+    {
+      "id": "codex-plugin",
+      "kind": "codex-plugin",
+      "source": "../../plugins/impactful-tom",
+      "archive_name": "impactful-tom-v1.0.0-codex-plugin.zip",
+      "top_level": "impactful-tom",
+      "customer_route": "Codex plugin archive"
+    },
+    {
+      "id": "standalone-skill",
+      "kind": "standalone-skill",
+      "source": "../../plugins/impactful-tom/skills/impactful-tom",
+      "archive_name": "impactful-tom-v1.0.0-standalone-skill.zip",
+      "top_level": "impactful-tom",
+      "customer_route": "Standalone skill installation in a compatible host"
+    },
+    {
+      "id": "claude-code-generic",
+      "kind": "claude-code-generic-skill",
+      "source": "../../dist/claude-code/impactful-tom",
+      "archive_name": "impactful-tom-v1.0.0-claude-code-generic-skill.zip",
+      "top_level": "impactful-tom",
+      "customer_route": "Claude Code or compatible skill-folder installation"
+    }
+  ],
+  "release_custody": {
+    "tagged_source": "planned GitHub tag v1.0.0; not yet published",
+    "release_assets": "built locally; names and SHA-256 values recorded in release/archive-custody-v1.0.0.json and release/assets/v1.0.0/SHA256SUMS.txt",
+    "canonical_local_archives": "release/assets/v1.0.0",
+    "latest_recovery_backup": "not selected; public repository, tag, and release assets will provide the initial remote recovery surfaces after live verification",
+    "detached_checksums": "built for all four archives at release/assets/v1.0.0/SHA256SUMS.txt"
+  },
+  "build_and_verification_requirements": [
+    "Freeze the approved final candidate before archive creation.",
+    "Build the customer kit in release/stage/impactful-tom-v1.0.0 without private development evidence.",
+    "Build the custody ledger with source-tree digest, archive digest, byte count, and member count.",
+    "Extract each archive and compare it byte-for-byte with its declared source tree.",
+    "Run source-exclusion and private-path checks on the final release tree and extracted archives.",
+    "Compare GitHub release assets with the custody ledger after publication readback.",
+    "Keep canonical archives, tagged source, release assets, and recovery backup as distinct custody surfaces."
+  ],
+  "blocking_conditions": []
+}

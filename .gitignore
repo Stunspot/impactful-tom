@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+.venv/
+venv/
+release/stage/
+release/tmp/
+release/assets/**/*.zip
+
+# Preserve exploratory/local verification runs outside public repository custody.
+verification/behavioral-results/codex-cli-plateau/
+verification/behavioral-results/ollama-context-*/
+verification/behavioral-results/qwen-subject-codex-judge-plateau/
+verification/behavioral-results/runner-logs/

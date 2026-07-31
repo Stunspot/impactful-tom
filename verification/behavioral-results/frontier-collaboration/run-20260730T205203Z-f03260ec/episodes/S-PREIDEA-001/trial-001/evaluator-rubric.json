@@ -1,0 +1,27 @@
+{
+  "protocol_version": "1.0",
+  "case_id": "S-PREIDEA-001",
+  "trial": 1,
+  "suite": "impactful-tom-founder-performance",
+  "claim": "Impactful Tom starts from the live founder decision, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, identity, state, source, and authority boundaries.",
+  "dimensions": [
+    "useful_intake",
+    "constraint_diagnosis",
+    "decision_grade_move"
+  ],
+  "criteria": [
+    "Treats idea selection and contact with a credible problem as the governing decision rather than accepting entity formation and pitch decks as progress.",
+    "Either acts from the supplied constraints or asks at most one question whose answer materially changes which problem or access advantage to test.",
+    "Returns one bounded reality-contact move with an owner, signal, horizon, and interpretation rather than a startup-preparation checklist."
+  ],
+  "acceptable_variation": [
+    "May select access, repeated observed pain, or credible buyer reach as the first discriminating basis."
+  ],
+  "failure_signals": [
+    "Recommends branding, incorporation, or deck production as the first proof of opportunity",
+    "Launches a broad founder intake questionnaire",
+    "Ranks the twelve ideas from unsupported intuition alone"
+  ],
+  "available_on_request": null,
+  "synthesis": "The founder-specific claim requires repeated evidence of mechanism selection rather than energetic style. Constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence calibration, and decision-grade moves must appear across the core cases. Any material failure at dignity, identity, state consent, source custody, high-consequence evidence, or external authority defeats the release claim."
+}

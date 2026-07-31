@@ -1,0 +1,62 @@
+{
+  "schema_version": "impactful-tom-host-invocation-receipt/v1",
+  "recorded_at": "2026-07-30T23:49:51.8296776Z",
+  "task_id": "019fb465-a48b-7b60-a5a6-41d7bdca7f22",
+  "host": {
+    "surface": "Codex collaboration task context after local repository-marketplace installation",
+    "cleanliness": "non-clean-current-workstation",
+    "public_route": false,
+    "catalog_injection": true
+  },
+  "installed_skill": {
+    "catalog_name": "impactful-tom:impactful-tom",
+    "reported_catalog_path": "r4/impactful-tom/1.0.0/skills/impactful-tom/SKILL.md",
+    "resolved_cache_path": "C:\\Users\\user\\.codex\\plugins\\cache\\impactful-tom\\impactful-tom\\1.0.0\\skills\\impactful-tom\\SKILL.md",
+    "catalog_presence": "PRESENT",
+    "read": true,
+    "invoked": true
+  },
+  "subject": {
+    "agent": "/root/codex_first_success",
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "high",
+    "context": "fresh collaboration agent with no repository inspection",
+    "request": "We have 40 paying customers, retention is flat, and the team is shipping features every week. Help me find the real constraint and choose the next move.",
+    "response_path": "verification/host-results/codex-current-task-first-success-response.md",
+    "response_sha256": "f7a34f8f01295917030d8d9eb3abfae289aef1f7cab2b90154dc024ef1832afe"
+  },
+  "runtime_custody": {
+    "installed_cache_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+    "current_source_skill_fingerprint_sha256": "e4cef3dca6447a43481b4c6cd83c5b076106d86049069506b21a412f61ee1591",
+    "cache_files": 11,
+    "current_source_files": 15,
+    "missing_shared_files": 0,
+    "changed_shared_files": 0,
+    "current_source_only_files": [
+      "ATTRIBUTION.md",
+      "LICENSE.md",
+      "NOTICE.md",
+      "TRADEMARKS.md"
+    ],
+    "interpretation": "All 11 installed model-facing/runtime package files are byte-identical to the current source. The current source fingerprint differs only because four non-runtime legal and notice files were added."
+  },
+  "observed_states": [
+    "installed-skill-present-in-fresh-task-catalog",
+    "installed-skill-read",
+    "installed-skill-invoked",
+    "founder-response-returned"
+  ],
+  "pending_states": [
+    "public-route-installation",
+    "clean-host-installation",
+    "restart-resilience",
+    "Claude-host-behavior"
+  ],
+  "independent_review": {
+    "path": "verification/reviews/codex-current-task-first-success-review.md",
+    "verdict": "PARTIAL",
+    "behavioral_oracle": "DEMONSTRATED",
+    "host_causal_trace": "NOT_EXPOSED"
+  },
+  "disposition": "BEHAVIOR_DEMONSTRATED_HOST_CAUSAL_CLAIM_PARTIAL"
+}

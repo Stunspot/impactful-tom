@@ -1,0 +1,25 @@
+{
+  "format": "cd-collaboration-subject-execution/v1",
+  "run_id": "run-20260730T205203Z-f03260ec",
+  "case_id": "S-UNCERTAINTY-001",
+  "trial": 1,
+  "agent_task": "/root/subj_uncertainty",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "high",
+  "package_fingerprint_sha256": "f03260ecb4024a964f213fe115874e3935d16a503c06675d1fa8dd0e73734cc2",
+  "prompt": {
+    "relative_path": "episodes/S-UNCERTAINTY-001/trial-001/subject-prompt.md",
+    "sha256": "831870ecb608af89b71aea7e8fc6f6a42bc472a427643a98c1a41e6bdfba6dc1"
+  },
+  "request": {
+    "relative_path": "episodes/S-UNCERTAINTY-001/trial-001/subject-request.json",
+    "sha256": "771be9dc263f4005fe01bddec55f00fc8bb9ceeaa3b0c17bf6cb4515539efb37"
+  },
+  "response": {
+    "relative_path": "episodes/S-UNCERTAINTY-001/trial-001/subject-response.md",
+    "sha256": "9cce171a763021b3b17ce54c249d74cc985f5f935dcd6c1c09a03fd9f72b016d"
+  },
+  "completed_at": "2026-07-30T21:00:10.1740377Z",
+  "status": "COMPLETED",
+  "runtime_boundary": "Isolated subject episode. Filesystem access was harness transport only; no browsing, external tools, durable user state, or external actions were used."
+}
