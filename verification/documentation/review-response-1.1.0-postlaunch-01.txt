@@ -1,0 +1,8 @@
+REVIEW_PASS
+
+No material findings.
+
+Reviewed fingerprint: b1b7c096fd3f302fdd71d9f8d7fa2302dbb6e28b0ef1d419f33df3e80e93dede
+Review run: hesperos-doc-review-impactful-tom-20260731-1.1.0-postlaunch-01
+
+The exact post-launch documentation bytes require public readback before claiming those current bytes are live. Clean public-route installation, discovery, invocation, restart resilience, and live Claude Code behavior remain unobserved. Source review does not establish formal accessibility conformance, legal adjudication, or customer outcomes.

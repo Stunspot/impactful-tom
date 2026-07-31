@@ -2,7 +2,7 @@
 
 **Target:** Impactful Tom 1.1.0
 **Canonical skill fingerprint:** `aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c`
-**Current decision:** `NOT_READY` only while publication and public readback are pending
+**Current decision:** `READY_WITH_RESIDUAL_RISK`
 **Behavioral reviewer:** independent TestForge `REVIEW_PASS` for the six-case 1.1.0 correction set
 
 ## Corrected capability
@@ -48,20 +48,18 @@ Collaborative Dynamics presents the public-figure reference and machine impressi
 
 ## Documentation and package evidence
 
-Hesperos inspected all 17 customer documents. The initial fresh accessibility review found one material gap in the Claude Code install route; Hesperos repaired it from the current official Claude skill documentation. After the repaired runtime fingerprint changed two customer claims, the canonical Hesperos receipt validated against documentation fingerprint `7ad752f2073c9d8b7ad9c3e296956fa5d24f071ce506f4f359e5ddb99839a824`, and a fresh independent reviewer returned `REVIEW_PASS` with zero material findings. The Pages source, README header, social card, mark, icons, navigation, install paths, update/uninstall steps, and source-level accessibility checks pass.
+Hesperos inspected all 17 customer documents. The initial fresh accessibility review found one material gap in the Claude Code install route; Hesperos repaired it from the current official Claude skill documentation. After publication, Hesperos reconciled every customer-facing release claim and the changelog to the observed public state. The canonical authorship receipt now validates against documentation fingerprint `b1b7c096fd3f302fdd71d9f8d7fa2302dbb6e28b0ef1d419f33df3e80e93dede`, and a fresh independent reviewer returned `REVIEW_PASS` with zero material findings. The Pages source, README header, social card, mark, icons, navigation, install paths, update/uninstall steps, and source-level accessibility checks pass.
 
 The customer kit contains 64 files including its manifest. Four deterministic archives were built and extracted. Every extracted tree matches its declared source byte-for-byte; the staged plugin and both portable skill forms pass their host checks. The complete archive has SHA-256 `edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a`, and the recovery copy at `E:\Indranet\Augments\Impactful-Tom-v1.1.0.zip` matches it.
 
-These are local documentation, package, and custody claims. They do not establish public GitHub objects, live Pages content, repository social-preview configuration, or host behavior.
+The release-candidate documentation, package, and custody checks are local claims. Separate public readback now establishes the GitHub objects, downloaded-archive parity, six live Pages routes, and repository social preview. Neither layer establishes installed-host behavior.
 
 ## Version and host boundary
 
 The sealed `v1.0.0` release remains historical custody and is not changed. Its prior 24-case run remains evidence for that version only.
 
-Version 1.1.0 has not yet earned:
+Version 1.1.0 has earned direct GitHub tag, release, asset, Pages, and repository social-preview readback. It has not yet earned:
 
-- GitHub tag, release, and asset readback;
-- corrected Pages deployment and repository social-preview readback;
 - clean public-route installation;
 - restart resilience or immutable causal host invocation; or
 - live Claude Code behavior.
@@ -70,4 +68,4 @@ OpenAI Plugin Directory submission is outside scope.
 
 ## Next consequential move
 
-Run the final independent release review, then perform one authorized GitHub publication transaction and read back the public repository, tag, release assets, Pages routes, social preview, and any exact host state directly observable without inventing a stronger claim.
+No further release transaction is required. Collect clean-host installation or live Claude evidence later only on a suitable authorized host, without weakening the current evidence boundaries.

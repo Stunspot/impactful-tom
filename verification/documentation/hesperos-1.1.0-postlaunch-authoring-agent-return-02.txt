@@ -1,0 +1,9 @@
+No material documentation defects remain.
+
+AUTHORING_RUN_ID: HESPEROS-IMPACTFUL-TOM-20260731-1.1.0-POSTLAUNCH-02
+AUTHORING_CAPABILITY: hesperos-documentation
+AUTHORSHIP_SCOPE: materially-revised
+AUTHORED_FILES_COUNT: 17
+AUTHORED_FILES: README.md|docs/index.md|docs/404.html|docs/getting-started.md|docs/installing-and-maintaining.md|docs/privacy-and-boundaries.md|docs/troubleshooting.md|docs/provenance-and-verification.md|DATA-AND-PRIVACY.md|TERMS-OF-USE.md|LICENSE.md|ATTRIBUTION.md|NOTICE.md|TRADEMARKS.md|SUPPORT.md|SECURITY.md|CHANGELOG.md
+DOCUMENTATION_FINGERPRINT: b1b7c096fd3f302fdd71d9f8d7fa2302dbb6e28b0ef1d419f33df3e80e93dede
+HESPEROS_AUTHORING_COMPLETE

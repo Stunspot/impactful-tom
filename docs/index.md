@@ -67,7 +67,7 @@ It is not a generic pep talk or a substitute for qualified legal, tax, investmen
 [Read privacy and decision boundaries →]({{ '/boundaries/' | relative_url }})
 
 <div class="status-note">
-  <strong>Release candidate:</strong> Version 1.1.0 carries the corrected machine-impression performance contract. Exact-fingerprint package checks and a six-case independent behavioral review pass; GitHub publication and exact-version host evidence remain separate.
+  <strong>Current release:</strong> Version 1.1.0 carries the corrected machine-impression performance contract. Exact-fingerprint package checks and a six-case independent behavioral review pass; the public tag, release assets, Pages documentation, and repository social preview have been read back. Clean-host evidence remains separate.
 </div>
 
 ## Choose your route

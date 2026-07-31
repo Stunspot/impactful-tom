@@ -58,8 +58,8 @@
       },
       {
         "id": "O-004",
-        "statement": "The public repository, sealed v1.0.0 release, Pages site, README header, social card, and name-free mark were observed before this 1.1.0 correction.",
-        "basis": "Historical v1.0.0 and Pages custody records retained in the repository.",
+        "statement": "The public repository, v1.1.0 tag and release, five assets, downloaded-archive parity, six Pages routes, and repository social preview were directly observed.",
+        "basis": "verification/release/public-publication-v1.1.0.json",
         "confidence": "high"
       },
       {
@@ -86,21 +86,9 @@
     "assumed": [],
     "unresolved": [
       {
-        "id": "U-001",
-        "statement": "The exact 1.1.0 package has not yet been publicly released or read back.",
-        "basis": "Release packaging and external publication are pending.",
-        "confidence": "high"
-      },
-      {
         "id": "U-002",
         "statement": "Clean public-route installation, restart resilience, immutable causal host invocation, and live Claude Code behavior remain unobserved.",
         "basis": "No current exact-version host receipts.",
-        "confidence": "high"
-      },
-      {
-        "id": "U-003",
-        "statement": "The repository-level GitHub social-preview setting for the existing social card is not yet directly observed.",
-        "basis": "Pages metadata and a repository social-preview setting are separate surfaces.",
         "confidence": "high"
       }
     ]
@@ -180,7 +168,7 @@
       "id": "R-007",
       "statement": "Published GitHub objects, Pages content, or repository metadata differ from the reviewed 1.1.0 candidate.",
       "severity": "high",
-      "disposition": "planned",
+      "disposition": "covered",
       "verification": ["S-PUBLICATION-001"]
     }
   ],
@@ -293,7 +281,7 @@
       "action": ["publish once and read back repository, tag, release, assets, Pages, social preview, and install route"],
       "expected": ["public objects match the reviewed candidate and checksums"],
       "forbidden": ["retry after uncertain commit", "claim publication without readback", "mutate sealed v1.0.0"],
-      "evidence": []
+      "evidence": ["verification/release/public-publication-v1.1.0.json"]
     }
   ],
   "tests": [
@@ -335,8 +323,9 @@
     {
       "id": "T-PUBLICATION-001",
       "scenario_ids": ["S-PUBLICATION-001"],
-      "path": "development/launch-state.json",
-      "status": "unexecuted"
+      "path": "verification/release/public-publication-v1.1.0.json",
+      "status": "passed",
+      "execution_id": "E-PUBLICATION-001"
     }
   ],
   "executions": [
@@ -371,6 +360,14 @@
       "status": "passed",
       "exit_code": 0,
       "raw_evidence": "The 64-member customer kit and all three host-specific components match their declared sources exactly; the complete recovery copy matches SHA-256 edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a."
+    },
+    {
+      "id": "E-PUBLICATION-001",
+      "command": ["single GitHub publication", "authenticated repository and release readback", "release asset download and SHA-256 comparison", "Pages route checks", "authenticated social-preview readback"],
+      "working_directory": "E:\\Github\\impactful-tom",
+      "status": "passed",
+      "exit_code": 0,
+      "raw_evidence": "At publication readback, public main and v1.1.0 matched the sealed source commit and annotated tag; five assets were uploaded; all four archives matched their sealed SHA-256 values; the Pages build API identified the source commit; six named routes returned HTTP 200 with expected titles and captured content hashes; authenticated settings and public repository metadata exposed the configured social card."
     }
   ],
   "findings": [
@@ -396,10 +393,10 @@
       "id": "F-003",
       "classification": "INSUFFICIENT_EVIDENCE",
       "severity": "high",
-      "statement": "Version 1.1.0 publication, Pages readback, social-preview configuration, and exact public-route host evidence remain pending.",
-      "evidence": ["U-001", "U-002", "U-003"],
-      "resolution": "Documentation and package gates now pass. Run the one authorized publication transaction and its readback, then preserve any exact-version host evidence the available surface can actually provide.",
-      "status": "open"
+      "statement": "Version 1.1.0 publication, Pages readback, and social-preview configuration were pending.",
+      "evidence": ["verification/release/public-publication-v1.1.0.json"],
+      "resolution": "The single authorized publication and readback passed. Exact-version clean-host and live Claude evidence remain honestly unclaimed.",
+      "status": "resolved"
     }
   ],
   "residual_risks": [
@@ -435,11 +432,12 @@
     "reviewer": "Independent TestForge verification-reviewer, gpt-5.6-sol xhigh"
   },
   "decision": {
-    "status": "NOT_READY",
+    "status": "READY_WITH_RESIDUAL_RISK",
     "basis": [
       "The corrected runtime, dual-host source package, customer documentation, visual assets, archives, extraction parity, reproducibility, recovery copy, and v1.1.0 state ledgers pass their named local gates.",
       "Independent final release review found no unresolved release-blocking finding.",
-      "GitHub publication, uploaded-asset parity, Pages/social readback, and exact-version host evidence remain pending and must be established after the single authorized publication transaction."
+      "The public repository, tag, release, uploaded archives, Pages routes, and repository social preview passed direct readback.",
+      "Exact-version clean-host invocation and live Claude behavior remain bounded residual evidence gaps, not publication blockers."
     ],
     "authority_required": []
   }

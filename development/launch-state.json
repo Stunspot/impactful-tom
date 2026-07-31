@@ -7,7 +7,7 @@
     "candidate_tree_sha256": "312b739958d453f5236298a23ae12cf1baff9cdcc3a41c1b9cb0b38c8063951d"
   },
   "requested_terminal_state": "published-verified",
-  "status": "prepared",
+  "status": "published-verified",
   "claim_states": [
     {
       "statement": "The exact repaired runtime demonstrates the six selected founder-performance and identity-boundary cases.",
@@ -28,7 +28,7 @@
       "class": "documentation",
       "state": "review-pass",
       "evidence": "verification/documentation/documentation-authorship.json; verification/documentation/documentation-review.json",
-      "limit": "Source-level review only; live Pages and formal accessibility conformance remain unobserved."
+      "limit": "Source-level review plus six-route Pages and repository social-preview readback; assistive-technology and formal accessibility conformance remain unobserved."
     }
   ],
   "authority": {
@@ -43,7 +43,7 @@
       "name": "GitHub repository and release",
       "destination": "Stunspot/impactful-tom",
       "requested": true,
-      "state": "existing-public-repository-v1.1.0-pending",
+      "state": "published-verified",
       "visibility": "PUBLIC",
       "directory_submission": "out-of-scope"
     },
@@ -80,25 +80,25 @@
     "observed_visibility": "PUBLIC",
     "public_exception_authority": "Sam Walker explicitly authorized a public GitHub plugin launch in task 019fb465-a48b-7b60-a5a6-41d7bdca7f22.",
     "default_branch": "main",
-    "main_commit": "",
+    "main_commit_at_publication_readback": "c232d882a6395e98916962819005adb57860cae6",
     "release_tag": "v1.1.0",
-    "release_commit": "",
+    "release_commit": "c232d882a6395e98916962819005adb57860cae6",
     "release_path": "https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0",
     "release_tree_sha256": "312b739958d453f5236298a23ae12cf1baff9cdcc3a41c1b9cb0b38c8063951d",
-    "release_assets_verified": false,
+    "release_assets_verified": true,
     "fresh_main_clone_verified": false,
     "fresh_tag_clone_verified": false,
-    "live_readback": "not_run",
-    "estate_verification_receipt": ""
+    "live_readback": "verified",
+    "estate_verification_receipt": "verification/release/public-publication-v1.1.0.json"
   },
   "archive_custody": {
     "plan": "development/launch/archive-plan.json",
     "ledger": "release/archive-custody-v1.1.0.json",
     "canonical_archives_verified": true,
-    "github_assets_verified": false,
+    "github_assets_verified": true,
     "latest_backups_verified": true
   },
-  "estate_custody_status": "incomplete",
+  "estate_custody_status": "verified",
   "proofs": [
     {
       "kind": "candidate-manifest",
@@ -111,6 +111,15 @@
       "archive_count": 4,
       "complete_archive_sha256": "edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
       "evidence": "release/archive-custody-v1.1.0.json; verification/release/archive-reproducibility-v1.1.0.json"
+    },
+    {
+      "kind": "public-publication-readback",
+      "publication_source_commit": "c232d882a6395e98916962819005adb57860cae6",
+      "tag_object_sha": "8d91678dba1a9bd076b02c115e6f1324ed78e553",
+      "release_assets_verified": true,
+      "pages_routes_verified": 6,
+      "social_preview_verified": true,
+      "evidence": "verification/release/public-publication-v1.1.0.json"
     }
   ],
   "open_decisions": [],
@@ -132,10 +141,9 @@
     "Raw transcripts, private prompts, Thoughtcore, and the source headshot are release-excluded.",
     "The publisher's fair-use position is not an adjudicated legal conclusion.",
     "One isolated episode per targeted case does not establish stochastic reliability.",
-    "GitHub 1.1.0 publication, release-asset parity, live Pages correction, and repository social-preview configuration remain unobserved.",
     "Exact-version public-route installation, immutable causal invocation, restart resilience, and live Claude behavior remain unobserved.",
     "OpenAI Plugin Directory submission is out of scope."
   ],
-  "next_consequential_move": "Receive final independent release verdict, commit and tag the exact candidate, then perform one controlled GitHub publication attempt and readback. Stop on any GitHub failure without retry.",
-  "updated_at": "2026-07-31T07:03:30Z"
+  "next_consequential_move": "Collect clean-host installation or live Claude evidence only when a suitable disposable host is available; no further publication action is required.",
+  "updated_at": "2026-07-31T07:22:00Z"
 }

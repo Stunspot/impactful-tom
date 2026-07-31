@@ -1,0 +1,85 @@
+{
+  "schema_version": "impactful-tom-publication-receipt/v1",
+  "observed_at": "2026-07-31T07:22:00Z",
+  "repository": {
+    "full_name": "Stunspot/impactful-tom",
+    "visibility": "public",
+    "url": "https://github.com/Stunspot/impactful-tom",
+    "homepage": "https://stunspot.github.io/impactful-tom/",
+    "main_sha_at_publication_readback": "c232d882a6395e98916962819005adb57860cae6"
+  },
+  "release": {
+    "tag": "v1.1.0",
+    "tag_object_sha": "8d91678dba1a9bd076b02c115e6f1324ed78e553",
+    "url": "https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0",
+    "draft": false,
+    "prerelease": false,
+    "asset_count": 5,
+    "archive_hashes_verified": true
+  },
+  "archive_hashes": {
+    "impactful-tom-v1.1.0.zip": "edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a",
+    "impactful-tom-v1.1.0-codex-plugin.zip": "5a7547b744d08f33c619edeb7b4d33b3bdf4104843e82bacf94c8f99d656ea8c",
+    "impactful-tom-v1.1.0-standalone-skill.zip": "b53fd7824570a3993fe74fc4a1ba3c9213ee423d12630e37c41c170b9f82c38b",
+    "impactful-tom-v1.1.0-claude-code-generic-skill.zip": "1debd19b8ef0b340ff738355ce6e471bf42a172ca738fb11af30419be3e5faeb"
+  },
+  "pages": {
+    "status": "built",
+    "source": "main:/docs",
+    "build_commit": "c232d882a6395e98916962819005adb57860cae6",
+    "build_created_at": "2026-07-31T07:16:48Z",
+    "build_updated_at": "2026-07-31T07:17:35Z",
+    "routes_checked": 6,
+    "all_routes_http_200": true,
+    "routes": [
+      {
+        "url": "https://stunspot.github.io/impactful-tom/",
+        "title": "Impactful Tom",
+        "status": 200,
+        "content_sha256": "715ef8d5ea2077b59e39470bf75b81ce203a51642076191435215014b2dfdc73"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/getting-started/",
+        "title": "Getting started with Impactful Tom · Impactful Tom",
+        "status": 200,
+        "content_sha256": "17971f3579d3c1d6f05174fd82547fb925fa26025cb1c1339a01e602aabce77b"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/install/",
+        "title": "Install, update, and uninstall · Impactful Tom",
+        "status": 200,
+        "content_sha256": "3bdfdf7f872be0689176b71e9e4eafe33a13603f7328890e0b472684248fd8c4"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/boundaries/",
+        "title": "Privacy and decision boundaries · Impactful Tom",
+        "status": 200,
+        "content_sha256": "987a6c5a89571c28a5bc466b0480d74322b8ff306d3ac0cf94b00f7c458c19b9"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/troubleshooting/",
+        "title": "Troubleshooting and recovery · Impactful Tom",
+        "status": 200,
+        "content_sha256": "ee53c920a1b62a0f40c336b08e035a7c5dc98d9f5c94d1445631fa1f2e55851a"
+      },
+      {
+        "url": "https://stunspot.github.io/impactful-tom/evidence/",
+        "title": "Provenance and verification status · Impactful Tom",
+        "status": 200,
+        "content_sha256": "8559ed7a00f33a237bb419da5956dacb2ba71b0c7c7333f6b7725da99f49c8cb"
+      }
+    ]
+  },
+  "social_preview": {
+    "configured": true,
+    "authenticated_settings_readback": "Direct authenticated GitHub settings readback visibly displayed docs/assets/images/impactful-tom-social-card.png.",
+    "public_repository_status": 200,
+    "public_open_graph_image_origin": "https://repository-images.githubusercontent.com",
+    "public_open_graph_image_path": "/github-production-repository-image-32fea6/1317810591/62212063-9c36-4f75-b705-56ad251915d8"
+  },
+  "verification_root": "E:\\Github\\impactful-tom-public-verification-20260731T0730Z",
+  "limits": [
+    "The public-route archive hashes and Pages routes were directly observed; clean host installation and live Claude behavior were not.",
+    "OpenAI Plugin Directory submission was not requested and was not performed."
+  ]
+}

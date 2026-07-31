@@ -55,14 +55,16 @@ Historical current-workstation receipts show a 1.0.0-era Codex marketplace insta
 
 ## Observed public release state and remaining host evidence
 
-GitHub readback on July 30, 2026 established the sealed historical state:
+GitHub readback on July 31, 2026 established the current public state:
 
 - `Stunspot/impactful-tom` is public with `main` as its default branch;
-- the annotated `v1.0.0` tag resolves to sealed release commit `913161c29d09e1b587e7e2c5522ef3ba0ca94dfe`;
-- the `Impactful Tom 1.0.0` GitHub release is published rather than draft or prerelease; and
-- the four distribution archives plus `SHA256SUMS.txt` are uploaded, with GitHub-reported SHA-256 digests matching the local release ledger.
+- the annotated `v1.1.0` tag resolves through tag object `8d91678dba1a9bd076b02c115e6f1324ed78e553` to release source commit `c232d882a6395e98916962819005adb57860cae6`;
+- the [Impactful Tom 1.1.0 release](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0) is published rather than draft or prerelease;
+- four distribution archives plus `SHA256SUMS.txt` are uploaded, and fresh downloads of all four archives match the sealed local SHA-256 values;
+- GitHub Pages reported a successful build from `main:/docs` at source commit `c232d882a6395e98916962819005adb57860cae6`, and the home, getting-started, install, boundaries, troubleshooting, and evidence routes returned HTTP 200 with their expected page titles; and
+- the repository settings visibly displayed the shipped social card, while the public repository HTML exposed GitHub's repository-image URL.
 
-Version 1.1.0 is intended to use its own immutable tag and [release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.0). At the current evidence cutoff, that tag, release, and its assets have not been published and read back. The presence of a link in source does not establish publication; public availability must be observed from the repository, tag, release, and asset objects themselves.
+The annotated `v1.0.0` tag and historical release remain sealed and unchanged. Public availability does not establish host installation or invocation.
 
 The remaining host evidence is separate:
 

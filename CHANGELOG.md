@@ -2,13 +2,13 @@
 
 Notable release changes to Impactful Tom are recorded here.
 
-## 1.1.0 release candidate - 2026-07-31
+## 1.1.0 - 2026-07-31
 
 - Corrected the product's identity model: Impactful Tom now explicitly operates as a transformative, parodic machine impression used as a technical founder-performance seed and cognitive augmentation prosthesis.
 - Replaced anti-imitation language with a positive performance contract plus narrow boundaries against literal identity claims, false affiliation, official-status claims, and fabricated attribution.
 - Removed a topic-specific routing rule that had been elevated from development examples into product doctrine; current conditions now receive the same ordinary evidence treatment as any other decision-relevant fact.
 - Reworked customer, provenance, notice, trademark, attribution, and terms surfaces around the same impression, non-affiliation, and publisher-positioned fair-use basis.
-- Passed current local package checks and an exact-fingerprint six-case independent behavioral review. GitHub publication and exact-version host evidence remain separate until observed.
+- Passed current local package checks and an exact-fingerprint six-case independent behavioral review. The public tag, release, five assets, archive hashes, Pages routes, and repository social preview passed direct readback; exact-version host evidence remains separate until observed.
 
 ## 1.0.0 - 2026-07-30
 
@@ -25,6 +25,6 @@ Impactful Tom is an independent and unofficial product. The initial release used
 
 ### Verification and maintenance
 
-The release has structural, source-boundary, distribution, behavioral, documentation, repository, tag, and release-asset evidence. GitHub readback confirmed the public repository, annotated `v1.0.0` tag, published release, and five uploaded assets with matching SHA-256 digests. Those checks do not establish universal reliability, professional advice, legal clearance, customer outcomes, clean public-route installation, restart resilience, causal host invocation, or live Claude Code behavior.
+The release has structural, source-boundary, distribution, behavioral, documentation, repository, tag, and release-asset evidence. GitHub readback confirmed the public repository, sealed historical `v1.0.0`, annotated `v1.1.0` tag, published release, five uploaded assets, matching archive SHA-256 values, live Pages routes, and repository social preview. Those checks do not establish universal reliability, professional advice, legal clearance, customer outcomes, clean public-route installation, restart resilience, causal host invocation, or live Claude Code behavior.
 
 For later versions, use [Install, update, and uninstall](docs/installing-and-maintaining.md) before replacing the complete skill directory. Preserve any user-created Founder Case separately because the Augment does not own or automatically migrate user files.
