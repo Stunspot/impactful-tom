@@ -1,0 +1,67 @@
+{
+  "format": "cd-visual-asset-review/v1",
+  "product": "Impactful Tom",
+  "reviewed_at": "2026-08-11",
+  "status": "PASS",
+  "inspection": {
+    "method": "Every tracked image was opened and visually inspected from decoded pixels; the live GitHub Open Graph image was downloaded and opened separately.",
+    "metadata_only": false,
+    "screenshots_used": false,
+    "files_opened": 9
+  },
+  "role_assets": [
+    {
+      "role": "README hero",
+      "path": "docs/assets/images/impactful-tom-header.png",
+      "dimensions": "1600x500",
+      "sha256": "1503574b7c6c3929ae3600620f58a5e67cc2d3f657eb14a8192e9d37caac4223",
+      "text": ["IMPACTFUL TOM", "Founder-performance judgment", "Name the real constraint. Choose the owned move."],
+      "verdict": "PASS",
+      "judgment": "Wide repository banner with clear left-to-right hierarchy, strong contrast, safe margins, crisp product mark, and legible product/value copy."
+    },
+    {
+      "role": "GitHub Pages hero",
+      "path": "docs/assets/images/impactful-tom-mark-512.png",
+      "dimensions": "512x512",
+      "sha256": "0a2468616f96be4cba1e943bd51a480f7db74b8e9f0856476079daefd1f08403",
+      "text": [],
+      "verdict": "PASS",
+      "judgment": "Deliberately text-free square product mark used beside rendered hero title and summary; centered, high-contrast, crop-safe, and visually distinct from both text-led banners."
+    },
+    {
+      "role": "Social share/Open Graph card",
+      "path": "docs/assets/images/impactful-tom-social-card.png",
+      "dimensions": "1280x640",
+      "sha256": "8cb9ec00b3e00bdc2ac6d543692edc69299e59205e4664145c66011e57ebd3ac",
+      "text": ["IMPACTFUL TOM", "Founder-performance judgment", "Find the constraint. Choose the move."],
+      "verdict": "PASS",
+      "judgment": "Exact product title and concise identifying line are plainly legible; composition survives center and edge crops, retains safe text margins, and presents a strong independent product identity."
+    }
+  ],
+  "role_set": {
+    "different_files": true,
+    "different_aspect_ratios": true,
+    "different_compositions": true,
+    "not_crops_or_duplicates": true,
+    "recognizable_product_identity": true,
+    "verdict": "PASS"
+  },
+  "support_assets": [
+    {"path": "docs/assets/images/apple-touch-icon.png", "dimensions": "180x180", "sha256": "12aec54b8820b9499d9e6ba7c2b4930e0616d8fb7d13f40b0f8299ec0fb602fb", "verdict": "PASS"},
+    {"path": "docs/assets/images/favicon-16.png", "dimensions": "16x16", "sha256": "3921acdd8603a9be4814de04ebf07e1f43ceac570b91496dbd487d7f85d02395", "verdict": "PASS"},
+    {"path": "docs/assets/images/favicon-32.png", "dimensions": "32x32", "sha256": "96d7c46f5986054c7830abc9a8ae514648d889a42fde3d157e4afc4f6a96cb75", "verdict": "PASS"},
+    {"path": "docs/assets/images/favicon-48.png", "dimensions": "48x48", "sha256": "cd63813836f5c26169824d0122f9884a5cb4fb771acc5ff1a83dece56620bb23", "verdict": "PASS"},
+    {"path": "docs/assets/images/impactful-tom-mark-192.png", "dimensions": "192x192", "sha256": "6580ed3dd125d6524acb028158992f0751bf1ce0f795e650892898655828c266", "verdict": "PASS"},
+    {"path": "plugins/impactful-tom/assets/founder-constraint-mark.png", "dimensions": "1254x1254", "sha256": "684e4d4343a09a7a6d9d1317ad2b6fced4d017286108b80ebbf2766b1bb2c463", "verdict": "PASS"}
+  ],
+  "live_wiring": {
+    "readme_hero": "README.md",
+    "pages_hero": "docs/index.md via docs/_layouts/default.html",
+    "pages_open_graph": "docs/_layouts/default.html",
+    "github_custom_social_preview": true,
+    "github_social_preview_sha256": "8cb9ec00b3e00bdc2ac6d543692edc69299e59205e4664145c66011e57ebd3ac",
+    "verdict": "PASS"
+  },
+  "rejections_checked": ["blank area", "broken rendering", "accidental transparency", "generic filler", "incoherent artifacts", "illegible text", "weak identity", "unsafe crop"],
+  "unresolved_material_findings": 0
+}

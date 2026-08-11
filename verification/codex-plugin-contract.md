@@ -1,28 +1,28 @@
 # Codex plugin contract check
 
-Observed on 2026-07-30.
+Observed on 2026-08-11 for Impactful Tom 1.1.1.
 
 ## Current official product boundary
 
-OpenAI's current [Plugins in ChatGPT and Codex](https://help.openai.com/en/articles/20001256-plugins-in-codex) documentation says that plugins may contain skills, apps, and app templates; skill-only plugins remain available without an app dependency, subject to plan, workspace, role, region, rollout, and supported-surface constraints. It also distinguishes plugin installation policy from app permissions and tells users to refresh a plugin imported from a marketplace when updating it.
+OpenAI's current [Plugins in Codex](https://help.openai.com/en/articles/20001256/) documentation says plugins may contain skills, apps, and app templates. Skill-only plugins remain usable without an app dependency when plugin and skill access are available, subject to plan, rollout, workspace, and role controls. Impactful Tom is a skill-only plugin: it declares no app, app template, MCP server, authentication flow, external-data dependency, or external action.
 
-Impactful Tom 1.0.0 is intentionally a skill-only plugin. It declares no app, app template, MCP server, external data dependency, or external action. The official page does not by itself prove that this repository can be imported or installed.
+That official product documentation describes eligibility and administration. It does not prove that this public repository installs or that a host selected the skill.
 
 ## Current local CLI contract
 
-The installed `codex` CLI help was read directly on the named host. It reports:
+The installed `codex-cli 0.144.5` help was read directly without changing configuration. It reports:
 
-- `codex plugin marketplace add <SOURCE>` accepts a local path, `owner/repo[@ref]`, HTTPS Git URL, or SSH Git URL.
-- `--ref <REF>` pins the Git ref used when adding a marketplace.
-- `codex plugin add <PLUGIN[@MARKETPLACE]>` installs a plugin from a configured marketplace snapshot.
-- `codex plugin marketplace upgrade <MARKETPLACE>` refreshes a configured Git marketplace.
-- plugin removal and marketplace removal are separate commands.
+- `codex plugin marketplace add <SOURCE>` accepts `owner/repo` and `--ref <REF>`;
+- `codex plugin add <PLUGIN@MARKETPLACE>` installs from a configured marketplace snapshot;
+- `codex plugin marketplace upgrade [MARKETPLACE_NAME]` refreshes a configured Git marketplace;
+- `codex plugin remove <PLUGIN@MARKETPLACE>` removes the installed plugin; and
+- `codex plugin marketplace remove <MARKETPLACE_NAME>` removes the configured source separately.
 
-This supports the intended public route:
+This confirms the documented command contract:
 
 ```powershell
 codex plugin marketplace add Stunspot/impactful-tom --ref main
 codex plugin add impactful-tom@impactful-tom
 ```
 
-The route remains **documented but unverified** until the public repository exists and a clean target context independently observes marketplace addition, installation, discovery, invocation, and first-success behavior.
+The help readback is command-surface evidence only. It does not establish clean public-route installation, discovery, invocation, restart resilience, or first success for Impactful Tom 1.1.1.

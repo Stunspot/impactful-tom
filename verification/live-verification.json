@@ -1,0 +1,44 @@
+{
+  "format": "impactful-tom-live-verification/v2",
+  "status": "BASELINE_PASS_REMEDIATION_NOT_YET_PUBLISHED",
+  "observed_at": "2026-08-11",
+  "repository": {
+    "full_name": "Stunspot/impactful-tom",
+    "visibility": "PUBLIC",
+    "default_branch": "main",
+    "main_commit": "ee414fd5ec0fcdec82c3c36570a58e6627007418",
+    "url": "https://github.com/Stunspot/impactful-tom",
+    "homepage": "https://stunspot.github.io/impactful-tom/"
+  },
+  "release": {
+    "tag": "v1.1.1",
+    "url": "https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1",
+    "published": true,
+    "draft": false,
+    "prerelease": false,
+    "asset_count": 5,
+    "asset_digests_present": true
+  },
+  "pages": {
+    "status": "built",
+    "source": "main:/docs",
+    "routes_read_completely": 6,
+    "links_exercised": 21,
+    "link_failures": 0,
+    "custom_404_status": 404,
+    "custom_404_useful": true,
+    "deployed_asset_byte_parity": "9/9"
+  },
+  "visuals": {
+    "readme_hero_sha256": "1503574b7c6c3929ae3600620f58a5e67cc2d3f657eb14a8192e9d37caac4223",
+    "pages_hero_sha256": "0a2468616f96be4cba1e943bd51a480f7db74b8e9f0856476079daefd1f08403",
+    "social_card_sha256": "8cb9ec00b3e00bdc2ac6d543692edc69299e59205e4664145c66011e57ebd3ac",
+    "github_custom_social_preview_sha256": "8cb9ec00b3e00bdc2ac6d543692edc69299e59205e4664145c66011e57ebd3ac",
+    "actual_pixels_inspected": true
+  },
+  "limits": [
+    "This receipt is the public baseline before the remediation commit is published.",
+    "Public availability does not establish clean-host installation, discovery, invocation, restart resilience, live Claude Code behavior, or customer outcomes."
+  ],
+  "claim_boundary": "Establishes direct public readback of the named baseline objects only. Final remediation status requires a new receipt after merge and Pages rebuild."
+}

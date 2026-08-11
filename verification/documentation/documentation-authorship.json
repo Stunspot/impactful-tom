@@ -1,55 +1,160 @@
 {
-  "format": "cd-hesperos-documentation-authorship/v1",
-  "product": {"slug": "impactful-tom", "version": "1.1.1"},
-  "created_at": "2026-07-31T12:00:00-05:00",
-  "documentation_fingerprint": "5a9ff024790d1ea6ca6d0a56ffc240f6ef4dc44c705e545a540ccecd0beac943",
-  "authored_files": [
-    {"bytes": 5474, "path": "README.md", "sha256": "cc2f7fa772e4d086614cfabf13e9a662cfc2e39751625c42c530a6e89498353b"},
-    {"bytes": 4329, "path": "docs/index.md", "sha256": "adac8a3f76e7dfdb51d31b4155e7b45bf771208ce44e2c68440e6e3b0e3541af"},
-    {"bytes": 578, "path": "docs/404.html", "sha256": "6ee82cf121115254bfa572df5735bc5794be42f31247438206c228c65c24ff53"},
-    {"bytes": 4844, "path": "docs/getting-started.md", "sha256": "e0c0827bff3d07e170ddda75d5a8dc8c5d7f0a7befa31f30a4da307f9d9d7294"},
-    {"bytes": 8598, "path": "docs/installing-and-maintaining.md", "sha256": "bd819ec0942507461312e702c70f0d99de1e1674e2704ba629194b9a33a8b3c9"},
-    {"bytes": 3500, "path": "docs/privacy-and-boundaries.md", "sha256": "e3ac5fe8e18b0fd7089625d4dc99d88cfd799486c7448d54f34177323d2afad0"},
-    {"bytes": 3416, "path": "docs/troubleshooting.md", "sha256": "e2b7c84422e983f9dacbdee76c501b02be56806da27f478bcef28d84db231ca7"},
-    {"bytes": 5555, "path": "docs/provenance-and-verification.md", "sha256": "7b7c897a0a3de56256521ca886946f70fbe05399e6139eb7dae2ef1da6e8fb7a"},
-    {"bytes": 1668, "path": "DATA-AND-PRIVACY.md", "sha256": "ddb5f7b6a2be9ea327f522925978803f1e88f5a73ac70cac03fd08ec59fab33e"},
-    {"bytes": 3674, "path": "TERMS-OF-USE.md", "sha256": "575d3dcf54f7a4a85d54bf941aff27789277b1b426d16ae1501682bdc28d3498"},
-    {"bytes": 3000, "path": "LICENSE.md", "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"},
-    {"bytes": 994, "path": "ATTRIBUTION.md", "sha256": "a4a3852a9465977bd6693f60b88452f545099c44d0295907399fdee1d57a694f"},
-    {"bytes": 1922, "path": "NOTICE.md", "sha256": "f8a1108394980464a7093456a9f7597fd4e547bdb420dae5b26b6d968020e6b6"},
-    {"bytes": 1109, "path": "TRADEMARKS.md", "sha256": "a0bb3f831e92a3aeccc54cca73d6a5faaaf1b96214632458f364f7e7036750e3"},
-    {"bytes": 1053, "path": "SUPPORT.md", "sha256": "c4689839646e2da9a418d6c74d6f023cb99a8a1b93c4defea6962a91ad590e78"},
-    {"bytes": 1305, "path": "SECURITY.md", "sha256": "7ba246ff1b81c59891f74da59b0c37fbf1ba390a82c00409f87b39c0b70b1846"},
-    {"bytes": 3701, "path": "CHANGELOG.md", "sha256": "5d0ce65234c3ac7af33fa5d01379b6ea2645ddde823157f656a21cf85fefcfa6"}
-  ],
-  "authoring": {
-    "authorship_scope": "materially-revised",
-    "capability": "hesperos-documentation",
-    "capability_entrypoint_sha256": "f9284a8b14ca20a4661b15db542e3d8f52d3cf1ef42c1c56f4ed540a1036a3b3",
-    "mode": "independent-dispatch",
-    "run_id": "HESPEROS-IMPACTFUL-TOM-20260731-1.1.1-PRODUCT-FIRST"
-  },
-  "documentation_manifest": {
-    "bytes": 3259,
-    "path": "documentation-manifest.json",
-    "sha256": "75fb74a08cbb89ba36aec6f776d71f36adf7eb717e3bbd3a297c532a97bc8dab"
-  },
-  "evidence_packet": {
-    "bytes": 1260,
-    "path": "verification/documentation/hesperos-1.1.1-product-first-authoring-evidence.md",
-    "sha256": "10ac1a2e11bc64d21a65c30f54d715e6d7eb52458cf839e9becf19f339016923"
-  },
-  "authoring_response": {
-    "bytes": 1271,
-    "path": "verification/documentation/hesperos-1.1.1-product-first-authoring-response.txt",
-    "sha256": "7318ab42f7fe3cfc6ee332a583be99416856aba4d81253c94af887360305d37d"
-  },
-  "execution_evidence": [
-    {
-      "bytes": 1271,
-      "path": "verification/documentation/hesperos-1.1.1-product-first-authoring-response.txt",
-      "sha256": "7318ab42f7fe3cfc6ee332a583be99416856aba4d81253c94af887360305d37d"
-    }
-  ],
-  "claim_boundary": "Binds the exact 17-file customer documentation set to an independent Hesperos authoring pass. It does not prove independent review, live deployment, host behavior, accessibility conformance, legal adjudication, or customer outcomes."
+    "format":  "cd-hesperos-documentation-authorship/v2",
+    "product":  {
+                    "slug":  "impactful-tom",
+                    "version":  "1.1.1"
+                },
+    "created_at":  "2026-08-11",
+    "documentation_fingerprint":  "4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3",
+    "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records",
+    "authored_files":  [
+                           {
+                               "bytes":  994,
+                               "path":  "ATTRIBUTION.md",
+                               "sha256":  "a4a3852a9465977bd6693f60b88452f545099c44d0295907399fdee1d57a694f"
+                           },
+                           {
+                               "bytes":  4568,
+                               "path":  "CHANGELOG.md",
+                               "sha256":  "daaee4a53df3144e5d9da99c08e06de4f810f04c0530b436a7a71b881be24a96"
+                           },
+                           {
+                               "bytes":  1668,
+                               "path":  "DATA-AND-PRIVACY.md",
+                               "sha256":  "ddb5f7b6a2be9ea327f522925978803f1e88f5a73ac70cac03fd08ec59fab33e"
+                           },
+                           {
+                               "bytes":  3000,
+                               "path":  "LICENSE.md",
+                               "sha256":  "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
+                           },
+                           {
+                               "bytes":  1922,
+                               "path":  "NOTICE.md",
+                               "sha256":  "f8a1108394980464a7093456a9f7597fd4e547bdb420dae5b26b6d968020e6b6"
+                           },
+                           {
+                               "bytes":  5889,
+                               "path":  "README.md",
+                               "sha256":  "a6a9586938205ea2bfb9c5c4c78260a9b364f543b9e6e0a539eb48b46347cfd5"
+                           },
+                           {
+                               "bytes":  1305,
+                               "path":  "SECURITY.md",
+                               "sha256":  "7ba246ff1b81c59891f74da59b0c37fbf1ba390a82c00409f87b39c0b70b1846"
+                           },
+                           {
+                               "bytes":  1053,
+                               "path":  "SUPPORT.md",
+                               "sha256":  "c4689839646e2da9a418d6c74d6f023cb99a8a1b93c4defea6962a91ad590e78"
+                           },
+                           {
+                               "bytes":  3674,
+                               "path":  "TERMS-OF-USE.md",
+                               "sha256":  "575d3dcf54f7a4a85d54bf941aff27789277b1b426d16ae1501682bdc28d3498"
+                           },
+                           {
+                               "bytes":  1109,
+                               "path":  "TRADEMARKS.md",
+                               "sha256":  "a0bb3f831e92a3aeccc54cca73d6a5faaaf1b96214632458f364f7e7036750e3"
+                           },
+                           {
+                               "bytes":  578,
+                               "path":  "docs/404.html",
+                               "sha256":  "6ee82cf121115254bfa572df5735bc5794be42f31247438206c228c65c24ff53"
+                           },
+                           {
+                               "bytes":  4844,
+                               "path":  "docs/getting-started.md",
+                               "sha256":  "e0c0827bff3d07e170ddda75d5a8dc8c5d7f0a7befa31f30a4da307f9d9d7294"
+                           },
+                           {
+                               "bytes":  4329,
+                               "path":  "docs/index.md",
+                               "sha256":  "adac8a3f76e7dfdb51d31b4155e7b45bf771208ce44e2c68440e6e3b0e3541af"
+                           },
+                           {
+                               "bytes":  8598,
+                               "path":  "docs/installing-and-maintaining.md",
+                               "sha256":  "bd819ec0942507461312e702c70f0d99de1e1674e2704ba629194b9a33a8b3c9"
+                           },
+                           {
+                               "bytes":  3500,
+                               "path":  "docs/privacy-and-boundaries.md",
+                               "sha256":  "e3ac5fe8e18b0fd7089625d4dc99d88cfd799486c7448d54f34177323d2afad0"
+                           },
+                           {
+                               "bytes":  7075,
+                               "path":  "docs/provenance-and-verification.md",
+                               "sha256":  "6eee64da6170b0de045c2417e0a1cf9e0189936931d2521b0350cb5eaaf3dd8c"
+                           },
+                           {
+                               "bytes":  3416,
+                               "path":  "docs/troubleshooting.md",
+                               "sha256":  "e2b7c84422e983f9dacbdee76c501b02be56806da27f478bcef28d84db231ca7"
+                           }
+                       ],
+    "presentation_fingerprint":  "47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842",
+    "presentation_fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records",
+    "presentation_sources":  [
+                                 {
+                                     "bytes":  483,
+                                     "path":  "docs/_config.yml",
+                                     "sha256":  "f33eb19302936e580a56726cb97dc688e54b5442aeafbf78634f52381e7b113f"
+                                 },
+                                 {
+                                     "bytes":  4712,
+                                     "path":  "docs/_layouts/default.html",
+                                     "sha256":  "0b2d6b81048d292ed23c3424e06ec355212c8c1890d6f9d1a36224df425dbee6"
+                                 },
+                                 {
+                                     "bytes":  9764,
+                                     "path":  "docs/assets/css/site.css",
+                                     "sha256":  "056844b30c1763c7a5d2c7112e8f18c376cbfa2105b7966dd39d174113f5e636"
+                                 },
+                                 {
+                                     "bytes":  751,
+                                     "path":  "docs/site.webmanifest",
+                                     "sha256":  "5ae26c017908f71acaf326901a038ce649a47aa1f0a702b6e661074da6cbbda0"
+                                 },
+                                 {
+                                     "bytes":  3888,
+                                     "path":  "documentation-manifest.json",
+                                     "sha256":  "e7fb607a7c82767dd1d1d0f11f78bdd5b0e653e51b87cdb409fec907a13e4bc5"
+                                 }
+                             ],
+    "authoring":  {
+                      "authorship_scope":  "complete-remediation",
+                      "capability":  "hesperos-documentation",
+                      "mode":  "main-agent-authorship",
+                      "run_id":  "HESPEROS-IMPACTFUL-TOM-20260811-REMEDIATION"
+                  },
+    "documentation_manifest":  {
+                                   "bytes":  3888,
+                                   "path":  "documentation-manifest.json",
+                                   "sha256":  "e7fb607a7c82767dd1d1d0f11f78bdd5b0e653e51b87cdb409fec907a13e4bc5"
+                               },
+    "evidence_packet":  {
+                            "bytes":  4090,
+                            "path":  "verification/documentation/hesperos-20260811-remediation-evidence.md",
+                            "sha256":  "f6db759cd82513ceb007857a31c7bdd296f7365bfd95f31ccd91d23044016059"
+                        },
+    "authoring_response":  {
+                               "bytes":  1112,
+                               "path":  "verification/documentation/hesperos-20260811-remediation-response.txt",
+                               "sha256":  "70db20955ec402ce1ad4ba42cf2ea3a4e03ac0b322ccff638b4b40cebaa99532"
+                           },
+    "execution_evidence":  [
+                               {
+                                   "bytes":  4090,
+                                   "path":  "verification/documentation/hesperos-20260811-remediation-evidence.md",
+                                   "sha256":  "f6db759cd82513ceb007857a31c7bdd296f7365bfd95f31ccd91d23044016059"
+                               },
+                               {
+                                   "bytes":  1112,
+                                   "path":  "verification/documentation/hesperos-20260811-remediation-response.txt",
+                                   "sha256":  "70db20955ec402ce1ad4ba42cf2ea3a4e03ac0b322ccff638b4b40cebaa99532"
+                               }
+                           ],
+    "claim_boundary":  "Binds the exact 17-file customer documentation set and the separate five-file presentation-source set to the substantive Hesperos remediation. It does not prove independent review, live deployment of the remediation commit, host behavior, formal accessibility conformance, legal adjudication, or customer outcomes."
 }

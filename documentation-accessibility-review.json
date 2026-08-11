@@ -1,0 +1,65 @@
+{
+  "format": "cd-documentation-accessibility-review/v1",
+  "product": {"slug": "impactful-tom", "name": "Impactful Tom", "version": "1.1.1"},
+  "review_date": "2026-08-11",
+  "reviewer": {"mode": "independent-fresh-context", "starting_state": "UNKNOWN", "capability": "documentation-accessibility-reviewer"},
+  "disposition": "REVIEW_PASS",
+  "fingerprints": {
+    "algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
+    "documentation": {"file_count": 17, "value": "4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3", "recomputed": true, "matched_expected": true},
+    "presentation": {"file_count": 5, "value": "47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842", "recomputed": true, "matched_expected": true}
+  },
+  "scope": {
+    "customer_documents_read_completely": ["README.md", "docs/index.md", "docs/404.html", "docs/getting-started.md", "docs/installing-and-maintaining.md", "docs/privacy-and-boundaries.md", "docs/troubleshooting.md", "docs/provenance-and-verification.md", "DATA-AND-PRIVACY.md", "TERMS-OF-USE.md", "LICENSE.md", "ATTRIBUTION.md", "NOTICE.md", "TRADEMARKS.md", "SUPPORT.md", "SECURITY.md", "CHANGELOG.md"],
+    "presentation_sources_read_completely": ["docs/_config.yml", "docs/_layouts/default.html", "docs/assets/css/site.css", "docs/site.webmanifest", "documentation-manifest.json"],
+    "live_pages_baseline_used": false,
+    "files_modified": false
+  },
+  "methods": [
+    "Complete fresh-context reading of every governed customer document",
+    "Complete source inspection of layout, stylesheet, configuration, web manifest, and documentation manifest",
+    "Independent SHA-256 fingerprint recomputation",
+    "Manual review of navigation, headings, link purpose, alternative text, ARIA, landmarks, keyboard route, focus styling, responsive behavior, reduced motion, cognitive load, recovery, and claim boundaries",
+    "Static calculation of declared light-mode, dark-mode, and focus-indicator contrast pairs"
+  ],
+  "results": {
+    "navigation_and_recovery": "PASS",
+    "headings_and_structure": "PASS",
+    "link_purpose": "PASS",
+    "images_and_aria": "PASS",
+    "keyboard_and_focus": "PASS",
+    "responsive_and_motion": "PASS",
+    "contrast": "PASS",
+    "cognitive_load_and_task_fit": "PASS",
+    "installation_and_recovery": "PASS",
+    "screen_reader_semantics_source": "PASS",
+    "accessibility_claim_boundaries": "PASS"
+  },
+  "contrast_evidence": {
+    "minimum_inspected_ratio": "5.82:1",
+    "light_body": "16.38:1",
+    "light_link": "6.44:1",
+    "dark_body": "16.50:1",
+    "dark_link": "13.35:1",
+    "primary_button": "9.23:1",
+    "skip_link": "10.91:1",
+    "focus_outer_ring_against_white": "6.97:1",
+    "focus_inner_outline_against_dark": "19.99:1"
+  },
+  "material_findings": [],
+  "required_repairs": [],
+  "residual_boundaries": [
+    "This was static source review, not rendered-browser or assistive-technology testing.",
+    "No GUI browser, screenshot, automated accessibility engine, screen reader, voice control, magnifier, or representative-user session was used.",
+    "The local candidate was not deployed and the current live Pages baseline was not treated as evidence for candidate bytes.",
+    "Markdown rendering, browser-specific accessibility trees, zoom, reflow, table interaction, and sticky-header focus positioning remain unobserved at runtime.",
+    "This pass does not establish WCAG conformance, host health, publication, product behavior, rights clearance, or customer outcomes."
+  ],
+  "rerun_triggers": [
+    "Any byte change to one of the 17 governed customer documents",
+    "Any byte change to one of the five governed presentation sources",
+    "A material renderer, layout, navigation, theme, or hosting change",
+    "Any new accessibility or formal-conformance claim"
+  ],
+  "claim_boundary": "REVIEW_PASS establishes static documentation accessibility readiness for documentation fingerprint 4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3 and presentation fingerprint 47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842 only. It does not establish rendered-browser behavior, assistive-technology compatibility, formal accessibility conformance, host health, publication, product behavior, rights clearance, or customer outcomes."
+}

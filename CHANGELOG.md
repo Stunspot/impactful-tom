@@ -2,6 +2,16 @@
 
 Notable release changes to Impactful Tom are recorded here.
 
+## Unreleased - documentation remediation
+
+- Re-read and reconciled the complete customer documentation journey against the 1.1.1 runtime, package manifests, eval suite, release objects, and live Pages deployment.
+- Added direct Troubleshooting navigation and current, evidence-bounded publication readback.
+- Replaced stale 1.0.0/1.1.0 verification summaries with current 1.1.1 receipts while preserving exact-version behavioral and host limits.
+- Opened and reviewed all nine visual assets, including the live GitHub social preview, and completed visual custody for every tracked image.
+- Added fresh Hesperos, accessibility, visual, adversarial, and live-verification receipts bound to the remediated documentation fingerprint.
+
+This is a documentation and evidence remediation. It does not change the 1.1.1 runtime or rewrite the sealed v1.1.1 release archives.
+
 ## 1.1.1 - 2026-07-31
 
 - Leads every customer surface with the Augment and its founder-performance value.

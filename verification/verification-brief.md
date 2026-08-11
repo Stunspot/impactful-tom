@@ -1,71 +1,36 @@
-# Verification Brief
+# Verification brief
 
-**Target:** Impactful Tom 1.1.0
-**Canonical skill fingerprint:** `aaf4ad08d72be41719685de4374835d4fbdd3131d688c93a62b437facdea0a4c`
-**Current decision:** `READY_WITH_RESIDUAL_RISK`
-**Behavioral reviewer:** independent TestForge `REVIEW_PASS` for the six-case 1.1.0 correction set
+**Target:** Impactful Tom 1.1.1 documentation and presentation remediation
+**Canonical package fingerprint:** `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`
+**Current decision:** `REMEDIATED_PENDING_ADVERSARIAL_REVIEW_AND_PUBLICATION`
+**Behavioral scope:** two targeted 1.1.1 episodes plus historical exact-version evidence; no new universal runtime claim
 
-## Corrected capability
+## Capability and package boundary
 
-Impactful Tom is a founder-performance cognitive support and augmentation prosthesis. It uses a transformative, parodic machine impression of public figure Tom Bilyeu as a technical performance seed. The required behavior is recognizable transformed performance without literal identity, authentic-speech claims, false affiliation, fabricated attribution, humiliation, or private-source reconstruction.
+Impactful Tom is a founder-performance Augment for one live business decision. The canonical source implements constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence-calibrated moves, optional user-governed state, and separate external-action authority. The 1.1.1 eval source contains 25 cases across 12 indispensable dimensions.
 
-Current and contextual material receives ordinary decision-relevance and evidence treatment. No subject category is privileged or specially excluded.
+Current local execution passed 9/9 regression tests and the content-boundary, distribution-topology, release-exclusion, and documentation-site source checks. Canonical and Claude Code/generic distributions remain aligned under the repository's host-specific topology contract.
 
-## Behavioral evidence
+## Documentation and presentation
 
-Six fresh `gpt-5.6-terra` subjects ran in isolated collaboration tasks against the exact 1.1.0 fingerprint. An independent `gpt-5.6-sol` TestForge reviewer recomputed the package fingerprint and subject-artifact hashes, validated the canonical eval suite, reran the content and topology checks, and returned `REVIEW_PASS`.
+The complete customer corpus, rendered Pages text, layout, stylesheet, navigation, live routes, and all nine tracked image assets were directly inspected. The 2026-08-11 Hesperos pass repaired recovery navigation, publication wording, incomplete visual custody, and stale top-level verification state. The three required role assets pass as distinct compositions and aspect ratios; the live GitHub custom social preview is byte-identical to the declared social card.
 
-All six cases were demonstrated:
+A fresh documentation accessibility review returned `REVIEW_PASS`; a separate adversarial TestForge review remains required for the final documentation fingerprint. Their receipts must be added without changing the governed customer corpus; otherwise the fingerprint is invalid and both reviews must run again.
 
-- `S-IDENTITY-001`: affirmative machine-impression identity, transformed challenge, no literal identity or humiliation;
-- `S-CONTRAST-001`: distinctive incentive and ownership diagnosis with an owned, thresholded move;
-- `S-PLATEAU-001`: provisional causal treatment and one discriminating cohort analysis;
-- `S-NARRATIVE-001`: ordinary evidence treatment for unsupported industry chatter;
-- `S-QUOTE-001`: no fabricated attribution; and
-- `S-LEAK-001`: injection rejection, private-source protection, and a public audit route.
+## Public state observed before remediation publication
 
-This is one episode per case under one model and adapter. It supports the corrected behavioral contract; it does not establish stochastic reliability, installed-host causality, customer outcomes, legal adjudication, or publication.
+Direct GitHub readback observed a public repository at main commit `ee414fd5ec0fcdec82c3c36570a58e6627007418`, Pages built from `main:/docs`, release `v1.1.1`, four distribution archives, `SHA256SUMS.txt`, six live Pages routes, 21 live customer-journey links, exact deployed CSS/image/manifest parity, and a custom repository social preview. The remediation commit is not live until it is merged, Pages rebuilds, and the final objects are reread.
 
-## Structural evidence
+## Host boundary
 
-The current candidate passes:
+Codex CLI 0.144.5 help confirms the documented command syntax. Claude Code is not installed on the review host; current official Claude documentation supports the documented directory route. Neither observation establishes clean public-route installation, discovery, invocation, restart resilience, live Claude behavior, or first success for 1.1.1.
 
-- Codex plugin validation;
-- Codex skill validation;
-- Codex and Claude Augment package validation;
-- canonical eval-envelope validation for 24 cases and 12 indispensable dimensions;
-- positive machine-impression and non-deception content checks;
-- private-source release exclusions; and
-- canonical/Claude byte parity, resource closure, and 1.1.0 version agreement.
+## Remaining release gates
 
-These are static and local claims.
+1. Bind Hesperos authorship to the final customer-document fingerprint.
+2. Complete a separate fresh accessibility review.
+3. Complete a separate adversarial TestForge review.
+4. Commit and publish one coherent change set.
+5. Wait for the Pages rebuild and rerun live repository, release, route, link, asset, and social-preview readback.
 
-## Source, identity, and rights boundary
-
-The public runtime is transformed and independently authored. Raw transcripts, recordings, the source headshot, private prompts, Thoughtcore, and copied source passages remain excluded from customer artifacts.
-
-Collaborative Dynamics presents the public-figure reference and machine impression as transformative parody and fair use for model-performance design. That is the publisher's position, not an adjudicated legal conclusion. The product remains independent, unofficial, unaffiliated, and unendorsed; generated output is not Tom Bilyeu's authentic speech, advice, participation, or approval.
-
-## Documentation and package evidence
-
-Hesperos inspected all 17 customer documents. The initial fresh accessibility review found one material gap in the Claude Code install route; Hesperos repaired it from the current official Claude skill documentation. After publication, Hesperos reconciled every customer-facing release claim and the changelog to the observed public state. The canonical authorship receipt now validates against documentation fingerprint `b1b7c096fd3f302fdd71d9f8d7fa2302dbb6e28b0ef1d419f33df3e80e93dede`, and a fresh independent reviewer returned `REVIEW_PASS` with zero material findings. The Pages source, README header, social card, mark, icons, navigation, install paths, update/uninstall steps, and source-level accessibility checks pass.
-
-The customer kit contains 64 files including its manifest. Four deterministic archives were built and extracted. Every extracted tree matches its declared source byte-for-byte; the staged plugin and both portable skill forms pass their host checks. The complete archive has SHA-256 `edae82c98ece09273290f6b6b7289d7c807017cd625eb24f5d15f2f41d14a11a`, and the recovery copy at `E:\Indranet\Augments\Impactful-Tom-v1.1.0.zip` matches it.
-
-The release-candidate documentation, package, and custody checks are local claims. Separate public readback now establishes the GitHub objects, downloaded-archive parity, six live Pages routes, and repository social preview. Neither layer establishes installed-host behavior.
-
-## Version and host boundary
-
-The sealed `v1.0.0` release remains historical custody and is not changed. Its prior 24-case run remains evidence for that version only.
-
-Version 1.1.0 has earned direct GitHub tag, release, asset, Pages, and repository social-preview readback. It has not yet earned:
-
-- clean public-route installation;
-- restart resilience or immutable causal host invocation; or
-- live Claude Code behavior.
-
-OpenAI Plugin Directory submission is outside scope.
-
-## Next consequential move
-
-No further release transaction is required. Collect clean-host installation or live Claude evidence later only on a suitable authorized host, without weakening the current evidence boundaries.
+No frozen release archive is modified by this remediation.

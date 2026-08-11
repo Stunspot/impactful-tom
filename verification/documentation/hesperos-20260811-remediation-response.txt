@@ -1,0 +1,7 @@
+HESPEROS AUTHORSHIP COMPLETE
+
+Impactful Tom's customer journey was read end to end, reconciled to the 1.1.1 runtime and package, and substantively repaired. The README and Pages now make publication evidence explicit without converting public availability into host evidence. Troubleshooting is directly navigable. All supported install, first-value, update, removal, cleanup, privacy, security, support, license, provenance, and evidence states remain available at the moment a customer needs them.
+
+All nine tracked images were opened and reviewed as pixels. The three required role assets pass without replacement: the README banner carries product/value text, the Pages hero uses the text-free product mark beside rendered hero copy, and the social card carries the exact product title plus identifying line. The live GitHub custom social preview is byte-identical to the declared social card.
+
+The authored corpus is ready for a separate fresh-context accessibility review and a separate adversarial TestForge review. Any later customer-content change requires a new documentation fingerprint and re-review.
