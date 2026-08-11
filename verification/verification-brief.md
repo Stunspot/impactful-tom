@@ -2,7 +2,7 @@
 
 **Target:** Impactful Tom 1.1.1 documentation and presentation remediation
 **Canonical package fingerprint:** `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`
-**Current decision:** `READY_FOR_PUBLICATION_WITH_RESIDUAL_RISK`
+**Current decision:** `PASS`
 **Behavioral scope:** two targeted 1.1.1 episodes plus historical exact-version evidence; no new universal runtime claim
 
 ## Capability and package boundary
@@ -19,7 +19,7 @@ A fresh documentation accessibility review returned `REVIEW_PASS`; the separate 
 
 ## Public state observed before remediation publication
 
-Direct GitHub readback observed a public repository at main commit `ee414fd5ec0fcdec82c3c36570a58e6627007418`, Pages built from `main:/docs`, release `v1.1.1`, four distribution archives, `SHA256SUMS.txt`, six live Pages routes, 21 live customer-journey links, exact deployed CSS/image/manifest parity, and a custom repository social preview. The remediation commit is not live until it is merged, Pages rebuilds, and the final objects are reread.
+Direct GitHub readback observed a public repository at main commit `ee414fd5ec0fcdec82c3c36570a58e6627007418`, Pages built from `main:/docs`, release `v1.1.1`, four distribution archives, `SHA256SUMS.txt`, six live Pages routes, 21 live customer-journey links, exact deployed CSS/image/manifest parity, and a custom repository social preview. The remediation merged at public main commit `44498a4d7aebae1a9e6f7e64ba1c0dfc89311f63`; Pages rebuilt successfully and the final repository, routes, links, assets, release, and social preview passed direct readback.
 
 ## Host boundary
 

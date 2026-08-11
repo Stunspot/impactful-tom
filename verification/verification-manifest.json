@@ -66,16 +66,11 @@
     "visual_review": "passed",
     "documentation_accessibility_review": "REVIEW_PASS",
     "adversarial_testforge_review": "REVIEW_PASS_WITH_CONDITIONS",
-    "final_live_verification": "pending remediation publication and Pages rebuild"
+    "final_live_verification": "PASS"
   },
   "decision": {
-    "status": "READY_FOR_PUBLICATION_WITH_RESIDUAL_RISK",
-    "blocking_gates": [
-
-
-      "single coherent publication",
-      "post-deployment live readback"
-    ]
+    "status": "PASS",
+    "blocking_gates": []
   },
-  "claim_boundary": "This manifest records the remediation candidate and completed pre-review observations. PASS requires fresh bound reviews, publication, Pages rebuild, and final live readback."
+  "claim_boundary": "This manifest records the completed remediation, bound reviews, successful publication, Pages rebuild, and final live readback for the exact governed fingerprints."
 }
