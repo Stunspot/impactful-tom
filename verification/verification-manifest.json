@@ -65,14 +65,14 @@
     "documentation_site_source": "passed",
     "visual_review": "passed",
     "documentation_accessibility_review": "REVIEW_PASS",
-    "adversarial_testforge_review": "pending fresh reviewer",
+    "adversarial_testforge_review": "REVIEW_PASS_WITH_CONDITIONS",
     "final_live_verification": "pending remediation publication and Pages rebuild"
   },
   "decision": {
-    "status": "REMEDIATED_PENDING_FINAL_REVIEW_AND_PUBLICATION",
+    "status": "READY_FOR_PUBLICATION_WITH_RESIDUAL_RISK",
     "blocking_gates": [
 
-      "fresh adversarial review",
+
       "single coherent publication",
       "post-deployment live readback"
     ]

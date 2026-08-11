@@ -2,7 +2,7 @@
 
 **Target:** Impactful Tom 1.1.1 documentation and presentation remediation
 **Canonical package fingerprint:** `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`
-**Current decision:** `REMEDIATED_PENDING_ADVERSARIAL_REVIEW_AND_PUBLICATION`
+**Current decision:** `READY_FOR_PUBLICATION_WITH_RESIDUAL_RISK`
 **Behavioral scope:** two targeted 1.1.1 episodes plus historical exact-version evidence; no new universal runtime claim
 
 ## Capability and package boundary
@@ -15,7 +15,7 @@ Current local execution passed 9/9 regression tests and the content-boundary, di
 
 The complete customer corpus, rendered Pages text, layout, stylesheet, navigation, live routes, and all nine tracked image assets were directly inspected. The 2026-08-11 Hesperos pass repaired recovery navigation, publication wording, incomplete visual custody, and stale top-level verification state. The three required role assets pass as distinct compositions and aspect ratios; the live GitHub custom social preview is byte-identical to the declared social card.
 
-A fresh documentation accessibility review returned `REVIEW_PASS`; a separate adversarial TestForge review remains required for the final documentation fingerprint. Their receipts must be added without changing the governed customer corpus; otherwise the fingerprint is invalid and both reviews must run again.
+A fresh documentation accessibility review returned `REVIEW_PASS`; the separate adversarial TestForge pass returned `REVIEW_PASS_WITH_CONDITIONS` for the exact fingerprints. Their receipts must be added without changing the governed customer corpus; otherwise the fingerprint is invalid and both reviews must run again.
 
 ## Public state observed before remediation publication
 
