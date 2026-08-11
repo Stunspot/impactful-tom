@@ -5,7 +5,7 @@
     "name": "Impactful Tom",
     "version": "1.1.1"
   },
-  "status": "accessibility-reviewed",
+  "status": "customer-journey-complete",
   "owner": "Collaborative Dynamics",
   "landing_page": "docs/index.md",
   "repository_landing_page": "README.md",
@@ -17,6 +17,7 @@
       "docs/index.md",
       "docs/getting-started.md",
       "docs/installing-and-maintaining.md",
+      "docs/troubleshooting.md",
       "docs/privacy-and-boundaries.md",
       "docs/provenance-and-verification.md"
     ],
@@ -50,6 +51,26 @@
       "path": "docs/assets/images/favicon-32.png",
       "purpose": "Browser favicon",
       "dimensions": "32x32"
+    },
+    {
+      "path": "docs/assets/images/impactful-tom-mark-192.png",
+      "purpose": "Web application icon",
+      "dimensions": "192x192"
+    },
+    {
+      "path": "docs/assets/images/favicon-16.png",
+      "purpose": "Small browser favicon",
+      "dimensions": "16x16"
+    },
+    {
+      "path": "docs/assets/images/favicon-48.png",
+      "purpose": "Large browser favicon",
+      "dimensions": "48x48"
+    },
+    {
+      "path": "plugins/impactful-tom/assets/founder-constraint-mark.png",
+      "purpose": "Codex plugin listing and composer mark",
+      "dimensions": "1254x1254"
     }
   ],
   "customer_docs": [

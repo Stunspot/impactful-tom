@@ -30,11 +30,11 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.1.1` is the package described here. Its release page is the authoritative source for public availability, four distribution archives, and the checksum ledger. Earlier release tags remain historical custody and are not rewritten.
+Version `1.1.1` is the package described here. Its release page is the authoritative source for four distribution archives and the checksum ledger. On 2026-08-11, direct public readback confirmed the repository, release, all five release assets, six Pages routes, 21 customer-journey links, the three role-specific visual assets, and the custom GitHub social preview. The [live-verification receipt](verification/live-verification.json) records the exact observations and their limits. Earlier release tags remain historical custody and are not rewritten.
 
 Clean public-route installation, restart resilience, immutable causal host invocation, and live Claude Code behavior remain unobserved.
 
-Package validation, behavioral evidence, publication, installation, discovery, invocation, and first success are separate states. Read [Provenance and verification status](docs/provenance-and-verification.md) for the exact evidence currently earned by version 1.1.1 and each host.
+Package validation, behavioral evidence, publication, installation, discovery, invocation, and first success are separate states. Public readback proves publication; it does not convert the unobserved host layers into successes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the exact evidence currently earned by version 1.1.1 and each host.
 
 Use [Install, update, and uninstall](docs/installing-and-maintaining.md) for the release route and the exact evidence boundary.
 

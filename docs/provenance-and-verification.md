@@ -47,7 +47,7 @@ Historical current-workstation receipts show a 1.0.0-era Codex marketplace insta
 
 ## Release route and remaining host evidence
 
-The [Impactful Tom 1.1.1 release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1) is the intended immutable distribution route. If the page, four distribution archives, or `SHA256SUMS.txt` are absent, public availability has not been established. Earlier annotated tags and historical releases remain sealed and unchanged. Public availability does not establish host installation or invocation.
+The [Impactful Tom 1.1.1 release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1) is the immutable distribution route. Direct readback on 2026-08-11 confirmed the public repository, release, four distribution archives, `SHA256SUMS.txt`, six Pages routes, 21 customer-journey links, exact deployed asset parity, and the custom GitHub social preview. The [live-verification receipt](https://github.com/Stunspot/impactful-tom/blob/main/verification/live-verification.json) preserves the observed objects, hashes, and claim boundary. Earlier annotated tags and historical releases remain sealed and unchanged. Public availability does not establish host installation or invocation.
 
 The remaining host evidence is separate:
 
@@ -59,6 +59,12 @@ The remaining host evidence is separate:
 OpenAI Plugin Directory submission is outside scope.
 
 Product identity and rights facts are centralized in the [Notice](https://github.com/Stunspot/impactful-tom/blob/main/NOTICE.md) so they remain available without becoming the customer experience.
+
+## Current documentation and presentation review
+
+The 2026-08-11 remediation read every customer document and the runtime source needed to test its claims, inspected the actual pixels of all nine tracked images, reran the repository checks, exercised the live navigation and links, and reviewed accessibility separately from adversarial verification. The exact documentation fingerprint and review boundaries are recorded in the [documentation review](https://github.com/Stunspot/impactful-tom/blob/main/documentation-review.json), [accessibility review](https://github.com/Stunspot/impactful-tom/blob/main/documentation-accessibility-review.json), [visual review](https://github.com/Stunspot/impactful-tom/blob/main/visual-asset-review.json), and [TestForge final review](https://github.com/Stunspot/impactful-tom/blob/main/verification/testforge-public-20260811/final-review.md).
+
+Those receipts establish the named source, rendered-site, link, accessibility, visual, and adversarial checks for their bound fingerprint. They do not establish formal accessibility conformance, stochastic behavioral reliability, live Claude Code behavior, clean public-route installation, professional advice, legal adjudication, or customer outcomes.
 
 ## How to read release claims
 
