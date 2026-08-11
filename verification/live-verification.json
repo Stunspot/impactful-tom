@@ -1,14 +1,26 @@
 {
   "format": "impactful-tom-live-verification/v2",
-  "status": "BASELINE_PASS_REMEDIATION_NOT_YET_PUBLISHED",
-  "observed_at": "2026-08-11",
+  "status": "PASS",
+  "observed_at": "2026-08-11T22:51:00Z",
+  "governed_content": {
+    "public_main_commit": "44498a4d7aebae1a9e6f7e64ba1c0dfc89311f63",
+    "reviewed_content_commit": "ef9c0f5ab0c8acfd04fdce83215d31b2d95f40bb",
+    "documentation_fingerprint": "4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3",
+    "presentation_fingerprint": "47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842"
+  },
   "repository": {
     "full_name": "Stunspot/impactful-tom",
     "visibility": "PUBLIC",
     "default_branch": "main",
-    "main_commit": "ee414fd5ec0fcdec82c3c36570a58e6627007418",
     "url": "https://github.com/Stunspot/impactful-tom",
-    "homepage": "https://stunspot.github.io/impactful-tom/"
+    "homepage": "https://stunspot.github.io/impactful-tom/",
+    "readme_remediation_live": true
+  },
+  "publication": {
+    "pull_request": "https://github.com/Stunspot/impactful-tom/pull/2",
+    "merged": true,
+    "merge_commit": "44498a4d7aebae1a9e6f7e64ba1c0dfc89311f63",
+    "line_ending_policy": "passed"
   },
   "release": {
     "tag": "v1.1.1",
@@ -17,28 +29,47 @@
     "draft": false,
     "prerelease": false,
     "asset_count": 5,
-    "asset_digests_present": true
+    "asset_digests_present": true,
+    "frozen_release_archives_modified": false
   },
   "pages": {
+    "url": "https://stunspot.github.io/impactful-tom/",
     "status": "built",
     "source": "main:/docs",
+    "deployment_run": "https://github.com/Stunspot/impactful-tom/actions/runs/31544075513",
+    "deployment_head_sha": "44498a4d7aebae1a9e6f7e64ba1c0dfc89311f63",
+    "deployment_conclusion": "success",
     "routes_read_completely": 6,
-    "links_exercised": 21,
+    "routes_with_one_main_and_one_h1": 6,
+    "routes_with_troubleshooting_navigation": 6,
+    "links_exercised": 26,
     "link_failures": 0,
     "custom_404_status": 404,
     "custom_404_useful": true,
     "deployed_asset_byte_parity": "9/9"
   },
   "visuals": {
+    "actual_pixels_inspected": true,
     "readme_hero_sha256": "1503574b7c6c3929ae3600620f58a5e67cc2d3f657eb14a8192e9d37caac4223",
     "pages_hero_sha256": "0a2468616f96be4cba1e943bd51a480f7db74b8e9f0856476079daefd1f08403",
     "social_card_sha256": "8cb9ec00b3e00bdc2ac6d543692edc69299e59205e4664145c66011e57ebd3ac",
-    "github_custom_social_preview_sha256": "8cb9ec00b3e00bdc2ac6d543692edc69299e59205e4664145c66011e57ebd3ac",
-    "actual_pixels_inspected": true
+    "github_custom_social_preview": true,
+    "github_social_preview_url": "https://repository-images.githubusercontent.com/1317810591/7695c21a-ff6b-44d9-b97f-d467b9483d19",
+    "github_social_preview_sha256": "8cb9ec00b3e00bdc2ac6d543692edc69299e59205e4664145c66011e57ebd3ac",
+    "social_card_exact_title_visible": true,
+    "social_card_identifying_line_visible": true
+  },
+  "reviews": {
+    "documentation": "REVIEW_PASS",
+    "accessibility": "REVIEW_PASS",
+    "visual": "PASS",
+    "adversarial": "REVIEW_PASS_WITH_CONDITIONS"
   },
   "limits": [
-    "This receipt is the public baseline before the remediation commit is published.",
-    "Public availability does not establish clean-host installation, discovery, invocation, restart resilience, live Claude Code behavior, or customer outcomes."
+    "No clean public-route installation, immutable causal invocation, restart-resilience test, or live Claude Code execution was performed.",
+    "Accessibility evidence is static source review, not formal WCAG conformance or assistive-technology testing.",
+    "Behavioral evidence does not establish stochastic reliability or customer outcomes.",
+    "Publisher rights statements are not legal adjudication."
   ],
-  "claim_boundary": "Establishes direct public readback of the named baseline objects only. Final remediation status requires a new receipt after merge and Pages rebuild."
+  "claim_boundary": "PASS establishes publication and live rendered documentation/presentation for the exact governed fingerprints and named public main commit. It does not establish unobserved host behavior, formal accessibility conformance, legal adjudication, stochastic reliability, or customer outcomes."
 }
