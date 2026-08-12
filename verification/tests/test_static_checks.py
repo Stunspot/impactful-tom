@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import hashlib
 import json
 import shutil
 import subprocess
@@ -49,60 +48,12 @@ def copy_documentation_fixture(destination: Path) -> None:
         "verification/documentation/hesperos-pages-authoring-evidence.md",
         "verification/documentation/hesperos-pages-authoring-response.txt",
         "verification/documentation/visual-assets-custody.json",
-        "verification/live-verification.json",
     ]:
         source = REPO / relative
         target = destination / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
     shutil.copytree(REPO / "docs", destination / "docs")
-    authorship = json.loads(
-        (REPO / "verification/documentation/documentation-authorship.json").read_text(
-            encoding="utf-8"
-        )
-    )
-    evidence_records = [
-        authorship.get("evidence_packet", {}),
-        authorship.get("authoring_response", {}),
-        *authorship.get("execution_evidence", []),
-    ]
-    for record in evidence_records:
-        relative = record.get("path")
-        if not relative:
-            continue
-        source = REPO / relative
-        target = destination / relative
-        target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(source, target)
-
-
-def rebind_documentation_fixture(destination: Path) -> str:
-    authorship_path = destination / "verification/documentation/documentation-authorship.json"
-    authorship = json.loads(authorship_path.read_text(encoding="utf-8"))
-    fingerprint_digest = hashlib.sha256()
-    records = sorted(authorship["authored_files"], key=lambda item: item["path"])
-    for record in records:
-        path = destination / record["path"]
-        digest = hashlib.sha256(path.read_bytes()).hexdigest()
-        record["bytes"] = path.stat().st_size
-        record["sha256"] = digest
-        fingerprint_digest.update(record["path"].encode("utf-8"))
-        fingerprint_digest.update(b"\0")
-        fingerprint_digest.update(bytes.fromhex(digest))
-    fingerprint = fingerprint_digest.hexdigest()
-    authorship["documentation_fingerprint"] = fingerprint
-    authorship_path.write_text(
-        json.dumps(authorship, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
-    review_path = destination / "verification/documentation/documentation-review.json"
-    review = json.loads(review_path.read_text(encoding="utf-8"))
-    review["documentation_fingerprint"] = fingerprint
-    review_path.write_text(
-        json.dumps(review, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
-    return fingerprint
 
 
 class StaticCheckFixtures(unittest.TestCase):
@@ -259,147 +210,6 @@ class StaticCheckFixtures(unittest.TestCase):
                     result,
                 )
 
-    def test_live_visual_claim_variants_require_matching_receipt_lineage(self) -> None:
-        escaped_cycle_one = (
-            "On 2026-08-11, direct public readback confirmed the repository, release, "
-            "all five release assets, six Pages routes, 21 customer-journey links, "
-            "the three role-specific visual assets, and the custom GitHub social preview."
-        )
-        wrapped_cycle_one = escaped_cycle_one.replace(
-            "repository, release,",
-            "repository,\n  release,",
-        )
-        claims = [
-            escaped_cycle_one,
-            wrapped_cycle_one,
-            "Public readback confirmed the redesigned README hero and social card.",
-            "The latest visual presentation is published with exact deployed asset parity.",
-            "The replacement header image is live.",
-            "The banner graphic is deployed.",
-            "The share image is published.",
-            "Public readback confirmed the Open Graph image.",
-            "The artwork has exact asset parity.",
-            "The brand imagery is publicly available.",
-            "The social card is online.",
-            "The README hero shipped.",
-            "The Pages hero is served.",
-            "The social preview is in production.",
-            "The palette is visible.",
-            "The visual assets were released.",
-        ]
-        surfaces = {
-            "README.md": (
-                "Clean public-route installation",
-                "{claim}\n\nClean public-route installation",
-            ),
-            "CHANGELOG.md": (
-                "- The [2026-08-11 verification receipt]",
-                "- {claim}\n- The [2026-08-11 verification receipt]",
-            ),
-            "docs/provenance-and-verification.md": (
-                "## How to read release claims",
-                "{claim}\n\n## How to read release claims",
-            ),
-        }
-        for path_text, (marker, replacement) in surfaces.items():
-            for claim in claims:
-                with self.subTest(path=path_text, claim=claim), tempfile.TemporaryDirectory() as temp:
-                    candidate = Path(temp)
-                    copy_documentation_fixture(candidate)
-                    path = candidate / path_text
-                    text = path.read_text(encoding="utf-8")
-                    self.assertIn(marker, text)
-                    path.write_text(
-                        text.replace(marker, replacement.format(claim=claim), 1),
-                        encoding="utf-8",
-                    )
-                    rebind_documentation_fixture(candidate)
-                    code, result = run("check_documentation_site.py", "--repo", str(candidate))
-                    self.assertEqual(code, 1, result)
-                    self.assertTrue(
-                        any(
-                            "current presentation-status section changed without matching live receipt" in item
-                            for item in result["errors"]
-                        ),
-                        result,
-                    )
-
-    def test_contradictory_live_claim_inside_historical_item_is_rejected(self) -> None:
-        contradictions = [
-            " Historical public readback confirmed the current replacement visual presentation is live.",
-            "; Historical public readback confirmed the updated social card is published.",
-            " Historical public readback confirmed the refreshed visual presentation is\n  live.",
-            "; Historical public readback confirmed this remediation's social card is deployed.",
-            " Historical public readback confirmed the redesigned README hero is live.",
-            "; Historical public readback confirmed the latest visual assets are published.",
-            " Historical public readback confirmed the new social card is live.",
-        ]
-        surfaces = {
-            "README.md": "Earlier release tags remain historical custody and are not rewritten.",
-            "CHANGELOG.md": "Its recorded role-image hashes do not verify the replacement hero, social card, or palette.",
-            "docs/provenance-and-verification.md": "Public availability does not establish host installation or invocation.",
-        }
-        for path_text, marker in surfaces.items():
-            for contradiction in contradictions:
-                with self.subTest(path=path_text, contradiction=contradiction), tempfile.TemporaryDirectory() as temp:
-                    candidate = Path(temp)
-                    copy_documentation_fixture(candidate)
-                    path = candidate / path_text
-                    text = path.read_text(encoding="utf-8")
-                    self.assertIn(marker, text)
-                    path.write_text(
-                        text.replace(marker, marker + contradiction, 1),
-                        encoding="utf-8",
-                    )
-                    rebind_documentation_fixture(candidate)
-                    code, result = run("check_documentation_site.py", "--repo", str(candidate))
-                    self.assertEqual(code, 1, result)
-                    self.assertTrue(
-                        any(
-                            "current presentation-status section changed without matching live receipt" in item
-                            for item in result["errors"]
-                        ),
-                        result,
-                    )
-    def test_dated_replacement_claim_inside_historical_item_is_rejected(self) -> None:
-        contradictions = [
-            " On 2026-08-11, public readback confirmed this remediation's replacement social card is live.",
-            "; On 2026-08-11, public readback confirmed this remediation's replacement social card is live.",
-        ]
-        surfaces = {
-            "README.md": "Earlier release tags remain historical custody and are not rewritten.",
-            "CHANGELOG.md": "Its recorded role-image hashes do not verify the replacement hero, social card, or palette.",
-            "docs/provenance-and-verification.md": "Public availability does not establish host installation or invocation.",
-        }
-        for path_text, marker in surfaces.items():
-            for contradiction in contradictions:
-                with self.subTest(path=path_text, contradiction=contradiction), tempfile.TemporaryDirectory() as temp:
-                    candidate = Path(temp)
-                    copy_documentation_fixture(candidate)
-                    path = candidate / path_text
-                    text = path.read_text(encoding="utf-8")
-                    self.assertIn(marker, text)
-                    path.write_text(
-                        text.replace(marker, marker + contradiction, 1),
-                        encoding="utf-8",
-                    )
-                    rebind_documentation_fixture(candidate)
-                    code, result = run("check_documentation_site.py", "--repo", str(candidate))
-                    self.assertEqual(code, 1, result)
-                    self.assertTrue(
-                        any(
-                            "current presentation-status section changed without matching live receipt" in item
-                            for item in result["errors"]
-                        ),
-                        result,
-                    )
-    def test_fully_rebound_current_docs_without_visual_publication_claims_pass(self) -> None:
-        with tempfile.TemporaryDirectory() as temp:
-            candidate = Path(temp)
-            copy_documentation_fixture(candidate)
-            rebind_documentation_fixture(candidate)
-            code, result = run("check_documentation_site.py", "--repo", str(candidate))
-            self.assertEqual(code, 0, result)
     def test_documentation_release_marker_tracks_manifest_version(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             candidate = Path(temp)

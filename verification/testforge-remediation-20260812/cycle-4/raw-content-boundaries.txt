@@ -1,6 +1,0 @@
-{
-  "check": "content_boundaries",
-  "errors": [],
-  "status": "passed",
-  "warnings": []
-}

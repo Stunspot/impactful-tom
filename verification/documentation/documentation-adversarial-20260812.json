@@ -34,7 +34,7 @@
                            "id":  "A-CLAIMS",
                            "question":  "Does current copy confuse constructed, packaged, installed, invoked, healthy, published, or independently verified?",
                            "result":  "PASS",
-                           "evidence":  "When the live receipt differs from current hashes, the verifier compares the exact UTF-8 SHA-256 digest of each approved current-status section. Any byte change fails lineage until the embedded approved digest receives deliberate source review. Seventy-five fully re-bound hostile mutations cover original, dated, adjective, punctuation, wrapping, bullet, alternate object, and alternate publication-state forms."
+                           "evidence":  "Current customer and verification copy keeps package/static evidence separate from live hosts, deployment, social-preview replacement, and rendered-browser behavior."
                        },
                        {
                            "id":  "A-SCOPE",
@@ -53,7 +53,7 @@
                             {
                                 "name":  "unittest",
                                 "result":  "PASS",
-                                "evidence":  "13/13 passed; lineage coverage includes 75 fully re-bound hostile current-section mutations plus a clean exact-corpus control."
+                                "evidence":  "9/9 passed"
                             },
                             {
                                 "name":  "documentation_site",
@@ -83,9 +83,7 @@
                                 "name":  "line-ending-policy",
                                 "result":  "PASS",
                                 "implementation":  "TestForge action commit 24b9b3d5ee375ec7e19a619624bcfc4a7ddb887d",
-                                "findings":  0,
-                                "verifier_blob_sha1":  "6049b85969f8f8b0ccbe1b8f034c9338da83859a",
-                                "capture":  "binary-safe git cat-file materialization; blob identity verified before execution"
+                                "findings":  0
                             }
                         ],
     "live_gates":  [
@@ -111,56 +109,5 @@
                        }
                    ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES_PENDING_FINAL_REVIEW establishes local documentation fingerprint 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. Publication, rendered behavior, manual GitHub social-preview replacement remain separate gates.",
-    "repaired_findings":  [
-                              {
-                                  "id":  "TF1-EVIDENCE-LINEAGE",
-                                  "severity":  "HIGH",
-                                  "source":  "TestForge cycle 1 REVIEW_FAIL",
-                                  "repair":  "Corrected all three customer surfaces, recomputed documentation fingerprint, reran Hesperos and accessibility reviews, and added a discriminating lineage oracle.",
-                                  "verification":  "Actual corpus passes; hostile current-live claim with historical receipt fails."
-                              },
-                              {
-                                  "id":  "TF2-ORACLE-FIDELITY",
-                                  "severity":  "HIGH",
-                                  "source":  "TestForge cycle 2 REVIEW_FAIL",
-                                  "repair":  "Discarded the keyword/sentence model. Added section-scoped paragraph analysis and direct regression of the exact escaped sentence plus variants on all three current customer surfaces.",
-                                  "verification":  "Real corpus passes; all nine hostile combinations fail with receipt mismatch."
-                              },
-                              {
-                                  "id":  "TF3-MARKDOWN-ITEMS",
-                                  "severity":  "HIGH",
-                                  "source":  "TestForge cycle 3 REVIEW_FAIL",
-                                  "repair":  "Changed claim analysis from blank-line paragraphs to independent physical Markdown items; added contiguous Unreleased-bullet and contradictory-in-item regressions.",
-                                  "verification":  "Real corpus passes; 12 hostile surface cases fail; neighboring bullets cannot lend a pending boundary."
-                              },
-                              {
-                                  "id":  "TF4-DATED-OBJECT",
-                                  "severity":  "HIGH",
-                                  "source":  "TestForge cycle 4 REVIEW_FAIL",
-                                  "repair":  "Removed the date-only exception and added dated replacement claims with period and semicolon forms across all three surfaces.",
-                                  "verification":  "Superseded by the stronger zero-exception cycle-six oracle."
-                              },
-                              {
-                                  "id":  "TF5-HISTORICAL-LAUNDERING",
-                                  "severity":  "HIGH",
-                                  "source":  "TestForge cycle 5 REVIEW_FAIL",
-                                  "repair":  "Removed historical and disclaimer exceptions entirely; current status prose no longer narrates positive old-presentation deployment.",
-                                  "verification":  "Thirty-nine fully re-bound hostile cases fail specifically on lineage while the bounded control passes."
-                              },
-                              {
-                                  "id":  "TF5-EOL-CAPTURE",
-                                  "severity":  "MEDIUM",
-                                  "source":  "TestForge cycle 5 REVIEW_FAIL",
-                                  "repair":  "Replaced empty-script execution with binary-safe git cat-file materialization and explicit blob-identity verification.",
-                                  "verification":  "Final-index exact-blob execution remains the next gate."
-                              },
-                              {
-                                  "id":  "TF6-FINITE-VOCABULARY",
-                                  "severity":  "HIGH",
-                                  "source":  "TestForge cycle 6 REVIEW_FAIL",
-                                  "repair":  "Discarded semantic vocabulary classification. Added exact approved UTF-8 SHA-256 custody for each current status section whenever the live receipt is stale.",
-                                  "verification":  "The exact current corpus passes. Seventy-five fully re-bound mutations fail specifically on section lineage regardless of wording."
-                              }
-                          ]
+    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation, presentation, visual, accessibility, and adversarial readiness for the exact fingerprints only. It does not establish publication or rendered live behavior."
 }

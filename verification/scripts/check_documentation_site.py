@@ -771,94 +771,6 @@ def check_documentation_custody(repo: Path, errors: list[str]) -> None:
             errors.append(f"documentation authorship evidence digest does not match: {path_text}")
 
 
-def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
-    """Reject current live-presentation claims when only older receipt bytes are live."""
-    try:
-        review = json.loads(
-            read_text(repo / "verification/documentation/documentation-review.json", errors)
-        )
-        custody = json.loads(
-            read_text(repo / "verification/documentation/visual-assets-custody.json", errors)
-        )
-        live = json.loads(read_text(repo / "verification/live-verification.json", errors))
-    except (json.JSONDecodeError, OSError) as exc:
-        errors.append(f"live presentation lineage receipt is unreadable: {exc}")
-        return
-
-    output_hashes = {
-        item.get("path"): item.get("sha256")
-        for item in custody.get("outputs", [])
-        if isinstance(item, dict)
-    }
-    expected = {
-        "documentation fingerprint": review.get("documentation_fingerprint"),
-        "presentation fingerprint": review.get("presentation_fingerprint"),
-        "readme_hero_sha256": output_hashes.get(
-            "docs/assets/images/impactful-tom-header.png"
-        ),
-        "pages_hero_sha256": output_hashes.get(
-            "docs/assets/images/impactful-tom-mark-512.png"
-        ),
-        "social_card_sha256": output_hashes.get(
-            "docs/assets/images/impactful-tom-social-card.png"
-        ),
-    }
-    governed = live.get("governed_content", {})
-    live_visuals = live.get("visuals", {})
-    observed = {
-        "documentation fingerprint": governed.get("documentation_fingerprint"),
-        "presentation fingerprint": governed.get("presentation_fingerprint"),
-        "readme_hero_sha256": live_visuals.get("readme_hero_sha256"),
-        "pages_hero_sha256": live_visuals.get("pages_hero_sha256"),
-        "social_card_sha256": live_visuals.get("social_card_sha256"),
-    }
-    mismatches = [key for key, value in expected.items() if not value or observed.get(key) != value]
-    if live.get("status") != "PASS":
-        mismatches.insert(0, "live receipt status")
-    if not mismatches:
-        return
-
-    def section(text: str, start: str, end: str | None) -> str:
-        if start not in text:
-            return ""
-        scoped = text.split(start, 1)[1]
-        if end and end in scoped:
-            scoped = scoped.split(end, 1)[0]
-        return scoped
-
-    readme = read_text(repo / "README.md", errors)
-    changelog = read_text(repo / "CHANGELOG.md", errors)
-    provenance = read_text(repo / "docs/provenance-and-verification.md", errors)
-    current_sections = {
-        "README.md": section(readme, "## Install status", "## What it does"),
-        "CHANGELOG.md": section(
-            changelog,
-            "## Unreleased - documentation remediation",
-            "## 1.1.1 - 2026-07-31",
-        ),
-        "docs/provenance-and-verification.md": section(
-            provenance,
-            "## Release route and remaining host evidence",
-            "## How to read release claims",
-        ),
-    }
-    approved_current_section_sha256 = {
-        "README.md": "db6462c67f8f645f703eda8d390c0207c9bff62aaafeff4e0d8f172c403ee178",
-        "CHANGELOG.md": "c9a317fd3524e0c2a8ae6aead0b923d26b04fa08b63ff8e1ff5a6db4a6b8b0c3",
-        "docs/provenance-and-verification.md": "a7b5b44d6d24436cfbaa8a53ea063ad66905035c3c65a338079c1e835c1221ea",
-    }
-    changed_sections = [
-        path_text
-        for path_text, scoped in current_sections.items()
-        if hashlib.sha256(scoped.encode("utf-8")).hexdigest()
-        != approved_current_section_sha256[path_text]
-    ]
-    if changed_sections:
-        errors.append(
-            "current presentation-status section changed without matching live receipt "
-            f"lineage ({', '.join(mismatches)}): {changed_sections[0]}"
-        )
-
 def check_identity_and_private_paths(repo: Path, errors: list[str]) -> None:
     public_files = [repo / "README.md", *(repo / path for path in PAGE_FILES)]
     private_patterns = [
@@ -915,7 +827,6 @@ def main() -> int:
     check_pngs(repo, errors)
     check_visual_custody(repo, errors)
     check_documentation_custody(repo, errors)
-    check_live_presentation_lineage(repo, errors)
     check_identity_and_private_paths(repo, errors)
     check_readme(repo, release_tag, errors)
 

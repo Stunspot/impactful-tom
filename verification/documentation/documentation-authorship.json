@@ -135,9 +135,9 @@
                                    "sha256":  "d8072161db0785b3a6ceaa2133de8e35134b03c1836e29856af63e05efade854"
                                },
     "evidence_packet":  {
-                            "bytes":  2279,
+                            "bytes":  1810,
                             "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
-                            "sha256":  "ed8b6bec92e436af5909a300314ebffe18f4e7b5e3bd55c48f85a19c8f3c5bdd"
+                            "sha256":  "ac4f5a653a956ea98524d5829359aeb10e5fcb810301fa5cfe3adc38cc0ef515"
                         },
     "authoring_response":  {
                                "bytes":  618,
@@ -146,9 +146,9 @@
                            },
     "execution_evidence":  [
                                {
-                                   "bytes":  2279,
+                                   "bytes":  1810,
                                    "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
-                                   "sha256":  "ed8b6bec92e436af5909a300314ebffe18f4e7b5e3bd55c48f85a19c8f3c5bdd"
+                                   "sha256":  "ac4f5a653a956ea98524d5829359aeb10e5fcb810301fa5cfe3adc38cc0ef515"
                                },
                                {
                                    "bytes":  618,

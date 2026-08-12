@@ -1,6 +1,0 @@
-{
-  "check": "release_exclusions",
-  "errors": [],
-  "status": "passed",
-  "warnings": []
-}
