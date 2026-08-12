@@ -1,0 +1,6 @@
+{
+  "check": "distribution_topology",
+  "errors": [],
+  "status": "passed",
+  "warnings": []
+}

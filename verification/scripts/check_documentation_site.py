@@ -842,51 +842,21 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
             "## How to read release claims",
         ),
     }
-    visual_terms = re.compile(
-        r"\b(?:presentation|visual(?: assets?)?|README hero|Pages hero|"
-        r"social card|social preview|palette|role-specific (?:visual )?assets?)\b",
-        re.I,
-    )
-    evidence_terms = re.compile(
-        r"\b(?:direct public readback|public readback|live verification|"
-        r"live|deployed|published|byte-identical|(?:asset )?parity|confirmed)\b",
-        re.I,
-    )
-    def markdown_claim_units(scoped: str) -> list[str]:
-        units: list[str] = []
-        current: list[str] = []
-
-        def flush() -> None:
-            if current:
-                units.append(" ".join(current))
-                current.clear()
-
-        for raw_line in scoped.splitlines():
-            stripped = raw_line.strip()
-            if not stripped:
-                flush()
-                continue
-            if re.match(r"^[-*+]\s+", stripped):
-                flush()
-                current.append(stripped)
-            else:
-                current.append(stripped)
-        flush()
-        return units
-
-    claims: list[str] = []
-    for path_text, scoped in current_sections.items():
-        # While the live receipt differs from current bytes, no current-status
-        # clause may pair a visual object with positive publication language.
-        # There are deliberately no historical, adjective, or disclaimer exceptions.
-        for unit in markdown_claim_units(scoped):
-            for clause in re.split(r"(?<=[.!?;])\s+", unit):
-                if visual_terms.search(clause) and evidence_terms.search(clause):
-                    claims.append(f"{path_text}: {clause.strip()}")
-    if claims:
+    approved_current_section_sha256 = {
+        "README.md": "db6462c67f8f645f703eda8d390c0207c9bff62aaafeff4e0d8f172c403ee178",
+        "CHANGELOG.md": "c9a317fd3524e0c2a8ae6aead0b923d26b04fa08b63ff8e1ff5a6db4a6b8b0c3",
+        "docs/provenance-and-verification.md": "a7b5b44d6d24436cfbaa8a53ea063ad66905035c3c65a338079c1e835c1221ea",
+    }
+    changed_sections = [
+        path_text
+        for path_text, scoped in current_sections.items()
+        if hashlib.sha256(scoped.encode("utf-8")).hexdigest()
+        != approved_current_section_sha256[path_text]
+    ]
+    if changed_sections:
         errors.append(
-            "current live presentation claim lacks matching receipt lineage "
-            f"({', '.join(mismatches)}): {claims[0]}"
+            "current presentation-status section changed without matching live receipt "
+            f"lineage ({', '.join(mismatches)}): {changed_sections[0]}"
         )
 
 def check_identity_and_private_paths(repo: Path, errors: list[str]) -> None:

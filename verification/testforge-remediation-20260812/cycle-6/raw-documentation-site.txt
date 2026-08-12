@@ -1,0 +1,6 @@
+{
+  "check": "documentation_site",
+  "errors": [],
+  "status": "passed",
+  "warnings": []
+}

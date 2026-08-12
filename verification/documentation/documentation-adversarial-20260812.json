@@ -34,7 +34,7 @@
                            "id":  "A-CLAIMS",
                            "question":  "Does current copy confuse constructed, packaged, installed, invoked, healthy, published, or independently verified?",
                            "result":  "PASS",
-                           "evidence":  "Current status copy points to exact historical receipt custody without positive old-presentation claims. While live receipt hashes differ, the zero-exception oracle rejects every current-status clause that pairs a visual object with live, deployed, published, confirmed, byte-parity, or equivalent positive publication language. Thirty-nine fully re-bound hostile surface cases cover date, adjective, punctuation, wrapping, same-item, and neighboring-bullet attacks."
+                           "evidence":  "When the live receipt differs from current hashes, the verifier compares the exact UTF-8 SHA-256 digest of each approved current-status section. Any byte change fails lineage until the embedded approved digest receives deliberate source review. Seventy-five fully re-bound hostile mutations cover original, dated, adjective, punctuation, wrapping, bullet, alternate object, and alternate publication-state forms."
                        },
                        {
                            "id":  "A-SCOPE",
@@ -53,7 +53,7 @@
                             {
                                 "name":  "unittest",
                                 "result":  "PASS",
-                                "evidence":  "13/13 passed; lineage coverage includes 39 fully re-bound hostile surface cases plus a clean bounded-corpus control."
+                                "evidence":  "13/13 passed; lineage coverage includes 75 fully re-bound hostile current-section mutations plus a clean exact-corpus control."
                             },
                             {
                                 "name":  "documentation_site",
@@ -111,7 +111,7 @@
                        }
                    ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation fingerprint 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. Publication, rendered behavior, manual GitHub social-preview replacement remain separate gates.",
+    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES_PENDING_FINAL_REVIEW establishes local documentation fingerprint 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. Publication, rendered behavior, manual GitHub social-preview replacement remain separate gates.",
     "repaired_findings":  [
                               {
                                   "id":  "TF1-EVIDENCE-LINEAGE",
@@ -154,6 +154,13 @@
                                   "source":  "TestForge cycle 5 REVIEW_FAIL",
                                   "repair":  "Replaced empty-script execution with binary-safe git cat-file materialization and explicit blob-identity verification.",
                                   "verification":  "Final-index exact-blob execution remains the next gate."
+                              },
+                              {
+                                  "id":  "TF6-FINITE-VOCABULARY",
+                                  "severity":  "HIGH",
+                                  "source":  "TestForge cycle 6 REVIEW_FAIL",
+                                  "repair":  "Discarded semantic vocabulary classification. Added exact approved UTF-8 SHA-256 custody for each current status section whenever the live receipt is stale.",
+                                  "verification":  "The exact current corpus passes. Seventy-five fully re-bound mutations fail specifically on section lineage regardless of wording."
                               }
                           ]
 }

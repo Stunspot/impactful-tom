@@ -274,6 +274,18 @@ class StaticCheckFixtures(unittest.TestCase):
             wrapped_cycle_one,
             "Public readback confirmed the redesigned README hero and social card.",
             "The latest visual presentation is published with exact deployed asset parity.",
+            "The replacement header image is live.",
+            "The banner graphic is deployed.",
+            "The share image is published.",
+            "Public readback confirmed the Open Graph image.",
+            "The artwork has exact asset parity.",
+            "The brand imagery is publicly available.",
+            "The social card is online.",
+            "The README hero shipped.",
+            "The Pages hero is served.",
+            "The social preview is in production.",
+            "The palette is visible.",
+            "The visual assets were released.",
         ]
         surfaces = {
             "README.md": (
@@ -306,7 +318,7 @@ class StaticCheckFixtures(unittest.TestCase):
                     self.assertEqual(code, 1, result)
                     self.assertTrue(
                         any(
-                            "current live presentation claim lacks matching receipt lineage" in item
+                            "current presentation-status section changed without matching live receipt" in item
                             for item in result["errors"]
                         ),
                         result,
@@ -344,7 +356,7 @@ class StaticCheckFixtures(unittest.TestCase):
                     self.assertEqual(code, 1, result)
                     self.assertTrue(
                         any(
-                            "current live presentation claim lacks matching receipt lineage" in item
+                            "current presentation-status section changed without matching live receipt" in item
                             for item in result["errors"]
                         ),
                         result,
@@ -376,7 +388,7 @@ class StaticCheckFixtures(unittest.TestCase):
                     self.assertEqual(code, 1, result)
                     self.assertTrue(
                         any(
-                            "current live presentation claim lacks matching receipt lineage" in item
+                            "current presentation-status section changed without matching live receipt" in item
                             for item in result["errors"]
                         ),
                         result,
