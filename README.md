@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/images/impactful-tom-header.png" alt="Impactful Tom — founder-performance judgment for naming the real constraint and choosing an owned move." width="1600">
+  <img src="docs/assets/images/impactful-tom-header.png" alt="A founder lifts the single brass constraint blocking a web of competing business paths while a teammate watches the decision." width="2060">
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.1.1` is the package described here. Its release page is the authoritative source for four distribution archives and the checksum ledger. On 2026-08-11, direct public readback confirmed the repository, release, all five release assets, six Pages routes, 21 customer-journey links, the three role-specific visual assets, and the custom GitHub social preview. The [live-verification receipt](verification/live-verification.json) records the exact observations and their limits. Earlier release tags remain historical custody and are not rewritten.
+Version `1.1.1` is the package described here. Its release page is the authoritative source for four distribution archives and the checksum ledger. The [2026-08-11 verification receipt](verification/live-verification.json) records historical observations. It binds them to documentation fingerprint `4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3`, presentation fingerprint `47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842`, and the image hashes recorded inside the receipt. Those observations belong only to those exact historical bytes. They do not cover this remediation's replacement README hero, social card, palette, or current documentation fingerprint. Earlier release tags remain historical custody and are not rewritten.
 
 Clean public-route installation, restart resilience, immutable causal host invocation, and live Claude Code behavior remain unobserved.
 

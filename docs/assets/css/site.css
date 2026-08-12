@@ -1,18 +1,18 @@
 :root {
-  --navy-950: #02071d;
-  --navy-900: #061237;
-  --navy-800: #0b1e4d;
-  --cyan-500: #00bfef;
-  --cyan-700: #007b9f;
-  --cyan-800: #00617e;
-  --gold-500: #ffb000;
-  --ink: #111827;
-  --muted: #536174;
-  --line: #d5deea;
-  --paper: #ffffff;
-  --canvas: #f3f6fb;
-  --focus: #ffb000;
-  --shadow: 0 18px 48px rgb(6 18 55 / 12%);
+  --navy-950: #120f0d;
+  --navy-900: #241b17;
+  --navy-800: #3a2a23;
+  --cyan-500: #c97136;
+  --cyan-700: #8b3f2f;
+  --cyan-800: #742f25;
+  --gold-500: #e2a13a;
+  --ink: #181311;
+  --muted: #62544e;
+  --line: #d8cec8;
+  --paper: #fffdf8;
+  --canvas: #f4efe9;
+  --focus: #e2a13a;
+  --shadow: 0 18px 48px rgb(36 27 23 / 14%);
   --radius: 1.15rem;
   font-family: "Segoe UI", Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--ink);
@@ -35,7 +35,7 @@ body {
   min-width: 18rem;
   margin: 0;
   background:
-    radial-gradient(circle at 10% 0%, rgb(0 191 239 / 10%), transparent 28rem),
+    radial-gradient(circle at 10% 0%, rgb(201 113 54 / 11%), transparent 28rem),
     var(--canvas);
   color: var(--ink);
   line-height: 1.65;
@@ -60,7 +60,7 @@ a:hover {
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px solid #ffffff;
+  outline: 3px solid #fffdf8;
   outline-offset: 3px;
   box-shadow: 0 0 0 6px var(--cyan-800);
   border-radius: 0.2rem;
@@ -94,8 +94,8 @@ button:focus-visible,
   z-index: 20;
   top: 0;
   border-bottom: 1px solid rgb(255 255 255 / 12%);
-  background: rgb(2 7 29 / 94%);
-  color: #f8fbff;
+  background: rgb(18 15 13 / 95%);
+  color: #fffaf3;
   backdrop-filter: blur(16px);
 }
 
@@ -111,7 +111,7 @@ button:focus-visible,
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  color: #ffffff;
+  color: #fffdf8;
   font-size: 1.04rem;
   font-weight: 800;
   letter-spacing: 0.01em;
@@ -132,15 +132,15 @@ button:focus-visible,
 .primary-nav a {
   padding: 0.55rem 0.72rem;
   border-radius: 0.5rem;
-  color: #e8f7ff;
+  color: #f6ede4;
   font-size: 0.92rem;
   font-weight: 650;
   text-decoration: none;
 }
 
 .primary-nav a:hover {
-  background: rgb(0 191 239 / 15%);
-  color: #ffffff;
+  background: rgb(201 113 54 / 18%);
+  color: #fffdf8;
 }
 
 .site-main {
@@ -190,15 +190,15 @@ button:focus-visible,
   padding: 0.9rem 1.2rem;
   border-left: 0.3rem solid var(--cyan-500);
   border-radius: 0 0.7rem 0.7rem 0;
-  background: #eaf9fd;
-  color: #16364a;
+  background: #fbefe3;
+  color: #45291f;
 }
 
 .prose code {
-  border: 1px solid #cbd8e8;
+  border: 1px solid #d7c8be;
   border-radius: 0.32rem;
-  background: #edf2f8;
-  color: #14233b;
+  background: #f2ebe5;
+  color: #382820;
   font-size: 0.9em;
   padding: 0.12em 0.34em;
 }
@@ -207,10 +207,10 @@ button:focus-visible,
   max-width: 100%;
   overflow-x: auto;
   padding: 1.1rem;
-  border: 1px solid #1c315a;
+  border: 1px solid #4b352a;
   border-radius: 0.8rem;
   background: var(--navy-950);
-  color: #edf8ff;
+  color: #fff7ed;
 }
 
 .prose pre code {
@@ -237,7 +237,7 @@ button:focus-visible,
 }
 
 .prose th {
-  background: #e8eef7;
+  background: #eee4dc;
   color: var(--navy-900);
 }
 
@@ -265,14 +265,14 @@ button:focus-visible,
   gap: clamp(1.5rem, 5vw, 4rem);
   margin-bottom: clamp(3rem, 7vw, 5.5rem);
   padding: clamp(2rem, 6vw, 4.5rem);
-  border: 1px solid rgb(0 191 239 / 24%);
+  border: 1px solid rgb(201 113 54 / 28%);
   border-radius: 1.6rem;
   background:
-    linear-gradient(135deg, rgb(0 191 239 / 12%), transparent 42%),
-    radial-gradient(circle at 85% 30%, rgb(0 191 239 / 16%), transparent 24rem),
+    linear-gradient(135deg, rgb(201 113 54 / 14%), transparent 42%),
+    radial-gradient(circle at 85% 30%, rgb(139 63 47 / 19%), transparent 24rem),
     var(--navy-950);
-  box-shadow: 0 30px 80px rgb(2 7 29 / 28%);
-  color: #f7fbff;
+  box-shadow: 0 30px 80px rgb(18 15 13 / 32%);
+  color: #fffaf3;
 }
 
 .hero::after {
@@ -293,18 +293,18 @@ button:focus-visible,
 }
 
 .hero .eyebrow {
-  color: #67ddff;
+  color: #f2bd68;
 }
 
 .hero h1 {
   max-width: 12ch;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #fffdf8;
 }
 
 .hero__summary {
   max-width: 44rem;
-  color: #d9e8f7;
+  color: #eadfd6;
   font-size: clamp(1.08rem, 2vw, 1.3rem);
 }
 
@@ -327,7 +327,7 @@ button:focus-visible,
   align-items: center;
   justify-content: center;
   padding: 0.7rem 1rem;
-  border: 1px solid #74ddf7;
+  border: 1px solid #e4a852;
   border-radius: 0.65rem;
   background: var(--cyan-500);
   color: var(--navy-950);
@@ -336,19 +336,19 @@ button:focus-visible,
 }
 
 .button:hover {
-  background: #73e1fb;
+  background: #efbd72;
   color: var(--navy-950);
 }
 
 .button--quiet {
   border-color: rgb(255 255 255 / 35%);
   background: transparent;
-  color: #ffffff;
+  color: #fffdf8;
 }
 
 .button--quiet:hover {
   background: rgb(255 255 255 / 10%);
-  color: #ffffff;
+  color: #fffdf8;
 }
 
 .card-grid {
@@ -390,8 +390,8 @@ button:focus-visible,
   padding: 2.8rem 1rem 1rem;
   border-top: 0.25rem solid var(--cyan-500);
   border-radius: 0.65rem;
-  background: #e8f6fb;
-  color: #16364a;
+  background: #f8eadf;
+  color: #45291f;
   counter-increment: journey;
 }
 
@@ -409,9 +409,9 @@ button:focus-visible,
 .status-note {
   margin-block: 2rem;
   padding: 1rem 1.2rem;
-  border: 1px solid #b9c7db;
+  border: 1px solid #cdbdb3;
   border-radius: 0.8rem;
-  background: #ffffff;
+  background: #fffdf8;
 }
 
 .status-note strong {
@@ -422,7 +422,7 @@ button:focus-visible,
   padding-block: 2.5rem 2rem;
   border-top: 1px solid rgb(255 255 255 / 12%);
   background: var(--navy-950);
-  color: #d9e8f7;
+  color: #eadfd6;
 }
 
 .site-footer__grid {
@@ -432,7 +432,7 @@ button:focus-visible,
 }
 
 .site-footer strong {
-  color: #ffffff;
+  color: #fffdf8;
 }
 
 .site-footer p {
@@ -446,14 +446,14 @@ button:focus-visible,
 }
 
 .site-footer a {
-  color: #87e6ff;
+  color: #f2bd68;
 }
 
 .site-footer__boundary {
   margin-top: 2rem;
   padding-top: 1.4rem;
   border-top: 1px solid rgb(255 255 255 / 14%);
-  color: #afbed1;
+  color: #cdbdb3;
   font-size: 0.9rem;
 }
 
@@ -528,25 +528,25 @@ button:focus-visible,
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink: #e7edf7;
-    --muted: #b7c4d5;
-    --line: #334768;
-    --paper: #0b1838;
-    --canvas: #050c22;
+    --ink: #f1e8e1;
+    --muted: #cdbdb3;
+    --line: #554038;
+    --paper: #211814;
+    --canvas: #0f0c0a;
   }
 
   body {
     background:
-      radial-gradient(circle at 10% 0%, rgb(0 191 239 / 9%), transparent 28rem),
+      radial-gradient(circle at 10% 0%, rgb(201 113 54 / 10%), transparent 28rem),
       var(--canvas);
   }
 
   a {
-    color: #7fe4ff;
+    color: #f2bd68;
   }
 
   a:hover {
-    color: #ffffff;
+    color: #fffdf8;
   }
 
   .prose h1,
@@ -558,31 +558,31 @@ button:focus-visible,
   }
 
   .prose blockquote {
-    background: #0b2a3c;
-    color: #d8f4ff;
+    background: #3a241b;
+    color: #f8e9dd;
   }
 
   .prose code {
-    border-color: #405573;
-    background: #111e38;
-    color: #eaf3ff;
+    border-color: #655047;
+    background: #2c211c;
+    color: #f8eee7;
   }
 
   .prose th {
-    background: #132343;
-    color: #f2f7ff;
+    background: #34251f;
+    color: #fff8f0;
   }
 
   .journey li {
-    background: #0b2a3c;
-    color: #d8f4ff;
+    background: #3a241b;
+    color: #f8e9dd;
   }
 
   .journey li::before {
-    color: #8de8ff;
+    color: #f3c477;
   }
 
   .status-note {
-    background: #0b1838;
+    background: #211814;
   }
 }

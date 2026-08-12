@@ -1,43 +1,106 @@
 {
-  "format": "cd-documentation-review/v2",
-  "product": {"slug": "impactful-tom", "name": "Impactful Tom", "version": "1.1.1"},
-  "review_date": "2026-08-11",
-  "fresh_context": true,
-  "starting_state": "UNKNOWN",
-  "disposition": "REVIEW_PASS",
-  "unresolved_material_findings": 0,
-  "documentation_fingerprint": "4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3",
-  "presentation_fingerprint": "47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842",
-  "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
-  "reviewed_files": [
-    "README.md", "docs/index.md", "docs/404.html", "docs/getting-started.md", "docs/installing-and-maintaining.md", "docs/privacy-and-boundaries.md", "docs/troubleshooting.md", "docs/provenance-and-verification.md", "DATA-AND-PRIVACY.md", "TERMS-OF-USE.md", "LICENSE.md", "ATTRIBUTION.md", "NOTICE.md", "TRADEMARKS.md", "SUPPORT.md", "SECURITY.md", "CHANGELOG.md"
-  ],
-  "reviewed_presentation_sources": [
-    "docs/_config.yml", "docs/_layouts/default.html", "docs/assets/css/site.css", "docs/site.webmanifest", "documentation-manifest.json"
-  ],
-  "reviewer": "Fresh-context independent documentation-accessibility reviewer",
-  "review_run_id": "impactful-tom-documentation-accessibility-20260811",
-  "review_record": "verification/reviews/documentation-accessibility-review-20260811.md",
-  "accessibility_receipt": "documentation-accessibility-review.json",
-  "material_findings": [],
-  "conditions": [],
-  "results": {
-    "orientation": "PASS",
-    "installation_all_supported_hosts": "PASS",
-    "first_success_and_examples": "PASS",
-    "update_removal_cleanup": "PASS",
-    "privacy_storage_network_security": "PASS",
-    "limitations_provenance_evidence": "PASS",
-    "support_contribution_license_terms": "PASS",
-    "navigation_and_recovery": "PASS",
-    "claim_boundaries": "PASS"
-  },
-  "residual_boundaries": [
-    "The remediation commit was not deployed during this review.",
-    "Rendered-browser and assistive-technology behavior remain outside this static review.",
-    "Clean public-route installation, invocation, restart resilience, and live Claude Code behavior remain unobserved.",
-    "The review does not establish formal accessibility conformance, stochastic behavioral reliability, legal adjudication, or customer outcomes."
-  ],
-  "rerun_trigger": "Any byte change to one of the 17 customer documents or five presentation sources invalidates this review and requires fingerprint recomputation and fresh review.",
-  "claim_boundary": "REVIEW_PASS establishes reader-centered documentation completeness and static presentation readiness for the two exact fingerprints only. It does not establish live deployment, assistive-technology compatibility, formal accessibility conformance, host health, product behavior, rights clearance, or customer outcomes."
+    "format":  "cd-documentation-review/v2",
+    "product":  {
+                    "slug":  "impactful-tom",
+                    "name":  "Impactful Tom",
+                    "version":  "1.1.1"
+                },
+    "review_date":  "2026-08-12",
+    "fresh_context":  true,
+    "starting_state":  "UNKNOWN",
+    "disposition":  "REVIEW_PASS",
+    "unresolved_material_findings":  0,
+    "documentation_fingerprint":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
+    "presentation_fingerprint":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
+    "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
+    "reviewed_files":  [
+                           "README.md",
+                           "docs/index.md",
+                           "docs/404.html",
+                           "docs/getting-started.md",
+                           "docs/installing-and-maintaining.md",
+                           "docs/privacy-and-boundaries.md",
+                           "docs/troubleshooting.md",
+                           "docs/provenance-and-verification.md",
+                           "DATA-AND-PRIVACY.md",
+                           "TERMS-OF-USE.md",
+                           "LICENSE.md",
+                           "ATTRIBUTION.md",
+                           "NOTICE.md",
+                           "TRADEMARKS.md",
+                           "SUPPORT.md",
+                           "SECURITY.md",
+                           "CHANGELOG.md"
+                       ],
+    "reviewed_presentation_sources":  [
+                                          "docs/_config.yml",
+                                          "docs/_layouts/default.html",
+                                          "docs/assets/css/site.css",
+                                          "docs/site.webmanifest",
+                                          "documentation-manifest.json"
+                                      ],
+    "reviewer":  "Hesperos substantive documentation review",
+    "review_run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-4",
+    "review_record":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
+    "accessibility_receipt":  "documentation-accessibility-review.json",
+    "material_findings":  [
+                              {
+                                  "id":  "VISUAL-TEMPLATE",
+                                  "status":  "REPAIRED",
+                                  "finding":  "README and social images were interchangeable navy-grid template graphics with weak product-specific communication.",
+                                  "repair":  "Replaced them with separate image-generator originals: a text-free single-constraint worktable scene and a title-bearing blocked-path decision scene."
+                              },
+                              {
+                                  "id":  "PROGRAMMED-ART",
+                                  "status":  "REPAIRED",
+                                  "finding":  "The repository shipped a PowerShell renderer and tests required it.",
+                                  "repair":  "Removed the renderer and changed the validator to reject programmed artwork."
+                              },
+                              {
+                                  "id":  "LIVE-STATE",
+                                  "status":  "REPAIRED",
+                                  "finding":  "Current changelog and verification copy overclaimed that the replacement social card was already live.",
+                                  "repair":  "Marked publication, live social-preview replacement, and rendered-browser behavior as pending gates."
+                              },
+                              {
+                                  "id":  "EVIDENCE-LINEAGE",
+                                  "status":  "REPAIRED",
+                                  "finding":  "Three current customer surfaces bound the historical August 11 live receipt to replacement presentation bytes it did not observe.",
+                                  "repair":  "Labeled that receipt historical with its full old fingerprints and added a hostile fingerprint-and-role-hash lineage oracle."
+                              },
+                              {
+                                  "id":  "EVIDENCE-LINEAGE-ORACLE",
+                                  "status":  "REPAIRED",
+                                  "finding":  "Two sentence-keyword oracle designs failed to regress the exact stale public-readback sentence.",
+                                  "repair":  "Discarded that model for a current-section paragraph contract with exact receipt comparison and nine surface/wording regressions."
+                              },
+                              {
+                                  "id":  "EVIDENCE-LINEAGE-ZERO-EXCEPTION",
+                                  "status":  "REPAIRED",
+                                  "finding":  "Historical, dated, and disclaimer exceptions repeatedly allowed current visual-publication claims to borrow boundaries from neighboring clauses.",
+                                  "repair":  "Removed positive old-presentation narration from current customer status sections and replaced the lineage oracle with a zero-exception stale-receipt invariant plus fully re-bound hostile fixtures."
+                              }
+                          ],
+    "conditions":  [
+
+                   ],
+    "results":  {
+                    "orientation":  "PASS",
+                    "installation_all_supported_hosts":  "PASS",
+                    "first_success_and_examples":  "PASS",
+                    "update_removal_cleanup":  "PASS",
+                    "privacy_storage_network_security":  "PASS",
+                    "limitations_provenance_evidence":  "PASS",
+                    "support_contribution_license_terms":  "PASS",
+                    "navigation_and_recovery":  "PASS",
+                    "claim_boundaries":  "PASS"
+                },
+    "residual_boundaries":  [
+                                "The remediation commit was not deployed during this review.",
+                                "Rendered-browser and assistive-technology behavior remain NOT TESTED.",
+                                "The repository custom social preview remains unchanged until manually updated after publication.",
+                                "Clean public-route installation, invocation, restart resilience, and live Claude Code behavior remain unobserved."
+                            ],
+    "rerun_trigger":  "Any byte change to one of the 17 customer documents or five presentation sources invalidates this review.",
+    "claim_boundary":  "REVIEW_PASS binds documentation 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only; detailed historical hashes remain in verification/live-verification.json, while publication and rendered behavior remain separate."
 }

@@ -1,0 +1,113 @@
+{
+    "format":  "cd-documentation-adversarial-verification/v1",
+    "product":  {
+                    "slug":  "impactful-tom",
+                    "version":  "1.1.1"
+                },
+    "review_date":  "2026-08-12",
+    "starting_state":  "UNKNOWN",
+    "disposition":  "PASS_LOCAL_WITH_LIVE_GATES",
+    "fingerprints":  {
+                         "documentation":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
+                         "presentation":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c"
+                     },
+    "challenges":  [
+                       {
+                           "id":  "A-COPY",
+                           "question":  "Does the documentation state the actual founder decision work instead of vague accomplishment copy?",
+                           "result":  "PASS",
+                           "evidence":  "README and Pages lead with one live business decision, constraint diagnosis, mission/tactic separation, owned move, threshold, and review date."
+                       },
+                       {
+                           "id":  "A-VISUAL",
+                           "question":  "Are role assets actually distinct and product-specific?",
+                           "result":  "PASS",
+                           "evidence":  "README 2060x763 text-free constraint-table scene; Pages 512x512 preserved mark; social 1731x909 blocked-path scene with exact title and line."
+                       },
+                       {
+                           "id":  "A-ARTWORK",
+                           "question":  "Can the repository regenerate or require programmed artwork?",
+                           "result":  "PASS",
+                           "evidence":  "The PowerShell renderer is deleted, its fixture dependency is removed, and the visual validator rejects a generator field and requires programmed_artwork=false."
+                       },
+                       {
+                           "id":  "A-CLAIMS",
+                           "question":  "Does current copy confuse constructed, packaged, installed, invoked, healthy, published, or independently verified?",
+                           "result":  "PASS",
+                           "evidence":  "Current customer and verification copy keeps package/static evidence separate from live hosts, deployment, social-preview replacement, and rendered-browser behavior."
+                       },
+                       {
+                           "id":  "A-SCOPE",
+                           "question":  "Were frozen release archives or runtime behavior changed?",
+                           "result":  "PASS",
+                           "evidence":  "No diff path is under release/assets or release/stage; runtime skill and references are unchanged."
+                       },
+                       {
+                           "id":  "A-ACCESS",
+                           "question":  "Do static accessibility and contrast gates pass?",
+                           "result":  "PASS",
+                           "evidence":  "All 17 Hesperos lint runs pass; inspected contrast minimum is 5.36:1; navigation, alt, focus, reduced-motion, and responsive source checks pass."
+                       }
+                   ],
+    "executed_checks":  [
+                            {
+                                "name":  "unittest",
+                                "result":  "PASS",
+                                "evidence":  "9/9 passed"
+                            },
+                            {
+                                "name":  "documentation_site",
+                                "result":  "PASS",
+                                "errors":  0,
+                                "warnings":  0
+                            },
+                            {
+                                "name":  "content_boundaries",
+                                "result":  "PASS",
+                                "errors":  0,
+                                "warnings":  0
+                            },
+                            {
+                                "name":  "release_exclusions",
+                                "result":  "PASS",
+                                "errors":  0,
+                                "warnings":  0
+                            },
+                            {
+                                "name":  "distribution_topology",
+                                "result":  "PASS",
+                                "errors":  0,
+                                "warnings":  0
+                            },
+                            {
+                                "name":  "line-ending-policy",
+                                "result":  "PASS",
+                                "implementation":  "TestForge action commit 24b9b3d5ee375ec7e19a619624bcfc4a7ddb887d",
+                                "findings":  0
+                            }
+                        ],
+    "live_gates":  [
+                       {
+                           "gate":  "published final commit",
+                           "status":  "NOT_YET_TESTED"
+                       },
+                       {
+                           "gate":  "Pages rebuild",
+                           "status":  "NOT_YET_TESTED"
+                       },
+                       {
+                           "gate":  "live source and asset parity",
+                           "status":  "NOT_YET_TESTED"
+                       },
+                       {
+                           "gate":  "repository social-preview replacement",
+                           "status":  "PENDING_MANUAL_UPLOAD"
+                       },
+                       {
+                           "gate":  "rendered Pages browser inspection",
+                           "status":  "NOT_TESTED_NO_PERMITTED_EXISTING_BROWSER"
+                       }
+                   ],
+    "unresolved_local_material_findings":  0,
+    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation, presentation, visual, accessibility, and adversarial readiness for the exact fingerprints only. It does not establish publication or rendered live behavior."
+}

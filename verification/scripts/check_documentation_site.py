@@ -50,8 +50,8 @@ PAGE_FILES = [
 ]
 
 PNG_CONTRACTS = {
-    "docs/assets/images/impactful-tom-header.png": (1600, 500, 1_000_000),
-    "docs/assets/images/impactful-tom-social-card.png": (1280, 640, 1_000_000),
+    "docs/assets/images/impactful-tom-header.png": (2060, 763, 3_000_000),
+    "docs/assets/images/impactful-tom-social-card.png": (1731, 909, 3_000_000),
     "docs/assets/images/impactful-tom-mark-512.png": (512, 512, 500_000),
     "docs/assets/images/impactful-tom-mark-192.png": (192, 192, 150_000),
     "docs/assets/images/apple-touch-icon.png": (180, 180, 150_000),
@@ -526,8 +526,8 @@ def check_metadata(repo: Path, errors: list[str]) -> None:
         errors.append("Open Graph image must be emitted through absolute_url")
     if "{{ page.url | absolute_url }}" not in layout:
         errors.append("canonical and Open Graph URLs must use page.url | absolute_url")
-    if 'content="1280"' not in layout or 'content="640"' not in layout:
-        errors.append("Open Graph image dimensions must declare 1280 by 640")
+    if 'content="1731"' not in layout or 'content="909"' not in layout:
+        errors.append("Open Graph image dimensions must declare 1731 by 909")
 
     manifest_path = repo / "docs/site.webmanifest"
     try:
@@ -674,12 +674,13 @@ def check_visual_custody(repo: Path, errors: list[str]) -> None:
     if source.get("sha256") != EXPECTED_SOURCE_MARK_SHA256:
         errors.append("visual custody receipt has the wrong source-mark digest")
 
-    generator = receipt.get("generator", {})
-    generator_path = repo / str(generator.get("path", ""))
-    if not generator_path.is_file():
-        errors.append("visual custody receipt generator is missing")
-    elif hashlib.sha256(generator_path.read_bytes()).hexdigest() != generator.get("sha256"):
-        errors.append("visual custody receipt generator digest does not match")
+    if "generator" in receipt:
+        errors.append("visual custody receipt still declares a programmed artwork generator")
+    policy = receipt.get("artwork_policy", {})
+    if policy.get("programmed_artwork") is not False:
+        errors.append("visual custody receipt does not prohibit programmed artwork")
+    if policy.get("new_artwork_method") != "built-in image generator":
+        errors.append("visual custody receipt does not identify the approved image-generation method")
 
     outputs = {
         item.get("path"): item
@@ -699,6 +700,8 @@ def check_visual_custody(repo: Path, errors: list[str]) -> None:
             errors.append(f"visual custody receipt byte count does not match for {path_text}")
         if item.get("sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
             errors.append(f"visual custody receipt digest does not match for {path_text}")
+        if not item.get("creation_method"):
+            errors.append(f"visual custody receipt lacks creation method for {path_text}")
 
     manual_review = receipt.get("manual_visual_review", {})
     if manual_review.get("status") != "passed":

@@ -2,7 +2,7 @@
 
 **Target:** Impactful Tom 1.1.1 documentation and presentation remediation
 **Canonical package fingerprint:** `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`
-**Current decision:** `PASS`
+**Current decision:** `REMEDIATED, NOT YET LIVE`
 **Behavioral scope:** two targeted 1.1.1 episodes plus historical exact-version evidence; no new universal runtime claim
 
 ## Capability and package boundary
@@ -13,13 +13,13 @@ Current local execution passed 9/9 regression tests and the content-boundary, di
 
 ## Documentation and presentation
 
-The complete customer corpus, rendered Pages text, layout, stylesheet, navigation, live routes, and all nine tracked image assets were directly inspected. The 2026-08-11 Hesperos pass repaired recovery navigation, publication wording, incomplete visual custody, and stale top-level verification state. The three required role assets pass as distinct compositions and aspect ratios; the live GitHub custom social preview is byte-identical to the declared social card.
+The complete customer corpus, Pages source, layout, stylesheet, navigation, and all nine tracked local image assets were directly inspected. The 2026-08-12 pass rejected the interchangeable navy-grid README and social cards, replaced them with separate image-generator originals, removed the programmed-art renderer, and preserved the recognizable Pages mark and icon set. The three required role assets pass locally as distinct files, compositions, and aspect ratios. The replacement social card is not yet the live GitHub custom preview.
 
-A fresh documentation accessibility review returned `REVIEW_PASS`; the separate adversarial TestForge pass returned `REVIEW_PASS_WITH_CONDITIONS` for the exact fingerprints. Their receipts must be added without changing the governed customer corpus; otherwise the fingerprint is invalid and both reviews must run again.
+A fresh documentation accessibility review returned `REVIEW_PASS`; the separate adversarial review returned `PASS_LOCAL_WITH_LIVE_GATES` for the exact fingerprints. Their receipts must be added without changing the governed customer corpus; otherwise the fingerprint is invalid and both reviews must run again.
 
 ## Public state observed before remediation publication
 
-Direct GitHub readback observed a public repository at main commit `ee414fd5ec0fcdec82c3c36570a58e6627007418`, Pages built from `main:/docs`, release `v1.1.1`, four distribution archives, `SHA256SUMS.txt`, six live Pages routes, 21 live customer-journey links, exact deployed CSS/image/manifest parity, and a custom repository social preview. The remediation merged at public main commit `44498a4d7aebae1a9e6f7e64ba1c0dfc89311f63`; Pages rebuilt successfully and the final repository, routes, links, assets, release, and social preview passed direct readback.
+Before this remediation, remote `main` was `40cbbdd98f60eeda7b9635918f82f9557b1db739`. The current candidate has not been published. Live source and asset parity, Pages rebuild status, route/link health, repository social-preview replacement, and rendered-browser behavior remain post-publication gates. No GitHub-hosted workflow will be triggered while account Actions capacity is unavailable.
 
 ## Host boundary
 

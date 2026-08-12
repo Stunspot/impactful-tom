@@ -4,9 +4,9 @@
                     "slug":  "impactful-tom",
                     "version":  "1.1.1"
                 },
-    "created_at":  "2026-08-11",
-    "documentation_fingerprint":  "4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3",
-    "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records",
+    "created_at":  "2026-08-12",
+    "documentation_fingerprint":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
+    "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
     "authored_files":  [
                            {
                                "bytes":  994,
@@ -14,9 +14,9 @@
                                "sha256":  "a4a3852a9465977bd6693f60b88452f545099c44d0295907399fdee1d57a694f"
                            },
                            {
-                               "bytes":  4568,
+                               "bytes":  5166,
                                "path":  "CHANGELOG.md",
-                               "sha256":  "daaee4a53df3144e5d9da99c08e06de4f810f04c0530b436a7a71b881be24a96"
+                               "sha256":  "e89b46d4be307a4c3ad7103a488707f57d2fc0daa76e6bd5031b1176a765e492"
                            },
                            {
                                "bytes":  1668,
@@ -34,9 +34,9 @@
                                "sha256":  "f8a1108394980464a7093456a9f7597fd4e547bdb420dae5b26b6d968020e6b6"
                            },
                            {
-                               "bytes":  5889,
+                               "bytes":  6119,
                                "path":  "README.md",
-                               "sha256":  "a6a9586938205ea2bfb9c5c4c78260a9b364f543b9e6e0a539eb48b46347cfd5"
+                               "sha256":  "c59ea6f7d2a441b3c35cf127f5a067bafc82269047dd5fdac95dda2e67896241"
                            },
                            {
                                "bytes":  1305,
@@ -84,9 +84,9 @@
                                "sha256":  "e3ac5fe8e18b0fd7089625d4dc99d88cfd799486c7448d54f34177323d2afad0"
                            },
                            {
-                               "bytes":  7075,
+                               "bytes":  7557,
                                "path":  "docs/provenance-and-verification.md",
-                               "sha256":  "6eee64da6170b0de045c2417e0a1cf9e0189936931d2521b0350cb5eaaf3dd8c"
+                               "sha256":  "8199a98bd27ae7bfe5a0ce1fcdaaeef89a57593765f3581a147eecd526e38de3"
                            },
                            {
                                "bytes":  3416,
@@ -94,8 +94,8 @@
                                "sha256":  "e2b7c84422e983f9dacbdee76c501b02be56806da27f478bcef28d84db231ca7"
                            }
                        ],
-    "presentation_fingerprint":  "47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842",
-    "presentation_fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records",
+    "presentation_fingerprint":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
+    "presentation_fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
     "presentation_sources":  [
                                  {
                                      "bytes":  483,
@@ -103,14 +103,14 @@
                                      "sha256":  "f33eb19302936e580a56726cb97dc688e54b5442aeafbf78634f52381e7b113f"
                                  },
                                  {
-                                     "bytes":  4712,
+                                     "bytes":  4652,
                                      "path":  "docs/_layouts/default.html",
-                                     "sha256":  "0b2d6b81048d292ed23c3424e06ec355212c8c1890d6f9d1a36224df425dbee6"
+                                     "sha256":  "06fb17ad548a52e2c97190c8e2df6a18382c8f3198f8f5dd45b87c5e1d258043"
                                  },
                                  {
-                                     "bytes":  9764,
+                                     "bytes":  9775,
                                      "path":  "docs/assets/css/site.css",
-                                     "sha256":  "056844b30c1763c7a5d2c7112e8f18c376cbfa2105b7966dd39d174113f5e636"
+                                     "sha256":  "7c01d932a6289c53cb8529dec2c91d6f98f7fa6f419b5e1c8589f6a6f21d8d00"
                                  },
                                  {
                                      "bytes":  751,
@@ -120,41 +120,41 @@
                                  {
                                      "bytes":  3888,
                                      "path":  "documentation-manifest.json",
-                                     "sha256":  "e7fb607a7c82767dd1d1d0f11f78bdd5b0e653e51b87cdb409fec907a13e4bc5"
+                                     "sha256":  "d8072161db0785b3a6ceaa2133de8e35134b03c1836e29856af63e05efade854"
                                  }
                              ],
     "authoring":  {
-                      "authorship_scope":  "complete-remediation",
+                      "authorship_scope":  "complete-final-remediation-rereview",
                       "capability":  "hesperos-documentation",
                       "mode":  "main-agent-authorship",
-                      "run_id":  "HESPEROS-IMPACTFUL-TOM-20260811-REMEDIATION"
+                      "run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-4"
                   },
     "documentation_manifest":  {
                                    "bytes":  3888,
                                    "path":  "documentation-manifest.json",
-                                   "sha256":  "e7fb607a7c82767dd1d1d0f11f78bdd5b0e653e51b87cdb409fec907a13e4bc5"
+                                   "sha256":  "d8072161db0785b3a6ceaa2133de8e35134b03c1836e29856af63e05efade854"
                                },
     "evidence_packet":  {
-                            "bytes":  4090,
-                            "path":  "verification/documentation/hesperos-20260811-remediation-evidence.md",
-                            "sha256":  "f6db759cd82513ceb007857a31c7bdd296f7365bfd95f31ccd91d23044016059"
+                            "bytes":  1810,
+                            "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
+                            "sha256":  "ac4f5a653a956ea98524d5829359aeb10e5fcb810301fa5cfe3adc38cc0ef515"
                         },
     "authoring_response":  {
-                               "bytes":  1112,
-                               "path":  "verification/documentation/hesperos-20260811-remediation-response.txt",
-                               "sha256":  "70db20955ec402ce1ad4ba42cf2ea3a4e03ac0b322ccff638b4b40cebaa99532"
+                               "bytes":  618,
+                               "path":  "verification/documentation/hesperos-20260812-remediation-response.txt",
+                               "sha256":  "311cf4f410f47e9ed02b9ab93340841f698a2703bc9d4c77c4120f55906261fb"
                            },
     "execution_evidence":  [
                                {
-                                   "bytes":  4090,
-                                   "path":  "verification/documentation/hesperos-20260811-remediation-evidence.md",
-                                   "sha256":  "f6db759cd82513ceb007857a31c7bdd296f7365bfd95f31ccd91d23044016059"
+                                   "bytes":  1810,
+                                   "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
+                                   "sha256":  "ac4f5a653a956ea98524d5829359aeb10e5fcb810301fa5cfe3adc38cc0ef515"
                                },
                                {
-                                   "bytes":  1112,
-                                   "path":  "verification/documentation/hesperos-20260811-remediation-response.txt",
-                                   "sha256":  "70db20955ec402ce1ad4ba42cf2ea3a4e03ac0b322ccff638b4b40cebaa99532"
+                                   "bytes":  618,
+                                   "path":  "verification/documentation/hesperos-20260812-remediation-response.txt",
+                                   "sha256":  "311cf4f410f47e9ed02b9ab93340841f698a2703bc9d4c77c4120f55906261fb"
                                }
                            ],
-    "claim_boundary":  "Binds the exact 17-file customer documentation set and the separate five-file presentation-source set to the substantive Hesperos remediation. It does not prove independent review, live deployment of the remediation commit, host behavior, formal accessibility conformance, legal adjudication, or customer outcomes."
+    "claim_boundary":  "Binds the complete final customer journey after the zero-exception lineage repair to documentation 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c; does not establish deployment or rendered behavior."
 }
