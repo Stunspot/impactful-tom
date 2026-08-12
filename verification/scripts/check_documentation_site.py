@@ -771,6 +771,88 @@ def check_documentation_custody(repo: Path, errors: list[str]) -> None:
             errors.append(f"documentation authorship evidence digest does not match: {path_text}")
 
 
+def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
+    """Require exact receipt lineage before current replacement visuals are called live."""
+    claim_files = [
+        repo / "README.md",
+        repo / "CHANGELOG.md",
+        repo / "docs/provenance-and-verification.md",
+    ]
+    claims: list[str] = []
+    visual_terms = re.compile(
+        r"\b(?:presentation|visual assets?|README hero|Pages hero|social card|social preview|palette)\b",
+        re.I,
+    )
+    live_terms = re.compile(r"\b(?:live|deployed|published|byte-identical|parity)\b", re.I)
+    current_terms = re.compile(r"\b(?:current|replacement|remediated|this remediation)\b", re.I)
+    negative_terms = re.compile(
+        r"\b(?:does not establish|do not establish|not yet|remain(?:s)?\b[^.\n]{0,80}\bgate|unverified|historical evidence)\b",
+        re.I,
+    )
+    for path in claim_files:
+        text = read_text(path, errors)
+        for line in text.splitlines():
+            for sentence in re.split(r"(?<=[.!?])\s+", line):
+                positive = (
+                "exact deployed asset parity" in sentence.lower()
+                or (
+                    visual_terms.search(sentence)
+                    and live_terms.search(sentence)
+                    and current_terms.search(sentence)
+                )
+            )
+                if positive and not negative_terms.search(sentence):
+                    claims.append(f"{relative(path, repo)}: {sentence.strip()}")
+
+    if not claims:
+        return
+
+    try:
+        review = json.loads(
+            read_text(repo / "verification/documentation/documentation-review.json", errors)
+        )
+        custody = json.loads(
+            read_text(repo / "verification/documentation/visual-assets-custody.json", errors)
+        )
+        live = json.loads(read_text(repo / "verification/live-verification.json", errors))
+    except (json.JSONDecodeError, OSError) as exc:
+        errors.append(f"current live presentation claim has unreadable receipt lineage: {exc}")
+        return
+
+    output_hashes = {
+        item.get("path"): item.get("sha256")
+        for item in custody.get("outputs", [])
+        if isinstance(item, dict)
+    }
+    expected_visuals = {
+        "readme_hero_sha256": output_hashes.get(
+            "docs/assets/images/impactful-tom-header.png"
+        ),
+        "pages_hero_sha256": output_hashes.get(
+            "docs/assets/images/impactful-tom-mark-512.png"
+        ),
+        "social_card_sha256": output_hashes.get(
+            "docs/assets/images/impactful-tom-social-card.png"
+        ),
+    }
+    governed = live.get("governed_content", {})
+    live_visuals = live.get("visuals", {})
+    mismatches = []
+    if live.get("status") != "PASS":
+        mismatches.append("live receipt status is not PASS")
+    if governed.get("documentation_fingerprint") != review.get("documentation_fingerprint"):
+        mismatches.append("documentation fingerprint")
+    if governed.get("presentation_fingerprint") != review.get("presentation_fingerprint"):
+        mismatches.append("presentation fingerprint")
+    for key, expected in expected_visuals.items():
+        if not expected or live_visuals.get(key) != expected:
+            mismatches.append(key)
+    if mismatches:
+        errors.append(
+            "current live presentation claim lacks matching receipt lineage "
+            f"({', '.join(mismatches)}): {claims[0]}"
+        )
+
 def check_identity_and_private_paths(repo: Path, errors: list[str]) -> None:
     public_files = [repo / "README.md", *(repo / path for path in PAGE_FILES)]
     private_patterns = [
@@ -827,6 +909,7 @@ def main() -> int:
     check_pngs(repo, errors)
     check_visual_custody(repo, errors)
     check_documentation_custody(repo, errors)
+    check_live_presentation_lineage(repo, errors)
     check_identity_and_private_paths(repo, errors)
     check_readme(repo, release_tag, errors)
 

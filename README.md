@@ -30,7 +30,7 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.1.1` is the package described here. Its release page is the authoritative source for four distribution archives and the checksum ledger. On 2026-08-11, direct public readback confirmed the repository, release, all five release assets, six Pages routes, 21 customer-journey links, the three role-specific visual assets, and the custom GitHub social preview. The [live-verification receipt](verification/live-verification.json) records the exact observations and their limits. Earlier release tags remain historical custody and are not rewritten.
+Version `1.1.1` is the package described here. Its release page is the authoritative source for four distribution archives and the checksum ledger. The [2026-08-11 live-verification receipt](verification/live-verification.json) confirms the release objects and the presentation that was deployed at that time. It is historical evidence for documentation fingerprint `4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3`, presentation fingerprint `47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842`, and the image hashes recorded inside the receipt; it does not establish that this remediation's replacement README hero, social card, palette, or current documentation fingerprint are live. Earlier release tags remain historical custody and are not rewritten.
 
 Clean public-route installation, restart resilience, immutable causal host invocation, and live Claude Code behavior remain unobserved.
 

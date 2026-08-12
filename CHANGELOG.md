@@ -10,7 +10,7 @@ Notable release changes to Impactful Tom are recorded here.
 - Opened and reviewed all nine local visual assets; live GitHub social-preview replacement remains a separate post-publication gate.
 - Replaced the interchangeable navy-grid README and social cards with separate original image-generator compositions: a text-free constraint table and a title-bearing blocked-path decision scene.
 - Removed the obsolete programmed-art renderer and changed the visual validator to reject scripted artwork while preserving the approved product mark and icon set.
-- Added fresh Hesperos, accessibility, visual, adversarial, and live-verification receipts bound to the remediated documentation fingerprint.
+- Added fresh Hesperos, accessibility, visual, and adversarial receipts bound to the remediated documentation and presentation fingerprints; live verification remains a post-deployment gate.
 
 This is a documentation and evidence remediation. It does not change the 1.1.1 runtime or rewrite the sealed v1.1.1 release archives.
 

@@ -4,7 +4,7 @@
                    "name":  "Impactful Tom",
                    "package_version":  "1.1.1",
                    "package_fingerprint":  "1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9",
-                   "documentation_fingerprint":  "d6588000485ea1fe41fefea8ae7c8e01978e2b078dc2934faa0eb69498527c0b",
+                   "documentation_fingerprint":  "173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85",
                    "presentation_fingerprint":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
                    "target_class":  "public_documentation_and_presentation_remediation"
                },
@@ -29,7 +29,9 @@
                      "All nine tracked local images were opened and visually inspected.",
                      "The README and social images were replaced with separate built-in image-generator originals; the Pages mark and icons were preserved.",
                      "The obsolete programmed-art renderer was removed and the validator now rejects programmed artwork.",
-                     "Nine regression tests, four actual static checks, and the exact pinned line-ending policy passed locally."
+                     "TestForge cycle 1 found and blocked stale live-receipt lineage across three customer surfaces.",
+                     "The lineage defect is repaired; a hostile current-live presentation claim now fails unless the live receipt matches current documentation, presentation, and all three role-image hashes.",
+                     "Ten regression tests, four actual static checks, and the exact pinned line-ending policy pass locally."
                  ],
     "risks":  [
                   {
@@ -58,7 +60,7 @@
                   }
               ],
     "tests":  {
-                  "regression_suite":  "9/9 passed",
+                  "regression_suite":  "10/10 passed",
                   "content_boundaries":  "PASS",
                   "distribution_topology":  "PASS",
                   "release_exclusions":  "PASS",
@@ -68,13 +70,14 @@
                   "documentation_accessibility":  "REVIEW_PASS",
                   "visual_review":  "PASS_LOCAL",
                   "adversarial_review":  "PASS_LOCAL_WITH_LIVE_GATES",
-                  "testforge_final":  "PENDING",
-                  "final_live_verification":  "PENDING"
+                  "testforge_final":  "PENDING_CYCLE_2",
+                  "final_live_verification":  "PENDING",
+                  "testforge_cycle_1":  "REVIEW_FAIL — evidence-lineage defect repaired"
               },
     "decision":  {
                      "status":  "REMEDIATED_NOT_YET_LIVE",
                      "blocking_gates":  [
-                                            "final TestForge review",
+                                            "TestForge cycle 2 reviewer pass",
                                             "publish final commit",
                                             "successful Pages rebuild",
                                             "live source and asset parity",
@@ -82,5 +85,5 @@
                                             "rendered Pages inspection in a permitted existing browser"
                                         ]
                  },
-    "claim_boundary":  "This manifest records local remediation readiness only. It does not claim successful publication or live rendered verification."
+    "claim_boundary":  "This manifest records repaired local remediation readiness for documentation fingerprint 173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85 and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. It does not claim TestForge cycle 2 passage, publication, or live rendered verification."
 }

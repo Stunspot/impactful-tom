@@ -9,13 +9,13 @@
 
 Impactful Tom is a founder-performance Augment for one live business decision. The canonical source implements constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence-calibrated moves, optional user-governed state, and separate external-action authority. The 1.1.1 eval source contains 25 cases across 12 indispensable dimensions.
 
-Current local execution passed 9/9 regression tests and the content-boundary, distribution-topology, release-exclusion, and documentation-site source checks. Canonical and Claude Code/generic distributions remain aligned under the repository's host-specific topology contract.
+Current local execution passed 10/10 regression tests and the content-boundary, distribution-topology, release-exclusion, and documentation-site source checks. Canonical and Claude Code/generic distributions remain aligned under the repository's host-specific topology contract.
 
 ## Documentation and presentation
 
 The complete customer corpus, Pages source, layout, stylesheet, navigation, and all nine tracked local image assets were directly inspected. The 2026-08-12 pass rejected the interchangeable navy-grid README and social cards, replaced them with separate image-generator originals, removed the programmed-art renderer, and preserved the recognizable Pages mark and icon set. The three required role assets pass locally as distinct files, compositions, and aspect ratios. The replacement social card is not yet the live GitHub custom preview.
 
-A fresh documentation accessibility review returned `REVIEW_PASS`; the separate adversarial TestForge pass returned `REVIEW_PASS_WITH_CONDITIONS` for the exact fingerprints. Their receipts must be added without changing the governed customer corpus; otherwise the fingerprint is invalid and both reviews must run again.
+The fresh documentation and accessibility reviews return `REVIEW_PASS` for the current fingerprints. TestForge cycle 1 returned `REVIEW_FAIL` because three customer surfaces treated the historical August 11 live receipt as evidence for the replacement presentation. That finding is repaired, a hostile evidence-lineage oracle now passes, and a second TestForge review remains required before publication.
 
 ## Public state observed before remediation publication
 

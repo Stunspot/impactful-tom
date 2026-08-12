@@ -48,6 +48,7 @@ def copy_documentation_fixture(destination: Path) -> None:
         "verification/documentation/hesperos-pages-authoring-evidence.md",
         "verification/documentation/hesperos-pages-authoring-response.txt",
         "verification/documentation/visual-assets-custody.json",
+        "verification/live-verification.json",
     ]:
         source = REPO / relative
         target = destination / relative
@@ -210,6 +211,25 @@ class StaticCheckFixtures(unittest.TestCase):
                     result,
                 )
 
+    def test_current_live_visual_claim_requires_matching_receipt_lineage(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp)
+            copy_documentation_fixture(candidate)
+            readme = candidate / "README.md"
+            readme.write_text(
+                readme.read_text(encoding="utf-8")
+                + "\n\nThe current replacement visual presentation is live with exact deployed asset parity, including the README hero, Pages hero, and social card.\n",
+                encoding="utf-8",
+            )
+            code, result = run("check_documentation_site.py", "--repo", str(candidate))
+            self.assertEqual(code, 1, result)
+            self.assertTrue(
+                any(
+                    "current live presentation claim lacks matching receipt lineage" in item
+                    for item in result["errors"]
+                ),
+                result,
+            )
     def test_documentation_release_marker_tracks_manifest_version(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             candidate = Path(temp)

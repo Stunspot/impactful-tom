@@ -1,0 +1,35 @@
+{
+  "format_version": "1.0",
+  "source": "git:40cbbdd98f60eeda7b9635918f82f9557b1db739..96e947dd78ce83de69013c0abc9a9e38658fb65a",
+  "changed_file_count": 21,
+  "groups": {
+    "configuration": [
+      "documentation-accessibility-review.json",
+      "documentation-manifest.json",
+      "documentation-review.json",
+      "verification/documentation/documentation-adversarial-20260812.json",
+      "verification/documentation/documentation-authorship.json",
+      "verification/documentation/documentation-review.json",
+      "verification/documentation/visual-assets-custody.json",
+      "verification/verification-manifest.json",
+      "visual-asset-review.json"
+    ],
+    "production_code": [
+      "CHANGELOG.md",
+      "README.md",
+      "development/build_documentation_visuals.ps1",
+      "docs/_layouts/default.html",
+      "docs/assets/css/site.css",
+      "docs/assets/images/impactful-tom-header.png",
+      "docs/assets/images/impactful-tom-social-card.png",
+      "verification/documentation/hesperos-20260812-remediation-evidence.md",
+      "verification/documentation/hesperos-20260812-remediation-response.txt",
+      "verification/scripts/check_documentation_site.py",
+      "verification/verification-brief.md"
+    ],
+    "tests": [
+      "verification/tests/test_static_checks.py"
+    ]
+  },
+  "warnings": []
+}

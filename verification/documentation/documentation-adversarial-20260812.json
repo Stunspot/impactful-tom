@@ -8,7 +8,7 @@
     "starting_state":  "UNKNOWN",
     "disposition":  "PASS_LOCAL_WITH_LIVE_GATES",
     "fingerprints":  {
-                         "documentation":  "d6588000485ea1fe41fefea8ae7c8e01978e2b078dc2934faa0eb69498527c0b",
+                         "documentation":  "173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85",
                          "presentation":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c"
                      },
     "challenges":  [
@@ -34,7 +34,7 @@
                            "id":  "A-CLAIMS",
                            "question":  "Does current copy confuse constructed, packaged, installed, invoked, healthy, published, or independently verified?",
                            "result":  "PASS",
-                           "evidence":  "Current customer and verification copy keeps package/static evidence separate from live hosts, deployment, social-preview replacement, and rendered-browser behavior."
+                           "evidence":  "README, changelog, and provenance explicitly bind the August 11 live receipt to its older documentation, presentation, and role-asset hashes. A hostile oracle rejects any positive current live/deployed visual claim unless the live receipt matches the current documentation fingerprint, presentation fingerprint, and all three role-image hashes."
                        },
                        {
                            "id":  "A-SCOPE",
@@ -53,7 +53,7 @@
                             {
                                 "name":  "unittest",
                                 "result":  "PASS",
-                                "evidence":  "9/9 passed"
+                                "evidence":  "10/10 passed, including the stale-receipt lineage hostile case"
                             },
                             {
                                 "name":  "documentation_site",
@@ -109,5 +109,14 @@
                        }
                    ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation, presentation, visual, accessibility, and adversarial readiness for the exact fingerprints only. It does not establish publication or rendered live behavior."
+    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation fingerprint 173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85 and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. It does not establish publication or rendered live behavior.",
+    "repaired_findings":  [
+                              {
+                                  "id":  "TF1-EVIDENCE-LINEAGE",
+                                  "severity":  "HIGH",
+                                  "source":  "TestForge cycle 1 REVIEW_FAIL",
+                                  "repair":  "Corrected all three customer surfaces, recomputed documentation fingerprint, reran Hesperos and accessibility reviews, and added a discriminating lineage oracle.",
+                                  "verification":  "Actual corpus passes; hostile current-live claim with historical receipt fails."
+                              }
+                          ]
 }
