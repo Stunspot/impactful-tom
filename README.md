@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/images/impactful-tom-header.png" alt="Impactful Tom — founder-performance judgment for naming the real constraint and choosing an owned move." width="1600">
+  <img src="docs/assets/images/impactful-tom-header.png" alt="A founder lifts the single brass constraint blocking a web of competing business paths while a teammate watches the decision." width="2060">
 </p>
 
 <p align="center">

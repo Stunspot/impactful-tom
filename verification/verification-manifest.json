@@ -1,76 +1,86 @@
 {
-  "format": "cd-public-remediation-verification/v2",
-  "target": {
-    "name": "Impactful Tom",
-    "package_version": "1.1.1",
-    "package_fingerprint": "1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9",
-    "documentation_fingerprint": "4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3",
-    "target_class": "public_documentation_and_presentation_remediation"
-  },
-  "scope": {
-    "included": [
-      "complete customer documentation journey",
-      "README and Pages presentation",
-      "all nine tracked visual assets",
-      "live Pages routes, navigation, links, CSS, manifest, images, and custom 404",
-      "GitHub repository, release, assets, and custom social preview",
-      "current static checks and exact evidence boundaries"
-    ],
-    "excluded": [
-      "runtime redesign",
-      "frozen historical release archive mutation",
-      "new behavioral reliability claims",
-      "OpenAI Plugin Directory submission",
-      "unobserved live Claude Code behavior"
-    ]
-  },
-  "observed": [
-    "All 17 customer documents and five presentation-source files were read and Hesperos-authored, with separate fingerprints.",
-    "The canonical 1.1.1 runtime source, references, templates, manifests, and all 25 eval cases were read for claim verification.",
-    "All nine tracked images and the live GitHub social preview were opened and visually inspected.",
-    "Nine regression tests and four static repository checks passed before the final independent reviews.",
-    "The live baseline returned six complete Pages routes, 21 successful links, a useful custom 404, and exact parity for nine deployed assets."
-  ],
-  "risks": [
-    {
-      "id": "R-DOC-STALE",
-      "severity": "high",
-      "status": "remediated",
-      "treatment": "Replaced stale top-level 1.0.0 and 1.1.0 verification state with version 1.1.1 receipts."
-    },
-    {
-      "id": "R-RECOVERY-HIDDEN",
-      "severity": "medium",
-      "status": "remediated",
-      "treatment": "Added Troubleshooting to primary and footer navigation."
-    },
-    {
-      "id": "R-VISUAL-INFERRED",
-      "severity": "high",
-      "status": "remediated",
-      "treatment": "Opened every image, recorded role-specific judgments, and verified the live GitHub preview is byte-identical to the declared social card."
-    },
-    {
-      "id": "R-HOST-OVERCLAIM",
-      "severity": "critical",
-      "status": "covered",
-      "treatment": "Kept publication, installation, discovery, invocation, health, restart resilience, and Claude behavior separate."
-    }
-  ],
-  "tests": {
-    "regression_suite": "9/9 passed",
-    "content_boundaries": "passed",
-    "distribution_topology": "passed",
-    "release_exclusions": "passed",
-    "documentation_site_source": "passed",
-    "visual_review": "passed",
-    "documentation_accessibility_review": "REVIEW_PASS",
-    "adversarial_testforge_review": "REVIEW_PASS_WITH_CONDITIONS",
-    "final_live_verification": "PASS"
-  },
-  "decision": {
-    "status": "PASS",
-    "blocking_gates": []
-  },
-  "claim_boundary": "This manifest records the completed remediation, bound reviews, successful publication, Pages rebuild, and final live readback for the exact governed fingerprints."
+    "format":  "cd-public-remediation-verification/v3",
+    "target":  {
+                   "name":  "Impactful Tom",
+                   "package_version":  "1.1.1",
+                   "package_fingerprint":  "1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9",
+                   "documentation_fingerprint":  "d6588000485ea1fe41fefea8ae7c8e01978e2b078dc2934faa0eb69498527c0b",
+                   "presentation_fingerprint":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
+                   "target_class":  "public_documentation_and_presentation_remediation"
+               },
+    "scope":  {
+                  "included":  [
+                                   "complete customer documentation journey",
+                                   "README and Pages presentation",
+                                   "all nine tracked visual assets",
+                                   "current static checks and exact evidence boundaries"
+                               ],
+                  "excluded":  [
+                                   "runtime redesign",
+                                   "frozen historical release archive mutation",
+                                   "new behavioral reliability claims",
+                                   "OpenAI Plugin Directory submission",
+                                   "unobserved live Claude Code behavior"
+                               ]
+              },
+    "observed":  [
+                     "All 17 customer documents and five presentation-source files were read completely and bound to separate fingerprints.",
+                     "The canonical 1.1.1 runtime skill and three references were read for claim verification.",
+                     "All nine tracked local images were opened and visually inspected.",
+                     "The README and social images were replaced with separate built-in image-generator originals; the Pages mark and icons were preserved.",
+                     "The obsolete programmed-art renderer was removed and the validator now rejects programmed artwork.",
+                     "Nine regression tests, four actual static checks, and the exact pinned line-ending policy passed locally."
+                 ],
+    "risks":  [
+                  {
+                      "id":  "R-VISUAL-TEMPLATE",
+                      "severity":  "high",
+                      "status":  "remediated",
+                      "treatment":  "Replaced interchangeable navy-grid role images with product-specific image-generator originals."
+                  },
+                  {
+                      "id":  "R-PROGRAMMED-ART",
+                      "severity":  "high",
+                      "status":  "remediated",
+                      "treatment":  "Removed the renderer and its test dependency; validator now prohibits programmed artwork."
+                  },
+                  {
+                      "id":  "R-LIVE-STATE",
+                      "severity":  "high",
+                      "status":  "bounded",
+                      "treatment":  "Marked publication, Pages rebuild, repository social preview, and rendered-browser behavior as separate pending gates."
+                  },
+                  {
+                      "id":  "R-HOST-OVERCLAIM",
+                      "severity":  "critical",
+                      "status":  "covered",
+                      "treatment":  "Kept publication, installation, discovery, invocation, health, restart resilience, and Claude behavior separate."
+                  }
+              ],
+    "tests":  {
+                  "regression_suite":  "9/9 passed",
+                  "content_boundaries":  "PASS",
+                  "distribution_topology":  "PASS",
+                  "release_exclusions":  "PASS",
+                  "documentation_site_source":  "PASS",
+                  "line_ending_policy":  "PASS",
+                  "hesperos_documentation":  "REVIEW_PASS",
+                  "documentation_accessibility":  "REVIEW_PASS",
+                  "visual_review":  "PASS_LOCAL",
+                  "adversarial_review":  "PASS_LOCAL_WITH_LIVE_GATES",
+                  "testforge_final":  "PENDING",
+                  "final_live_verification":  "PENDING"
+              },
+    "decision":  {
+                     "status":  "REMEDIATED_NOT_YET_LIVE",
+                     "blocking_gates":  [
+                                            "final TestForge review",
+                                            "publish final commit",
+                                            "successful Pages rebuild",
+                                            "live source and asset parity",
+                                            "manual GitHub social-preview replacement",
+                                            "rendered Pages inspection in a permitted existing browser"
+                                        ]
+                 },
+    "claim_boundary":  "This manifest records local remediation readiness only. It does not claim successful publication or live rendered verification."
 }
