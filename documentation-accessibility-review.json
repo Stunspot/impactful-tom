@@ -16,7 +16,7 @@
                          "algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
                          "documentation":  {
                                                "file_count":  17,
-                                               "value":  "6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d",
+                                               "value":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
                                                "recomputed":  true,
                                                "matched_expected":  true
                                            },
@@ -65,7 +65,8 @@
                     "Static calculation of declared light-mode and dark-mode contrast pairs",
                     "Hesperos accessible-Markdown lint across all 17 governed documents",
                     "Post-finding complete Hesperos lint rerun plus focused re-reading of every changed customer passage and evidence link",
-                    "Third complete post-finding Hesperos lint pass and focused reading of the rethought current-section lineage boundary"
+                    "Third complete post-finding Hesperos lint pass and focused reading of the rethought current-section lineage boundary",
+                    "Final complete Hesperos lint pass and full customer-journey reread after the zero-exception lineage rewrite"
                 ],
     "results":  {
                     "navigation_and_recovery":  "PASS",
@@ -110,5 +111,5 @@
                            "A material renderer, layout, navigation, theme, or hosting change",
                            "Any new accessibility or formal-conformance claim"
                        ],
-    "claim_boundary":  "REVIEW_PASS establishes static documentation accessibility readiness for documentation 6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d and presentation 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only."
+    "claim_boundary":  "REVIEW_PASS establishes static documentation accessibility readiness for documentation 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only."
 }

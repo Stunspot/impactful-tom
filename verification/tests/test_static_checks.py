@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 import subprocess
@@ -55,6 +56,53 @@ def copy_documentation_fixture(destination: Path) -> None:
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
     shutil.copytree(REPO / "docs", destination / "docs")
+    authorship = json.loads(
+        (REPO / "verification/documentation/documentation-authorship.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    evidence_records = [
+        authorship.get("evidence_packet", {}),
+        authorship.get("authoring_response", {}),
+        *authorship.get("execution_evidence", []),
+    ]
+    for record in evidence_records:
+        relative = record.get("path")
+        if not relative:
+            continue
+        source = REPO / relative
+        target = destination / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
+
+
+def rebind_documentation_fixture(destination: Path) -> str:
+    authorship_path = destination / "verification/documentation/documentation-authorship.json"
+    authorship = json.loads(authorship_path.read_text(encoding="utf-8"))
+    fingerprint_digest = hashlib.sha256()
+    records = sorted(authorship["authored_files"], key=lambda item: item["path"])
+    for record in records:
+        path = destination / record["path"]
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        record["bytes"] = path.stat().st_size
+        record["sha256"] = digest
+        fingerprint_digest.update(record["path"].encode("utf-8"))
+        fingerprint_digest.update(b"\0")
+        fingerprint_digest.update(bytes.fromhex(digest))
+    fingerprint = fingerprint_digest.hexdigest()
+    authorship["documentation_fingerprint"] = fingerprint
+    authorship_path.write_text(
+        json.dumps(authorship, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    review_path = destination / "verification/documentation/documentation-review.json"
+    review = json.loads(review_path.read_text(encoding="utf-8"))
+    review["documentation_fingerprint"] = fingerprint
+    review_path.write_text(
+        json.dumps(review, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    return fingerprint
 
 
 class StaticCheckFixtures(unittest.TestCase):
@@ -233,8 +281,8 @@ class StaticCheckFixtures(unittest.TestCase):
                 "{claim}\n\nClean public-route installation",
             ),
             "CHANGELOG.md": (
-                "- Classified the [2026-08-11 live-verification receipt]",
-                "- {claim}\n- Classified the [2026-08-11 live-verification receipt]",
+                "- The [2026-08-11 verification receipt]",
+                "- {claim}\n- The [2026-08-11 verification receipt]",
             ),
             "docs/provenance-and-verification.md": (
                 "## How to read release claims",
@@ -253,6 +301,7 @@ class StaticCheckFixtures(unittest.TestCase):
                         text.replace(marker, replacement.format(claim=claim), 1),
                         encoding="utf-8",
                     )
+                    rebind_documentation_fixture(candidate)
                     code, result = run("check_documentation_site.py", "--repo", str(candidate))
                     self.assertEqual(code, 1, result)
                     self.assertTrue(
@@ -265,12 +314,17 @@ class StaticCheckFixtures(unittest.TestCase):
 
     def test_contradictory_live_claim_inside_historical_item_is_rejected(self) -> None:
         contradictions = [
-            " The current replacement visual presentation is live and deployed.",
-            "; The current replacement visual presentation is live and deployed.",
+            " Historical public readback confirmed the current replacement visual presentation is live.",
+            "; Historical public readback confirmed the updated social card is published.",
+            " Historical public readback confirmed the refreshed visual presentation is\n  live.",
+            "; Historical public readback confirmed this remediation's social card is deployed.",
+            " Historical public readback confirmed the redesigned README hero is live.",
+            "; Historical public readback confirmed the latest visual assets are published.",
+            " Historical public readback confirmed the new social card is live.",
         ]
         surfaces = {
             "README.md": "Earlier release tags remain historical custody and are not rewritten.",
-            "CHANGELOG.md": "its recorded role-image hashes do not verify the replacement hero, social card, or palette.",
+            "CHANGELOG.md": "Its recorded role-image hashes do not verify the replacement hero, social card, or palette.",
             "docs/provenance-and-verification.md": "Public availability does not establish host installation or invocation.",
         }
         for path_text, marker in surfaces.items():
@@ -285,6 +339,7 @@ class StaticCheckFixtures(unittest.TestCase):
                         text.replace(marker, marker + contradiction, 1),
                         encoding="utf-8",
                     )
+                    rebind_documentation_fixture(candidate)
                     code, result = run("check_documentation_site.py", "--repo", str(candidate))
                     self.assertEqual(code, 1, result)
                     self.assertTrue(
@@ -301,7 +356,7 @@ class StaticCheckFixtures(unittest.TestCase):
         ]
         surfaces = {
             "README.md": "Earlier release tags remain historical custody and are not rewritten.",
-            "CHANGELOG.md": "its recorded role-image hashes do not verify the replacement hero, social card, or palette.",
+            "CHANGELOG.md": "Its recorded role-image hashes do not verify the replacement hero, social card, or palette.",
             "docs/provenance-and-verification.md": "Public availability does not establish host installation or invocation.",
         }
         for path_text, marker in surfaces.items():
@@ -316,6 +371,7 @@ class StaticCheckFixtures(unittest.TestCase):
                         text.replace(marker, marker + contradiction, 1),
                         encoding="utf-8",
                     )
+                    rebind_documentation_fixture(candidate)
                     code, result = run("check_documentation_site.py", "--repo", str(candidate))
                     self.assertEqual(code, 1, result)
                     self.assertTrue(
@@ -325,6 +381,13 @@ class StaticCheckFixtures(unittest.TestCase):
                         ),
                         result,
                     )
+    def test_fully_rebound_current_docs_without_visual_publication_claims_pass(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            candidate = Path(temp)
+            copy_documentation_fixture(candidate)
+            rebind_documentation_fixture(candidate)
+            code, result = run("check_documentation_site.py", "--repo", str(candidate))
+            self.assertEqual(code, 0, result)
     def test_documentation_release_marker_tracks_manifest_version(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             candidate = Path(temp)

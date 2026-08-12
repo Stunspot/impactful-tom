@@ -852,17 +852,6 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
         r"live|deployed|published|byte-identical|(?:asset )?parity|confirmed)\b",
         re.I,
     )
-    historical_boundary = re.compile(r"\bhistorical\b", re.I)
-    disclaims_replacements = re.compile(
-        r"\b(?:does not establish|do not establish|does not verify|do not verify)\b[^\n]{0,180}"
-        r"\b(?:replacement|remediation|current)\b",
-        re.I,
-    )
-    pending_boundary = re.compile(
-        r"\b(?:not yet|remain(?:s)?\b[^.\n]{0,100}\bgate|pending)\b",
-        re.I,
-    )
-
     def markdown_claim_units(scoped: str) -> list[str]:
         units: list[str] = []
         current: list[str] = []
@@ -886,42 +875,14 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
         return units
 
     claims: list[str] = []
-    explicit_old_scope = re.compile(
-        r"\b(?:at that time|historical (?:presentation|visual(?: assets?)?|social preview))\b",
-        re.I,
-    )
-    present_byte_scope = re.compile(
-        r"\b(?:this (?:remediation|replacement|redesign)|current|replacement|"
-        r"remediated|redesigned|latest|new)\b",
-        re.I,
-    )
     for path_text, scoped in current_sections.items():
-        # Neighboring bullets are independent, while wrapped continuation lines stay
-        # with their own semantic item.
+        # While the live receipt differs from current bytes, no current-status
+        # clause may pair a visual object with positive publication language.
+        # There are deliberately no historical, adjective, or disclaimer exceptions.
         for unit in markdown_claim_units(scoped):
-            unit_historical = historical_boundary.search(unit)
-            unit_disclaims = disclaims_replacements.search(unit)
-            for sentence in re.split(r"(?<=[.!?;])\s+", unit):
-                positive = visual_terms.search(sentence) and evidence_terms.search(sentence)
-                if not positive:
-                    continue
-                sentence_pending = pending_boundary.search(sentence)
-                sentence_historical = historical_boundary.search(sentence)
-                sentence_disclaims = disclaims_replacements.search(sentence)
-                old_claim_with_local_boundary = (
-                    explicit_old_scope.search(sentence)
-                    and not present_byte_scope.search(sentence)
-                    and unit_historical
-                    and unit_disclaims
-                )
-                if not (
-                    sentence_pending
-                    or sentence_disclaims
-                    or (sentence_historical and unit_disclaims)
-                    or old_claim_with_local_boundary
-                ):
-                    claims.append(f"{path_text}: {sentence.strip()}")
-
+            for clause in re.split(r"(?<=[.!?;])\s+", unit):
+                if visual_terms.search(clause) and evidence_terms.search(clause):
+                    claims.append(f"{path_text}: {clause.strip()}")
     if claims:
         errors.append(
             "current live presentation claim lacks matching receipt lineage "

@@ -4,7 +4,7 @@
     "reviewed_at":  "2026-08-12",
     "status":  "PASS_LOCAL",
     "fingerprints":  {
-                         "documentation":  "6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d",
+                         "documentation":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
                          "presentation":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c"
                      },
     "inspection":  {
@@ -119,5 +119,5 @@
                                "unsafe crop"
                            ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL approves the exact local visual bytes and wiring only. It does not establish deployment, rendered Pages behavior, or the GitHub repository social-preview setting."
+    "claim_boundary":  "PASS_LOCAL approves the unchanged exact visual bytes and their wiring in documentation 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e only. It does not establish deployment, rendered Pages behavior, or the GitHub repository social-preview setting."
 }

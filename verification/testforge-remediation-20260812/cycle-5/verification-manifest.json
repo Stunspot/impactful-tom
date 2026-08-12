@@ -1,0 +1,601 @@
+{
+    "manifest_version":  "1.0",
+    "target":  {
+                   "name":  "Impactful Tom documentation and presentation remediation",
+                   "revision":  "be999dfe076c3a8c83eeb733b2238b2909245b3f",
+                   "target_class":  "public documentation publication candidate"
+               },
+    "scope":  {
+                  "included":  [
+                                   "17-file customer documentation journey",
+                                   "five Pages presentation sources",
+                                   "README hero, Pages hero mark, and social card",
+                                   "visual creation policy and validator",
+                                   "documentation and presentation evidence receipts"
+                               ],
+                  "excluded":  [
+                                   "runtime redesign",
+                                   "frozen release archive mutation",
+                                   "clean-host installation",
+                                   "live Codex or Claude invocation",
+                                   "GitHub social-preview setting",
+                                   "rendered post-deployment browser behavior"
+                               ],
+                  "constraints":  [
+                                      "GitHub Actions capacity unavailable; no hosted workflow dispatch",
+                                      "no permitted existing browser after Codex restart",
+                                      "new artwork must be built-in image-generator output, never programmed artwork"
+                                  ],
+                  "safety_boundary":  [
+                                          "local non-production verification only",
+                                          "no GitHub-hosted CI",
+                                          "no destructive release archive changes"
+                                      ]
+              },
+    "claim_custody":  {
+                          "observed":  [
+                                           "candidate commit be999dfe076c3a8c83eeb733b2238b2909245b3f",
+                                           "tree cc88e68822e37f5266cb63111b5ccd0528eaf94b",
+                                           "documentation fingerprint 6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d",
+                                           "presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
+                                           "all nine local image assets directly inspected",
+                                           "12/12 unit tests and four actual static checks passed",
+                                           "24 hostile lineage cases passed across the three current customer surfaces",
+                                           "exact pinned line-ending policy passed with zero findings",
+                                           "TestForge cycles 1 through 4 REVIEW_FAIL receipts preserved; all earlier candidates withdrawn"
+                                       ],
+                          "inferred":  [
+
+                                       ],
+                          "assumed":  [
+
+                                      ],
+                          "unresolved":  [
+                                             "independent cycle-five adversarial review",
+                                             "rendered Pages browser behavior after deployment",
+                                             "manual GitHub repository social-preview replacement",
+                                             "GitHub-hosted runner and status-integration behavior"
+                                         ]
+                      },
+    "impact_map":  [
+                       {
+                           "surface":  "customer documentation",
+                           "downstream":  [
+                                              "installation",
+                                              "first use",
+                                              "maintenance",
+                                              "privacy and support decisions"
+                                          ]
+                       },
+                       {
+                           "surface":  "visual identity",
+                           "downstream":  [
+                                              "README comprehension",
+                                              "Pages recognition",
+                                              "social sharing"
+                                          ]
+                       },
+                       {
+                           "surface":  "validator contract",
+                           "downstream":  [
+                                              "future visual custody",
+                                              "local release gate",
+                                              "line-ending status"
+                                          ]
+                       }
+                   ],
+    "invariants":  [
+                       {
+                           "id":  "INV-CONTENT",
+                           "statement":  "Customer copy names the founder decision work, supported hosts, boundaries, recovery, and evidence status without vague catalog language."
+                       },
+                       {
+                           "id":  "INV-VISUAL",
+                           "statement":  "The three role assets are distinct, product-specific, correctly text-bearing or text-free for their roles, and no programmed artwork renderer is shipped."
+                       },
+                       {
+                           "id":  "INV-CLAIMS",
+                           "statement":  "Local, packaged, installed, invoked, healthy, published, and independently verified states remain distinct."
+                       },
+                       {
+                           "id":  "INV-SCOPE",
+                           "statement":  "Runtime source and frozen release archives remain unchanged."
+                       }
+                   ],
+    "risks":  [
+                  {
+                      "id":  "R-CONTENT",
+                      "severity":  "high",
+                      "statement":  "If the docs bury or blur the founder-decision capability, customers cannot judge fit or reach first value.",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-CONTENT",
+                                           "T-HESPEROS",
+                                           "EXEC-HESPEROS"
+                                       ]
+                  },
+                  {
+                      "id":  "R-VISUAL",
+                      "severity":  "high",
+                      "statement":  "If generic duplicate graphics or malformed text are accepted, the repository repeats the failed portfolio-template identity.",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-VISUAL",
+                                           "T-VISUAL",
+                                           "EXEC-VISUAL"
+                                       ]
+                  },
+                  {
+                      "id":  "R-ARTWORK",
+                      "severity":  "high",
+                      "statement":  "If a programmed renderer remains available or required, future changes can recreate the prohibited deterministic artwork.",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-ARTWORK",
+                                           "T-DOC",
+                                           "EXEC-DOC"
+                                       ]
+                  },
+                  {
+                      "id":  "R-CLAIMS",
+                      "severity":  "high",
+                      "statement":  "If static evidence is presented as live host or deployment evidence, publication status becomes false.",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-CLAIMS",
+                                           "T-CONTENT",
+                                           "EXEC-CONTENT"
+                                       ]
+                  },
+                  {
+                      "id":  "R-SCOPE",
+                      "severity":  "high",
+                      "statement":  "If frozen releases or runtime source changed during presentation work, the published package contract could drift.",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-SCOPE",
+                                           "T-RELEASE",
+                                           "T-TOPOLOGY",
+                                           "EXEC-RELEASE",
+                                           "EXEC-TOPOLOGY"
+                                       ]
+                  },
+                  {
+                      "id":  "R-EOL",
+                      "severity":  "medium",
+                      "statement":  "If text or binary attributes drift, required branch status may fail or binary assets may be corrupted.",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-EOL",
+                                           "T-EOL",
+                                           "EXEC-EOL"
+                                       ]
+                  },
+                  {
+                      "id":  "R-LINEAGE",
+                      "severity":  "high",
+                      "statement":  "If a current status section presents historical live receipts as evidence for replacement presentation bytes, customers receive false publication evidence.",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-LINEAGE",
+                                           "T-UNIT",
+                                           "EXEC-UNIT"
+                                       ]
+                  }
+              ],
+    "scenarios":  [
+                      {
+                          "id":  "S-CONTENT",
+                          "risk_ids":  [
+                                           "R-CONTENT"
+                                       ],
+                          "preconditions":  [
+                                                "17 governed documents at candidate revision"
+                                            ],
+                          "action":  "read complete journey and run Hesperos lint",
+                          "expected":  "Specific founder-decision guidance is complete and all 17 lint runs pass; unsupported claims remain bounded.",
+                          "forbidden":  [
+                                            "filename-only approval",
+                                            "vague catalog framing"
+                                        ]
+                      },
+                      {
+                          "id":  "S-VISUAL",
+                          "risk_ids":  [
+                                           "R-VISUAL"
+                                       ],
+                          "preconditions":  [
+                                                "all nine local images available"
+                                            ],
+                          "action":  "inspect decoded pixels and compare role compositions",
+                          "expected":  "README hero is text-free; Pages mark is intentionally text-free beside page copy; social card has exact title and line; roles are distinct.",
+                          "forbidden":  [
+                                            "duplicate compositions",
+                                            "pseudo-text",
+                                            "generic filler"
+                                        ]
+                      },
+                      {
+                          "id":  "S-ARTWORK",
+                          "risk_ids":  [
+                                           "R-ARTWORK"
+                                       ],
+                          "preconditions":  [
+                                                "candidate tree and documentation validator"
+                                            ],
+                          "action":  "check renderer absence and execute documentation-site gate",
+                          "expected":  "Renderer file is absent and visual custody rejects programmed artwork while exact assets pass.",
+                          "forbidden":  [
+                                            "System.Drawing renderer",
+                                            "test dependency on renderer"
+                                        ]
+                      },
+                      {
+                          "id":  "S-CLAIMS",
+                          "risk_ids":  [
+                                           "R-CLAIMS"
+                                       ],
+                          "preconditions":  [
+                                                "customer copy and hostile overclaim fixtures"
+                                            ],
+                          "action":  "execute content and documentation claim gates",
+                          "expected":  "Current docs pass and fixtures claiming unobserved host states fail as designed.",
+                          "forbidden":  [
+                                            "social preview called live before upload",
+                                            "browser behavior inferred from source"
+                                        ]
+                      },
+                      {
+                          "id":  "S-SCOPE",
+                          "risk_ids":  [
+                                           "R-SCOPE"
+                                       ],
+                          "preconditions":  [
+                                                "base and candidate revisions"
+                                            ],
+                          "action":  "inspect diff and execute release-exclusion and distribution-topology gates",
+                          "expected":  "No frozen release path or runtime source changes; canonical and Claude distributions remain aligned.",
+                          "forbidden":  [
+                                            "release/assets mutation",
+                                            "skill/runtime drift"
+                                        ]
+                      },
+                      {
+                          "id":  "S-EOL",
+                          "risk_ids":  [
+                                           "R-EOL"
+                                       ],
+                          "preconditions":  [
+                                                "candidate worktree"
+                                            ],
+                          "action":  "execute exact pinned TestForge line-ending action bytes locally",
+                          "expected":  "PASS with zero findings.",
+                          "forbidden":  [
+                                            "CR in indexed text",
+                                            "binary treated as text"
+                                        ]
+                      },
+                      {
+                          "id":  "S-LINEAGE",
+                          "risk_ids":  [
+                                           "R-LINEAGE"
+                                       ],
+                          "preconditions":  [
+                                                "current README status section, Unreleased changelog section, and provenance release/review sections",
+                                                "historical live receipt with older fingerprints and role hashes"
+                                            ],
+                          "action":  "Parse current sections into independent Markdown items with wrapped continuations, then evaluate each sentence or semicolon clause against exact receipt lineage.",
+                          "expected":  "Bounded historical items pass. Twelve exact/variant/wrapped claims and six period/semicolon contradictions fail across README, Unreleased changelog, and provenance.",
+                          "forbidden":  [
+                                            "narrow current-token requirement",
+                                            "neighboring-bullet boundary laundering",
+                                            "wrapped-line evasion",
+                                            "semicolon-clause laundering",
+                                            "duplicating detailed hashes throughout customer prose"
+                                        ]
+                      }
+                  ],
+    "tests":  [
+                  {
+                      "id":  "T-UNIT",
+                      "scenario_ids":  [
+                                           "S-CLAIMS",
+                                           "S-ARTWORK",
+                                           "S-LINEAGE"
+                                       ],
+                      "status":  "passed",
+                      "path":  "verification/tests/test_static_checks.py",
+                      "execution_id":  "EXEC-UNIT"
+                  },
+                  {
+                      "id":  "T-DOC",
+                      "scenario_ids":  [
+                                           "S-ARTWORK",
+                                           "S-CONTENT"
+                                       ],
+                      "status":  "passed",
+                      "path":  "verification/scripts/check_documentation_site.py",
+                      "execution_id":  "EXEC-DOC"
+                  },
+                  {
+                      "id":  "T-CONTENT",
+                      "scenario_ids":  [
+                                           "S-CLAIMS"
+                                       ],
+                      "status":  "passed",
+                      "path":  "verification/scripts/check_content_boundaries.py",
+                      "execution_id":  "EXEC-CONTENT"
+                  },
+                  {
+                      "id":  "T-RELEASE",
+                      "scenario_ids":  [
+                                           "S-SCOPE"
+                                       ],
+                      "status":  "passed",
+                      "path":  "verification/scripts/check_release_exclusions.py",
+                      "execution_id":  "EXEC-RELEASE"
+                  },
+                  {
+                      "id":  "T-TOPOLOGY",
+                      "scenario_ids":  [
+                                           "S-SCOPE"
+                                       ],
+                      "status":  "passed",
+                      "path":  "verification/scripts/check_distribution_topology.py",
+                      "execution_id":  "EXEC-TOPOLOGY"
+                  },
+                  {
+                      "id":  "T-EOL",
+                      "scenario_ids":  [
+                                           "S-EOL"
+                                       ],
+                      "status":  "passed",
+                      "path":  "verification/testforge-remediation-20260812/raw-line-ending-policy.txt",
+                      "execution_id":  "EXEC-EOL"
+                  },
+                  {
+                      "id":  "T-HESPEROS",
+                      "scenario_ids":  [
+                                           "S-CONTENT"
+                                       ],
+                      "status":  "passed",
+                      "path":  "documentation-review.json",
+                      "execution_id":  "EXEC-HESPEROS"
+                  },
+                  {
+                      "id":  "T-ACCESS",
+                      "scenario_ids":  [
+                                           "S-CONTENT"
+                                       ],
+                      "status":  "passed",
+                      "path":  "documentation-accessibility-review.json",
+                      "execution_id":  "EXEC-ACCESS"
+                  },
+                  {
+                      "id":  "T-VISUAL",
+                      "scenario_ids":  [
+                                           "S-VISUAL"
+                                       ],
+                      "status":  "passed",
+                      "path":  "visual-asset-review.json",
+                      "execution_id":  "EXEC-VISUAL"
+                  }
+              ],
+    "executions":  [
+                       {
+                           "id":  "EXEC-UNIT",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "python",
+                                           "-X",
+                                           "utf8",
+                                           "-m",
+                                           "unittest",
+                                           "discover",
+                                           "-s",
+                                           "verification/tests",
+                                           "-v"
+                                       ],
+                           "cwd":  ".",
+                           "started_utc":  "2026-08-12T18:52:55.7412680Z",
+                           "ended_utc":  "2026-08-12T18:53:08.0103974Z",
+                           "raw_evidence":  "verification/testforge-remediation-20260812/cycle-5/raw-unittest.txt"
+                       },
+                       {
+                           "id":  "EXEC-DOC",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "python",
+                                           "-X",
+                                           "utf8",
+                                           "verification/scripts/check_documentation_site.py",
+                                           "--repo",
+                                           "."
+                                       ],
+                           "cwd":  ".",
+                           "started_utc":  "2026-08-12T18:53:08.0458148Z",
+                           "ended_utc":  "2026-08-12T18:53:08.2735278Z",
+                           "raw_evidence":  "verification/testforge-remediation-20260812/cycle-5/raw-documentation-site.txt"
+                       },
+                       {
+                           "id":  "EXEC-CONTENT",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "python",
+                                           "-X",
+                                           "utf8",
+                                           "verification/scripts/check_content_boundaries.py",
+                                           "--repo",
+                                           "."
+                                       ],
+                           "cwd":  ".",
+                           "started_utc":  "2026-08-12T18:53:08.2770985Z",
+                           "ended_utc":  "2026-08-12T18:53:08.4222647Z",
+                           "raw_evidence":  "verification/testforge-remediation-20260812/cycle-5/raw-content-boundaries.txt"
+                       },
+                       {
+                           "id":  "EXEC-RELEASE",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "python",
+                                           "-X",
+                                           "utf8",
+                                           "verification/scripts/check_release_exclusions.py",
+                                           "--repo",
+                                           "."
+                                       ],
+                           "cwd":  ".",
+                           "started_utc":  "2026-08-12T18:53:08.4255882Z",
+                           "ended_utc":  "2026-08-12T18:53:08.6398317Z",
+                           "raw_evidence":  "verification/testforge-remediation-20260812/cycle-5/raw-release-exclusions.txt"
+                       },
+                       {
+                           "id":  "EXEC-TOPOLOGY",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "python",
+                                           "-X",
+                                           "utf8",
+                                           "verification/scripts/check_distribution_topology.py",
+                                           "--repo",
+                                           ".",
+                                           "--claude-root",
+                                           "dist/claude-code/impactful-tom",
+                                           "--require-claude"
+                                       ],
+                           "cwd":  ".",
+                           "started_utc":  "2026-08-12T18:53:08.6432504Z",
+                           "ended_utc":  "2026-08-12T18:53:08.7858934Z",
+                           "raw_evidence":  "verification/testforge-remediation-20260812/cycle-5/raw-distribution-topology.txt"
+                       },
+                       {
+                           "id":  "EXEC-EOL",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "python",
+                                           "-X",
+                                           "utf8",
+                                           "C:\\Users\\user\\AppData\\Local\\Temp\\impactful-tom-testforge-24b9b3d5-verify_line_endings.py",
+                                           "--root",
+                                           "E:\\Github\\.portfolio-repair-20260812\\impactful-tom"
+                                       ],
+                           "cwd":  ".",
+                           "started_utc":  "2026-08-12T18:53:08.8387082Z",
+                           "ended_utc":  "2026-08-12T18:53:08.9107151Z",
+                           "raw_evidence":  "verification/testforge-remediation-20260812/cycle-5/raw-line-ending-policy.txt"
+                       },
+                       {
+                           "id":  "EXEC-HESPEROS",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "complete Hesperos documentation rereview bound to unchanged governed bytes"
+                                       ],
+                           "cwd":  ".",
+                           "raw_evidence":  "verification/documentation/hesperos-20260812-remediation-evidence.md"
+                       },
+                       {
+                           "id":  "EXEC-ACCESS",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "separate static documentation accessibility review bound to unchanged governed bytes"
+                                       ],
+                           "cwd":  ".",
+                           "raw_evidence":  "documentation-accessibility-review.json"
+                       },
+                       {
+                           "id":  "EXEC-VISUAL",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "command":  [
+                                           "direct decoded-pixel inspection of all nine local images"
+                                       ],
+                           "cwd":  ".",
+                           "raw_evidence":  "visual-asset-review.json"
+                       }
+                   ],
+    "findings":  [
+                     {
+                         "id":  "F-CYCLE1-LINEAGE",
+                         "classification":  "PRODUCT_DEFECT",
+                         "severity":  "high",
+                         "statement":  "Cycle one customer copy misbound the August 11 receipt to replacement presentation bytes.",
+                         "status":  "remediated_before_cycle_2",
+                         "resolution":  "Corrected all three current customer surfaces and added a first hostile oracle."
+                     },
+                     {
+                         "id":  "F-CYCLE2-ORACLE",
+                         "classification":  "PRODUCT_DEFECT",
+                         "severity":  "high",
+                         "statement":  "Cycle two oracle still missed the exact escaped sentence and overstated per-surface hash duplication.",
+                         "status":  "remediated_before_cycle_3",
+                         "resolution":  "Discarded the sentence-keyword model; added current-section paragraph analysis, exact receipt comparison, nine hostile combinations, and an accurate canonical-receipt ownership boundary."
+                     },
+                     {
+                         "id":  "F-CYCLE3-ITEMS",
+                         "classification":  "PRODUCT_DEFECT",
+                         "severity":  "high",
+                         "statement":  "Cycle three blank-line paragraph units let neighboring changelog bullets share pending status.",
+                         "status":  "remediated_before_cycle_4",
+                         "resolution":  "Parse neighboring bullets independently, preserve wrapped continuations, split semicolon clauses, and add 18 hostile surface cases."
+                     },
+                     {
+                         "id":  "F-CYCLE4-DATED-OBJECT",
+                         "classification":  "PRODUCT_DEFECT",
+                         "severity":  "high",
+                         "statement":  "Cycle four treated a date as enough to pardon a clause that explicitly claimed this remediation replacement assets were live.",
+                         "status":  "remediated_before_cycle_5",
+                         "resolution":  "Require an explicit old-object boundary in the positive clause, reject present-byte scope, and add six dated period-and-semicolon attacks across all three governed current surfaces."
+                     }
+                 ],
+    "residual_risks":  [
+                           {
+                               "id":  "RR-LIVE-BROWSER",
+                               "statement":  "Rendered Pages and assistive-technology behavior remain unobserved after deployment.",
+                               "treatment":  "Require live rendered-browser inspection before repository PASS."
+                           },
+                           {
+                               "id":  "RR-SOCIAL",
+                               "statement":  "GitHub repository social preview will remain the prior image until manually uploaded.",
+                               "treatment":  "Manual owner/browser upload of docs/assets/images/impactful-tom-social-card.png, followed by pixel verification."
+                           },
+                           {
+                               "id":  "RR-HOSTED-CI",
+                               "statement":  "GitHub-hosted workflow behavior is untested because account capacity is unavailable.",
+                               "treatment":  "Use local exact-action-byte substitute; do not claim hosted runner, trigger, permission, artifact, or status integration."
+                           }
+                       ],
+    "review":  {
+                   "status":  "REVIEW_FAIL",
+                   "findings":  [
+                                    {
+                                        "severity":  "HIGH",
+                                        "risk_id":  "R-LINEAGE",
+                                        "summary":  "Historical and disclaimer allowances could still launder a present-byte publication claim across clauses.",
+                                        "receipt":  "cycle-5-review-fail.md"
+                                    },
+                                    {
+                                        "severity":  "MEDIUM",
+                                        "risk_id":  "R-EOL",
+                                        "summary":  "The cycle-specific raw EOL receipt was empty and T-EOL referenced older evidence.",
+                                        "receipt":  "cycle-5-review-fail.md"
+                                    }
+                                ]
+               },
+    "decision":  {
+                     "status":  "NOT_READY",
+                     "basis":  [
+                                   "Independent review demonstrated a live lineage bypass and invalid EOL execution evidence."
+                               ],
+                     "authority_required":  [
+                                                "Withdraw candidate five and start a fresh cycle after clause-local semantic repair, fully re-bound hostile tests, and exact-blob EOL capture."
+                                            ]
+                 }
+}

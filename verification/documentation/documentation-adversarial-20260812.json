@@ -8,7 +8,7 @@
     "starting_state":  "UNKNOWN",
     "disposition":  "PASS_LOCAL_WITH_LIVE_GATES",
     "fingerprints":  {
-                         "documentation":  "6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d",
+                         "documentation":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
                          "presentation":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c"
                      },
     "challenges":  [
@@ -34,7 +34,7 @@
                            "id":  "A-CLAIMS",
                            "question":  "Does current copy confuse constructed, packaged, installed, invoked, healthy, published, or independently verified?",
                            "result":  "PASS",
-                           "evidence":  "Current README, Unreleased changelog, and provenance review sections explicitly classify the August 11 receipt as historical and deny coverage of replacement presentation bytes. Detailed old role hashes remain in the linked canonical receipt. The replacement section-scoped paragraph contract compares current documentation, presentation, and three role hashes and rejects nine hostile surface/wording combinations, including the exact cycle-one escape."
+                           "evidence":  "Current status copy points to exact historical receipt custody without positive old-presentation claims. While live receipt hashes differ, the zero-exception oracle rejects every current-status clause that pairs a visual object with live, deployed, published, confirmed, byte-parity, or equivalent positive publication language. Thirty-nine fully re-bound hostile surface cases cover date, adjective, punctuation, wrapping, same-item, and neighboring-bullet attacks."
                        },
                        {
                            "id":  "A-SCOPE",
@@ -53,7 +53,7 @@
                             {
                                 "name":  "unittest",
                                 "result":  "PASS",
-                                "evidence":  "11/11 passed; lineage coverage includes nine exact/variant surface cases and three contradictory historical-item cases"
+                                "evidence":  "13/13 passed; lineage coverage includes 39 fully re-bound hostile surface cases plus a clean bounded-corpus control."
                             },
                             {
                                 "name":  "documentation_site",
@@ -83,7 +83,9 @@
                                 "name":  "line-ending-policy",
                                 "result":  "PASS",
                                 "implementation":  "TestForge action commit 24b9b3d5ee375ec7e19a619624bcfc4a7ddb887d",
-                                "findings":  0
+                                "findings":  0,
+                                "verifier_blob_sha1":  "6049b85969f8f8b0ccbe1b8f034c9338da83859a",
+                                "capture":  "binary-safe git cat-file materialization; blob identity verified before execution"
                             }
                         ],
     "live_gates":  [
@@ -109,7 +111,7 @@
                        }
                    ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation fingerprint 6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. The linked historical receipt owns old image hashes; publication and rendered behavior remain separate gates.",
+    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation fingerprint 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. Publication, rendered behavior, manual GitHub social-preview replacement remain separate gates.",
     "repaired_findings":  [
                               {
                                   "id":  "TF1-EVIDENCE-LINEAGE",
@@ -131,6 +133,27 @@
                                   "source":  "TestForge cycle 3 REVIEW_FAIL",
                                   "repair":  "Changed claim analysis from blank-line paragraphs to independent physical Markdown items; added contiguous Unreleased-bullet and contradictory-in-item regressions.",
                                   "verification":  "Real corpus passes; 12 hostile surface cases fail; neighboring bullets cannot lend a pending boundary."
+                              },
+                              {
+                                  "id":  "TF4-DATED-OBJECT",
+                                  "severity":  "HIGH",
+                                  "source":  "TestForge cycle 4 REVIEW_FAIL",
+                                  "repair":  "Removed the date-only exception and added dated replacement claims with period and semicolon forms across all three surfaces.",
+                                  "verification":  "Superseded by the stronger zero-exception cycle-six oracle."
+                              },
+                              {
+                                  "id":  "TF5-HISTORICAL-LAUNDERING",
+                                  "severity":  "HIGH",
+                                  "source":  "TestForge cycle 5 REVIEW_FAIL",
+                                  "repair":  "Removed historical and disclaimer exceptions entirely; current status prose no longer narrates positive old-presentation deployment.",
+                                  "verification":  "Thirty-nine fully re-bound hostile cases fail specifically on lineage while the bounded control passes."
+                              },
+                              {
+                                  "id":  "TF5-EOL-CAPTURE",
+                                  "severity":  "MEDIUM",
+                                  "source":  "TestForge cycle 5 REVIEW_FAIL",
+                                  "repair":  "Replaced empty-script execution with binary-safe git cat-file materialization and explicit blob-identity verification.",
+                                  "verification":  "Final-index exact-blob execution remains the next gate."
                               }
                           ]
 }
