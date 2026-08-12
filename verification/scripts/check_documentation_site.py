@@ -886,8 +886,13 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
         return units
 
     claims: list[str] = []
-    dated_old_evidence = re.compile(
-        r"\b(?:2026-08-11|at that time|August 11)\b",
+    explicit_old_scope = re.compile(
+        r"\b(?:at that time|historical (?:presentation|visual(?: assets?)?|social preview))\b",
+        re.I,
+    )
+    present_byte_scope = re.compile(
+        r"\b(?:this (?:remediation|replacement|redesign)|current|replacement|"
+        r"remediated|redesigned|latest|new)\b",
         re.I,
     )
     for path_text, scoped in current_sections.items():
@@ -904,7 +909,8 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
                 sentence_historical = historical_boundary.search(sentence)
                 sentence_disclaims = disclaims_replacements.search(sentence)
                 old_claim_with_local_boundary = (
-                    dated_old_evidence.search(sentence)
+                    explicit_old_scope.search(sentence)
+                    and not present_byte_scope.search(sentence)
                     and unit_historical
                     and unit_disclaims
                 )

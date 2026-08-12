@@ -294,6 +294,37 @@ class StaticCheckFixtures(unittest.TestCase):
                         ),
                         result,
                     )
+    def test_dated_replacement_claim_inside_historical_item_is_rejected(self) -> None:
+        contradictions = [
+            " On 2026-08-11, public readback confirmed this remediation's replacement social card is live.",
+            "; On 2026-08-11, public readback confirmed this remediation's replacement social card is live.",
+        ]
+        surfaces = {
+            "README.md": "Earlier release tags remain historical custody and are not rewritten.",
+            "CHANGELOG.md": "its recorded role-image hashes do not verify the replacement hero, social card, or palette.",
+            "docs/provenance-and-verification.md": "Public availability does not establish host installation or invocation.",
+        }
+        for path_text, marker in surfaces.items():
+            for contradiction in contradictions:
+                with self.subTest(path=path_text, contradiction=contradiction), tempfile.TemporaryDirectory() as temp:
+                    candidate = Path(temp)
+                    copy_documentation_fixture(candidate)
+                    path = candidate / path_text
+                    text = path.read_text(encoding="utf-8")
+                    self.assertIn(marker, text)
+                    path.write_text(
+                        text.replace(marker, marker + contradiction, 1),
+                        encoding="utf-8",
+                    )
+                    code, result = run("check_documentation_site.py", "--repo", str(candidate))
+                    self.assertEqual(code, 1, result)
+                    self.assertTrue(
+                        any(
+                            "current live presentation claim lacks matching receipt lineage" in item
+                            for item in result["errors"]
+                        ),
+                        result,
+                    )
     def test_documentation_release_marker_tracks_manifest_version(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             candidate = Path(temp)
