@@ -4,15 +4,15 @@
                    "name":  "Impactful Tom",
                    "package_version":  "1.1.1",
                    "package_fingerprint":  "1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9",
-                   "documentation_fingerprint":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
-                   "presentation_fingerprint":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
+                   "documentation_fingerprint":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
+                   "presentation_fingerprint":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968",
                    "target_class":  "public_documentation_and_presentation_remediation"
                },
     "scope":  {
                   "included":  [
                                    "complete customer documentation journey",
                                    "README and Pages presentation",
-                                   "all nine tracked visual assets",
+                                   "all ten tracked visual assets",
                                    "current static checks and exact evidence boundaries"
                                ],
                   "excluded":  [
@@ -26,8 +26,8 @@
     "observed":  [
                      "All 17 customer documents and five presentation-source files were read completely and bound to separate fingerprints.",
                      "The canonical 1.1.1 runtime skill and three references were read for claim verification.",
-                     "All nine tracked local images were opened and visually inspected.",
-                     "The README and social images were replaced with separate built-in image-generator originals; the Pages mark and icons were preserved.",
+                     "All ten tracked local images were opened and visually inspected.",
+                     "The README, Pages, and social roles use distinct product-specific assets; the application mark and icons remain preserved.",
                      "The obsolete programmed-art renderer was removed and the validator now rejects programmed artwork.",
                      "Nine regression tests, four actual static checks, and the exact pinned line-ending policy passed locally."
                  ],
@@ -68,7 +68,7 @@
                   "documentation_accessibility":  "REVIEW_PASS",
                   "visual_review":  "PASS_LOCAL",
                   "adversarial_review":  "PASS_LOCAL_WITH_LIVE_GATES",
-                  "testforge_final":  "NOT_REQUIRED",
+                  "testforge_final":  "PASS_LOCAL",
                   "final_live_verification":  "PENDING"
               },
     "decision":  {

@@ -8,8 +8,8 @@
     "starting_state":  "UNKNOWN",
     "disposition":  "PASS_LOCAL_WITH_LIVE_GATES",
     "fingerprints":  {
-                         "documentation":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
-                         "presentation":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c"
+                         "documentation":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
+                         "presentation":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968"
                      },
     "challenges":  [
                        {
@@ -22,7 +22,7 @@
                            "id":  "A-VISUAL",
                            "question":  "Are role assets actually distinct and product-specific?",
                            "result":  "PASS",
-                           "evidence":  "README 2060x763 text-free constraint-table scene; Pages 512x512 preserved mark; social 1731x909 blocked-path scene with exact title and line."
+                           "evidence":  "README 2060x763 constraint-table scene; Pages 1536x1024 decision-workbench scene; social 1731x909 blocked-path scene with exact title and line. Three distinct files, compositions, and aspect ratios."
                        },
                        {
                            "id":  "A-ARTWORK",
@@ -109,5 +109,5 @@
                        }
                    ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation, presentation, visual, accessibility, and adversarial readiness for the exact fingerprints only. It does not establish publication or rendered live behavior."
+    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local readiness for documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968 only; it does not establish publication or rendered live behavior."
 }

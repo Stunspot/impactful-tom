@@ -16,13 +16,13 @@
                          "algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
                          "documentation":  {
                                                "file_count":  17,
-                                               "value":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
+                                               "value":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
                                                "recomputed":  true,
                                                "matched_expected":  true
                                            },
                          "presentation":  {
                                               "file_count":  5,
-                                              "value":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
+                                              "value":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968",
                                               "recomputed":  true,
                                               "matched_expected":  true
                                           }
@@ -66,7 +66,8 @@
                     "Hesperos accessible-Markdown lint across all 17 governed documents",
                     "Post-finding complete Hesperos lint rerun plus focused re-reading of every changed customer passage and evidence link",
                     "Third complete post-finding Hesperos lint pass and focused reading of the rethought current-section lineage boundary",
-                    "Final complete Hesperos lint pass and full customer-journey reread after the zero-exception lineage rewrite"
+                    "Final complete Hesperos lint pass and full customer-journey reread after the zero-exception lineage rewrite",
+                    "Post-repair complete document-set re-review plus focused alternative-text and responsive-image review for the dedicated Pages hero"
                 ],
     "results":  {
                     "navigation_and_recovery":  "PASS",
@@ -111,5 +112,5 @@
                            "A material renderer, layout, navigation, theme, or hosting change",
                            "Any new accessibility or formal-conformance claim"
                        ],
-    "claim_boundary":  "REVIEW_PASS establishes static documentation accessibility readiness for documentation 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only."
+    "claim_boundary":  "REVIEW_PASS establishes static documentation accessibility readiness for documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968 only."
 }

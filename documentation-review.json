@@ -10,8 +10,8 @@
     "starting_state":  "UNKNOWN",
     "disposition":  "REVIEW_PASS",
     "unresolved_material_findings":  0,
-    "documentation_fingerprint":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
-    "presentation_fingerprint":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
+    "documentation_fingerprint":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
+    "presentation_fingerprint":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968",
     "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
     "reviewed_files":  [
                            "README.md",
@@ -40,7 +40,7 @@
                                           "documentation-manifest.json"
                                       ],
     "reviewer":  "Hesperos substantive documentation review",
-    "review_run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-4",
+    "review_run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-5",
     "review_record":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
     "accessibility_receipt":  "documentation-accessibility-review.json",
     "material_findings":  [
@@ -79,6 +79,12 @@
                                   "status":  "REPAIRED",
                                   "finding":  "Historical, dated, and disclaimer exceptions repeatedly allowed current visual-publication claims to borrow boundaries from neighboring clauses.",
                                   "repair":  "Removed positive old-presentation narration from current customer status sections and replaced the lineage oracle with a zero-exception stale-receipt invariant plus fully re-bound hostile fixtures."
+                              },
+                              {
+                                  "id":  "VISUAL-ROLE-SEPARATION",
+                                  "status":  "REPAIRED",
+                                  "finding":  "The square application mark was doing double duty as the Pages hero.",
+                                  "repair":  "Generated and wired a dedicated 1536x1024 text-free decision-workbench Pages hero, retained the mark only as an application/navigation identity asset, and re-reviewed the complete customer-document set."
                               }
                           ],
     "conditions":  [
@@ -102,5 +108,5 @@
                                 "Clean public-route installation, invocation, restart resilience, and live Claude Code behavior remain unobserved."
                             ],
     "rerun_trigger":  "Any byte change to one of the 17 customer documents or five presentation sources invalidates this review.",
-    "claim_boundary":  "REVIEW_PASS binds documentation 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e and presentation 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only; detailed historical hashes remain in verification/live-verification.json, while publication and rendered behavior remain separate."
+    "claim_boundary":  "REVIEW_PASS binds documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968 only; publication and rendered behavior remain separate."
 }

@@ -4,15 +4,15 @@
     "reviewed_at":  "2026-08-12",
     "status":  "PASS_LOCAL",
     "fingerprints":  {
-                         "documentation":  "659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e",
-                         "presentation":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c"
+                         "documentation":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
+                         "presentation":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968"
                      },
     "inspection":  {
                        "method":  "Every tracked image was opened and visually inspected from decoded pixels. Replacement role artwork was evaluated directly from the built-in image generator output.",
                        "metadata_only":  false,
                        "screenshots_used":  false,
                        "programmed_artwork_used":  false,
-                       "files_opened":  9
+                       "files_opened":  10
                    },
     "role_assets":  [
                         {
@@ -29,15 +29,15 @@
                         },
                         {
                             "role":  "GitHub Pages hero",
-                            "path":  "docs/assets/images/impactful-tom-mark-512.png",
-                            "dimensions":  "512x512",
-                            "sha256":  "0a2468616f96be4cba1e943bd51a480f7db74b8e9f0856476079daefd1f08403",
-                            "creation_method":  "preserved prior product-identity asset; not regenerated",
+                            "path":  "docs/assets/images/impactful-tom-pages-hero.png",
+                            "dimensions":  "1536x1024",
+                            "sha256":  "b8c8c3edcf8b8b93e3003f7bef2f4620af6d475fb1ca5b18f979f6890bc96b4c",
+                            "creation_method":  "built-in image generator; original output bytes preserved unchanged",
                             "text":  [
 
                                      ],
                             "verdict":  "PASS",
-                            "judgment":  "Recognizable text-free square product mark used beside rendered hero title and summary; centered, high contrast, crop-safe, and visually distinct from both generated scenes."
+                            "judgment":  "Text-free overhead founder decision bench: two hands isolate one brass constraint from tangled paths and select a clear next move. Strong focal hierarchy, crop-safe 3:2 composition, product-specific physical metaphor, no pseudo-text, and clearly distinct from the README scene and social card."
                         },
                         {
                             "role":  "Social share/Open Graph card",
@@ -119,5 +119,5 @@
                                "unsafe crop"
                            ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL approves the unchanged exact visual bytes and their wiring in documentation 659e5b97c147e510cea288e6cd6223832d5e52c61f17556a8658a0ecdbf39b5e only. It does not establish deployment, rendered Pages behavior, or the GitHub repository social-preview setting."
+    "claim_boundary":  "PASS_LOCAL approves the exact visual bytes and wiring in documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968 only; it does not establish deployment, rendered Pages behavior, or the GitHub repository social-preview setting."
 }

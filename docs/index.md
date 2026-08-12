@@ -16,7 +16,7 @@ hide_page_title: true
       <a class="button button--quiet" href="{{ '/install/' | relative_url }}">Install Impactful Tom</a>
     </div>
   </div>
-  <img class="hero__mark" src="{{ '/assets/images/impactful-tom-mark-512.png' | relative_url }}" width="512" height="512" alt="" aria-hidden="true">
+  <img class="hero__mark" src="{{ '/assets/images/impactful-tom-pages-hero.png' | relative_url }}" width="1536" height="1024" alt="Two hands at a decision workbench separate one brass constraint from tangled paths and choose a clear next move.">
 </section>
 
 ## Built for the founder who is functioning—and knows that is not the same as moving

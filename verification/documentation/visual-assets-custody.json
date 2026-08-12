@@ -37,8 +37,17 @@
                         "creation_method":  "image-generator original; output bytes preserved unchanged"
                     },
                     {
+                        "path":  "docs/assets/images/impactful-tom-pages-hero.png",
+                        "purpose":  "GitHub Pages hero",
+                        "width":  1536,
+                        "height":  1024,
+                        "bytes":  3033435,
+                        "sha256":  "b8c8c3edcf8b8b93e3003f7bef2f4620af6d475fb1ca5b18f979f6890bc96b4c",
+                        "creation_method":  "built-in image generator original; output bytes preserved unchanged"
+                    },
+                    {
                         "path":  "docs/assets/images/impactful-tom-mark-512.png",
-                        "purpose":  "Pages hero and web-app icon",
+                        "purpose":  "application mark",
                         "width":  512,
                         "height":  512,
                         "bytes":  269256,
@@ -96,6 +105,7 @@
                                  "reviewed":  [
                                                   "docs/assets/images/impactful-tom-header.png",
                                                   "docs/assets/images/impactful-tom-social-card.png",
+                                                  "docs/assets/images/impactful-tom-pages-hero.png",
                                                   "docs/assets/images/impactful-tom-mark-512.png",
                                                   "docs/assets/images/impactful-tom-mark-192.png",
                                                   "docs/assets/images/apple-touch-icon.png",
@@ -105,9 +115,10 @@
                                                   "plugins/impactful-tom/assets/founder-constraint-mark.png"
                                               ],
                                  "observed":  [
+                                                  "Pages hero is a text-free overhead decision workbench: two hands isolate one brass constraint from tangled paths and select a clear next move; composition is coherent, crop-safe, and visually distinct from the README and social assets.",
                                                   "README hero is text-free and depicts one physical constraint blocking many competing paths.",
                                                   "Social card contains the exact product title and identifying line with no stray or pseudo-text.",
-                                                  "Pages hero mark remains crisp, recognizable, centered, and text-free because the rendered page supplies adjacent copy.",
+                                                  "The preserved application mark remains crisp, recognizable, centered, and text-free in its navigation and icon roles.",
                                                   "Role assets are distinct files, compositions, and aspect ratios; they are not crops or duplicates.",
                                                   "No blank field, accidental transparency, incoherent artifact, illegible text, weak identity, or unsafe crop was accepted."
                                               ],

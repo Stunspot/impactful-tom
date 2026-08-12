@@ -38,8 +38,13 @@
       "dimensions": "1731x909"
     },
     {
+      "path": "docs/assets/images/impactful-tom-pages-hero.png",
+      "purpose": "GitHub Pages hero",
+      "dimensions": "1536x1024"
+    },
+    {
       "path": "docs/assets/images/impactful-tom-mark-512.png",
-      "purpose": "Pages hero and application mark",
+      "purpose": "Application mark",
       "dimensions": "512x512"
     },
     {

@@ -52,6 +52,7 @@ PAGE_FILES = [
 PNG_CONTRACTS = {
     "docs/assets/images/impactful-tom-header.png": (2060, 763, 3_000_000),
     "docs/assets/images/impactful-tom-social-card.png": (1731, 909, 3_000_000),
+    "docs/assets/images/impactful-tom-pages-hero.png": (1536, 1024, 4_000_000),
     "docs/assets/images/impactful-tom-mark-512.png": (512, 512, 500_000),
     "docs/assets/images/impactful-tom-mark-192.png": (192, 192, 150_000),
     "docs/assets/images/apple-touch-icon.png": (180, 180, 150_000),
