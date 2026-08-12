@@ -1,0 +1,107 @@
+[
+    {
+        "id":  "EXEC-UNIT",
+        "status":  "passed",
+        "exit_code":  0,
+        "command":  [
+                        "python",
+                        "-X",
+                        "utf8",
+                        "-m",
+                        "unittest",
+                        "discover",
+                        "-s",
+                        "verification/tests",
+                        "-v"
+                    ],
+        "cwd":  ".",
+        "started_utc":  "2026-08-12T18:19:51.4364584Z",
+        "ended_utc":  "2026-08-12T18:19:56.2416526Z",
+        "raw_evidence":  "verification/testforge-remediation-20260812/cycle-2/raw-unittest.txt"
+    },
+    {
+        "id":  "EXEC-DOC",
+        "status":  "passed",
+        "exit_code":  0,
+        "command":  [
+                        "python",
+                        "-X",
+                        "utf8",
+                        "verification/scripts/check_documentation_site.py",
+                        "--repo",
+                        "."
+                    ],
+        "cwd":  ".",
+        "started_utc":  "2026-08-12T18:19:56.2496701Z",
+        "ended_utc":  "2026-08-12T18:19:56.4714804Z",
+        "raw_evidence":  "verification/testforge-remediation-20260812/cycle-2/raw-documentation-site.txt"
+    },
+    {
+        "id":  "EXEC-CONTENT",
+        "status":  "passed",
+        "exit_code":  0,
+        "command":  [
+                        "python",
+                        "-X",
+                        "utf8",
+                        "verification/scripts/check_content_boundaries.py",
+                        "--repo",
+                        "."
+                    ],
+        "cwd":  ".",
+        "started_utc":  "2026-08-12T18:19:56.4724784Z",
+        "ended_utc":  "2026-08-12T18:19:56.6033992Z",
+        "raw_evidence":  "verification/testforge-remediation-20260812/cycle-2/raw-content-boundaries.txt"
+    },
+    {
+        "id":  "EXEC-RELEASE",
+        "status":  "passed",
+        "exit_code":  0,
+        "command":  [
+                        "python",
+                        "-X",
+                        "utf8",
+                        "verification/scripts/check_release_exclusions.py",
+                        "--repo",
+                        "."
+                    ],
+        "cwd":  ".",
+        "started_utc":  "2026-08-12T18:19:56.6043674Z",
+        "ended_utc":  "2026-08-12T18:19:56.8049839Z",
+        "raw_evidence":  "verification/testforge-remediation-20260812/cycle-2/raw-release-exclusions.txt"
+    },
+    {
+        "id":  "EXEC-TOPOLOGY",
+        "status":  "passed",
+        "exit_code":  0,
+        "command":  [
+                        "python",
+                        "-X",
+                        "utf8",
+                        "verification/scripts/check_distribution_topology.py",
+                        "--repo",
+                        ".",
+                        "--claude-root",
+                        "dist/claude-code/impactful-tom",
+                        "--require-claude"
+                    ],
+        "cwd":  ".",
+        "started_utc":  "2026-08-12T18:19:56.8059809Z",
+        "ended_utc":  "2026-08-12T18:19:56.9350097Z",
+        "raw_evidence":  "verification/testforge-remediation-20260812/cycle-2/raw-distribution-topology.txt"
+    },
+    {
+        "id":  "EXEC-EOL",
+        "status":  "passed",
+        "exit_code":  0,
+        "command":  [
+                        "git show TestForge@24b9b3d5ee375ec7e19a619624bcfc4a7ddb887d:tools/verify_line_endings.py",
+                        "|",
+                        "python -X utf8 - --root ."
+                    ],
+        "cwd":  ".",
+        "started_utc":  "2026-08-12T18:19:56.9371271Z",
+        "ended_utc":  "2026-08-12T18:19:58.0562071Z",
+        "raw_evidence":  "verification/testforge-remediation-20260812/cycle-2/raw-line-ending-policy.txt"
+    }
+]

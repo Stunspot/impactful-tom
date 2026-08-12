@@ -5,7 +5,7 @@
                     "version":  "1.1.1"
                 },
     "created_at":  "2026-08-12",
-    "documentation_fingerprint":  "173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85",
+    "documentation_fingerprint":  "6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d",
     "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
     "authored_files":  [
                            {
@@ -14,9 +14,9 @@
                                "sha256":  "a4a3852a9465977bd6693f60b88452f545099c44d0295907399fdee1d57a694f"
                            },
                            {
-                               "bytes":  4968,
+                               "bytes":  5211,
                                "path":  "CHANGELOG.md",
-                               "sha256":  "9e1fe207b8d97f4d096c3a71c6a31fec02da38de2a51408bee52e0b9c29e9956"
+                               "sha256":  "0f60f26351b5c185f9175a87b950f025ef3ba47efd4cb4713c592d6104f77aca"
                            },
                            {
                                "bytes":  1668,
@@ -127,7 +127,7 @@
                       "authorship_scope":  "complete-remediation-rereview",
                       "capability":  "hesperos-documentation",
                       "mode":  "main-agent-authorship",
-                      "run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-2"
+                      "run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-3"
                   },
     "documentation_manifest":  {
                                    "bytes":  3888,
@@ -135,26 +135,26 @@
                                    "sha256":  "d8072161db0785b3a6ceaa2133de8e35134b03c1836e29856af63e05efade854"
                                },
     "evidence_packet":  {
-                            "bytes":  2218,
+                            "bytes":  2580,
                             "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
-                            "sha256":  "c63d87bd2cfe78c340ba3a8da0e46f54f096f278996d92f997f2af1885d35854"
+                            "sha256":  "f9acb5bc803bf803903736b42950065bf3df026c8308360816deab435c7e6f31"
                         },
     "authoring_response":  {
-                               "bytes":  558,
+                               "bytes":  606,
                                "path":  "verification/documentation/hesperos-20260812-remediation-response.txt",
-                               "sha256":  "506ba04f19d6365883a68d5f5c7eb3ab7a085be5a9084b2d5cd318d1fc152d73"
+                               "sha256":  "1adde3d4d7e72edd25402671fb1b277529db65e01f3aacd4f95a146a00c5a299"
                            },
     "execution_evidence":  [
                                {
-                                   "bytes":  2218,
+                                   "bytes":  2580,
                                    "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
-                                   "sha256":  "c63d87bd2cfe78c340ba3a8da0e46f54f096f278996d92f997f2af1885d35854"
+                                   "sha256":  "f9acb5bc803bf803903736b42950065bf3df026c8308360816deab435c7e6f31"
                                },
                                {
-                                   "bytes":  558,
+                                   "bytes":  606,
                                    "path":  "verification/documentation/hesperos-20260812-remediation-response.txt",
-                                   "sha256":  "506ba04f19d6365883a68d5f5c7eb3ab7a085be5a9084b2d5cd318d1fc152d73"
+                                   "sha256":  "1adde3d4d7e72edd25402671fb1b277529db65e01f3aacd4f95a146a00c5a299"
                                }
                            ],
-    "claim_boundary":  "Binds the exact 17-file customer documentation set and separate five-file presentation-source set after TestForge evidence-lineage repair. It does not prove live deployment, host behavior, formal accessibility conformance, or customer outcomes."
+    "claim_boundary":  "Binds exact customer and presentation bytes after the rethought lineage repair; does not establish deployment or rendered behavior."
 }

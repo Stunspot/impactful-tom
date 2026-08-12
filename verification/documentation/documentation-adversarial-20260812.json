@@ -8,7 +8,7 @@
     "starting_state":  "UNKNOWN",
     "disposition":  "PASS_LOCAL_WITH_LIVE_GATES",
     "fingerprints":  {
-                         "documentation":  "173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85",
+                         "documentation":  "6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d",
                          "presentation":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c"
                      },
     "challenges":  [
@@ -34,7 +34,7 @@
                            "id":  "A-CLAIMS",
                            "question":  "Does current copy confuse constructed, packaged, installed, invoked, healthy, published, or independently verified?",
                            "result":  "PASS",
-                           "evidence":  "README, changelog, and provenance explicitly bind the August 11 live receipt to its older documentation, presentation, and role-asset hashes. A hostile oracle rejects any positive current live/deployed visual claim unless the live receipt matches the current documentation fingerprint, presentation fingerprint, and all three role-image hashes."
+                           "evidence":  "Current README, Unreleased changelog, and provenance review sections explicitly classify the August 11 receipt as historical and deny coverage of replacement presentation bytes. Detailed old role hashes remain in the linked canonical receipt. The replacement section-scoped paragraph contract compares current documentation, presentation, and three role hashes and rejects nine hostile surface/wording combinations, including the exact cycle-one escape."
                        },
                        {
                            "id":  "A-SCOPE",
@@ -53,7 +53,7 @@
                             {
                                 "name":  "unittest",
                                 "result":  "PASS",
-                                "evidence":  "10/10 passed, including the stale-receipt lineage hostile case"
+                                "evidence":  "10/10 passed; the lineage test exercises nine hostile README/changelog/provenance combinations"
                             },
                             {
                                 "name":  "documentation_site",
@@ -109,7 +109,7 @@
                        }
                    ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation fingerprint 173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85 and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. It does not establish publication or rendered live behavior.",
+    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local documentation fingerprint 6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. The linked historical receipt owns old image hashes; publication and rendered behavior remain separate gates.",
     "repaired_findings":  [
                               {
                                   "id":  "TF1-EVIDENCE-LINEAGE",
@@ -117,6 +117,13 @@
                                   "source":  "TestForge cycle 1 REVIEW_FAIL",
                                   "repair":  "Corrected all three customer surfaces, recomputed documentation fingerprint, reran Hesperos and accessibility reviews, and added a discriminating lineage oracle.",
                                   "verification":  "Actual corpus passes; hostile current-live claim with historical receipt fails."
+                              },
+                              {
+                                  "id":  "TF2-ORACLE-FIDELITY",
+                                  "severity":  "HIGH",
+                                  "source":  "TestForge cycle 2 REVIEW_FAIL",
+                                  "repair":  "Discarded the keyword/sentence model. Added section-scoped paragraph analysis and direct regression of the exact escaped sentence plus variants on all three current customer surfaces.",
+                                  "verification":  "Real corpus passes; all nine hostile combinations fail with receipt mismatch."
                               }
                           ]
 }

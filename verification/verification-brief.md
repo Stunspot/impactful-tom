@@ -15,7 +15,7 @@ Current local execution passed 10/10 regression tests and the content-boundary, 
 
 The complete customer corpus, Pages source, layout, stylesheet, navigation, and all nine tracked local image assets were directly inspected. The 2026-08-12 pass rejected the interchangeable navy-grid README and social cards, replaced them with separate image-generator originals, removed the programmed-art renderer, and preserved the recognizable Pages mark and icon set. The three required role assets pass locally as distinct files, compositions, and aspect ratios. The replacement social card is not yet the live GitHub custom preview.
 
-The fresh documentation and accessibility reviews return `REVIEW_PASS` for the current fingerprints. TestForge cycle 1 returned `REVIEW_FAIL` because three customer surfaces treated the historical August 11 live receipt as evidence for the replacement presentation. That finding is repaired, a hostile evidence-lineage oracle now passes, and a second TestForge review remains required before publication.
+The fresh documentation and accessibility reviews return `REVIEW_PASS` for the current fingerprints. TestForge cycles 1 and 2 returned `REVIEW_FAIL`: first for stale live-receipt lineage, then because the initial keyword oracle did not regress the exact escaped sentence. After the second failure, that detector was discarded. The replacement current-section paragraph contract passes the real corpus and nine hostile surface/wording combinations. A fresh TestForge review of the new candidate remains required before publication.
 
 ## Public state observed before remediation publication
 

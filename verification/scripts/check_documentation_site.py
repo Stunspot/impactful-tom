@@ -772,41 +772,7 @@ def check_documentation_custody(repo: Path, errors: list[str]) -> None:
 
 
 def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
-    """Require exact receipt lineage before current replacement visuals are called live."""
-    claim_files = [
-        repo / "README.md",
-        repo / "CHANGELOG.md",
-        repo / "docs/provenance-and-verification.md",
-    ]
-    claims: list[str] = []
-    visual_terms = re.compile(
-        r"\b(?:presentation|visual assets?|README hero|Pages hero|social card|social preview|palette)\b",
-        re.I,
-    )
-    live_terms = re.compile(r"\b(?:live|deployed|published|byte-identical|parity)\b", re.I)
-    current_terms = re.compile(r"\b(?:current|replacement|remediated|this remediation)\b", re.I)
-    negative_terms = re.compile(
-        r"\b(?:does not establish|do not establish|not yet|remain(?:s)?\b[^.\n]{0,80}\bgate|unverified|historical evidence)\b",
-        re.I,
-    )
-    for path in claim_files:
-        text = read_text(path, errors)
-        for line in text.splitlines():
-            for sentence in re.split(r"(?<=[.!?])\s+", line):
-                positive = (
-                "exact deployed asset parity" in sentence.lower()
-                or (
-                    visual_terms.search(sentence)
-                    and live_terms.search(sentence)
-                    and current_terms.search(sentence)
-                )
-            )
-                if positive and not negative_terms.search(sentence):
-                    claims.append(f"{relative(path, repo)}: {sentence.strip()}")
-
-    if not claims:
-        return
-
+    """Reject current live-presentation claims when only older receipt bytes are live."""
     try:
         review = json.loads(
             read_text(repo / "verification/documentation/documentation-review.json", errors)
@@ -816,7 +782,7 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
         )
         live = json.loads(read_text(repo / "verification/live-verification.json", errors))
     except (json.JSONDecodeError, OSError) as exc:
-        errors.append(f"current live presentation claim has unreadable receipt lineage: {exc}")
+        errors.append(f"live presentation lineage receipt is unreadable: {exc}")
         return
 
     output_hashes = {
@@ -824,7 +790,9 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
         for item in custody.get("outputs", [])
         if isinstance(item, dict)
     }
-    expected_visuals = {
+    expected = {
+        "documentation fingerprint": review.get("documentation_fingerprint"),
+        "presentation fingerprint": review.get("presentation_fingerprint"),
         "readme_hero_sha256": output_hashes.get(
             "docs/assets/images/impactful-tom-header.png"
         ),
@@ -837,17 +805,81 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
     }
     governed = live.get("governed_content", {})
     live_visuals = live.get("visuals", {})
-    mismatches = []
+    observed = {
+        "documentation fingerprint": governed.get("documentation_fingerprint"),
+        "presentation fingerprint": governed.get("presentation_fingerprint"),
+        "readme_hero_sha256": live_visuals.get("readme_hero_sha256"),
+        "pages_hero_sha256": live_visuals.get("pages_hero_sha256"),
+        "social_card_sha256": live_visuals.get("social_card_sha256"),
+    }
+    mismatches = [key for key, value in expected.items() if not value or observed.get(key) != value]
     if live.get("status") != "PASS":
-        mismatches.append("live receipt status is not PASS")
-    if governed.get("documentation_fingerprint") != review.get("documentation_fingerprint"):
-        mismatches.append("documentation fingerprint")
-    if governed.get("presentation_fingerprint") != review.get("presentation_fingerprint"):
-        mismatches.append("presentation fingerprint")
-    for key, expected in expected_visuals.items():
-        if not expected or live_visuals.get(key) != expected:
-            mismatches.append(key)
-    if mismatches:
+        mismatches.insert(0, "live receipt status")
+    if not mismatches:
+        return
+
+    def section(text: str, start: str, end: str | None) -> str:
+        if start not in text:
+            return ""
+        scoped = text.split(start, 1)[1]
+        if end and end in scoped:
+            scoped = scoped.split(end, 1)[0]
+        return scoped
+
+    readme = read_text(repo / "README.md", errors)
+    changelog = read_text(repo / "CHANGELOG.md", errors)
+    provenance = read_text(repo / "docs/provenance-and-verification.md", errors)
+    current_sections = {
+        "README.md": section(readme, "## Install status", "## What it does"),
+        "CHANGELOG.md": section(
+            changelog,
+            "## Unreleased - documentation remediation",
+            "## 1.1.1 - 2026-07-31",
+        ),
+        "docs/provenance-and-verification.md": section(
+            provenance,
+            "## Release route and remaining host evidence",
+            "## How to read release claims",
+        ),
+    }
+    visual_terms = re.compile(
+        r"\b(?:presentation|visual(?: assets?)?|README hero|Pages hero|"
+        r"social card|social preview|palette|role-specific (?:visual )?assets?)\b",
+        re.I,
+    )
+    evidence_terms = re.compile(
+        r"\b(?:direct public readback|public readback|live verification|"
+        r"live|deployed|published|byte-identical|(?:asset )?parity|confirmed)\b",
+        re.I,
+    )
+    historical_boundary = re.compile(r"\bhistorical\b", re.I)
+    disclaims_replacements = re.compile(
+        r"\b(?:does not establish|do not establish)\b[^\n]{0,180}"
+        r"\b(?:replacement|remediation|current)\b",
+        re.I,
+    )
+    pending_boundary = re.compile(
+        r"\b(?:not yet|remain(?:s)?\b[^.\n]{0,100}\bgate|pending)\b",
+        re.I,
+    )
+
+    claims: list[str] = []
+    for path_text, scoped in current_sections.items():
+        paragraphs = re.split(r"\n\s*\n", scoped)
+        for paragraph in paragraphs:
+            flattened = " ".join(line.strip() for line in paragraph.splitlines()).strip()
+            if not flattened:
+                continue
+            positive = visual_terms.search(flattened) and evidence_terms.search(flattened)
+            explicitly_historical = (
+                historical_boundary.search(flattened)
+                and disclaims_replacements.search(flattened)
+            )
+            explicitly_pending = pending_boundary.search(flattened)
+            if positive and not explicitly_historical and not explicitly_pending:
+                claims.append(f"{path_text}: {flattened}")
+
+    if claims:
         errors.append(
             "current live presentation claim lacks matching receipt lineage "
             f"({', '.join(mismatches)}): {claims[0]}"

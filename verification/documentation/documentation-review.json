@@ -10,7 +10,7 @@
     "starting_state":  "UNKNOWN",
     "disposition":  "REVIEW_PASS",
     "unresolved_material_findings":  0,
-    "documentation_fingerprint":  "173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85",
+    "documentation_fingerprint":  "6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d",
     "presentation_fingerprint":  "65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c",
     "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
     "reviewed_files":  [
@@ -40,7 +40,7 @@
                                           "documentation-manifest.json"
                                       ],
     "reviewer":  "Hesperos substantive documentation review",
-    "review_run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-2",
+    "review_run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-3",
     "review_record":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
     "accessibility_receipt":  "documentation-accessibility-review.json",
     "material_findings":  [
@@ -67,6 +67,12 @@
                                   "status":  "REPAIRED",
                                   "finding":  "Three current customer surfaces bound the historical August 11 live receipt to replacement presentation bytes it did not observe.",
                                   "repair":  "Labeled that receipt historical with its full old fingerprints and added a hostile fingerprint-and-role-hash lineage oracle."
+                              },
+                              {
+                                  "id":  "EVIDENCE-LINEAGE-ORACLE",
+                                  "status":  "REPAIRED",
+                                  "finding":  "Two sentence-keyword oracle designs failed to regress the exact stale public-readback sentence.",
+                                  "repair":  "Discarded that model for a current-section paragraph contract with exact receipt comparison and nine surface/wording regressions."
                               }
                           ],
     "conditions":  [
@@ -90,5 +96,5 @@
                                 "Clean public-route installation, invocation, restart resilience, and live Claude Code behavior remain unobserved."
                             ],
     "rerun_trigger":  "Any byte change to one of the 17 customer documents or five presentation sources invalidates this review.",
-    "claim_boundary":  "REVIEW_PASS binds documentation 173f3577ab2b8fcfb00ae392168c25a9b991d2f50787f8beddff12629a401e85 and presentation 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only; it does not establish publication, rendered-browser behavior, assistive-technology compatibility, host health, product behavior, rights adjudication, or customer outcomes."
+    "claim_boundary":  "REVIEW_PASS binds documentation 6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d and presentation 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only; detailed historical image hashes remain in verification/live-verification.json and are not duplicated on every customer surface."
 }

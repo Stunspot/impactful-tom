@@ -211,25 +211,43 @@ class StaticCheckFixtures(unittest.TestCase):
                     result,
                 )
 
-    def test_current_live_visual_claim_requires_matching_receipt_lineage(self) -> None:
-        with tempfile.TemporaryDirectory() as temp:
-            candidate = Path(temp)
-            copy_documentation_fixture(candidate)
-            readme = candidate / "README.md"
-            readme.write_text(
-                readme.read_text(encoding="utf-8")
-                + "\n\nThe current replacement visual presentation is live with exact deployed asset parity, including the README hero, Pages hero, and social card.\n",
-                encoding="utf-8",
-            )
-            code, result = run("check_documentation_site.py", "--repo", str(candidate))
-            self.assertEqual(code, 1, result)
-            self.assertTrue(
-                any(
-                    "current live presentation claim lacks matching receipt lineage" in item
-                    for item in result["errors"]
-                ),
-                result,
-            )
+    def test_live_visual_claim_variants_require_matching_receipt_lineage(self) -> None:
+        escaped_cycle_one = (
+            "On 2026-08-11, direct public readback confirmed the repository, release, "
+            "all five release assets, six Pages routes, 21 customer-journey links, "
+            "the three role-specific visual assets, and the custom GitHub social preview."
+        )
+        claims = [
+            escaped_cycle_one,
+            "Public readback confirmed the redesigned README hero and social card.",
+            "The latest visual presentation is published with exact deployed asset parity.",
+        ]
+        surfaces = {
+            "README.md": ("Clean public-route installation", "{claim}\n\nClean public-route installation"),
+            "CHANGELOG.md": ("This is a documentation and evidence remediation.", "{claim}\n\nThis is a documentation and evidence remediation."),
+            "docs/provenance-and-verification.md": ("## How to read release claims", "{claim}\n\n## How to read release claims"),
+        }
+        for path_text, (marker, replacement) in surfaces.items():
+            for claim in claims:
+                with self.subTest(path=path_text, claim=claim), tempfile.TemporaryDirectory() as temp:
+                    candidate = Path(temp)
+                    copy_documentation_fixture(candidate)
+                    path = candidate / path_text
+                    text = path.read_text(encoding="utf-8")
+                    self.assertIn(marker, text)
+                    path.write_text(
+                        text.replace(marker, replacement.format(claim=claim), 1),
+                        encoding="utf-8",
+                    )
+                    code, result = run("check_documentation_site.py", "--repo", str(candidate))
+                    self.assertEqual(code, 1, result)
+                    self.assertTrue(
+                        any(
+                            "current live presentation claim lacks matching receipt lineage" in item
+                            for item in result["errors"]
+                        ),
+                        result,
+                    )
     def test_documentation_release_marker_tracks_manifest_version(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             candidate = Path(temp)
