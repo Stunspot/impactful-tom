@@ -31,7 +31,9 @@
                      "TestForge cycles 1 and 2 both returned REVIEW_FAIL; both candidate revisions remain withdrawn and receipts are preserved.",
                      "After the second failure, the sentence-keyword lineage detector was discarded for a current-section paragraph contract.",
                      "The exact cycle-one escaped sentence and two variants are rejected independently on README, changelog, and provenance when receipt lineage is stale.",
-                     "Ten regression tests, four actual static checks, and the exact pinned line-ending policy pass locally."
+                     "Ten regression tests, four actual static checks, and the exact pinned line-ending policy pass locally.",
+                     "TestForge cycle 3 returned REVIEW_FAIL because contiguous changelog bullets shared a paragraph boundary; candidate three is withdrawn.",
+                     "The current claim-unit oracle treats each Markdown bullet/prose line independently and rejects nine exact/variant surface cases plus three contradictory historical-item cases."
                  ],
     "risks":  [
                   {
@@ -60,7 +62,7 @@
                   }
               ],
     "tests":  {
-                  "regression_suite":  "10/10 passed",
+                  "regression_suite":  "11/11 passed",
                   "content_boundaries":  "PASS",
                   "distribution_topology":  "PASS",
                   "release_exclusions":  "PASS",
@@ -72,8 +74,9 @@
                   "adversarial_review":  "PASS_LOCAL_WITH_LIVE_GATES",
                   "testforge_final":  "PENDING_FRESH_CYCLE",
                   "final_live_verification":  "PENDING",
-                  "testforge_cycle_1":  "REVIEW_FAIL — stale evidence lineage repaired",
-                  "testforge_cycle_2":  "REVIEW_FAIL — inadequate oracle discarded and replaced"
+                  "testforge_cycle_1":  "REVIEW_FAIL â€” stale evidence lineage repaired",
+                  "testforge_cycle_2":  "REVIEW_FAIL â€” inadequate oracle discarded and replaced",
+                  "testforge_cycle_3":  "REVIEW_FAIL — Markdown item aggregation repaired"
               },
     "decision":  {
                      "status":  "REMEDIATED_NOT_YET_LIVE",
@@ -86,5 +89,5 @@
                                             "rendered Pages inspection in a permitted existing browser"
                                         ]
                  },
-    "claim_boundary":  "This manifest records local remediation readiness for documentation fingerprint 6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. It preserves two failed TestForge cycles and does not claim a fresh pass, publication, or live rendered verification."
+    "claim_boundary":  "This manifest records local remediation readiness for documentation fingerprint 6eb06fdf7ff00316d71683195bb501fe2a8790e8678486cbdcb338242337ed6d and presentation fingerprint 65f4d5c4bc4d6c885a49876e861bf308db25c915f3f3bb3d0cc5107e5a763e9c only. It preserves three failed TestForge cycles and does not claim a fresh pass, publication, or live rendered verification."
 }

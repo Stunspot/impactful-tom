@@ -9,13 +9,13 @@
 
 Impactful Tom is a founder-performance Augment for one live business decision. The canonical source implements constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence-calibrated moves, optional user-governed state, and separate external-action authority. The 1.1.1 eval source contains 25 cases across 12 indispensable dimensions.
 
-Current local execution passed 10/10 regression tests and the content-boundary, distribution-topology, release-exclusion, and documentation-site source checks. Canonical and Claude Code/generic distributions remain aligned under the repository's host-specific topology contract.
+Current local execution passed 11/11 regression tests and the content-boundary, distribution-topology, release-exclusion, and documentation-site source checks. Canonical and Claude Code/generic distributions remain aligned under the repository's host-specific topology contract.
 
 ## Documentation and presentation
 
 The complete customer corpus, Pages source, layout, stylesheet, navigation, and all nine tracked local image assets were directly inspected. The 2026-08-12 pass rejected the interchangeable navy-grid README and social cards, replaced them with separate image-generator originals, removed the programmed-art renderer, and preserved the recognizable Pages mark and icon set. The three required role assets pass locally as distinct files, compositions, and aspect ratios. The replacement social card is not yet the live GitHub custom preview.
 
-The fresh documentation and accessibility reviews return `REVIEW_PASS` for the current fingerprints. TestForge cycles 1 and 2 returned `REVIEW_FAIL`: first for stale live-receipt lineage, then because the initial keyword oracle did not regress the exact escaped sentence. After the second failure, that detector was discarded. The replacement current-section paragraph contract passes the real corpus and nine hostile surface/wording combinations. A fresh TestForge review of the new candidate remains required before publication.
+The fresh documentation and accessibility reviews return `REVIEW_PASS` for the current fingerprints. TestForge cycles 1 through 3 returned `REVIEW_FAIL`: stale receipt lineage, a keyword oracle that missed the exact escape, and paragraph aggregation that let a neighboring pending bullet pardon it. All three candidates remain withdrawn. The current claim-unit contract treats Markdown bullets independently and rejects the nine exact/variant surface combinations plus contradictory positive sentences inside all three historical items. A fresh TestForge review of the new candidate remains required before publication.
 
 ## Public state observed before remediation publication
 

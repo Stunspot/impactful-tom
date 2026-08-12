@@ -854,7 +854,7 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
     )
     historical_boundary = re.compile(r"\bhistorical\b", re.I)
     disclaims_replacements = re.compile(
-        r"\b(?:does not establish|do not establish)\b[^\n]{0,180}"
+        r"\b(?:does not establish|do not establish|does not verify|do not verify)\b[^\n]{0,180}"
         r"\b(?:replacement|remediation|current)\b",
         re.I,
     )
@@ -863,21 +863,58 @@ def check_live_presentation_lineage(repo: Path, errors: list[str]) -> None:
         re.I,
     )
 
-    claims: list[str] = []
-    for path_text, scoped in current_sections.items():
-        paragraphs = re.split(r"\n\s*\n", scoped)
-        for paragraph in paragraphs:
-            flattened = " ".join(line.strip() for line in paragraph.splitlines()).strip()
-            if not flattened:
+    def markdown_claim_units(scoped: str) -> list[str]:
+        units: list[str] = []
+        current: list[str] = []
+
+        def flush() -> None:
+            if current:
+                units.append(" ".join(current))
+                current.clear()
+
+        for raw_line in scoped.splitlines():
+            stripped = raw_line.strip()
+            if not stripped:
+                flush()
                 continue
-            positive = visual_terms.search(flattened) and evidence_terms.search(flattened)
-            explicitly_historical = (
-                historical_boundary.search(flattened)
-                and disclaims_replacements.search(flattened)
-            )
-            explicitly_pending = pending_boundary.search(flattened)
-            if positive and not explicitly_historical and not explicitly_pending:
-                claims.append(f"{path_text}: {flattened}")
+            if re.match(r"^[-*+]\s+", stripped):
+                flush()
+                current.append(stripped)
+            else:
+                current.append(stripped)
+        flush()
+        return units
+
+    claims: list[str] = []
+    dated_old_evidence = re.compile(
+        r"\b(?:2026-08-11|at that time|August 11)\b",
+        re.I,
+    )
+    for path_text, scoped in current_sections.items():
+        # Neighboring bullets are independent, while wrapped continuation lines stay
+        # with their own semantic item.
+        for unit in markdown_claim_units(scoped):
+            unit_historical = historical_boundary.search(unit)
+            unit_disclaims = disclaims_replacements.search(unit)
+            for sentence in re.split(r"(?<=[.!?;])\s+", unit):
+                positive = visual_terms.search(sentence) and evidence_terms.search(sentence)
+                if not positive:
+                    continue
+                sentence_pending = pending_boundary.search(sentence)
+                sentence_historical = historical_boundary.search(sentence)
+                sentence_disclaims = disclaims_replacements.search(sentence)
+                old_claim_with_local_boundary = (
+                    dated_old_evidence.search(sentence)
+                    and unit_historical
+                    and unit_disclaims
+                )
+                if not (
+                    sentence_pending
+                    or sentence_disclaims
+                    or (sentence_historical and unit_disclaims)
+                    or old_claim_with_local_boundary
+                ):
+                    claims.append(f"{path_text}: {sentence.strip()}")
 
     if claims:
         errors.append(

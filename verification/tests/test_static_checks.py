@@ -217,15 +217,29 @@ class StaticCheckFixtures(unittest.TestCase):
             "all five release assets, six Pages routes, 21 customer-journey links, "
             "the three role-specific visual assets, and the custom GitHub social preview."
         )
+        wrapped_cycle_one = escaped_cycle_one.replace(
+            "repository, release,",
+            "repository,\n  release,",
+        )
         claims = [
             escaped_cycle_one,
+            wrapped_cycle_one,
             "Public readback confirmed the redesigned README hero and social card.",
             "The latest visual presentation is published with exact deployed asset parity.",
         ]
         surfaces = {
-            "README.md": ("Clean public-route installation", "{claim}\n\nClean public-route installation"),
-            "CHANGELOG.md": ("This is a documentation and evidence remediation.", "{claim}\n\nThis is a documentation and evidence remediation."),
-            "docs/provenance-and-verification.md": ("## How to read release claims", "{claim}\n\n## How to read release claims"),
+            "README.md": (
+                "Clean public-route installation",
+                "{claim}\n\nClean public-route installation",
+            ),
+            "CHANGELOG.md": (
+                "- Classified the [2026-08-11 live-verification receipt]",
+                "- {claim}\n- Classified the [2026-08-11 live-verification receipt]",
+            ),
+            "docs/provenance-and-verification.md": (
+                "## How to read release claims",
+                "{claim}\n\n## How to read release claims",
+            ),
         }
         for path_text, (marker, replacement) in surfaces.items():
             for claim in claims:
@@ -237,6 +251,38 @@ class StaticCheckFixtures(unittest.TestCase):
                     self.assertIn(marker, text)
                     path.write_text(
                         text.replace(marker, replacement.format(claim=claim), 1),
+                        encoding="utf-8",
+                    )
+                    code, result = run("check_documentation_site.py", "--repo", str(candidate))
+                    self.assertEqual(code, 1, result)
+                    self.assertTrue(
+                        any(
+                            "current live presentation claim lacks matching receipt lineage" in item
+                            for item in result["errors"]
+                        ),
+                        result,
+                    )
+
+    def test_contradictory_live_claim_inside_historical_item_is_rejected(self) -> None:
+        contradictions = [
+            " The current replacement visual presentation is live and deployed.",
+            "; The current replacement visual presentation is live and deployed.",
+        ]
+        surfaces = {
+            "README.md": "Earlier release tags remain historical custody and are not rewritten.",
+            "CHANGELOG.md": "its recorded role-image hashes do not verify the replacement hero, social card, or palette.",
+            "docs/provenance-and-verification.md": "Public availability does not establish host installation or invocation.",
+        }
+        for path_text, marker in surfaces.items():
+            for contradiction in contradictions:
+                with self.subTest(path=path_text, contradiction=contradiction), tempfile.TemporaryDirectory() as temp:
+                    candidate = Path(temp)
+                    copy_documentation_fixture(candidate)
+                    path = candidate / path_text
+                    text = path.read_text(encoding="utf-8")
+                    self.assertIn(marker, text)
+                    path.write_text(
+                        text.replace(marker, marker + contradiction, 1),
                         encoding="utf-8",
                     )
                     code, result = run("check_documentation_site.py", "--repo", str(candidate))

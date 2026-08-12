@@ -53,7 +53,7 @@
                             {
                                 "name":  "unittest",
                                 "result":  "PASS",
-                                "evidence":  "10/10 passed; the lineage test exercises nine hostile README/changelog/provenance combinations"
+                                "evidence":  "11/11 passed; lineage coverage includes nine exact/variant surface cases and three contradictory historical-item cases"
                             },
                             {
                                 "name":  "documentation_site",
@@ -124,6 +124,13 @@
                                   "source":  "TestForge cycle 2 REVIEW_FAIL",
                                   "repair":  "Discarded the keyword/sentence model. Added section-scoped paragraph analysis and direct regression of the exact escaped sentence plus variants on all three current customer surfaces.",
                                   "verification":  "Real corpus passes; all nine hostile combinations fail with receipt mismatch."
+                              },
+                              {
+                                  "id":  "TF3-MARKDOWN-ITEMS",
+                                  "severity":  "HIGH",
+                                  "source":  "TestForge cycle 3 REVIEW_FAIL",
+                                  "repair":  "Changed claim analysis from blank-line paragraphs to independent physical Markdown items; added contiguous Unreleased-bullet and contradictory-in-item regressions.",
+                                  "verification":  "Real corpus passes; 12 hostile surface cases fail; neighboring bullets cannot lend a pending boundary."
                               }
                           ]
 }
