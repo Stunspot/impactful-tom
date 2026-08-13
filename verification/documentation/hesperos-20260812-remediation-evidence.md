@@ -1,7 +1,7 @@
 # Hesperos documentation remediation evidence - 2026-08-12
 
 - Bound documentation fingerprint: `acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5`
-- Bound presentation fingerprint: `52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968`
+- Bound presentation fingerprint: `071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e`
 - Review run: `HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-5`
 
 All 17 customer documents were re-read against the unchanged 1.1.1 skill, its three runtime references, package manifests, examples, and evidence boundaries after the Pages-hero correction. The customer journey still explains founder fit, supported hosts, installation verification, first success, representative workflows, inputs and outputs, maintenance, privacy, authority, limitations, provenance, support, licensing, and terms.

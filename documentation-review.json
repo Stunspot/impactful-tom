@@ -11,7 +11,7 @@
     "disposition":  "REVIEW_PASS",
     "unresolved_material_findings":  0,
     "documentation_fingerprint":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
-    "presentation_fingerprint":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968",
+    "presentation_fingerprint":  "071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e",
     "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
     "reviewed_files":  [
                            "README.md",
@@ -108,5 +108,5 @@
                                 "Clean public-route installation, invocation, restart resilience, and live Claude Code behavior remain unobserved."
                             ],
     "rerun_trigger":  "Any byte change to one of the 17 customer documents or five presentation sources invalidates this review.",
-    "claim_boundary":  "REVIEW_PASS binds documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968 only; publication and rendered behavior remain separate."
+    "claim_boundary":  "REVIEW_PASS binds documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e only; publication and rendered behavior remain separate."
 }

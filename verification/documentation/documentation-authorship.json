@@ -94,18 +94,18 @@
                                "sha256":  "e2b7c84422e983f9dacbdee76c501b02be56806da27f478bcef28d84db231ca7"
                            }
                        ],
-    "presentation_fingerprint":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968",
+    "presentation_fingerprint":  "071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e",
     "presentation_fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
     "presentation_sources":  [
                                  {
                                      "bytes":  483,
                                      "path":  "docs/_config.yml",
-                                     "sha256":  "f33eb19302936e580a56726cb97dc688e54b5442aeafbf78634f52381e7b113f"
+                                     "sha256":  "bcdfce91090408a50e80ce18f379bef7b189d86b2a41a21d96c5c521659d0a29"
                                  },
                                  {
-                                     "bytes":  4652,
+                                     "bytes":  4709,
                                      "path":  "docs/_layouts/default.html",
-                                     "sha256":  "06fb17ad548a52e2c97190c8e2df6a18382c8f3198f8f5dd45b87c5e1d258043"
+                                     "sha256":  "d7d1e2209310a6a7f9d5de4bf8b45edf794014d56b6b1c8c9dad1cf6c06380c7"
                                  },
                                  {
                                      "bytes":  9775,
@@ -120,7 +120,7 @@
                                  {
                                      "bytes":  4021,
                                      "path":  "documentation-manifest.json",
-                                     "sha256":  "eedcf414ba85215c1cd850229155923d8d4b42883466f772015417a9b7a2427d"
+                                     "sha256":  "82ee8fde1a6df3ba186d3723893a0f4410d8fe35ab7e075457921eecee5e83dc"
                                  }
                              ],
     "authoring":  {
@@ -132,29 +132,29 @@
     "documentation_manifest":  {
                                    "bytes":  4021,
                                    "path":  "documentation-manifest.json",
-                                   "sha256":  "eedcf414ba85215c1cd850229155923d8d4b42883466f772015417a9b7a2427d"
+                                   "sha256":  "82ee8fde1a6df3ba186d3723893a0f4410d8fe35ab7e075457921eecee5e83dc"
                                },
     "evidence_packet":  {
                             "bytes":  1777,
                             "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
-                            "sha256":  "032c951e1d9490bbd636d6951c48c4bbfbb96708fe8251eb803098362dfe42a2"
+                            "sha256":  "e50b4233ddf7bd5b55df95b62be7765e6981b9850f1e17889660d5699cabb498"
                         },
     "authoring_response":  {
                                "bytes":  618,
                                "path":  "verification/documentation/hesperos-20260812-remediation-response.txt",
-                               "sha256":  "34acc49203b7cf27674165a6372ce1325849be2aa0af084de7c72528836342f1"
+                               "sha256":  "af873e81c3a59ca1c008d28796b8fe959185983680ad3fd904cd939c78b1a692"
                            },
     "execution_evidence":  [
                                {
                                    "bytes":  1777,
                                    "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
-                                   "sha256":  "032c951e1d9490bbd636d6951c48c4bbfbb96708fe8251eb803098362dfe42a2"
+                                   "sha256":  "e50b4233ddf7bd5b55df95b62be7765e6981b9850f1e17889660d5699cabb498"
                                },
                                {
                                    "bytes":  618,
                                    "path":  "verification/documentation/hesperos-20260812-remediation-response.txt",
-                                   "sha256":  "34acc49203b7cf27674165a6372ce1325849be2aa0af084de7c72528836342f1"
+                                   "sha256":  "af873e81c3a59ca1c008d28796b8fe959185983680ad3fd904cd939c78b1a692"
                                }
                            ],
-    "claim_boundary":  "Binds the complete current customer journey after the dedicated Pages-hero repair to documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968; does not establish deployment or rendered behavior."
+    "claim_boundary":  "Binds the complete current customer journey after the dedicated Pages-hero repair to documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e; does not establish deployment or rendered behavior."
 }

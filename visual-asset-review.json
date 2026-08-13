@@ -5,10 +5,10 @@
     "status":  "PASS_LOCAL",
     "fingerprints":  {
                          "documentation":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
-                         "presentation":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968"
+                         "presentation":  "071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e"
                      },
     "inspection":  {
-                       "method":  "Every tracked image was opened and visually inspected from decoded pixels. Replacement role artwork was evaluated directly from the built-in image generator output.",
+                       "method":  "Every tracked image was opened and visually inspected from decoded pixels. Replacement role artwork and the user-provided JPEG encoding of the social card were evaluated directly.",
                        "metadata_only":  false,
                        "screenshots_used":  false,
                        "programmed_artwork_used":  false,
@@ -41,10 +41,10 @@
                         },
                         {
                             "role":  "Social share/Open Graph card",
-                            "path":  "docs/assets/images/impactful-tom-social-card.png",
+                            "path":  "docs/assets/images/impactful-tom-social-card.jpg",
                             "dimensions":  "1731x909",
-                            "sha256":  "8c68ad1979984cd164bb6844bed1159a85a0ace0922beae935a09c6e3fd41551",
-                            "creation_method":  "built-in image generator; original output bytes preserved unchanged",
+                            "sha256":  "65e2f1e3bf8cc449a10db5e5f65b898ae1b23fe8653240830590658c3eb988e4",
+                            "creation_method":  "image-generator original; user-provided JPEG conversion directly inspected and accepted",
                             "text":  [
                                          "Impactful Tom",
                                          "Find the constraint. Choose the move that changes the decision."
@@ -119,5 +119,5 @@
                                "unsafe crop"
                            ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL approves the exact visual bytes and wiring in documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968 only; it does not establish deployment, rendered Pages behavior, or the GitHub repository social-preview setting."
+    "claim_boundary":  "PASS_LOCAL approves the exact visual bytes and wiring in documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e only; it does not establish deployment, rendered Pages behavior, or the GitHub repository social-preview setting."
 }

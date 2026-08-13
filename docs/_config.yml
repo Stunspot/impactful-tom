@@ -14,7 +14,7 @@ defaults:
       path: ""
     values:
       layout: default
-      image: /assets/images/impactful-tom-social-card.png
+      image: /assets/images/impactful-tom-social-card.jpg
 exclude:
   - "*.psd"
   - "*.xcf"

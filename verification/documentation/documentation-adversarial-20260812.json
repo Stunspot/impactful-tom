@@ -9,7 +9,7 @@
     "disposition":  "PASS_LOCAL_WITH_LIVE_GATES",
     "fingerprints":  {
                          "documentation":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
-                         "presentation":  "52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968"
+                         "presentation":  "071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e"
                      },
     "challenges":  [
                        {
@@ -109,5 +109,5 @@
                        }
                    ],
     "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local readiness for documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 52190971dfc304906f7b51df7da36a40bd36832e681dc65a98336bd61fe60968 only; it does not establish publication or rendered live behavior."
+    "claim_boundary":  "PASS_LOCAL_WITH_LIVE_GATES establishes local readiness for documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e only; it does not establish publication or rendered live behavior."
 }

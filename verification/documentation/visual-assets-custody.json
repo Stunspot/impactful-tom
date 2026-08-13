@@ -14,8 +14,8 @@
                            "programmed_artwork":  false,
                            "new_artwork_method":  "built-in image generator",
                            "renderer_tracked":  false,
-                           "pixel_postprocessing":  "none",
-                           "boundary":  "New artwork is accepted only as original image-generator output. No scripted drawing, compositing, typography overlay, crop, or other programmatic image manufacture is used."
+                           "pixel_postprocessing":  "user-provided JPEG encoding of the approved social-card pixels; no compositing, crop, typography overlay, or scripted artwork",
+                           "boundary":  "New artwork is accepted only as original image-generator output. The approved social card was encoded as JPEG by the user to meet the publication size boundary; no scripted drawing, compositing, typography overlay, crop, or other programmatic image manufacture was used."
                        },
     "outputs":  [
                     {
@@ -28,13 +28,13 @@
                         "creation_method":  "image-generator original; output bytes preserved unchanged"
                     },
                     {
-                        "path":  "docs/assets/images/impactful-tom-social-card.png",
+                        "path":  "docs/assets/images/impactful-tom-social-card.jpg",
                         "purpose":  "Open Graph and share-preview card",
                         "width":  1731,
                         "height":  909,
-                        "bytes":  1940193,
-                        "sha256":  "8c68ad1979984cd164bb6844bed1159a85a0ace0922beae935a09c6e3fd41551",
-                        "creation_method":  "image-generator original; output bytes preserved unchanged"
+                        "bytes":  185905,
+                        "sha256":  "65e2f1e3bf8cc449a10db5e5f65b898ae1b23fe8653240830590658c3eb988e4",
+                        "creation_method":  "image-generator original; user-provided JPEG conversion directly inspected and accepted"
                     },
                     {
                         "path":  "docs/assets/images/impactful-tom-pages-hero.png",
@@ -104,7 +104,7 @@
                                  "status":  "passed",
                                  "reviewed":  [
                                                   "docs/assets/images/impactful-tom-header.png",
-                                                  "docs/assets/images/impactful-tom-social-card.png",
+                                                  "docs/assets/images/impactful-tom-social-card.jpg",
                                                   "docs/assets/images/impactful-tom-pages-hero.png",
                                                   "docs/assets/images/impactful-tom-mark-512.png",
                                                   "docs/assets/images/impactful-tom-mark-192.png",

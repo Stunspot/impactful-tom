@@ -49,9 +49,9 @@ PAGE_FILES = [
     "docs/404.html",
 ]
 
-PNG_CONTRACTS = {
+IMAGE_CONTRACTS = {
     "docs/assets/images/impactful-tom-header.png": (2060, 763, 3_000_000),
-    "docs/assets/images/impactful-tom-social-card.png": (1731, 909, 3_000_000),
+    "docs/assets/images/impactful-tom-social-card.jpg": (1731, 909, 3_000_000),
     "docs/assets/images/impactful-tom-pages-hero.png": (1536, 1024, 4_000_000),
     "docs/assets/images/impactful-tom-mark-512.png": (512, 512, 500_000),
     "docs/assets/images/impactful-tom-mark-192.png": (192, 192, 150_000),
@@ -271,20 +271,45 @@ def parse_front_matter(path: Path, errors: list[str]) -> tuple[dict[str, str], s
     return front_matter, "\n".join(lines[end + 1 :])
 
 
-def png_dimensions(path: Path, errors: list[str]) -> tuple[int, int] | None:
+def image_dimensions(path: Path, errors: list[str]) -> tuple[int, int] | None:
     try:
-        with path.open("rb") as stream:
-            header = stream.read(24)
+        data = path.read_bytes()
     except OSError as exc:
-        errors.append(f"cannot read PNG {path}: {exc}")
+        errors.append(f"cannot read image {path}: {exc}")
         return None
-    if len(header) != 24 or header[:8] != b"\x89PNG\r\n\x1a\n":
-        errors.append(f"invalid PNG signature: {path.as_posix()}")
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        if len(data) < 24 or struct.unpack(">I", data[8:12])[0] != 13 or data[12:16] != b"IHDR":
+            errors.append(f"invalid PNG header: {path.as_posix()}")
+            return None
+        return struct.unpack(">II", data[16:24])
+    if data[:2] != b"\xff\xd8":
+        errors.append(f"unsupported image format: {path.as_posix()}")
         return None
-    if struct.unpack(">I", header[8:12])[0] != 13 or header[12:16] != b"IHDR":
-        errors.append(f"invalid PNG IHDR: {path.as_posix()}")
-        return None
-    return struct.unpack(">II", header[16:24])
+    offset = 2
+    sof_markers = {0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF}
+    while offset + 3 < len(data):
+        if data[offset] != 0xFF:
+            offset += 1
+            continue
+        while offset < len(data) and data[offset] == 0xFF:
+            offset += 1
+        if offset >= len(data):
+            break
+        marker = data[offset]
+        offset += 1
+        if marker in {0xD8, 0xD9}:
+            continue
+        if offset + 2 > len(data):
+            break
+        length = struct.unpack(">H", data[offset:offset + 2])[0]
+        if length < 2 or offset + length > len(data):
+            break
+        if marker in sof_markers and length >= 7:
+            height, width = struct.unpack(">HH", data[offset + 3:offset + 7])
+            return width, height
+        offset += length
+    errors.append(f"JPEG dimensions not found: {path.as_posix()}")
+    return None
 
 
 def linear_channel(value: int) -> float:
@@ -456,8 +481,9 @@ def check_layout_and_css(repo: Path, errors: list[str]) -> None:
         'property="og:description"',
         'property="og:url"',
         'property="og:image"',
+        'property="og:image:type"',
         'name="twitter:card"',
-        "impactful-tom-social-card.png",
+        "impactful-tom-social-card.jpg",
         "'/assets/css/site.css' | relative_url",
     ]
     for marker in layout_markers:
@@ -636,13 +662,13 @@ def check_accessibility_content(repo: Path, errors: list[str]) -> None:
                 )
 
 
-def check_pngs(repo: Path, errors: list[str]) -> None:
-    for path_text, (expected_width, expected_height, max_bytes) in PNG_CONTRACTS.items():
+def check_images(repo: Path, errors: list[str]) -> None:
+    for path_text, (expected_width, expected_height, max_bytes) in IMAGE_CONTRACTS.items():
         path = repo / path_text
         if not path.is_file():
             errors.append(f"missing visual asset: {path_text}")
             continue
-        dimensions = png_dimensions(path, errors)
+        dimensions = image_dimensions(path, errors)
         if dimensions and dimensions != (expected_width, expected_height):
             errors.append(
                 f"{path_text} is {dimensions[0]}x{dimensions[1]}, "
@@ -688,9 +714,9 @@ def check_visual_custody(repo: Path, errors: list[str]) -> None:
         for item in receipt.get("outputs", [])
         if isinstance(item, dict) and item.get("path")
     }
-    if set(outputs) != set(PNG_CONTRACTS):
-        errors.append("visual custody receipt output set does not match the site PNG contract")
-    for path_text, (expected_width, expected_height, _) in PNG_CONTRACTS.items():
+    if set(outputs) != set(IMAGE_CONTRACTS):
+        errors.append("visual custody receipt output set does not match the site image contract")
+    for path_text, (expected_width, expected_height, _) in IMAGE_CONTRACTS.items():
         item = outputs.get(path_text)
         path = repo / path_text
         if not item or not path.is_file():
@@ -825,7 +851,7 @@ def main() -> int:
     check_metadata(repo, errors)
     check_public_claims(repo, release_tag, errors)
     check_accessibility_content(repo, errors)
-    check_pngs(repo, errors)
+    check_images(repo, errors)
     check_visual_custody(repo, errors)
     check_documentation_custody(repo, errors)
     check_identity_and_private_paths(repo, errors)
