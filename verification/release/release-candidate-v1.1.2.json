@@ -6,13 +6,13 @@
   "stage": {
     "path": "release/stage/impactful-tom-v1.1.2",
     "manifest_file_count": 64,
-    "manifest_tree_sha256": "6e75a45ad1f3e653718c6b412395ccfae592e21e3d5a28dd803f83fa763f7ef8"
+    "manifest_tree_sha256": "f550a28106d52a627f25f4e587f69ade2cc2d4f1e86bb274a08bd7131a6a3ed8"
   },
   "archives": [
     {
       "name": "impactful-tom-v1.1.2.zip",
-      "bytes": 6632628,
-      "sha256": "a6babab7fbd8eb22bd837ae9e84b594f4e20d7555ba0a19b9bdea29f4ee42321",
+      "bytes": 6632620,
+      "sha256": "654582c2dbc5e9945297673d383916b7aa59befb29351010baa33f4f1637d5bc",
       "members": 65,
       "extraction_parity": true
     },
