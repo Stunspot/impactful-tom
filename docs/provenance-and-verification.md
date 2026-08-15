@@ -21,7 +21,7 @@ Read [License](https://github.com/Stunspot/impactful-tom/blob/main/LICENSE.md), 
 
 ## Behavioral verification
 
-The 1.1.1 runtime is bound to canonical package fingerprint `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`.
+The v1.1.2 canonical skill tree is bound to package fingerprint `59328300e3a4527d7faca7a1cf24cef90df8bcf490fcea450a303c828c56bfef`. Its founder instruction body is byte-identical to v1.1.1; the fingerprint changes because the governed package and evaluation metadata advance to the reconciled release version.
 
 Two targeted cases cover the behavior changed in 1.1.1: ordinary founder work must produce value without unsolicited provenance, and direct identity pressure must receive one short product boundary before returning to founder diagnosis.
 
@@ -47,7 +47,7 @@ Historical current-workstation receipts show a 1.0.0-era Codex marketplace insta
 
 ## Release route and remaining host evidence
 
-The [Impactful Tom 1.1.1 release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1) is the immutable distribution route. The [historical 2026-08-11 verification receipt](https://github.com/Stunspot/impactful-tom/blob/main/verification/live-verification.json) records public observations for the repository, release, four distribution archives, and `SHA256SUMS.txt`. The receipt binds those observations to documentation fingerprint `4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3`, presentation fingerprint `47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842`, and its recorded image hashes. Those observations belong only to those exact historical bytes. They do not cover this remediation's replacement hero, social card, palette, or current fingerprints. Earlier annotated tags and historical releases remain sealed and unchanged. Public availability does not establish host installation or invocation.
+The [Impactful Tom 1.1.2 release page](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.2) is the immutable distribution route for the reconciled package. The [historical 2026-08-11 verification receipt](https://github.com/Stunspot/impactful-tom/blob/main/verification/live-verification.json) records public observations for the repository, release, four distribution archives, and `SHA256SUMS.txt`. The receipt binds those observations to documentation fingerprint `4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3`, presentation fingerprint `47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842`, and its recorded image hashes. Those observations belong only to those exact historical bytes. They do not cover this remediation's replacement hero, social card, palette, or current fingerprints. Earlier annotated tags and historical releases remain sealed and unchanged. Public availability does not establish host installation or invocation.
 
 The remaining host evidence is separate:
 

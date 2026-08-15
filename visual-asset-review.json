@@ -1,123 +1,119 @@
 {
-    "format":  "cd-visual-asset-review/v2",
-    "product":  "Impactful Tom",
-    "reviewed_at":  "2026-08-12",
-    "status":  "PASS_LOCAL",
-    "fingerprints":  {
-                         "documentation":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
-                         "presentation":  "071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e"
-                     },
-    "inspection":  {
-                       "method":  "Every tracked image was opened and visually inspected from decoded pixels. Replacement role artwork and the user-provided JPEG encoding of the social card were evaluated directly.",
-                       "metadata_only":  false,
-                       "screenshots_used":  false,
-                       "programmed_artwork_used":  false,
-                       "files_opened":  10
-                   },
-    "role_assets":  [
-                        {
-                            "role":  "README hero",
-                            "path":  "docs/assets/images/impactful-tom-header.png",
-                            "dimensions":  "2060x763",
-                            "sha256":  "0f12be1b87193384b16ef77ea84b24fc89712e31f5f2809fdb7f86219053742e",
-                            "creation_method":  "built-in image generator; original output bytes preserved unchanged",
-                            "text":  [
-
-                                     ],
-                            "verdict":  "PASS",
-                            "judgment":  "Wide, text-free worktable scene: a founder lifts the single brass constraint blocking a web of competing business paths while a teammate watches. Strong product-specific metaphor, clear focal hierarchy, readable crop, and no pseudo-text."
-                        },
-                        {
-                            "role":  "GitHub Pages hero",
-                            "path":  "docs/assets/images/impactful-tom-pages-hero.png",
-                            "dimensions":  "1536x1024",
-                            "sha256":  "b8c8c3edcf8b8b93e3003f7bef2f4620af6d475fb1ca5b18f979f6890bc96b4c",
-                            "creation_method":  "built-in image generator; original output bytes preserved unchanged",
-                            "text":  [
-
-                                     ],
-                            "verdict":  "PASS",
-                            "judgment":  "Text-free overhead founder decision bench: two hands isolate one brass constraint from tangled paths and select a clear next move. Strong focal hierarchy, crop-safe 3:2 composition, product-specific physical metaphor, no pseudo-text, and clearly distinct from the README scene and social card."
-                        },
-                        {
-                            "role":  "Social share/Open Graph card",
-                            "path":  "docs/assets/images/impactful-tom-social-card.jpg",
-                            "dimensions":  "1731x909",
-                            "sha256":  "65e2f1e3bf8cc449a10db5e5f65b898ae1b23fe8653240830590658c3eb988e4",
-                            "creation_method":  "image-generator original; user-provided JPEG conversion directly inspected and accepted",
-                            "text":  [
-                                         "Impactful Tom",
-                                         "Find the constraint. Choose the move that changes the decision."
-                                     ],
-                            "verdict":  "PASS",
-                            "judgment":  "A founder removes a heavy amber locking bar from a doorway and opens the forward route. The exact title and identifying line are plainly legible, edge-safe, and the only text; no pseudo-writing or generic template field appears."
-                        }
-                    ],
-    "role_set":  {
-                     "different_files":  true,
-                     "different_aspect_ratios":  true,
-                     "different_compositions":  true,
-                     "not_crops_or_duplicates":  true,
-                     "recognizable_product_identity":  true,
-                     "verdict":  "PASS"
-                 },
-    "support_assets":  [
-                           {
-                               "path":  "docs/assets/images/apple-touch-icon.png",
-                               "dimensions":  "180x180",
-                               "sha256":  "12aec54b8820b9499d9e6ba7c2b4930e0616d8fb7d13f40b0f8299ec0fb602fb",
-                               "verdict":  "PASS_PRESERVED"
-                           },
-                           {
-                               "path":  "docs/assets/images/favicon-16.png",
-                               "dimensions":  "16x16",
-                               "sha256":  "3921acdd8603a9be4814de04ebf07e1f43ceac570b91496dbd487d7f85d02395",
-                               "verdict":  "PASS_PRESERVED"
-                           },
-                           {
-                               "path":  "docs/assets/images/favicon-32.png",
-                               "dimensions":  "32x32",
-                               "sha256":  "96d7c46f5986054c7830abc9a8ae514648d889a42fde3d157e4afc4f6a96cb75",
-                               "verdict":  "PASS_PRESERVED"
-                           },
-                           {
-                               "path":  "docs/assets/images/favicon-48.png",
-                               "dimensions":  "48x48",
-                               "sha256":  "cd63813836f5c26169824d0122f9884a5cb4fb771acc5ff1a83dece56620bb23",
-                               "verdict":  "PASS_PRESERVED"
-                           },
-                           {
-                               "path":  "docs/assets/images/impactful-tom-mark-192.png",
-                               "dimensions":  "192x192",
-                               "sha256":  "6580ed3deec4997cc57308b00c74988b5b17b5f03a65e0f850c25c06293df64e",
-                               "verdict":  "PASS_PRESERVED"
-                           },
-                           {
-                               "path":  "plugins/impactful-tom/assets/founder-constraint-mark.png",
-                               "dimensions":  "1254x1254",
-                               "sha256":  "684e4d435fb213e6806cf0cbc362e7f33300ba2e2346d5445dd8d3b72c859773",
-                               "verdict":  "PASS_PRESERVED"
-                           }
-                       ],
-    "live_wiring":  {
-                        "readme_hero":  "WIRED_LOCAL",
-                        "pages_hero":  "WIRED_LOCAL",
-                        "pages_open_graph":  "WIRED_LOCAL",
-                        "github_custom_social_preview":  "PENDING_MANUAL_UPLOAD",
-                        "rendered_pages":  "NOT_TESTED",
-                        "verdict":  "NOT_YET_LIVE"
-                    },
-    "rejections_checked":  [
-                               "blank area",
-                               "broken rendering",
-                               "accidental transparency",
-                               "generic filler",
-                               "incoherent artifacts",
-                               "illegible text",
-                               "pseudo-text",
-                               "weak identity",
-                               "unsafe crop"
-                           ],
-    "unresolved_local_material_findings":  0,
-    "claim_boundary":  "PASS_LOCAL approves the exact visual bytes and wiring in documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e only; it does not establish deployment, rendered Pages behavior, or the GitHub repository social-preview setting."
+  "format": "cd-visual-asset-review/v2",
+  "product": "Impactful Tom",
+  "reviewed_at": "2026-08-14",
+  "status": "PASS_LOCAL",
+  "fingerprints": {
+    "documentation": "5af2b4b5f56653f7b8d38acc2c3495702afceb41308847da69c6ca7ea13d603f",
+    "presentation": "210d203c01de007c1ca81471946199424c6d90f69b754bc77a02892575700e06"
+  },
+  "inspection": {
+    "method": "Every tracked image was opened and visually inspected from decoded pixels. Replacement role artwork and the user-provided JPEG encoding of the social card were evaluated directly.",
+    "metadata_only": false,
+    "screenshots_used": false,
+    "programmed_artwork_used": false,
+    "files_opened": 10
+  },
+  "role_assets": [
+    {
+      "role": "README hero",
+      "path": "docs/assets/images/impactful-tom-header.png",
+      "dimensions": "2060x763",
+      "sha256": "0f12be1b87193384b16ef77ea84b24fc89712e31f5f2809fdb7f86219053742e",
+      "creation_method": "built-in image generator; original output bytes preserved unchanged",
+      "text": [],
+      "verdict": "PASS",
+      "judgment": "Wide, text-free worktable scene: a founder lifts the single brass constraint blocking a web of competing business paths while a teammate watches. Strong product-specific metaphor, clear focal hierarchy, readable crop, and no pseudo-text."
+    },
+    {
+      "role": "GitHub Pages hero",
+      "path": "docs/assets/images/impactful-tom-pages-hero.png",
+      "dimensions": "1536x1024",
+      "sha256": "b8c8c3edcf8b8b93e3003f7bef2f4620af6d475fb1ca5b18f979f6890bc96b4c",
+      "creation_method": "built-in image generator; original output bytes preserved unchanged",
+      "text": [],
+      "verdict": "PASS",
+      "judgment": "Text-free overhead founder decision bench: two hands isolate one brass constraint from tangled paths and select a clear next move. Strong focal hierarchy, crop-safe 3:2 composition, product-specific physical metaphor, no pseudo-text, and clearly distinct from the README scene and social card."
+    },
+    {
+      "role": "Social share/Open Graph card",
+      "path": "docs/assets/images/impactful-tom-social-card.jpg",
+      "dimensions": "1731x909",
+      "sha256": "65e2f1e3bf8cc449a10db5e5f65b898ae1b23fe8653240830590658c3eb988e4",
+      "creation_method": "image-generator original; user-provided JPEG conversion directly inspected and accepted",
+      "text": [
+        "Impactful Tom",
+        "Find the constraint. Choose the move that changes the decision."
+      ],
+      "verdict": "PASS",
+      "judgment": "A founder removes a heavy amber locking bar from a doorway and opens the forward route. The exact title and identifying line are plainly legible, edge-safe, and the only text; no pseudo-writing or generic template field appears."
+    }
+  ],
+  "role_set": {
+    "different_files": true,
+    "different_aspect_ratios": true,
+    "different_compositions": true,
+    "not_crops_or_duplicates": true,
+    "recognizable_product_identity": true,
+    "verdict": "PASS"
+  },
+  "support_assets": [
+    {
+      "path": "docs/assets/images/apple-touch-icon.png",
+      "dimensions": "180x180",
+      "sha256": "12aec54b8820b9499d9e6ba7c2b4930e0616d8fb7d13f40b0f8299ec0fb602fb",
+      "verdict": "PASS_PRESERVED"
+    },
+    {
+      "path": "docs/assets/images/favicon-16.png",
+      "dimensions": "16x16",
+      "sha256": "3921acdd8603a9be4814de04ebf07e1f43ceac570b91496dbd487d7f85d02395",
+      "verdict": "PASS_PRESERVED"
+    },
+    {
+      "path": "docs/assets/images/favicon-32.png",
+      "dimensions": "32x32",
+      "sha256": "96d7c46f5986054c7830abc9a8ae514648d889a42fde3d157e4afc4f6a96cb75",
+      "verdict": "PASS_PRESERVED"
+    },
+    {
+      "path": "docs/assets/images/favicon-48.png",
+      "dimensions": "48x48",
+      "sha256": "cd63813836f5c26169824d0122f9884a5cb4fb771acc5ff1a83dece56620bb23",
+      "verdict": "PASS_PRESERVED"
+    },
+    {
+      "path": "docs/assets/images/impactful-tom-mark-192.png",
+      "dimensions": "192x192",
+      "sha256": "6580ed3deec4997cc57308b00c74988b5b17b5f03a65e0f850c25c06293df64e",
+      "verdict": "PASS_PRESERVED"
+    },
+    {
+      "path": "plugins/impactful-tom/assets/founder-constraint-mark.png",
+      "dimensions": "1254x1254",
+      "sha256": "684e4d435fb213e6806cf0cbc362e7f33300ba2e2346d5445dd8d3b72c859773",
+      "verdict": "PASS_PRESERVED"
+    }
+  ],
+  "live_wiring": {
+    "readme_hero": "WIRED_LOCAL",
+    "pages_hero": "WIRED_LOCAL",
+    "pages_open_graph": "WIRED_LOCAL",
+    "github_custom_social_preview": "PENDING_MANUAL_UPLOAD",
+    "rendered_pages": "NOT_TESTED",
+    "verdict": "NOT_YET_LIVE"
+  },
+  "rejections_checked": [
+    "blank area",
+    "broken rendering",
+    "accidental transparency",
+    "generic filler",
+    "incoherent artifacts",
+    "illegible text",
+    "pseudo-text",
+    "weak identity",
+    "unsafe crop"
+  ],
+  "unresolved_local_material_findings": 0,
+  "claim_boundary": "PASS_LOCAL binds the unchanged directly inspected visual set to current documentation 5af2b4b5f56653f7b8d38acc2c3495702afceb41308847da69c6ca7ea13d603f and presentation 210d203c01de007c1ca81471946199424c6d90f69b754bc77a02892575700e06; live repository settings and rendered behavior remain separate."
 }

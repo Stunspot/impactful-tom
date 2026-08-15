@@ -1,36 +1,28 @@
 # Verification brief
 
-**Target:** Impactful Tom 1.1.1 documentation and presentation remediation
-**Canonical package fingerprint:** `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`
-**Current decision:** `REMEDIATED, NOT YET LIVE`
-**Behavioral scope:** two targeted 1.1.1 episodes plus historical exact-version evidence; no new universal runtime claim
+**Target:** Impactful Tom 1.1.2 reconciled release candidate
+**Canonical package fingerprint:** `59328300e3a4527d7faca7a1cf24cef90df8bcf490fcea450a303c828c56bfef`
+**Documentation fingerprint:** `5af2b4b5f56653f7b8d38acc2c3495702afceb41308847da69c6ca7ea13d603f`
+**Presentation fingerprint:** `210d203c01de007c1ca81471946199424c6d90f69b754bc77a02892575700e06`
+**Current decision:** `READY_FOR_V1.1.2_RELEASE_WITH_LIVE_GATES`
 
-## Capability and package boundary
+## Reconciliation result
 
-Impactful Tom is a founder-performance Augment for one live business decision. The canonical source implements constraint diagnosis, behavior-incentive mapping, mission-market arbitration, conditional iteration, evidence-calibrated moves, optional user-governed state, and separate external-action authority. The 1.1.1 eval source contains 25 cases across 12 indispensable dimensions.
+The sealed v1.1.1 release and central ZIP agreed. Maintained `main` then accumulated intended documentation, accessibility, evidence-lineage, and visual-identity repairs dated August 11–12. Version 1.1.2 packages those changes without altering the founder instruction body; canonical, Codex, standalone, and Claude/generic version metadata advance together.
 
-Current local execution passed 9/9 regression tests and the content-boundary, distribution-topology, release-exclusion, and documentation-site source checks. Canonical and Claude Code/generic distributions remain aligned under the repository's host-specific topology contract.
+## Local evidence
 
-## Documentation and presentation
+- 9/9 regression tests pass.
+- Content-boundary, distribution-topology, release-exclusion, and documentation-site gates pass with no findings.
+- All 17 governed customer documents pass Hesperos accessible-Markdown lint.
+- Hesperos substantive review and separate static accessibility review bind the exact fingerprints above.
+- The complete package and three host-specific archives match their declared source trees byte-for-byte.
+- Consecutive builds reproduce all archive hashes; every ZIP uses ordinal member ordering, fixed timestamps, stored entries, fixed Unix creator metadata, and fixed regular-file permissions.
 
-The complete customer corpus, Pages source, layout, stylesheet, navigation, and all nine tracked local image assets were directly inspected. The 2026-08-12 pass rejected the interchangeable navy-grid README and social cards, replaced them with separate image-generator originals, removed the programmed-art renderer, and preserved the recognizable Pages mark and icon set. The three required role assets pass locally as distinct files, compositions, and aspect ratios. The replacement social card is not yet the live GitHub custom preview.
+## Historical evidence boundary
 
-A fresh documentation accessibility review returned `REVIEW_PASS`; the separate adversarial review returned `PASS_LOCAL_WITH_LIVE_GATES` for the exact fingerprints. Their receipts must be added without changing the governed customer corpus; otherwise the fingerprint is invalid and both reviews must run again.
+The v1.1.1 targeted behavioral episodes remain evidence for the unchanged founder instruction body and their exact v1.1.1 package. They are not represented as execution of the metadata-distinct v1.1.2 package or as host-installation evidence.
 
-## Public state observed before remediation publication
+## Remaining live gates
 
-Before this remediation, remote `main` was `40cbbdd98f60eeda7b9635918f82f9557b1db739`. The current candidate has not been published. Live source and asset parity, Pages rebuild status, route/link health, repository social-preview replacement, and rendered-browser behavior remain post-publication gates. No GitHub-hosted workflow will be triggered while account Actions capacity is unavailable.
-
-## Host boundary
-
-Codex CLI 0.144.5 help confirms the documented command syntax. Claude Code is not installed on the review host; current official Claude documentation supports the documented directory route. Neither observation establishes clean public-route installation, discovery, invocation, restart resilience, live Claude behavior, or first success for 1.1.1.
-
-## Remaining release gates
-
-1. Bind Hesperos authorship to the final customer-document fingerprint.
-2. Complete a separate fresh accessibility review.
-3. Complete a separate adversarial TestForge review.
-4. Commit and publish one coherent change set.
-5. Wait for the Pages rebuild and rerun live repository, release, route, link, asset, and social-preview readback.
-
-No frozen release archive is modified by this remediation.
+Publication, tag and release-asset readback, Pages deployment, clean public-route installation, causal invocation, restart resilience, live Claude Code behavior, formal accessibility conformance, Plugins Directory approval, stochastic reliability, and customer outcomes remain separate until directly observed.

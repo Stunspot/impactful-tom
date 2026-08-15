@@ -1,7 +1,7 @@
 {
   "format": "cd-augment-eval/v1",
   "suite": "impactful-tom-founder-performance",
-  "package_version": "1.1.1",
+  "package_version": "1.1.2",
   "skills": ["SKILL.md"],
   "runtime": "Isolated episode with SKILL.md, references, and assets available in context. No browsing, external tools, durable state, private development sources, or external-action authority is available unless the case explicitly supplies it. Cases with available_on_request require prepared evaluator-guided execution.",
   "claim": "Impactful Tom starts from the live founder decision, sustains a distinctive founder-performance profile, identifies and treats the governing constraint at the correct level, reconciles mission with market evidence, conditionally admits iteration, and produces an evidence-calibrated move while preserving dignity, authorship, state, source, and authority boundaries.",

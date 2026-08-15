@@ -1,160 +1,160 @@
 {
-    "format":  "cd-hesperos-documentation-authorship/v2",
-    "product":  {
-                    "slug":  "impactful-tom",
-                    "version":  "1.1.1"
-                },
-    "created_at":  "2026-08-12",
-    "documentation_fingerprint":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
-    "fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
-    "authored_files":  [
-                           {
-                               "bytes":  994,
-                               "path":  "ATTRIBUTION.md",
-                               "sha256":  "a4a3852a9465977bd6693f60b88452f545099c44d0295907399fdee1d57a694f"
-                           },
-                           {
-                               "bytes":  5166,
-                               "path":  "CHANGELOG.md",
-                               "sha256":  "e89b46d4be307a4c3ad7103a488707f57d2fc0daa76e6bd5031b1176a765e492"
-                           },
-                           {
-                               "bytes":  1668,
-                               "path":  "DATA-AND-PRIVACY.md",
-                               "sha256":  "ddb5f7b6a2be9ea327f522925978803f1e88f5a73ac70cac03fd08ec59fab33e"
-                           },
-                           {
-                               "bytes":  3000,
-                               "path":  "LICENSE.md",
-                               "sha256":  "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
-                           },
-                           {
-                               "bytes":  1922,
-                               "path":  "NOTICE.md",
-                               "sha256":  "f8a1108394980464a7093456a9f7597fd4e547bdb420dae5b26b6d968020e6b6"
-                           },
-                           {
-                               "bytes":  6119,
-                               "path":  "README.md",
-                               "sha256":  "c59ea6f7d2a441b3c35cf127f5a067bafc82269047dd5fdac95dda2e67896241"
-                           },
-                           {
-                               "bytes":  1305,
-                               "path":  "SECURITY.md",
-                               "sha256":  "7ba246ff1b81c59891f74da59b0c37fbf1ba390a82c00409f87b39c0b70b1846"
-                           },
-                           {
-                               "bytes":  1053,
-                               "path":  "SUPPORT.md",
-                               "sha256":  "c4689839646e2da9a418d6c74d6f023cb99a8a1b93c4defea6962a91ad590e78"
-                           },
-                           {
-                               "bytes":  3674,
-                               "path":  "TERMS-OF-USE.md",
-                               "sha256":  "575d3dcf54f7a4a85d54bf941aff27789277b1b426d16ae1501682bdc28d3498"
-                           },
-                           {
-                               "bytes":  1109,
-                               "path":  "TRADEMARKS.md",
-                               "sha256":  "a0bb3f831e92a3aeccc54cca73d6a5faaaf1b96214632458f364f7e7036750e3"
-                           },
-                           {
-                               "bytes":  578,
-                               "path":  "docs/404.html",
-                               "sha256":  "6ee82cf121115254bfa572df5735bc5794be42f31247438206c228c65c24ff53"
-                           },
-                           {
-                               "bytes":  4844,
-                               "path":  "docs/getting-started.md",
-                               "sha256":  "e0c0827bff3d07e170ddda75d5a8dc8c5d7f0a7befa31f30a4da307f9d9d7294"
-                           },
-                           {
-                               "bytes":  4426,
-                               "path":  "docs/index.md",
-                               "sha256":  "81749cbd62ba678d1bc4c0bdc5e280b43f1fa1e7d1de658ccad152d782c65a84"
-                           },
-                           {
-                               "bytes":  8598,
-                               "path":  "docs/installing-and-maintaining.md",
-                               "sha256":  "bd819ec0942507461312e702c70f0d99de1e1674e2704ba629194b9a33a8b3c9"
-                           },
-                           {
-                               "bytes":  3500,
-                               "path":  "docs/privacy-and-boundaries.md",
-                               "sha256":  "e3ac5fe8e18b0fd7089625d4dc99d88cfd799486c7448d54f34177323d2afad0"
-                           },
-                           {
-                               "bytes":  7557,
-                               "path":  "docs/provenance-and-verification.md",
-                               "sha256":  "8199a98bd27ae7bfe5a0ce1fcdaaeef89a57593765f3581a147eecd526e38de3"
-                           },
-                           {
-                               "bytes":  3416,
-                               "path":  "docs/troubleshooting.md",
-                               "sha256":  "e2b7c84422e983f9dacbdee76c501b02be56806da27f478bcef28d84db231ca7"
-                           }
-                       ],
-    "presentation_fingerprint":  "071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e",
-    "presentation_fingerprint_algorithm":  "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
-    "presentation_sources":  [
-                                 {
-                                     "bytes":  483,
-                                     "path":  "docs/_config.yml",
-                                     "sha256":  "bcdfce91090408a50e80ce18f379bef7b189d86b2a41a21d96c5c521659d0a29"
-                                 },
-                                 {
-                                     "bytes":  4709,
-                                     "path":  "docs/_layouts/default.html",
-                                     "sha256":  "d7d1e2209310a6a7f9d5de4bf8b45edf794014d56b6b1c8c9dad1cf6c06380c7"
-                                 },
-                                 {
-                                     "bytes":  9775,
-                                     "path":  "docs/assets/css/site.css",
-                                     "sha256":  "7c01d932a6289c53cb8529dec2c91d6f98f7fa6f419b5e1c8589f6a6f21d8d00"
-                                 },
-                                 {
-                                     "bytes":  751,
-                                     "path":  "docs/site.webmanifest",
-                                     "sha256":  "5ae26c017908f71acaf326901a038ce649a47aa1f0a702b6e661074da6cbbda0"
-                                 },
-                                 {
-                                     "bytes":  4021,
-                                     "path":  "documentation-manifest.json",
-                                     "sha256":  "82ee8fde1a6df3ba186d3723893a0f4410d8fe35ab7e075457921eecee5e83dc"
-                                 }
-                             ],
-    "authoring":  {
-                      "authorship_scope":  "complete-final-remediation-rereview",
-                      "capability":  "hesperos-documentation",
-                      "mode":  "main-agent-authorship",
-                      "run_id":  "HESPEROS-IMPACTFUL-TOM-20260812-REREVIEW-5"
-                  },
-    "documentation_manifest":  {
-                                   "bytes":  4021,
-                                   "path":  "documentation-manifest.json",
-                                   "sha256":  "82ee8fde1a6df3ba186d3723893a0f4410d8fe35ab7e075457921eecee5e83dc"
-                               },
-    "evidence_packet":  {
-                            "bytes":  1777,
-                            "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
-                            "sha256":  "e50b4233ddf7bd5b55df95b62be7765e6981b9850f1e17889660d5699cabb498"
-                        },
-    "authoring_response":  {
-                               "bytes":  618,
-                               "path":  "verification/documentation/hesperos-20260812-remediation-response.txt",
-                               "sha256":  "af873e81c3a59ca1c008d28796b8fe959185983680ad3fd904cd939c78b1a692"
-                           },
-    "execution_evidence":  [
-                               {
-                                   "bytes":  1777,
-                                   "path":  "verification/documentation/hesperos-20260812-remediation-evidence.md",
-                                   "sha256":  "e50b4233ddf7bd5b55df95b62be7765e6981b9850f1e17889660d5699cabb498"
-                               },
-                               {
-                                   "bytes":  618,
-                                   "path":  "verification/documentation/hesperos-20260812-remediation-response.txt",
-                                   "sha256":  "af873e81c3a59ca1c008d28796b8fe959185983680ad3fd904cd939c78b1a692"
-                               }
-                           ],
-    "claim_boundary":  "Binds the complete current customer journey after the dedicated Pages-hero repair to documentation acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5 and presentation 071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e; does not establish deployment or rendered behavior."
+  "format": "cd-hesperos-documentation-authorship/v2",
+  "product": {
+    "slug": "impactful-tom",
+    "version": "1.1.2"
+  },
+  "created_at": "2026-08-14",
+  "documentation_fingerprint": "5af2b4b5f56653f7b8d38acc2c3495702afceb41308847da69c6ca7ea13d603f",
+  "fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
+  "authored_files": [
+    {
+      "bytes": 994,
+      "path": "ATTRIBUTION.md",
+      "sha256": "a4a3852a9465977bd6693f60b88452f545099c44d0295907399fdee1d57a694f"
+    },
+    {
+      "bytes": 5255,
+      "path": "CHANGELOG.md",
+      "sha256": "4e73da9aca8b5a8c741e775b26f5c411253470dab3500b9895b28e36466ce399"
+    },
+    {
+      "bytes": 1668,
+      "path": "DATA-AND-PRIVACY.md",
+      "sha256": "f3a6ed76be0a7a79fde6644706005456059bbd7b475e0f7bc1fa212cc0fb5c31"
+    },
+    {
+      "bytes": 3000,
+      "path": "LICENSE.md",
+      "sha256": "7b6179e77955c917b6642f54df5cb68a902be26429536c1fdfdb34885da3ae3e"
+    },
+    {
+      "bytes": 1922,
+      "path": "NOTICE.md",
+      "sha256": "f8a1108394980464a7093456a9f7597fd4e547bdb420dae5b26b6d968020e6b6"
+    },
+    {
+      "bytes": 6242,
+      "path": "README.md",
+      "sha256": "17f875647114c301e26d2b128e5d9a5af7f657f46d01dfac87cfb8c6a7eed3bd"
+    },
+    {
+      "bytes": 1305,
+      "path": "SECURITY.md",
+      "sha256": "fa2bbdc6d27728abada3287ce12f1e44d6231f8e468eebdf23082d16d6e1fe86"
+    },
+    {
+      "bytes": 1053,
+      "path": "SUPPORT.md",
+      "sha256": "c4689839646e2da9a418d6c74d6f023cb99a8a1b93c4defea6962a91ad590e78"
+    },
+    {
+      "bytes": 3674,
+      "path": "TERMS-OF-USE.md",
+      "sha256": "575d3dcf54f7a4a85d54bf941aff27789277b1b426d16ae1501682bdc28d3498"
+    },
+    {
+      "bytes": 1109,
+      "path": "TRADEMARKS.md",
+      "sha256": "a0bb3f831e92a3aeccc54cca73d6a5faaaf1b96214632458f364f7e7036750e3"
+    },
+    {
+      "bytes": 578,
+      "path": "docs/404.html",
+      "sha256": "6ee82cf121115254bfa572df5735bc5794be42f31247438206c228c65c24ff53"
+    },
+    {
+      "bytes": 4844,
+      "path": "docs/getting-started.md",
+      "sha256": "e0c0827bff3d07e170ddda75d5a8dc8c5d7f0a7befa31f30a4da307f9d9d7294"
+    },
+    {
+      "bytes": 4497,
+      "path": "docs/index.md",
+      "sha256": "68207e322faac35cc7caf51669e5189533c6fbc99b61b39386a19270d1b8cad3"
+    },
+    {
+      "bytes": 8598,
+      "path": "docs/installing-and-maintaining.md",
+      "sha256": "8f6ed7928fbc9f383e677fd942e52ec7e89eb1cc59e88604e52a6e9d8acca46d"
+    },
+    {
+      "bytes": 3500,
+      "path": "docs/privacy-and-boundaries.md",
+      "sha256": "e3ac5fe8e18b0fd7089625d4dc99d88cfd799486c7448d54f34177323d2afad0"
+    },
+    {
+      "bytes": 7766,
+      "path": "docs/provenance-and-verification.md",
+      "sha256": "ccdb36ce4dcb478996901c18d23ba93e53d4e66d331edbd93ee6a931e41bb5d4"
+    },
+    {
+      "bytes": 3416,
+      "path": "docs/troubleshooting.md",
+      "sha256": "e2b7c84422e983f9dacbdee76c501b02be56806da27f478bcef28d84db231ca7"
+    }
+  ],
+  "presentation_fingerprint": "210d203c01de007c1ca81471946199424c6d90f69b754bc77a02892575700e06",
+  "presentation_fingerprint_algorithm": "sha256 over sorted UTF-8 path NUL raw file-sha256 records with ordinal path ordering",
+  "presentation_sources": [
+    {
+      "bytes": 483,
+      "path": "docs/_config.yml",
+      "sha256": "bcdfce91090408a50e80ce18f379bef7b189d86b2a41a21d96c5c521659d0a29"
+    },
+    {
+      "bytes": 4709,
+      "path": "docs/_layouts/default.html",
+      "sha256": "58e9f39cf651fa9ba1ee95e90af3cd56a0c809fa1fe996f83f6e032e37be7173"
+    },
+    {
+      "bytes": 9775,
+      "path": "docs/assets/css/site.css",
+      "sha256": "7c01d932a6289c53cb8529dec2c91d6f98f7fa6f419b5e1c8589f6a6f21d8d00"
+    },
+    {
+      "bytes": 751,
+      "path": "docs/site.webmanifest",
+      "sha256": "5ae26c017908f71acaf326901a038ce649a47aa1f0a702b6e661074da6cbbda0"
+    },
+    {
+      "bytes": 4021,
+      "path": "documentation-manifest.json",
+      "sha256": "754f39da1e570b828029a787ce9add2efd36e9d4fdb6f218e81148725783bcc6"
+    }
+  ],
+  "authoring": {
+    "authorship_scope": "complete-final-remediation-rereview",
+    "capability": "hesperos-documentation",
+    "mode": "main-agent-authorship",
+    "run_id": "HESPEROS-IMPACTFUL-TOM-20260814-V1.1.2-RECONCILIATION"
+  },
+  "documentation_manifest": {
+    "bytes": 4021,
+    "path": "documentation-manifest.json",
+    "sha256": "754f39da1e570b828029a787ce9add2efd36e9d4fdb6f218e81148725783bcc6"
+  },
+  "evidence_packet": {
+    "bytes": 1287,
+    "path": "verification/documentation/hesperos-20260814-v1.1.2-evidence.md",
+    "sha256": "f958c0809acbbbff252eae62b444548678eaeec72837e080682713b2717296df"
+  },
+  "authoring_response": {
+    "bytes": 309,
+    "path": "verification/documentation/hesperos-20260814-v1.1.2-response.txt",
+    "sha256": "e422dcfb40f53ecdf4c408ddcdd7cf292f6d56fbfcffe5e0cfed644b3f816118"
+  },
+  "execution_evidence": [
+    {
+      "bytes": 1287,
+      "path": "verification/documentation/hesperos-20260814-v1.1.2-evidence.md",
+      "sha256": "f958c0809acbbbff252eae62b444548678eaeec72837e080682713b2717296df"
+    },
+    {
+      "bytes": 309,
+      "path": "verification/documentation/hesperos-20260814-v1.1.2-response.txt",
+      "sha256": "e422dcfb40f53ecdf4c408ddcdd7cf292f6d56fbfcffe5e0cfed644b3f816118"
+    }
+  ],
+  "claim_boundary": "Binds the complete v1.1.2 customer journey at documentation 5af2b4b5f56653f7b8d38acc2c3495702afceb41308847da69c6ca7ea13d603f and presentation 210d203c01de007c1ca81471946199424c6d90f69b754bc77a02892575700e06; does not establish publication, rendered behavior, host activation, or customer outcomes."
 }

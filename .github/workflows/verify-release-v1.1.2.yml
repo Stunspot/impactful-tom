@@ -1,0 +1,30 @@
+name: Verify v1.1.2 release
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B -m unittest discover -s verification/tests -p "test_*.py" -v
+      - run: python -B verification/scripts/check_content_boundaries.py
+      - run: python -B verification/scripts/check_distribution_topology.py --claude-root dist/claude-code/impactful-tom --require-claude
+      - run: python -B verification/scripts/check_release_exclusions.py
+      - run: python -B verification/scripts/check_documentation_site.py
+      - run: python -c "import shutil; shutil.rmtree('release/stage/impactful-tom-v1.1.2', ignore_errors=True); shutil.rmtree('release/assets/v1.1.2', ignore_errors=True)"
+      - run: python -B development/build_release_v1_1_2.py
+      - run: git diff --exit-code -- release/assets/v1.1.2/SHA256SUMS.txt
