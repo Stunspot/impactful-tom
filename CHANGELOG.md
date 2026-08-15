@@ -2,7 +2,7 @@
 
 Notable release changes to Impactful Tom are recorded here.
 
-## Unreleased - documentation remediation
+## 1.1.2 - 2026-08-14
 
 - Re-read and reconciled the complete customer documentation journey against the 1.1.1 runtime, package manifests, eval suite, release objects, and live Pages deployment.
 - Added direct Troubleshooting navigation and current, evidence-bounded publication readback.
@@ -11,9 +11,9 @@ Notable release changes to Impactful Tom are recorded here.
 - Replaced the interchangeable navy-grid README and social cards with separate original image-generator compositions: a text-free constraint table and a title-bearing blocked-path decision scene.
 - Removed the obsolete programmed-art renderer and changed the visual validator to reject scripted artwork while preserving the approved product mark and icon set.
 - Added fresh Hesperos, accessibility, visual, and adversarial receipts bound to the remediated documentation and presentation fingerprints; live verification remains a post-deployment gate.
-- The [2026-08-11 verification receipt](verification/live-verification.json) is historical evidence. Its recorded role-image hashes do not verify the replacement hero, social card, or palette.
+- The [2026-08-11 verification receipt](https://github.com/Stunspot/impactful-tom/blob/main/verification/live-verification.json) is historical evidence. Its recorded role-image hashes do not verify the replacement hero, social card, or palette.
 
-This is a documentation and evidence remediation. It does not change the 1.1.1 runtime or rewrite the sealed v1.1.1 release archives.
+Version 1.1.2 packages this documentation, accessibility, evidence, and visual remediation without changing the founder instruction body. The sealed v1.1.1 release archives remain unchanged.
 
 ## 1.1.1 - 2026-07-31
 

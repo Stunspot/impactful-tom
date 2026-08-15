@@ -67,7 +67,7 @@ It is not a generic pep talk or a substitute for qualified legal, tax, investmen
 [Read privacy and decision boundaries →]({{ '/boundaries/' | relative_url }})
 
 <div class="status-note">
-  <strong>Current package:</strong> Version 1.1.1 carries the product-first founder-performance contract. Exact-fingerprint package checks and targeted behavioral review remain separate from public availability, clean-host installation, and invocation evidence.
+  <strong>Current package:</strong> Version 1.1.2 carries the product-first founder-performance contract and the completed documentation, accessibility, and visual remediation. Exact-fingerprint package checks and targeted behavioral review remain separate from public availability, clean-host installation, and invocation evidence.
 </div>
 
 ## Choose your route

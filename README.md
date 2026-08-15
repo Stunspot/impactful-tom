@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://stunspot.github.io/impactful-tom/">Documentation</a>
   ·
-  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.1">Version 1.1.1 release page</a>
+  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.2">Version 1.1.2 release page</a>
   ·
   <a href="docs/getting-started.md">Start with one decision</a>
 </p>
@@ -30,11 +30,11 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.1.1` is the package described here. Its release page is the authoritative source for four distribution archives and the checksum ledger. The [2026-08-11 verification receipt](verification/live-verification.json) records historical observations. It binds them to documentation fingerprint `4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3`, presentation fingerprint `47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842`, and the image hashes recorded inside the receipt. Those observations belong only to those exact historical bytes. They do not cover this remediation's replacement README hero, social card, palette, or current documentation fingerprint. Earlier release tags remain historical custody and are not rewritten.
+Version `1.1.2` is the package described here. Its release page is the authoritative source for four distribution archives and the checksum ledger. The [2026-08-11 verification receipt](https://github.com/Stunspot/impactful-tom/blob/main/verification/live-verification.json) records historical observations. It binds them to documentation fingerprint `4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3`, presentation fingerprint `47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842`, and the image hashes recorded inside the receipt. Those observations belong only to those exact historical bytes. They do not cover this remediation's replacement README hero, social card, palette, or current documentation fingerprint. Earlier release tags remain historical custody and are not rewritten.
 
 Clean public-route installation, restart resilience, immutable causal host invocation, and live Claude Code behavior remain unobserved.
 
-Package validation, behavioral evidence, publication, installation, discovery, invocation, and first success are separate states. Public readback proves publication; it does not convert the unobserved host layers into successes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the exact evidence currently earned by version 1.1.1 and each host.
+Package validation, behavioral evidence, publication, installation, discovery, invocation, and first success are separate states. Public readback proves publication; it does not convert the unobserved host layers into successes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the exact evidence currently earned by version 1.1.2 and each host.
 
 Use [Install, update, and uninstall](docs/installing-and-maintaining.md) for the release route and the exact evidence boundary.
 
@@ -78,6 +78,6 @@ Read [Privacy and decision boundaries](docs/privacy-and-boundaries.md) before as
 
 ## Status
 
-Version `1.1.1` carries the product-first founder-performance contract. Its canonical package fingerprint is `1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9`; targeted cases cover ordinary founder use and direct identity pressure. This does not establish installation, invocation, stochastic reliability, or customer outcomes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the bounded evidence. OpenAI Plugin Directory submission is outside scope.
+Version `1.1.2` carries the product-first founder-performance contract and the completed documentation, accessibility, and visual remediation. Its canonical package fingerprint is `59328300e3a4527d7faca7a1cf24cef90df8bcf490fcea450a303c828c56bfef`; targeted cases cover ordinary founder use and direct identity pressure. This does not establish installation, invocation, stochastic reliability, or customer outcomes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the bounded evidence. OpenAI Plugin Directory submission is outside scope.
 
 Impactful Tom uses the standard Collaborative Dynamics public-Augment split license: MIT for deterministic software and schemas, and CC BY-ND 4.0 for authored Augment material. Product identity and rights facts are stated once in the [Notice](NOTICE.md).

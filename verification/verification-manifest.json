@@ -1,85 +1,84 @@
 {
-    "format":  "cd-public-remediation-verification/v3",
-    "target":  {
-                   "name":  "Impactful Tom",
-                   "package_version":  "1.1.1",
-                   "package_fingerprint":  "1f39ba40e89facd8dd1ac567ddd19720fd705582e34e4505cfcd9beed6c590a9",
-                   "documentation_fingerprint":  "acbb67cf90089c61559a8b768385357512bbb5b7d7f41fc7ceff176275cdd7d5",
-                   "presentation_fingerprint":  "071e9223c24d67f86a83ba3b84f0704157344e433013706dcf3be5a5aa8c556e",
-                   "target_class":  "public_documentation_and_presentation_remediation"
-               },
-    "scope":  {
-                  "included":  [
-                                   "complete customer documentation journey",
-                                   "README and Pages presentation",
-                                   "all ten tracked visual assets",
-                                   "current static checks and exact evidence boundaries"
-                               ],
-                  "excluded":  [
-                                   "runtime redesign",
-                                   "frozen historical release archive mutation",
-                                   "new behavioral reliability claims",
-                                   "OpenAI Plugin Directory submission",
-                                   "unobserved live Claude Code behavior"
-                               ]
-              },
-    "observed":  [
-                     "All 17 customer documents and five presentation-source files were read completely and bound to separate fingerprints.",
-                     "The canonical 1.1.1 runtime skill and three references were read for claim verification.",
-                     "All ten tracked local images were opened and visually inspected.",
-                     "The README, Pages, and social roles use distinct product-specific assets; the application mark and icons remain preserved.",
-                     "The obsolete programmed-art renderer was removed and the validator now rejects programmed artwork.",
-                     "Nine regression tests, four actual static checks, and the exact pinned line-ending policy passed locally."
-                 ],
-    "risks":  [
-                  {
-                      "id":  "R-VISUAL-TEMPLATE",
-                      "severity":  "high",
-                      "status":  "remediated",
-                      "treatment":  "Replaced interchangeable navy-grid role images with product-specific image-generator originals."
-                  },
-                  {
-                      "id":  "R-PROGRAMMED-ART",
-                      "severity":  "high",
-                      "status":  "remediated",
-                      "treatment":  "Removed the renderer and its test dependency; validator now prohibits programmed artwork."
-                  },
-                  {
-                      "id":  "R-LIVE-STATE",
-                      "severity":  "high",
-                      "status":  "bounded",
-                      "treatment":  "Marked publication, Pages rebuild, repository social preview, and rendered-browser behavior as separate pending gates."
-                  },
-                  {
-                      "id":  "R-HOST-OVERCLAIM",
-                      "severity":  "critical",
-                      "status":  "covered",
-                      "treatment":  "Kept publication, installation, discovery, invocation, health, restart resilience, and Claude behavior separate."
-                  }
-              ],
-    "tests":  {
-                  "regression_suite":  "9/9 passed",
-                  "content_boundaries":  "PASS",
-                  "distribution_topology":  "PASS",
-                  "release_exclusions":  "PASS",
-                  "documentation_site_source":  "PASS",
-                  "line_ending_policy":  "PASS",
-                  "hesperos_documentation":  "REVIEW_PASS",
-                  "documentation_accessibility":  "REVIEW_PASS",
-                  "visual_review":  "PASS_LOCAL",
-                  "adversarial_review":  "PASS_LOCAL_WITH_LIVE_GATES",
-                  "testforge_final":  "PASS_LOCAL",
-                  "final_live_verification":  "PENDING"
-              },
-    "decision":  {
-                     "status":  "REMEDIATED_NOT_YET_LIVE",
-                     "blocking_gates":  [
-                                            "publish final commit",
-                                            "successful Pages rebuild",
-                                            "live source and asset parity",
-                                            "manual GitHub social-preview replacement",
-                                            "rendered Pages inspection in a permitted existing browser"
-                                        ]
-                 },
-    "claim_boundary":  "This manifest records local remediation readiness only. It does not claim successful publication or live rendered verification."
+  "format": "cd-public-remediation-verification/v3",
+  "target": {
+    "name": "Impactful Tom",
+    "package_version": "1.1.2",
+    "package_fingerprint": "59328300e3a4527d7faca7a1cf24cef90df8bcf490fcea450a303c828c56bfef",
+    "documentation_fingerprint": "5af2b4b5f56653f7b8d38acc2c3495702afceb41308847da69c6ca7ea13d603f",
+    "presentation_fingerprint": "210d203c01de007c1ca81471946199424c6d90f69b754bc77a02892575700e06",
+    "target_class": "reconciled_public_release_candidate"
+  },
+  "scope": {
+    "included": [
+      "complete customer documentation journey",
+      "README and Pages presentation",
+      "all ten tracked visual assets",
+      "current static checks and exact evidence boundaries"
+    ],
+    "excluded": [
+      "runtime redesign",
+      "frozen historical release archive mutation",
+      "new behavioral reliability claims",
+      "OpenAI Plugin Directory submission",
+      "unobserved live Claude Code behavior"
+    ]
+  },
+  "observed": [
+    "All 17 customer documents and five presentation sources were read completely and rebound to current fingerprints.",
+    "The v1.1.2 canonical and Claude/generic skill trees pass exact topology and byte-parity checks.",
+    "The founder instruction body is unchanged from v1.1.1; versioned package and evaluation metadata advance together.",
+    "All ten tracked local images retain the directly reviewed role separation and custody.",
+    "Nine regression tests, four actual static checks, 17 Hesperos lint checks, and deterministic archive verification pass locally.",
+    "Four v1.1.2 archives reproduce byte-for-byte with safe members, exact source extraction parity, stored entries, and pinned cross-platform metadata."
+  ],
+  "risks": [
+    {
+      "id": "R-VISUAL-TEMPLATE",
+      "severity": "high",
+      "status": "remediated",
+      "treatment": "Replaced interchangeable navy-grid role images with product-specific image-generator originals."
+    },
+    {
+      "id": "R-PROGRAMMED-ART",
+      "severity": "high",
+      "status": "remediated",
+      "treatment": "Removed the renderer and its test dependency; validator now prohibits programmed artwork."
+    },
+    {
+      "id": "R-LIVE-STATE",
+      "severity": "high",
+      "status": "bounded",
+      "treatment": "Marked publication, Pages rebuild, repository social preview, and rendered-browser behavior as separate pending gates."
+    },
+    {
+      "id": "R-HOST-OVERCLAIM",
+      "severity": "critical",
+      "status": "covered",
+      "treatment": "Kept publication, installation, discovery, invocation, health, restart resilience, and Claude behavior separate."
+    }
+  ],
+  "tests": {
+    "regression_suite": "9/9 passed",
+    "content_boundaries": "PASS",
+    "distribution_topology": "PASS",
+    "release_exclusions": "PASS",
+    "documentation_site_source": "PASS",
+    "line_ending_policy": "PASS",
+    "hesperos_documentation": "REVIEW_PASS",
+    "documentation_accessibility": "REVIEW_PASS",
+    "visual_review": "PASS_LOCAL",
+    "adversarial_review": "PASS_LOCAL_WITH_LIVE_GATES",
+    "testforge_final": "PASS_LOCAL",
+    "final_live_verification": "PENDING_V1.1.2_PUBLICATION"
+  },
+  "decision": {
+    "status": "READY_FOR_V1.1.2_RELEASE_WITH_LIVE_GATES",
+    "blocking_gates": [
+      "publish final commit and v1.1.2 tag",
+      "successful three-OS PR rebuild",
+      "upload and read back the four archives and checksum ledger",
+      "successful Pages rebuild and live v1.1.2 route readback"
+    ]
+  },
+  "claim_boundary": "Records local v1.1.2 release-candidate readiness only. It does not establish GitHub publication, host installation or invocation, formal accessibility conformance, Plugins Directory approval, stochastic reliability, or customer outcomes."
 }
