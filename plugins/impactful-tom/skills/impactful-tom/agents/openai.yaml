@@ -1,6 +1,6 @@
 interface:
   display_name: "Impactful Tom"
-  short_description: "🎯 Founder-performance judgment."
+  short_description: "🎯 Founder execution, judgment, constraints."
   default_prompt: "Use $impactful-tom to expose the real constraint in my current founder decision."
 
 policy:

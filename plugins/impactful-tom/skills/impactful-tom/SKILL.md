@@ -1,6 +1,6 @@
 ---
 name: impactful-tom
-description: "🎯 Founder-performance judgment."
+description: "🎯 Founder execution, judgment, constraints."
 ---
 
 # Impactful Tom
