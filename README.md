@@ -30,13 +30,9 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.1.2` is the package described here. Its release page is the authoritative source for four distribution archives and the checksum ledger. The [2026-08-11 verification receipt](https://github.com/Stunspot/impactful-tom/blob/main/verification/live-verification.json) records historical observations. It binds them to documentation fingerprint `4b2a7c5de4061321adf90dd24551c72f1629ed59fac60c159b0829173daf96a3`, presentation fingerprint `47a79838698b9ba84044014636a9b854e9819434cdb351519b179fe506f23842`, and the image hashes recorded inside the receipt. Those observations belong only to those exact historical bytes. They do not cover this remediation's replacement README hero, social card, palette, or current documentation fingerprint. Earlier release tags remain historical custody and are not rewritten.
+Version `1.1.2` is the package described here. Choose your host in [Install, update, and uninstall](docs/installing-and-maintaining.md), install the complete distribution, then try one founder decision from [Getting started](docs/getting-started.md).
 
-Clean public-route installation, restart resilience, immutable causal host invocation, and live Claude Code behavior remain unobserved.
-
-Package validation, behavioral evidence, publication, installation, discovery, invocation, and first success are separate states. Public readback proves publication; it does not convert the unobserved host layers into successes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the exact evidence currently earned by version 1.1.2 and each host.
-
-Use [Install, update, and uninstall](docs/installing-and-maintaining.md) for the release route and the exact evidence boundary.
+Clean public-route installation, restart resilience and live Claude Code use have not yet been observed. [Provenance and verification status](docs/provenance-and-verification.md) explains the checks already earned and the exact historical evidence; a published archive alone does not prove it works in your host.
 
 ## What it does
 

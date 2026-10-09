@@ -1,0 +1,72 @@
+{
+  "authored_files": [
+    {
+      "bytes": 5342,
+      "path": "README.md",
+      "sha256": "b295c63fbfc363f2ffd0cc1e0ddb2b7c4548dc146d894e802b26f92781ead1db"
+    },
+    {
+      "bytes": 9089,
+      "path": "docs/installing-and-maintaining.md",
+      "sha256": "d1ed1fceaad549a940e17515981c136fde3261bac27754e6f3b87683ef580c04"
+    },
+    {
+      "bytes": 8802,
+      "path": "docs/provenance-and-verification.md",
+      "sha256": "6ab5f004f3a9739b88e2a81158e5ddde0530a0038dd127f3f72d75402cecc215"
+    },
+    {
+      "bytes": 1641,
+      "path": "delivery-sidecars/Impactful Tom T-Free v1.1.2 Extra.md",
+      "sha256": "bd8db25352a557e0dfa66c1d4de901714107dea94ee7bc05e1ed50d28565a46f"
+    }
+  ],
+  "authoring": {
+    "authorship_scope": "materially-revised",
+    "capability": "hesperos-documentation",
+    "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_snapshot": {
+      "bytes": 7306,
+      "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+      "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+    },
+    "mode": "in-process",
+    "run_id": "impactful-tom-estate-r1"
+  },
+  "authoring_response": {
+    "bytes": 433,
+    "path": "development/evidence/ESTATE-REPAIR-20261009/candidate-r1/authoring-response.md",
+    "sha256": "e40f4c3fe060ca94e2e1f33d5512186be1a0f92f8f11ad8811543d79b27dc325"
+  },
+  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
+  "created_at": "2026-10-09T19:18:40+00:00",
+  "documentation_fingerprint": "9c4548a3bab182fe9115ecee812b9500fc5f25f469e24442c2ba147ad698441a",
+  "documentation_manifest": {
+    "bytes": 299,
+    "path": "development/evidence/ESTATE-REPAIR-20261009/candidate-r1/documentation-manifest.json",
+    "sha256": "1978310355b8419f9e6725e8a110c66ca658af10626cd4f6ac9b6390e3eb01e1"
+  },
+  "evidence_packet": {
+    "bytes": 391,
+    "path": "development/evidence/ESTATE-REPAIR-20261009/candidate-r1/evidence-packet.json",
+    "sha256": "63d00c36925f28e3d9d837f2e789c928a081d932aaf0409b46128b205ae059cc"
+  },
+  "execution_evidence": [
+    {
+      "bytes": 1029,
+      "path": "development/evidence/ESTATE-REPAIR-20261009/candidate-r1/lint-execution.json",
+      "sha256": "4d939829f0bc30965219e62e291df9ad32a974b1dffdee870b123d2db9b88580"
+    },
+    {
+      "bytes": 433,
+      "path": "development/evidence/ESTATE-REPAIR-20261009/candidate-r1/authoring-response.md",
+      "sha256": "e40f4c3fe060ca94e2e1f33d5512186be1a0f92f8f11ad8811543d79b27dc325"
+    }
+  ],
+  "format": "cd-hesperos-documentation-authorship/v1",
+  "product": {
+    "slug": "impactful-tom",
+    "version": "1.1.2"
+  }
+}

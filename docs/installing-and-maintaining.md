@@ -78,7 +78,7 @@ Removing a plugin and removing a marketplace are different actions. The first re
 
 The release includes one self-contained directory: `dist/claude-code/impactful-tom`. The Claude Code/generic skill directory passes structural checks without live-host evidence. A live Claude Code installation, discovery, invocation, and first-success test have not been observed.
 
-Claude Code's [official skill documentation](https://code.claude.com/docs/en/slash-commands) defines two local installation scopes:
+Claude Code's [official skill documentation](https://code.claude.com/docs/en/skills) defines two local installation scopes:
 
 - **Personal:** place the complete folder at `~/.claude/skills/impactful-tom/`. The entry point must be `~/.claude/skills/impactful-tom/SKILL.md`. Use this when you want the skill available across your projects.
 - **Project:** from the project root, place the complete folder at `.claude/skills/impactful-tom/`. The entry point must be `.claude/skills/impactful-tom/SKILL.md`. Use this when the skill should apply only to that project.
@@ -105,7 +105,7 @@ Choose one scope unless you intentionally manage both. A personal skill with the
    ```
 
    If the entry point is instead at `impactful-tom/impactful-tom/SKILL.md`, move the inner folder up one level.
-4. If `~/.claude/skills/` or the project's `.claude/skills/` already existed when the current Claude Code session started, Claude Code watches it and should detect the new skill without a restart. If you created that top-level skills directory during the session, restart Claude Code so it can watch the directory.
+4. Current Claude Code watches `SKILL.md` changes in existing skill directories during a session, except in bare mode. If you create a top-level skills directory that did not exist when the session started, run `/reload-skills` to load its skills; repeat that command after later changes there because the new directory is not yet watched. A fresh session is a conservative fallback. Check the [current official skill guidance](https://code.claude.com/docs/en/skills) for the behavior of your installed version.
 
 ### Invoke it and confirm first value
 
@@ -117,7 +117,7 @@ In Claude Code, invoke the directory name directly with one observable founder d
 
 A first-success response stays on that decision, distinguishes evidence from inference, names a plausible constraint, and proposes a bounded move with an owner and review condition. That response is a functional check in your host; it is not evidence of universal reliability or professional advice.
 
-If `/impactful-tom` is not available, recheck the entry-point path and extra-nesting condition first. If the top-level skills directory did not exist when the session started, restart Claude Code, then try `/impactful-tom` again. Do not change the package contents until those path and restart checks are complete.
+If `/impactful-tom` is not available, recheck the entry-point path and extra-nesting condition first. If the top-level skills directory did not exist when the session started, run `/reload-skills`, then try `/impactful-tom` again; use a fresh session when reload is unavailable in your version. Do not change the package contents until those path and restart checks are complete.
 
 ### Update
 
@@ -125,7 +125,7 @@ If `/impactful-tom` is not available, recheck the entry-point path and extra-nes
 2. Replace the entire installed `impactful-tom` folder with the complete replacement folder at the same personal or project path. Do not merge selected files from different versions.
 3. Recheck the directory shape and run the first-value invocation again.
 
-Claude Code watches changes inside an existing skills directory during the current session. Start a new conversation for the update check so a previously loaded skill body is not mistaken for the replacement version. Restart Claude Code only if the top-level skills directory did not exist when the session started.
+Current live change detection covers `SKILL.md` text; it is not proof that every replaced reference or asset has been reloaded. Start a fresh session for a complete-package update check and invoke one founder decision, so earlier loaded content is not mistaken for the replacement. For a top-level skills directory created after session start, use `/reload-skills` as described in the official guidance; if that command is unavailable, restart. A changed file on disk remains a configuration observation until the host actually uses the current method.
 
 ### Uninstall
 

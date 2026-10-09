@@ -1,4 +1,4 @@
 2022d97f01a49fc79a67fcb7154f404264157fb89af1f44d7facc3a3aa8b90bc  impactful-tom-v1.1.2-claude-code-generic-skill.zip
 88e6d5429098224727bfd4dcc288536b30d717a6fc81123a6bcc17142fbfaa90  impactful-tom-v1.1.2-codex-plugin.zip
 d3473760f14e190f8e6207470d9eabe8795912ad572e7e94301ba49ebe67e0c8  impactful-tom-v1.1.2-standalone-skill.zip
-64a47acfeed4ecf6b86cb3dff639754c542a7672e080d8db70977fbcb99bd548  impactful-tom-v1.1.2.zip
+b81e4a6238f75a1882be212283c2e3d761da452d684f779468d89d59116ff63f  impactful-tom-v1.1.2.zip

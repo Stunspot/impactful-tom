@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:/Python314/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\user\\.codex\\plugins\\cache\\personal\\scribe-hesperos-clearpath\\0.1.3\\skills\\hesperos-documentation\\scripts\\lint_accessible_markdown.py",
+    "--check-links",
+    "--root",
+    "E:\\Github\\impactful-tom",
+    "E:\\Github\\impactful-tom\\README.md",
+    "E:\\Github\\impactful-tom\\docs\\installing-and-maintaining.md",
+    "E:\\Github\\impactful-tom\\docs\\provenance-and-verification.md",
+    "E:\\Github\\impactful-tom\\delivery-sidecars\\Impactful Tom T-Free v1.1.2 Extra.md"
+  ],
+  "exit_code": 0,
+  "stdout": "E:\\Github\\impactful-tom\\README.md: PASS (bounded source checks)\nE:\\Github\\impactful-tom\\docs\\installing-and-maintaining.md: PASS (bounded source checks)\nE:\\Github\\impactful-tom\\docs\\provenance-and-verification.md: PASS (bounded source checks)\nE:\\Github\\impactful-tom\\delivery-sidecars\\Impactful Tom T-Free v1.1.2 Extra.md: PASS (bounded source checks)\n",
+  "stderr": ""
+}

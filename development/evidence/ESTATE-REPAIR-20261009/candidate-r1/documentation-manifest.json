@@ -1,0 +1,11 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "product": "Impactful Tom",
+  "version": "1.1.2",
+  "customer_docs": [
+    "README.md",
+    "docs/installing-and-maintaining.md",
+    "docs/provenance-and-verification.md",
+    "delivery-sidecars/Impactful Tom T-Free v1.1.2 Extra.md"
+  ]
+}
