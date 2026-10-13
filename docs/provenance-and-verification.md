@@ -6,6 +6,12 @@ permalink: /evidence/
 eyebrow: Trust and evidence
 ---
 
+## Current 1.1.3 release
+
+The [1.1.3 release](https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.3) carries the accepted first-encounter, installation and complete-ZIP guidance repair under a distinct updateable identity. Founder operative instructions and voice are unchanged; native host activation and stochastic reliability are not newly claimed. The original qualification narrative below retains its own version, fingerprints and evidence cutoff.
+
+## Retained qualification narrative
+
 ## What the public package contains
 
 Impactful Tom is a founder-performance Augment from Collaborative Dynamics. Its authored runtime elicits concrete stakes, mechanism-first reasoning, direct challenge, explanatory clarity, and sequential action.

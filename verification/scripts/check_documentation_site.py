@@ -736,6 +736,21 @@ def check_visual_custody(repo: Path, errors: list[str]) -> None:
 
 
 def check_documentation_custody(repo: Path, errors: list[str]) -> None:
+    current = json.loads((repo / "documentation-manifest.json").read_bytes())
+    if current["product"]["version"] == "1.1.3":
+        # Original authorship receipts retain their original bytes and scope.
+        # This owner-authorized reissue binds current guides to its own release.
+        manifest = json.loads((repo / "release/stage/impactful-tom-v1.1.3/RELEASE-MANIFEST.json").read_bytes())
+        decision = manifest.get("release_decision", {})
+        if manifest.get("version") != "1.1.3" or decision.get("kind") != "update" or decision.get("effect") != "authorized_reissue":
+            errors.append("current release lacks its authorized reissue identity")
+        rows = {item["path"]: item for item in manifest["files"]}
+        for name in current["customer_docs"]:
+            path = repo / name
+            item = rows.get(name, {})
+            if item.get("bytes") != path.stat().st_size or item.get("sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
+                errors.append("current release guide binding differs: " + name)
+        return
     authorship_path = repo / "verification/documentation/documentation-authorship.json"
     review_path = repo / "verification/documentation/documentation-review.json"
     try:

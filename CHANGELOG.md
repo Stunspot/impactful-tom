@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3 - 2026-10-13
+
+Reissues the accepted customer-entry and installation repair under the owner-required distinct identity. Founder operative content, approved artwork, original qualification and host boundaries are preserved.
+
 Notable release changes to Impactful Tom are recorded here.
 
 ## 1.1.2 - 2026-08-14

@@ -20,3 +20,7 @@
 # Preserve original Hesperos authorship evidence bytes.
 /development/evidence/ESTATE-REPAIR-20261009/candidate-r1/** -text
 /verification/hesperos-capabilities/** -text
+
+# Preserve the supplied owner prompt bytes.
+"/delivery-sidecars/Impactful Tom T-Free v1.1.3.md" -text
+"/delivery-v1.1.3/Impactful Tom T-Free v1.1.3.md" -text

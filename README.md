@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://stunspot.github.io/impactful-tom/">Documentation</a>
   ·
-  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.2">Version 1.1.2 release page</a>
+  <a href="https://github.com/Stunspot/impactful-tom/releases/tag/v1.1.3">Version 1.1.3 release page</a>
   ·
   <a href="docs/getting-started.md">Start with one decision</a>
 </p>
@@ -30,9 +30,9 @@ Read [Getting started](docs/getting-started.md) for fit, examples, and how the c
 
 ## Install status
 
-Version `1.1.2` is the package described here. Choose your host in [Install, update, and uninstall](docs/installing-and-maintaining.md), install the complete distribution, then try one founder decision from [Getting started](docs/getting-started.md).
+Version `1.1.3` is the package described here. Choose your host in [Install, update, and uninstall](docs/installing-and-maintaining.md), install the complete distribution, then try one founder decision from [Getting started](docs/getting-started.md).
 
-Clean public-route installation, restart resilience and live Claude Code use have not yet been observed. [Provenance and verification status](docs/provenance-and-verification.md) explains the checks already earned and the exact historical evidence; a published archive alone does not prove it works in your host.
+Clean public-route installation, restart resilience and live Claude Code use remain unobserved. [Provenance and verification status](docs/provenance-and-verification.md) explains the checks already earned and the exact historical evidence; a published archive alone does not prove it works in your host.
 
 ## What it does
 
@@ -74,6 +74,6 @@ Read [Privacy and decision boundaries](docs/privacy-and-boundaries.md) before as
 
 ## Status
 
-Version `1.1.2` carries the product-first founder-performance contract and the completed documentation, accessibility, and visual remediation. Its canonical package fingerprint is `59328300e3a4527d7faca7a1cf24cef90df8bcf490fcea450a303c828c56bfef`; targeted cases cover ordinary founder use and direct identity pressure. This does not establish installation, invocation, stochastic reliability, or customer outcomes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the bounded evidence. OpenAI Plugin Directory submission is outside scope.
+Version `1.1.3` carries the product-first founder-performance contract and the completed documentation, accessibility, and visual remediation. The original v1.1.2 qualification used canonical package fingerprint `59328300e3a4527d7faca7a1cf24cef90df8bcf490fcea450a303c828c56bfef`; its targeted cases cover ordinary founder use and direct identity pressure. The 1.1.3 reissue changes identity and current guidance, preserving that proof at its original scope. This does not establish installation, invocation, stochastic reliability, or customer outcomes. Read [Provenance and verification status](docs/provenance-and-verification.md) for the bounded evidence. OpenAI Plugin Directory submission is outside scope.
 
 Impactful Tom uses the standard Collaborative Dynamics public-Augment split license: MIT for deterministic software and schemas, and CC BY-ND 4.0 for authored Augment material. Product identity and rights facts are stated once in the [Notice](NOTICE.md).
