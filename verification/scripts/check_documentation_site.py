@@ -736,11 +736,19 @@ def check_visual_custody(repo: Path, errors: list[str]) -> None:
 
 
 def check_documentation_custody(repo: Path, errors: list[str]) -> None:
-    current = json.loads((repo / "documentation-manifest.json").read_bytes())
+    try:
+        current = json.loads(read_text(repo / "documentation-manifest.json", errors))
+    except (json.JSONDecodeError, OSError) as exc:
+        errors.append(f"invalid current documentation manifest: {exc}")
+        return
     if current["product"]["version"] == "1.1.3":
         # Original authorship receipts retain their original bytes and scope.
         # This owner-authorized reissue binds current guides to its own release.
-        manifest = json.loads((repo / "release/stage/impactful-tom-v1.1.3/RELEASE-MANIFEST.json").read_bytes())
+        try:
+            manifest = json.loads(read_text(repo / "release/stage/impactful-tom-v1.1.3/RELEASE-MANIFEST.json", errors))
+        except (json.JSONDecodeError, OSError) as exc:
+            errors.append(f"invalid current release inventory: {exc}")
+            return
         decision = manifest.get("release_decision", {})
         if manifest.get("version") != "1.1.3" or decision.get("kind") != "update" or decision.get("effect") != "authorized_reissue":
             errors.append("current release lacks its authorized reissue identity")

@@ -41,6 +41,7 @@ def copy_documentation_fixture(destination: Path) -> None:
         "NOTICE.md",
         "TRADEMARKS.md",
         "documentation-manifest.json",
+        "release/stage/impactful-tom-v1.1.3/RELEASE-MANIFEST.json",
         "development/documentation-project.json",
         "plugins/impactful-tom/assets/founder-constraint-mark.png",
         "verification/documentation/documentation-authorship.json",
